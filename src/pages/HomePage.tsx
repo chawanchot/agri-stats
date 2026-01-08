@@ -4,7 +4,7 @@ import ProvincesData from "../data/provinces.json";
 import type { FeatureCollection } from "geojson";
 import { useRef, useState } from "react";
 import Axios from "axios";
-import { Button, Cascader, Modal, Tree, type CascaderProps } from "antd";
+import { Button, Cascader, Modal, Tag, Tree, type CascaderProps } from "antd";
 import HeadMapCrop from "@components/HeadMapCrop";
 import SoilSource from "@components/SoilSource";
 import ProvinceSource from "@components/ProvinceSource";
@@ -14,7 +14,7 @@ import ChartComponent from "@components/ChartComponent";
 const MAPBOX_TOKEN = import.meta.env.VITE_MAPBOX_TOKEN;
 const ProvincesGeoJson = ProvincesData as FeatureCollection;
 
-type CropType = {
+type CropDetailType = {
     crop: string;
     harvest_area: number;
     planted_area: number;
@@ -23,6 +23,13 @@ type CropType = {
     yield_per_rai: number;
     yield_ton: number;
 };
+
+type PriceType = {
+    day_price: string;
+    product_category: string;
+    product_name: string;
+    unit: string;
+}
 
 type Option = {
     value: string;
@@ -90,61 +97,25 @@ function HomePage() {
 
             try {
                 const soilName = pro_en.replaceAll(" ", "").toLowerCase();
-                const data = await import(`./data/soils/${soilName}.json`);
+                const data = await import(`../data/soils/${soilName}.json`);
 
                 setSoilData(data.default);
             } catch (error) {
                 setSoilData(null);
             }
 
-            Axios.get(`http://localhost:5000/crops-province?province=${pro_th}`)
-                .then((resp) => {
-                    if (resp.data.status) {
-                        const responseData = resp.data.data;
+            try {
+                const getCropsByProvince = await Axios.get(`http://localhost:5000/crops-province?province=${pro_th}`);
+                const cropsData = getCropsByProvince.data.data;
+                fetchCropPrice(cropsData);
 
-                        const dataTree = Object.keys(responseData).map(
-                            (cropName) => {
-                                return {
-                                    title: (
-                                        <span className="font-bold">
-                                            {cropName}
-                                        </span>
-                                    ),
-                                    key: cropName,
-                                    children: responseData[cropName].map(
-                                        (item: any, index: number) => ({
-                                            title: (
-                                                <div className="flex flex-col text-xs py-1">
-                                                    <span className="font-semibold">
-                                                        ปี {item.year}
-                                                    </span>
-                                                    <span className="text-gray-500">
-                                                        ผลผลิต:{" "}
-                                                        <span className="text-green-500">
-                                                            {item.yield_per_rai}
-                                                        </span>{" "}
-                                                        กก./ไร่
-                                                    </span>
-                                                </div>
-                                            ),
-                                            key: `${cropName}-${item.year}-${index}`,
-                                        })
-                                    ),
-                                };
-                            }
-                        );
-
-                        setProvinceCropsData(dataTree);
-
-                        setTimeout(() => {
-                            setIsModalOpen(true);
-                            setProvinceSelected(pro_th);
-                        }, 2000);
-                    }
-                })
-                .catch((err) => {
-                    console.log(err);
-                });
+                setTimeout(() => {
+                    setIsModalOpen(true);
+                    setProvinceSelected(pro_th);
+                }, 2000);
+            } catch (error) {
+                console.log(error);
+            }
         }
     };
 
@@ -164,51 +135,113 @@ function HomePage() {
         setCropSelected(value);
 
         if (value) {
-            getCropData(value[0], value[1]);
+            fetchCropCompareData(value[0], value[1]);
         }
     };
 
-    const getCropData = (crop: string, year: string) => {
-        Axios.get(`http://localhost:5000/crops?crop=${crop}&year=${year}`)
-            .then((resp) => {
-                if (resp.data.status) {
-                    const apiData = resp.data.data;
+    const fetchCropCompareData = async (crop: string, year: string) => {
+        try {
+            const getCropData = await Axios.get(`http://localhost:5000/crops?crop=${crop}&year=${year}`);
+            const cropData = getCropData.data.data;
 
-                    const updatedGeoJson = {
-                        ...ProvincesGeoJson,
-                        features: ProvincesGeoJson.features.map(
-                            (feature: any) => {
-                                const match = apiData.find(
-                                    (item: CropType) =>
-                                        item.province ===
-                                        feature.properties.pro_th
-                                );
+            const updatedGeoJson = {
+                ...ProvincesGeoJson,
+                features: ProvincesGeoJson.features.map(
+                    (feature: any) => {
+                        const match = cropData.find(
+                            (item: CropDetailType) => item.province === feature.properties.pro_th
+                        );
 
-                                return {
-                                    ...feature,
-                                    properties: {
-                                        ...feature.properties,
-                                        yield_weight: match
-                                            ? match.yield_per_rai
-                                            : 0,
-                                    },
-                                };
-                            }
-                        ),
-                    };
+                        return {
+                            ...feature,
+                            properties: {
+                                ...feature.properties,
+                                yield_weight: match ? match.yield_per_rai : 0,
+                            },
+                        };
+                    }
+                ),
+            };
 
-                    setCropCompareData(updatedGeoJson);
-                }
-            })
-            .catch((err) => {
-                console.error(err);
-            });
+            setCropCompareData(updatedGeoJson);
+        } catch (error) {
+            console.log(error);
+        }
     };
+
+    const fetchCropPrice = async (cropsData: CropDetailType[]) => {
+        const cropKey = Object.keys(cropsData);
+        let allPrice: PriceType[] = [];
+
+        for (const item of cropKey) {
+            const getPrice = await Axios.get(`http://localhost:5000/price-by-crop?crop=${item}`);
+            const priceData = getPrice.data.data;
+            allPrice = [...allPrice, ...priceData];
+        }
+
+        formatTreeData(cropsData, allPrice);
+    }
+
+    const formatTreeData = (data: any, allPrice: PriceType[]) => {
+        const dataTree = Object.keys(data).map(
+            (cropName) => {
+                const price = getCropPrice(cropName, allPrice);
+                return {
+                    title: (
+                        <span className="flex gap-3">
+                            <div className="font-bold">{cropName}</div>
+                            {price && (
+                                <Tag variant="filled" color="green" className="shadow-sm">
+                                    {price.product_name} - <span className="font-semibold">{`${price.day_price} ${price.unit}`}</span>
+                                </Tag>
+                            )}
+                        </span>
+                    ),
+                    key: cropName,
+                    children: data[cropName].map(
+                        (item: any, index: number) => ({
+                            title: (
+                                <div className="flex flex-col text-xs py-1">
+                                    <span className="">
+                                        ปี {item.year}
+                                    </span>
+                                    <span className="font-semibold">
+                                        ผลผลิต:{" "}
+                                        <span className="text-green-500">
+                                            {item.yield_per_rai}
+                                        </span>{" "}
+                                        กก./ไร่
+                                    </span>
+                                </div>
+                            ),
+                            key: `${cropName}-${item.year}-${index}`,
+                        })
+                    ),
+                };
+            }
+        );
+
+        setProvinceCropsData(dataTree);
+    }
+
+    const getCropPrice = (crop: string, allPrice: PriceType[]): PriceType | "" => {
+        const filtered = allPrice.filter((item: PriceType) => item.product_category === crop);
+            
+        if (filtered.length > 0) {
+            const HighestPrice = filtered.reduce((acc, curr) => {
+                return curr.day_price > acc.day_price ? curr : acc;
+            })
+
+            return HighestPrice
+        } else {
+            return "";
+        }
+    }
 
     return (
         <div className="flex items-center justify-center h-full">
             <div className="w-full h-full">
-                <div className="absolute bottom-5 left-5 z-10 text-9xl text-white text-sh text-shadow-lg">
+                <div className="pointer-events-none absolute bottom-5 left-5 z-10 text-9xl text-white text-sh text-shadow-lg">
                     {provinceSelected}
                 </div>
 
@@ -263,9 +296,7 @@ function HomePage() {
                             );
 
                             if (provinceFeature) {
-                                setHoverInfo(
-                                    provinceFeature.properties?.pro_th
-                                );
+                                setHoverInfo(provinceFeature.properties?.pro_th);
                             } else {
                                 setHoverInfo(null);
                             }
