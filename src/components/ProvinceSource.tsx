@@ -1,0 +1,41 @@
+import type { FeatureCollection } from "geojson";
+import { Layer, Source } from "react-map-gl/mapbox";
+
+type PropsType = {
+    data: FeatureCollection;
+    hoverData: any;
+};
+
+function ProvinceSource({ data, hoverData }: PropsType) {
+    return (
+        <>
+            <Source id="provincesData" type="geojson" data={data}>
+                <Layer
+                    id="province-hover-fills"
+                    type="fill"
+                    paint={{
+                        "fill-color": "#088",
+                        "fill-opacity": [
+                            "case",
+                            ["==", ["get", "pro_th"], hoverData],
+                            0.5,
+                            0.1,
+                        ],
+                    }}
+                />
+
+                <Layer
+                    id="province-outline"
+                    type="line"
+                    paint={{
+                        "line-color": "#fff",
+                        "line-width": 1,
+                        "line-opacity": 0.4,
+                    }}
+                />
+            </Source>
+        </>
+    );
+}
+
+export default ProvinceSource;
