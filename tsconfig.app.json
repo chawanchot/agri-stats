@@ -23,6 +23,7 @@
       "@components/*": ["components/*"],
       "@assets/*": ["assets/*"],
       "@data/*": ["data/*"],
+      "@router/*": ["router/*"],
     },
 
     /* Linting */
