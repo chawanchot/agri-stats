@@ -20,7 +20,29 @@ ChartJS.register(
     Legend
 );
 
-function ChartComponent() {
+type PropsType = {
+    data: CropType[];
+}
+
+type CropType = {
+    name: string;
+    data: CropDetailType[];
+}
+
+type CropDetailType = {
+    crop: string;
+    harvest_area: number;
+    planted_area: number;
+    province: string;
+    year: number;
+    yield_per_rai: number;
+    yield_ton: number;
+};
+
+function ChartComponent({ data }: PropsType) {
+
+    console.log(data);
+
     const ChartOptions = {
         responsive: true,
         plugins: {

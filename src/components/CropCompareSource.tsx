@@ -1,12 +1,13 @@
 import { Layer, Source } from "react-map-gl/mapbox"
 import type { FeatureCollection } from "geojson";
 
-const HeadMapCrop = ({ data }: { data: FeatureCollection }) => {
+const CropCompareSource = ({ data }: { data: FeatureCollection }) => {
     return (
         <Source id="provinces-source" type="geojson" data={data}>
             <Layer
                 id="province-fills"
                 type="fill"
+                beforeId="province-labels"
                 paint={{
                     "fill-color": [
                         "interpolate",
@@ -25,4 +26,4 @@ const HeadMapCrop = ({ data }: { data: FeatureCollection }) => {
     )
 }
 
-export default HeadMapCrop
+export default CropCompareSource

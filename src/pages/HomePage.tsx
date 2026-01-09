@@ -5,7 +5,7 @@ import type { FeatureCollection } from "geojson";
 import { useRef, useState } from "react";
 import Axios from "axios";
 import { Button, Cascader, Modal, Tag, Tree, type CascaderProps } from "antd";
-import HeadMapCrop from "@components/HeadMapCrop";
+import CropCompareSource from "@components/CropCompareSource";
 import SoilSource from "@components/SoilSource";
 import ProvinceSource from "@components/ProvinceSource";
 import ProvinceLabelsSource from "@components/ProvinceLabelsSource";
@@ -13,6 +13,11 @@ import ChartComponent from "@components/ChartComponent";
 
 const MAPBOX_TOKEN = import.meta.env.VITE_MAPBOX_TOKEN;
 const ProvincesGeoJson = ProvincesData as FeatureCollection;
+
+type CropType = {
+    name: string;
+    data: CropDetailType[]
+}
 
 type CropDetailType = {
     crop: string;
@@ -41,9 +46,10 @@ function HomePage() {
     const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
     const [hoverInfo, setHoverInfo] = useState<string | null>(null);
     const [provinceSelected, setProvinceSelected] = useState<string | null>(null);
+    const [cropProvinceData, setCropProvinceData] = useState<CropType[] | []>([]);
     const [soilData, setSoilData] = useState(null);
     const [hoverSoil, setHoverSoil] = useState<any>(null);
-    const [cropSelected, setCropSelected] = useState<string[] | undefined>(undefined);
+    const [cropCompareSelected, setCropCompareSelected] = useState<string[] | undefined>(undefined);
     const [cropCompareData, setCropCompareData] = useState<FeatureCollection>(ProvincesGeoJson);
     const [provinceCropsData, setProvinceCropsData] = useState<any>([]);
     const [zoom, setZoom] = useState(5);
@@ -107,6 +113,7 @@ function HomePage() {
             try {
                 const getCropsByProvince = await Axios.get(`http://localhost:5000/crops-province?province=${pro_th}`);
                 const cropsData = getCropsByProvince.data.data;
+                setCropProvinceData(cropsData);
                 fetchCropPrice(cropsData);
 
                 setTimeout(() => {
@@ -132,7 +139,7 @@ function HomePage() {
     };
 
     const onCropsSelectedChange: CascaderProps<Option>["onChange"] = (value) => {
-        setCropSelected(value);
+        setCropCompareSelected(value);
 
         if (value) {
             fetchCropCompareData(value[0], value[1]);
@@ -169,12 +176,11 @@ function HomePage() {
         }
     };
 
-    const fetchCropPrice = async (cropsData: CropDetailType[]) => {
-        const cropKey = Object.keys(cropsData);
+    const fetchCropPrice = async (cropsData: CropType[]) => {
         let allPrice: PriceType[] = [];
 
-        for (const item of cropKey) {
-            const getPrice = await Axios.get(`http://localhost:5000/price-by-crop?crop=${item}`);
+        for (const item of cropsData) {
+            const getPrice = await Axios.get(`http://localhost:5000/price-by-crop?crop=${item.name}`);
             const priceData = getPrice.data.data;
             allPrice = [...allPrice, ...priceData];
         }
@@ -182,14 +188,14 @@ function HomePage() {
         formatTreeData(cropsData, allPrice);
     }
 
-    const formatTreeData = (data: any, allPrice: PriceType[]) => {
-        const dataTree = Object.keys(data).map(
-            (cropName) => {
-                const price = getCropPrice(cropName, allPrice);
+    const formatTreeData = (cropsData: CropType[], allPrice: PriceType[]) => {
+        const dataTree = cropsData.map(
+            (crop: any) => {
+                const price = getCropPrice(crop.name, allPrice);
                 return {
                     title: (
                         <span className="flex gap-3">
-                            <div className="font-bold">{cropName}</div>
+                            <div className="font-bold">{crop.name}</div>
                             {price && (
                                 <Tag variant="filled" color="green" className="shadow-sm">
                                     {price.product_name} - <span className="font-semibold">{`${price.day_price} ${price.unit}`}</span>
@@ -197,24 +203,24 @@ function HomePage() {
                             )}
                         </span>
                     ),
-                    key: cropName,
-                    children: data[cropName].map(
-                        (item: any, index: number) => ({
+                    key: crop.name,
+                    children: crop.data.map(
+                        (cropDetail: CropDetailType, index: number) => ({
                             title: (
                                 <div className="flex flex-col text-xs py-1">
                                     <span className="">
-                                        ปี {item.year}
+                                        ปี {cropDetail.year}
                                     </span>
                                     <span className="font-semibold">
                                         ผลผลิต:{" "}
                                         <span className="text-green-500">
-                                            {item.yield_per_rai}
+                                            {cropDetail.yield_per_rai}
                                         </span>{" "}
                                         กก./ไร่
                                     </span>
                                 </div>
                             ),
-                            key: `${cropName}-${item.year}-${index}`,
+                            key: `${crop.name}-${cropDetail.year}-${index}`,
                         })
                     ),
                 };
@@ -288,8 +294,7 @@ function HomePage() {
                     onMouseMove={(e) => {
                         if (e.features && e.features.length > 0) {
                             const provinceFeature = e.features.find(
-                                (feature) =>
-                                    feature.layer?.id === "province-hover-fills"
+                                (feature) => feature.layer?.id === "province-hover-fills"
                             );
                             const soilFeature = e.features.find(
                                 (feature) => feature.layer?.id === "soil-fill"
@@ -319,7 +324,6 @@ function HomePage() {
                     }}
                     interactiveLayerIds={["province-hover-fills", "soil-fill"]}
                 >
-                    <ProvinceLabelsSource data={ProvincesGeoJson} />
                     <ProvinceSource
                         data={ProvincesGeoJson}
                         hoverData={hoverInfo}
@@ -329,7 +333,11 @@ function HomePage() {
                         <SoilSource data={soilData} hoverData={hoverSoil} />
                     )}
 
-                    {cropSelected && <HeadMapCrop data={cropCompareData} />}
+                    {cropCompareSelected && (
+                        <CropCompareSource data={cropCompareData} />
+                    )}
+
+                    <ProvinceLabelsSource data={ProvincesGeoJson} />
                 </Map>
 
                 <Modal
@@ -350,7 +358,7 @@ function HomePage() {
                             treeData={provinceCropsData}
                         />
                     )}
-                    <ChartComponent />
+                    <ChartComponent data={cropProvinceData} />
                 </Modal>
             </div>
         </div>
