@@ -4,7 +4,7 @@ import ProvincesData from "../data/provinces.json";
 import type { FeatureCollection } from "geojson";
 import { useRef, useState } from "react";
 import Axios from "axios";
-import { Button, Cascader, Modal, Tag, Tree, type CascaderProps } from "antd";
+import { Button, Cascader, Modal, Segmented, Tag, Tree, type CascaderProps } from "antd";
 import CropCompareSource from "@components/CropCompareSource";
 import SoilSource from "@components/SoilSource";
 import ProvinceSource from "@components/ProvinceSource";
@@ -49,8 +49,10 @@ function HomePage() {
     const [cropProvinceData, setCropProvinceData] = useState<CropType[] | []>([]);
     const [soilData, setSoilData] = useState(null);
     const [hoverSoil, setHoverSoil] = useState<any>(null);
+    const [hoverCompare, setHoverCompare] = useState<any>(null);
     const [cropCompareSelected, setCropCompareSelected] = useState<string[] | undefined>(undefined);
     const [cropCompareData, setCropCompareData] = useState<FeatureCollection>(ProvincesGeoJson);
+    const [cropCompareType, setCropCompareType] = useState<string>("ผลผลิตต่อไร่");
     const [provinceCropsData, setProvinceCropsData] = useState<any>([]);
     const [zoom, setZoom] = useState(5);
 
@@ -163,7 +165,8 @@ function HomePage() {
                             ...feature,
                             properties: {
                                 ...feature.properties,
-                                yield_weight: match ? match.yield_per_rai : 0,
+                                yield_per_rai: match ? match.yield_per_rai : 0,
+                                yield_ton: match ? match.yield_ton : 0,
                             },
                         };
                     }
@@ -265,10 +268,16 @@ function HomePage() {
 
                 {!isModalOpen && (
                     <div className="absolute top-5 left-5 z-10 flex flex-col rounded-md bg-white shadow-xl">
-                        <div className="flex flex-col p-5">
-                            <div className="text-xs mb-1">
+                        <div className="flex flex-col gap-2 p-5">
+                            <div className="text-xs">
                                 เปรียบเทียบผลผลิต
                             </div>
+                            <Segmented
+                                size="small"
+                                value={cropCompareType}
+                                options={["ผลผลิตต่อไร่", "ผลผลิตทั้งหมด"]}
+                                onChange={(value) => setCropCompareType(value)}
+                            />
                             <Cascader
                                 placeholder="เลือกชนิดพืช..."
                                 options={cropsSelectOptions}
@@ -300,6 +309,10 @@ function HomePage() {
                                 (feature) => feature.layer?.id === "soil-fill"
                             );
 
+                            const provinceCompareFeature = e.features.find(
+                                (feature) => feature.layer?.id === "province-compare-fills"
+                            )
+
                             if (provinceFeature) {
                                 setHoverInfo(provinceFeature.properties?.pro_th);
                             } else {
@@ -313,16 +326,25 @@ function HomePage() {
                                     properties: soilFeature.properties,
                                 });
                             }
+
+                            if (provinceCompareFeature) {
+                                setHoverCompare({
+                                    lng: e.lngLat.lng,
+                                    lat: e.lngLat.lat,
+                                    properties: provinceCompareFeature.properties,
+                                })
+                            }
                         } else {
                             setHoverSoil(null);
                             setHoverInfo(null);
+                            setHoverCompare(null);
                         }
                     }}
                     onMouseLeave={() => {
                         setHoverSoil(null);
                         setHoverInfo(null);
                     }}
-                    interactiveLayerIds={["province-hover-fills", "soil-fill"]}
+                    interactiveLayerIds={["province-hover-fills", "soil-fill", "province-compare-fills"]}
                 >
                     <ProvinceSource
                         data={ProvincesGeoJson}
@@ -334,7 +356,7 @@ function HomePage() {
                     )}
 
                     {cropCompareSelected && (
-                        <CropCompareSource data={cropCompareData} />
+                        <CropCompareSource data={cropCompareData} hoverData={hoverCompare} type={cropCompareType} />
                     )}
 
                     <ProvinceLabelsSource data={ProvincesGeoJson} />
