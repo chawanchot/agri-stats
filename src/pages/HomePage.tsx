@@ -2,9 +2,9 @@ import Map, { type MapRef } from "react-map-gl/mapbox";
 import "mapbox-gl/dist/mapbox-gl.css";
 import ProvincesData from "../data/provinces.json";
 import type { FeatureCollection } from "geojson";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Axios from "axios";
-import { Button, Cascader, Modal, Tag, Tree, type CascaderProps } from "antd";
+import { Button, Cascader, Modal, Segmented, Tag, Tree, type CascaderProps } from "antd";
 import CropCompareSource from "@components/CropCompareSource";
 import SoilSource from "@components/SoilSource";
 import ProvinceSource from "@components/ProvinceSource";
@@ -49,43 +49,15 @@ function HomePage() {
     const [cropProvinceData, setCropProvinceData] = useState<CropType[] | []>([]);
     const [soilData, setSoilData] = useState(null);
     const [hoverSoil, setHoverSoil] = useState<any>(null);
+    const [hoverCompare, setHoverCompare] = useState<any>(null);
     const [cropCompareSelected, setCropCompareSelected] = useState<string[] | undefined>(undefined);
     const [cropCompareData, setCropCompareData] = useState<FeatureCollection>(ProvincesGeoJson);
+    const [cropCompareType, setCropCompareType] = useState<string>("ผลผลิตต่อไร่");
     const [provinceCropsData, setProvinceCropsData] = useState<any>([]);
+    const [cropCompareOptions, setCropCompareOptions] = useState<Option[] | []>([]);
     const [zoom, setZoom] = useState(5);
 
     const mapRef = useRef<MapRef>(null);
-
-    const cropsSelectOptions: Option[] = [
-        {
-            value: "ทุเรียน",
-            label: "ทุเรียน",
-            children: [
-                {
-                    value: "2566",
-                    label: "2566",
-                },
-                {
-                    value: "2567",
-                    label: "2567",
-                },
-            ],
-        },
-        {
-            value: "ยางพารา",
-            label: "ยางพารา",
-            children: [
-                {
-                    value: "2566",
-                    label: "2566",
-                },
-                {
-                    value: "2567",
-                    label: "2567",
-                },
-            ],
-        },
-    ];
 
     const onProvinceClick = async (event: any) => {
         const feature = event.features && event.features[0];
@@ -111,7 +83,7 @@ function HomePage() {
             }
 
             try {
-                const getCropsByProvince = await Axios.get(`http://localhost:5000/crops-province?province=${pro_th}`);
+                const getCropsByProvince = await Axios.get(`http://localhost:5000/crops-by-province?province=${pro_th}`);
                 const cropsData = getCropsByProvince.data.data;
                 setCropProvinceData(cropsData);
                 fetchCropPrice(cropsData);
@@ -148,7 +120,7 @@ function HomePage() {
 
     const fetchCropCompareData = async (crop: string, year: string) => {
         try {
-            const getCropData = await Axios.get(`http://localhost:5000/crops?crop=${crop}&year=${year}`);
+            const getCropData = await Axios.get(`http://localhost:5000/crops-by-year?crop=${crop}&year=${year}`);
             const cropData = getCropData.data.data;
 
             const updatedGeoJson = {
@@ -163,7 +135,8 @@ function HomePage() {
                             ...feature,
                             properties: {
                                 ...feature.properties,
-                                yield_weight: match ? match.yield_per_rai : 0,
+                                yield_per_rai: match ? match.yield_per_rai : 0,
+                                yield_ton: match ? match.yield_ton : 0,
                             },
                         };
                     }
@@ -244,6 +217,32 @@ function HomePage() {
         }
     }
 
+    const fetchCropsList = async () => {
+        try {
+            const getCropsList = await Axios.get("http://localhost:5000/crops-list");
+            const cropsListData = getCropsList.data.data;
+
+            let options: any = [];
+            for (const item of cropsListData) {
+                options = [...options, {
+                    value: item.name,
+                    label: item.name,
+                    children: item.data.map((year: string) => {
+                        return {value: year, label: year}
+                    })
+                }]
+            }
+
+            setCropCompareOptions(options);
+        } catch (error) {
+            console.log(error);
+        }
+    }
+
+    useEffect(() => {
+        fetchCropsList();
+    }, [])
+
     return (
         <div className="flex items-center justify-center h-full">
             <div className="w-full h-full">
@@ -264,15 +263,24 @@ function HomePage() {
                 )}
 
                 {!isModalOpen && (
-                    <div className="absolute top-5 left-5 z-10 flex flex-col rounded-md bg-white shadow-xl">
-                        <div className="flex flex-col p-5">
-                            <div className="text-xs mb-1">
+                    <div className="absolute top-5 left-5 z-10 flex flex-col rounded-md">
+                        <div className="flex flex-col gap-2 p-3">
+                            <div className="text-xs text-white">
                                 เปรียบเทียบผลผลิต
                             </div>
+                            <Segmented
+                                size="small"
+                                value={cropCompareType}
+                                options={["ผลผลิตต่อไร่", "ผลผลิตทั้งหมด"]}
+                                onChange={(value) => setCropCompareType(value)}
+                                classNames={{ item: "py-1" }}
+                                className="shadow-md"
+                            />
                             <Cascader
                                 placeholder="เลือกชนิดพืช..."
-                                options={cropsSelectOptions}
+                                options={cropCompareOptions}
                                 onChange={onCropsSelectedChange}
+                                className="w-full! shadow-md"
                             />
                         </div>
                     </div>
@@ -300,6 +308,10 @@ function HomePage() {
                                 (feature) => feature.layer?.id === "soil-fill"
                             );
 
+                            const provinceCompareFeature = e.features.find(
+                                (feature) => feature.layer?.id === "province-compare-fills"
+                            )
+
                             if (provinceFeature) {
                                 setHoverInfo(provinceFeature.properties?.pro_th);
                             } else {
@@ -313,16 +325,25 @@ function HomePage() {
                                     properties: soilFeature.properties,
                                 });
                             }
+
+                            if (provinceCompareFeature) {
+                                setHoverCompare({
+                                    lng: e.lngLat.lng,
+                                    lat: e.lngLat.lat,
+                                    properties: provinceCompareFeature.properties,
+                                })
+                            }
                         } else {
                             setHoverSoil(null);
                             setHoverInfo(null);
+                            setHoverCompare(null);
                         }
                     }}
                     onMouseLeave={() => {
                         setHoverSoil(null);
                         setHoverInfo(null);
                     }}
-                    interactiveLayerIds={["province-hover-fills", "soil-fill"]}
+                    interactiveLayerIds={["province-hover-fills", "soil-fill", "province-compare-fills"]}
                 >
                     <ProvinceSource
                         data={ProvincesGeoJson}
@@ -334,7 +355,7 @@ function HomePage() {
                     )}
 
                     {cropCompareSelected && (
-                        <CropCompareSource data={cropCompareData} />
+                        <CropCompareSource data={cropCompareData} hoverData={hoverCompare} type={cropCompareType} />
                     )}
 
                     <ProvinceLabelsSource data={ProvincesGeoJson} />
