@@ -4,7 +4,7 @@ import ProvincesData from "../data/provinces.json";
 import type { FeatureCollection } from "geojson";
 import { useEffect, useRef, useState } from "react";
 import Axios from "axios";
-import { Button, Cascader, Modal, Segmented, Tag, Tree, type CascaderProps } from "antd";
+import { Cascader, Modal, Segmented, Tag, Tree, type CascaderProps } from "antd";
 import CropCompareSource from "@components/CropCompareSource";
 import SoilSource from "@components/SoilSource";
 import ProvinceSource from "@components/ProvinceSource";
@@ -249,18 +249,6 @@ function HomePage() {
                 <div className="pointer-events-none absolute bottom-5 left-5 z-10 text-9xl text-white text-sh text-shadow-lg">
                     {provinceSelected}
                 </div>
-
-                {isModalOpen && (
-                    <Button
-                        color="default"
-                        variant="solid"
-                        size="large"
-                        className="absolute! top-5 left-5 z-10"
-                        onClick={exitProvince}
-                    >
-                        ย้อนกลับ
-                    </Button>
-                )}
 
                 {!isModalOpen && (
                     <div className="absolute top-5 left-5 z-10 flex flex-col rounded-md">

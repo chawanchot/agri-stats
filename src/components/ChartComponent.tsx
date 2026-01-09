@@ -1,33 +1,14 @@
-import {
-    Chart as ChartJS,
-    CategoryScale,
-    LinearScale,
-    PointElement,
-    LineElement,
-    Title,
-    Tooltip,
-    Legend,
-} from "chart.js";
-import { Line } from "react-chartjs-2";
-
-ChartJS.register(
-    CategoryScale,
-    LinearScale,
-    PointElement,
-    LineElement,
-    Title,
-    Tooltip,
-    Legend
-);
+import type { ApexOptions } from "apexcharts";
+import Chart from "react-apexcharts";
 
 type PropsType = {
     data: CropType[];
-}
+};
 
 type CropType = {
     name: string;
     data: CropDetailType[];
-}
+};
 
 type CropDetailType = {
     crop: string;
@@ -40,43 +21,48 @@ type CropDetailType = {
 };
 
 function ChartComponent({ data }: PropsType) {
-
     console.log(data);
 
-    const ChartOptions = {
-        responsive: true,
-        plugins: {
-            legend: {
-                position: "top" as const,
-            },
-            title: {
-                display: true,
-                text: "ผลผลิตรายปี",
+    const chartOptions: ApexOptions = {
+        chart: {
+            toolbar: {
+                show: false,
             },
         },
-    };
+        dataLabels: {
+            enabled: false,
+        },
+        title: {
+            text: "ผลผลิตเฉลี่ยรายปี",
+        },
+        grid: {
+            row: {
+                colors: ["#f3f3f3", "transparent"],
+                opacity: 0.5,
+            },
+        },
+        xaxis: {
+            categories: ["2563", "2564", "2565", "2566", "2567"],
+        },
+    }
 
-    const ChartLabels = ["2563", "2564", "2565", "2566", "2567"];
+    const chartData = [
+        {
+            name: "ทุเรียน",
+            data: [202, 245, 275, 295, 325],
+        },
+        {
+            name: "ยางพารา",
+            data: [252, 285, 300, 312, 335],
+        },
+    ];
+
     return (
-        <Line
-            options={ChartOptions}
-            data={{
-                labels: ChartLabels,
-                datasets: [
-                    {
-                        label: "ทุเรียน",
-                        data: [202, 245, 275, 295, 325],
-                        borderColor: "rgb(53, 162, 235)",
-                        backgroundColor: "rgba(53, 162, 235, 0.5)",
-                    },
-                    {
-                        label: "ยางพารา",
-                        data: [252, 285, 300, 312, 335],
-                        borderColor: "rgb(134, 140, 150)",
-                        backgroundColor: "rgb(134, 140, 150, 0.5)",
-                    },
-                ],
-            }}
+        <Chart
+            options={chartOptions}
+            series={chartData}
+            type="line"
+            height={250}
         />
     );
 }
