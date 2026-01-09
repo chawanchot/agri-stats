@@ -10,6 +10,7 @@ import SoilSource from "@components/SoilSource";
 import ProvinceSource from "@components/ProvinceSource";
 import ProvinceLabelsSource from "@components/ProvinceLabelsSource";
 import ChartComponent from "@components/ChartComponent";
+import MainChartComponent from "@components/MainChartComponent";
 
 const MAPBOX_TOKEN = import.meta.env.VITE_MAPBOX_TOKEN;
 const ProvincesGeoJson = ProvincesData as FeatureCollection;
@@ -55,6 +56,7 @@ function HomePage() {
     const [cropCompareType, setCropCompareType] = useState<string>("ผลผลิตต่อไร่");
     const [provinceCropsData, setProvinceCropsData] = useState<any>([]);
     const [cropCompareOptions, setCropCompareOptions] = useState<Option[] | []>([]);
+    const [mainChartData, setMainChartData] = useState([]);
     const [zoom, setZoom] = useState(5);
 
     const mapRef = useRef<MapRef>(null);
@@ -112,7 +114,8 @@ function HomePage() {
 
     const onCropsSelectedChange: CascaderProps<Option>["onChange"] = (value) => {
         setCropCompareSelected(value);
-
+        setMainChartData([])
+        
         if (value) {
             fetchCropCompareData(value[0], value[1]);
         }
@@ -122,6 +125,7 @@ function HomePage() {
         try {
             const getCropData = await Axios.get(`http://localhost:5000/crops-by-year?crop=${crop}&year=${year}`);
             const cropData = getCropData.data.data;
+            setMainChartData(cropData);
 
             const updatedGeoJson = {
                 ...ProvincesGeoJson,
@@ -273,6 +277,8 @@ function HomePage() {
                         </div>
                     </div>
                 )}
+
+                <MainChartComponent data={mainChartData} />
 
                 <Map
                     ref={mapRef}
