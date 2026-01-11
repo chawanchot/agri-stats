@@ -11,22 +11,26 @@ function MainChartComponent({ data }: PropsType) {
     const [chartValue, setChartValue] = useState<number[]>([]);
 
     useEffect(() => {
-        if (data.length > 0) {
-            data.map((item: any) => {
-                setChartProvince((prev: any) => [...prev, item.province])
-                setChartValue((prev) => [...prev, item.yield_per_rai])
-            })
+        if (data && data.length > 0) {
+            const sorted = data.sort((a: any, b: any) => b.yield_per_rai - a.yield_per_rai);
+
+            const provinces = sorted.map((item: any) => item.province);
+            const values = sorted.map((item: any) => item.yield_per_rai);
+            
+            setChartProvince(provinces);
+            setChartValue(values);
         } else {
             setChartProvince([]);
             setChartValue([]);
         }
-    }, [data])
+    }, [data]);
 
     const chartOptions: ApexOptions = {
         chart: {
             toolbar: {
                 show: false,
             },
+            sparkline: { enabled: true }
         },
         legend: {
             show: false,
@@ -56,6 +60,11 @@ function MainChartComponent({ data }: PropsType) {
             },
         },
         grid: {
+            show: true,
+            padding: {
+                left: 0,  
+                right: 0 
+            },
             row: {
                 colors: ["#f3f3f3", "transparent"],
                 opacity: 0.5,
@@ -96,7 +105,7 @@ function MainChartComponent({ data }: PropsType) {
         return (
             <>
                 {data.length && (
-                    <div className="absolute right-0 z-10 bg-white h-full overflow-y-auto overflow-x-hidden">
+                    <div className="absolute right-0 z-10 bg-white h-full overflow-y-auto overflow-x-hidden w-75">
                         <Chart
                             options={chartOptions}
                             series={chartData}
