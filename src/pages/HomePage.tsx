@@ -9,7 +9,7 @@ import CropCompareSource from "@components/CropCompareSource";
 import SoilSource from "@components/SoilSource";
 import ProvinceSource from "@components/ProvinceSource";
 import ProvinceLabelsSource from "@components/ProvinceLabelsSource";
-import ChartComponent from "@components/ChartComponent";
+import ModalChartComponent from "@components/ModalChartComponent";
 import MainChartComponent from "@components/MainChartComponent";
 import { MinusOutlined, PlusOutlined } from "@ant-design/icons";
 
@@ -65,6 +65,8 @@ function HomePage() {
     const onProvinceClick = async (event: any) => {
         const feature = event.features && event.features[0];
 
+        console.log(event)
+
         if (feature && feature.properties && !isModalOpen) {
             const { pro_th, pro_en, province_lat, province_lon } = feature.properties;
 
@@ -72,7 +74,7 @@ function HomePage() {
                 center: [province_lon, province_lat],
                 zoom: 8,
                 duration: 2000,
-                offset: [-250, 0],
+                offset: [-300, 0],
                 essential: true,
             });
 
@@ -279,7 +281,7 @@ function HomePage() {
                             </div>
                         </div>
 
-                        <FloatButton.Group className="left-5" shape="square">
+                        <FloatButton.Group className="left-5 w-fit!" shape="square">
                             <FloatButton onClick={() => mapRef.current?.zoomIn()} icon={<PlusOutlined />} />
                             <FloatButton onClick={() => mapRef.current?.zoomOut()} icon={<MinusOutlined />} />
                         </FloatButton.Group>
@@ -374,7 +376,7 @@ function HomePage() {
                         wrapper: "pointer-events-none",
                         title: "text-center",
                     }}
-                    className="absolute! top-1/2! right-1/6 transform -translate-y-1/2"
+                    className="absolute! top-1/2! right-[13%] transform -translate-y-1/2"
                 >
                     {provinceCropsData && (
                         <Tree
@@ -382,7 +384,7 @@ function HomePage() {
                             treeData={provinceCropsData}
                         />
                     )}
-                    <ChartComponent data={cropProvinceData} />
+                    <ModalChartComponent data={cropProvinceData} />
                 </Modal>
             </div>
         </div>

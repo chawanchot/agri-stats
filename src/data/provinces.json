@@ -16,8 +16,8 @@
         "reg_royin": "North",
         "perimeter": 442.83883879102001,
         "area_sqkm": 6189.6359503633203,
-        "province_lat": 19.1664789,
-        "province_lon": 99.9019419
+        "province_lat": 19.187595108906123,
+        "province_lon": 100.2090989118476
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -2270,8 +2270,8 @@
         "reg_royin": "Central",
         "perimeter": 488.43520716555997,
         "area_sqkm": 6672.3418363651099,
-        "province_lat": 17.0055573,
-        "province_lon": 99.82637120000004
+        "province_lat": 17.223518516597636,
+        "province_lon": 99.71645588724624
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -2598,8 +2598,8 @@
         "reg_royin": "Central",
         "perimeter": 491.03004508420003,
         "area_sqkm": 6649.6438050494598,
-        "province_lat": 15.3835001,
-        "province_lon": 100.02455269999996
+        "province_lat": 15.329284202191758,
+        "province_lon": 99.50442513985979
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -2893,8 +2893,8 @@
         "reg_royin": "Central",
         "perimeter": 486.24219960444998,
         "area_sqkm": 8520.4947679785091,
-        "province_lat": 16.4827798,
-        "province_lon": 99.52266179999992
+        "province_lat": 16.299987692306246,
+        "province_lon": 99.54791279887576
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -4027,8 +4027,8 @@
         "reg_royin": "Central",
         "perimeter": 692.43325837147995,
         "area_sqkm": 10598.922859617571,
-        "province_lat": 16.8298048,
-        "province_lon": 100.26149150000003
+        "province_lat": 16.97345895950518,
+        "province_lon": 100.6149051948313
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -4482,8 +4482,8 @@
         "reg_royin": "Central",
         "perimeter": 383.70807230815001,
         "area_sqkm": 4318.6512618092302,
-        "province_lat": 16.4429516,
-        "province_lon": 100.34823289999997
+        "province_lat": 16.255828700105724,
+        "province_lon": 100.34588341671412
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -5873,8 +5873,8 @@
         "reg_royin": "Central",
         "perimeter": 144.02890572321999,
         "area_sqkm": 866.06545786263996,
-        "province_lat": 13.5475216,
-        "province_lon": 100.27439559999993
+        "province_lat": 13.56303467905795,
+        "province_lon": 100.20763836375409
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -6787,8 +6787,8 @@
         "reg_royin": "Central",
         "perimeter": 242.57464085800001,
         "area_sqkm": 2141.72859749704,
-        "province_lat": 13.8199206,
-        "province_lon": 100.06216760000007
+        "province_lat": 13.90732999788247,
+        "province_lon": 100.11863585074258
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -7108,8 +7108,8 @@
         "reg_royin": "West",
         "perimeter": 396.61398035047,
         "area_sqkm": 5193.5302239491002,
-        "province_lat": 13.5282893,
-        "province_lon": 99.81342110000003
+        "province_lat": 13.520759875789153,
+        "province_lon": 99.54458732093264
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -7345,8 +7345,8 @@
         "reg_royin": "Northeast",
         "perimeter": 423.37052678018,
         "area_sqkm": 3979.5452929892799,
-        "province_lat": 18.3609104,
-        "province_lon": 103.64644629999998
+        "province_lat": 18.135820175469448,
+        "province_lon": 103.69501295179981
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -7607,8 +7607,8 @@
         "reg_royin": "West",
         "perimeter": 808.23200765611,
         "area_sqkm": 19405.042979192691,
-        "province_lat": 14.0227797,
-        "province_lon": 99.53281149999998
+        "province_lat": 14.554173465646898,
+        "province_lon": 99.12498233988862
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -8290,8 +8290,8 @@
         "reg_royin": "Central",
         "perimeter": 526.46738595741999,
         "area_sqkm": 6501.0311852592504,
-        "province_lat": 14.7995081,
-        "province_lon": 100.65337060000002
+        "province_lat": 15.10079909079711,
+        "province_lon": 100.90148291345287
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -8596,8 +8596,8 @@
         "reg_royin": "Northeast",
         "perimeter": 617.92133812274994,
         "area_sqkm": 12679.25394167537,
-        "province_lat": 15.8068173,
-        "province_lon": 102.03150270000003
+        "province_lat": 16.02907963049958,
+        "province_lon": 101.83193502002348
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -9427,8 +9427,8 @@
         "reg_royin": "Northeast",
         "perimeter": 355.31276101301,
         "area_sqkm": 3262.6137879980902,
-        "province_lat": 15.8656783,
-        "province_lon": 104.62577740000006
+        "province_lat": 15.89418030813286,
+        "province_lon": 104.74381022692307
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -9697,8 +9697,8 @@
         "reg_royin": "Central",
         "perimeter": 160.09146749105,
         "area_sqkm": 948.98724583936996,
-        "province_lat": 14.5896054,
-        "province_lon": 100.45505200000002
+        "province_lat": 14.6279769044218,
+        "province_lon": 100.35647299778134
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -9833,8 +9833,8 @@
         "reg_royin": "Northeast",
         "perimeter": 836.01457201787002,
         "area_sqkm": 15472.47978609577,
-        "province_lat": 15.2286861,
-        "province_lon": 104.85642170000006
+        "province_lat": 15.210293576661314,
+        "province_lon": 105.10617717094402
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -10330,8 +10330,8 @@
         "reg_royin": "Northeast",
         "perimeter": 489.08479724026,
         "area_sqkm": 4096.1543099610299,
-        "province_lat": 15.792641,
-        "province_lon": 104.14528270000005
+        "province_lat": 15.88138484244925,
+        "province_lon": 104.28347993647174
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -10694,8 +10694,8 @@
         "reg_royin": "Central",
         "perimeter": 133.87332373404001,
         "area_sqkm": 640.29422318965999,
-        "province_lat": 13.8621125,
-        "province_lon": 100.51435279999998
+        "province_lat": 13.905195991859102,
+        "province_lon": 100.3989308488811
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -10843,8 +10843,8 @@
         "reg_royin": "Northeast",
         "perimeter": 723.66334934004999,
         "area_sqkm": 8809.9351777687098,
-        "province_lat": 14.882905,
-        "province_lon": 103.49371070000007
+        "province_lat": 14.949574857590221,
+        "province_lon": 103.68393825462488
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -11443,8 +11443,8 @@
         "reg_royin": "Central",
         "perimeter": 203.51623734508999,
         "area_sqkm": 1521.51426750265,
-        "province_lat": 14.0208391,
-        "province_lon": 100.52502759999993
+        "province_lat": 14.048697761495333,
+        "province_lon": 100.65822088621064
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -11572,8 +11572,8 @@
         "reg_royin": "Central",
         "perimeter": 250.16777331327,
         "area_sqkm": 1566.5778551537101,
-        "province_lat": 13.7278956,
-        "province_lon": 100.52412349999997
+        "province_lat": 13.783478653442927,
+        "province_lon": 100.62159441527461
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -13366,8 +13366,8 @@
         "reg_royin": "Northeast",
         "perimeter": 591.15879085895995,
         "area_sqkm": 8869.4988587257594,
-        "province_lat": 15.1186009,
-        "province_lon": 104.32200949999992
+        "province_lat": 14.872484719908357,
+        "province_lon": 104.36337443478328
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -13779,8 +13779,8 @@
         "reg_royin": "Central",
         "perimeter": 174.79504855617,
         "area_sqkm": 965.96104508808003,
-        "province_lat": 13.5990961,
-        "province_lon": 100.59983190000003
+        "province_lat": 13.598909480810022,
+        "province_lon": 100.71075611313302
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -14085,8 +14085,8 @@
         "reg_royin": "West",
         "perimeter": 403.45322701967001,
         "area_sqkm": 6173.0017388286196,
-        "province_lat": 13.1111601,
-        "province_lon": 99.93913069999996
+        "province_lat": 12.943471987345816,
+        "province_lon": 99.65753412149797
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -15692,8 +15692,8 @@
         "reg_royin": "East",
         "perimeter": 546.68718367410997,
         "area_sqkm": 4510.4795786348604,
-        "province_lat": 13.3611431,
-        "province_lon": 100.98467170000004
+        "province_lat": 13.179701923663728,
+        "province_lon": 101.14401270640309
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -16222,8 +16222,8 @@
         "reg_royin": "Northeast",
         "perimeter": 770.84815746735001,
         "area_sqkm": 10629.00058294659,
-        "province_lat": 16.4419355,
-        "province_lon": 102.8359921
+        "province_lat": 16.4526915687791,
+        "province_lon": 102.69901142685035
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -17461,8 +17461,8 @@
         "reg_royin": "South",
         "perimeter": 652.35100014247996,
         "area_sqkm": 6010.2878036949296,
-        "province_lat": 10.4930496,
-        "province_lon": 99.18001989999993
+        "province_lat": 10.323710395071686,
+        "province_lon": 99.07035854837233
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -18563,8 +18563,8 @@
         "reg_royin": "South",
         "perimeter": 966.86338224021995,
         "area_sqkm": 13086.21372902809,
-        "province_lat": 9.1382389,
-        "province_lon": 99.32174829999997
+        "province_lat": 9.01602368857516,
+        "province_lon": 99.07690289942843
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -19604,8 +19604,8 @@
         "reg_royin": "South",
         "perimeter": 777.02456363084002,
         "area_sqkm": 5319.4152473746299,
-        "province_lat": 8.0862997,
-        "province_lon": 98.90628349999997
+        "province_lat": 8.140672083667923,
+        "province_lon": 99.07720783502896
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -20238,8 +20238,8 @@
         "reg_royin": "Northeast",
         "perimeter": 383.61164149613001,
         "area_sqkm": 4092.9699355799698,
-        "province_lat": 16.542443,
-        "province_lon": 104.72091509999996
+        "province_lat": 16.547167425483465,
+        "province_lon": 104.47995540995618
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -20479,8 +20479,8 @@
         "reg_royin": "South",
         "perimeter": 624.84610795173,
         "area_sqkm": 4580.0690594532598,
-        "province_lat": 8.4407456,
-        "province_lon": 98.51930319999997
+        "province_lat": 8.65519721979959,
+        "province_lon": 98.40423928559869
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -20943,8 +20943,8 @@
         "reg_royin": "East",
         "perimeter": 483.87700077799002,
         "area_sqkm": 6815.1150349824802,
-        "province_lat": 13.824038,
-        "province_lon": 102.0645839
+        "province_lat": 13.788226463297974,
+        "province_lon": 102.3141754361157
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -21213,8 +21213,8 @@
         "reg_royin": "Northeast",
         "perimeter": 674.04022646995998,
         "area_sqkm": 9525.6054687764408,
-        "province_lat": 17.1545995,
-        "province_lon": 104.1348365
+        "province_lat": 17.34519365336952,
+        "province_lon": 103.89011598187875
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -22056,8 +22056,8 @@
         "reg_royin": "Northeast",
         "perimeter": 545.56122676468999,
         "area_sqkm": 5591.2248017037,
-        "province_lat": 17.392039,
-        "province_lon": 104.76955079999993
+        "province_lat": 17.387778032810417,
+        "province_lon": 104.5507689376413
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -22378,8 +22378,8 @@
         "reg_royin": "East",
         "perimeter": 440.69876649742002,
         "area_sqkm": 5020.3357971740697,
-        "province_lat": 14.0509704,
-        "province_lon": 101.37274389999993
+        "province_lat": 14.034602828931682,
+        "province_lon": 101.64247703431624
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -22641,8 +22641,8 @@
         "reg_royin": "Northeast",
         "perimeter": 615.04465412539003,
         "area_sqkm": 7831.5106648172996,
-        "province_lat": 16.0538196,
-        "province_lon": 103.65200359999994
+        "province_lat": 15.924580945511394,
+        "province_lon": 103.7713371322588
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -23282,8 +23282,8 @@
         "reg_royin": "Northeast",
         "perimeter": 565.49154255264,
         "area_sqkm": 6898.9834557863096,
-        "province_lat": 16.4314078,
-        "province_lon": 103.5058755
+        "province_lat": 16.634415358342707,
+        "province_lon": 103.62137184430173
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -23694,8 +23694,8 @@
         "reg_royin": "East",
         "perimeter": 653.52837531461,
         "area_sqkm": 2852.4168647738202,
-        "province_lat": 12.2427563,
-        "province_lon": 102.51747339999997
+        "province_lat": 12.338579674419961,
+        "province_lon": 102.5325444837813
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -24593,8 +24593,8 @@
         "reg_royin": "East",
         "perimeter": 476.29950774068999,
         "area_sqkm": 5166.9035806361799,
-        "province_lat": 13.6904194,
-        "province_lon": 101.07795959999999
+        "province_lat": 13.636720888656413,
+        "province_lon": 101.45270017925316
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -24908,8 +24908,8 @@
         "reg_royin": "Northeast",
         "perimeter": 465.98581968460002,
         "area_sqkm": 5582.5856811366702,
-        "province_lat": 16.1850896,
-        "province_lon": 103.30264609999995
+        "province_lat": 16.001743881809844,
+        "province_lon": 103.17444921855804
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -25234,8 +25234,8 @@
         "reg_royin": "East",
         "perimeter": 354.66880561455997,
         "area_sqkm": 3665.05762206486,
-        "province_lat": 12.6833115,
-        "province_lon": 101.23742949999996
+        "province_lat": 12.846909015790146,
+        "province_lon": 101.44813263775313
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -25533,8 +25533,8 @@
         "reg_royin": "East",
         "perimeter": 479.93633473085998,
         "area_sqkm": 6404.21977766077,
-        "province_lat": 12.61134,
-        "province_lon": 102.10385459999998
+        "province_lat": 12.872014014499172,
+        "province_lon": 102.11100751346845
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -26083,8 +26083,8 @@
         "reg_royin": "Central",
         "perimeter": 427.04356420091,
         "area_sqkm": 3487.6504514849998,
-        "province_lat": 14.5289154,
-        "province_lon": 100.91014210000003
+        "province_lat": 14.608116941696679,
+        "province_lon": 101.02122684107047
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -26864,8 +26864,8 @@
         "reg_royin": "North",
         "perimeter": 576.19079887103999,
         "area_sqkm": 7867.4802821287603,
-        "province_lat": 17.6200886,
-        "province_lon": 100.09929420000003
+        "province_lat": 17.756494932496153,
+        "province_lon": 100.58295127215501
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -27221,8 +27221,8 @@
         "reg_royin": "North",
         "perimeter": 1278.65433527608,
         "area_sqkm": 22056.887318348348,
-        "province_lat": 18.7877477,
-        "province_lon": 98.99313110000003
+        "province_lat": 18.89336889208481,
+        "province_lon": 98.83860662561375
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -28003,8 +28003,8 @@
         "reg_royin": "North",
         "perimeter": 499.28097271619998,
         "area_sqkm": 4481.1881581135704,
-        "province_lat": 18.5744606,
-        "province_lon": 99.0087221
+        "province_lat": 18.109839192138125,
+        "province_lon": 98.97240326738938
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -28328,8 +28328,8 @@
         "reg_royin": "South",
         "perimeter": 344.49928976172998,
         "area_sqkm": 4487.1435538813403,
-        "province_lat": 6.4254607,
-        "province_lon": 101.82531429999995
+        "province_lat": 6.215946953188734,
+        "province_lon": 101.7419620433198
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -28557,8 +28557,8 @@
         "reg_royin": "South",
         "perimeter": 287.18575047309997,
         "area_sqkm": 1975.9549969795401,
-        "province_lat": 6.869484399999999,
-        "province_lon": 101.25048259999994
+        "province_lat": 6.76328502501849,
+        "province_lon": 101.3621101300169
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -28734,8 +28734,8 @@
         "reg_royin": "South",
         "perimeter": 483.68035913493998,
         "area_sqkm": 4467.2689414124798,
-        "province_lat": 6.541147,
-        "province_lon": 101.28039469999999
+        "province_lat": 6.198751640683284,
+        "province_lon": 101.25211037291717
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -30043,8 +30043,8 @@
         "reg_royin": "North",
         "perimeter": 962.46584093359002,
         "area_sqkm": 12784.28056691474,
-        "province_lat": 19.2990643,
-        "province_lon": 97.96562259999996
+        "province_lat": 18.844032081368027,
+        "province_lon": 97.98142615711686
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -30655,8 +30655,8 @@
         "reg_royin": "South",
         "perimeter": 554.35743484883994,
         "area_sqkm": 3011.5586545034198,
-        "province_lat": 6.6238158,
-        "province_lon": 100.06737440000006
+        "province_lat": 6.846397760606251,
+        "province_lon": 99.98117573864147
       },
       "geometry": {
         "type": "MultiPolygon",
