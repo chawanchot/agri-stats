@@ -4,13 +4,14 @@ import ProvincesData from "../data/provinces.json";
 import type { FeatureCollection } from "geojson";
 import { useEffect, useRef, useState } from "react";
 import Axios from "axios";
-import { Cascader, Modal, Segmented, Tag, Tree, type CascaderProps } from "antd";
+import { Cascader, FloatButton, Modal, Segmented, Tag, Tree, type CascaderProps } from "antd";
 import CropCompareSource from "@components/CropCompareSource";
 import SoilSource from "@components/SoilSource";
 import ProvinceSource from "@components/ProvinceSource";
 import ProvinceLabelsSource from "@components/ProvinceLabelsSource";
 import ChartComponent from "@components/ChartComponent";
 import MainChartComponent from "@components/MainChartComponent";
+import { MinusOutlined, PlusOutlined } from "@ant-design/icons";
 
 const MAPBOX_TOKEN = import.meta.env.VITE_MAPBOX_TOKEN;
 const ProvincesGeoJson = ProvincesData as FeatureCollection;
@@ -64,8 +65,6 @@ function HomePage() {
     const onProvinceClick = async (event: any) => {
         const feature = event.features && event.features[0];
 
-        console.log(`LAT: ${event.lngLat.lat} - LNG: ${event.lngLat.lng}`);
-
         if (feature && feature.properties && !isModalOpen) {
             const { pro_th, pro_en, province_lat, province_lon } = feature.properties;
 
@@ -107,7 +106,7 @@ function HomePage() {
         setProvinceSelected(null);
 
         mapRef.current?.flyTo({
-            center: [100.5, 13.7],
+            center: [100.90, 13.18],
             zoom: 5,
             duration: 2000,
             essential: true,
@@ -257,27 +256,34 @@ function HomePage() {
                 </div>
 
                 {!isModalOpen && (
-                    <div className="absolute top-5 left-5 z-10 flex flex-col rounded-md">
-                        <div className="flex flex-col gap-2 p-3">
-                            <div className="text-xs text-white">
-                                เปรียบเทียบผลผลิต
+                    <>
+                        <div className="absolute top-5 left-5 z-10 flex flex-col rounded-md">
+                            <div className="flex flex-col gap-2 p-3">
+                                <div className="text-xs text-white">
+                                    เปรียบเทียบผลผลิต
+                                </div>
+                                <Segmented
+                                    size="small"
+                                    value={cropCompareType}
+                                    options={["ผลผลิตต่อไร่", "ผลผลิตทั้งหมด"]}
+                                    onChange={(value) => setCropCompareType(value)}
+                                    classNames={{ item: "py-1" }}
+                                    className="shadow-md"
+                                />
+                                <Cascader
+                                    placeholder="เลือกชนิดพืช..."
+                                    options={cropCompareOptions}
+                                    onChange={onCropsSelectedChange}
+                                    className="w-full! shadow-md"
+                                />
                             </div>
-                            <Segmented
-                                size="small"
-                                value={cropCompareType}
-                                options={["ผลผลิตต่อไร่", "ผลผลิตทั้งหมด"]}
-                                onChange={(value) => setCropCompareType(value)}
-                                classNames={{ item: "py-1" }}
-                                className="shadow-md"
-                            />
-                            <Cascader
-                                placeholder="เลือกชนิดพืช..."
-                                options={cropCompareOptions}
-                                onChange={onCropsSelectedChange}
-                                className="w-full! shadow-md"
-                            />
                         </div>
-                    </div>
+
+                        <FloatButton.Group className="left-5" shape="square">
+                            <FloatButton onClick={() => mapRef.current?.zoomIn()} icon={<PlusOutlined />} />
+                            <FloatButton onClick={() => mapRef.current?.zoomOut()} icon={<MinusOutlined />} />
+                        </FloatButton.Group>
+                    </>
                 )}
 
                 <MainChartComponent data={mainChartData} type={cropCompareType} />
@@ -285,10 +291,11 @@ function HomePage() {
                 <Map
                     ref={mapRef}
                     initialViewState={{
-                        longitude: 100.5,
-                        latitude: 13.7,
+                        longitude: 100.90,
+                        latitude: 13.18,
                         zoom: 5,
                     }}
+                    maxBounds={[82.28, 4.77, 119.53, 21.32]}
                     dragPan={!isModalOpen}
                     scrollZoom={!isModalOpen}
                     onZoom={(e) => setZoom(e.viewState.zoom)}

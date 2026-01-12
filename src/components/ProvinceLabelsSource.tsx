@@ -26,7 +26,7 @@ function ProvinceLabelsSource({ data }: PropsType) {
             <Layer
                 id="province-labels"
                 type="symbol"
-                minzoom={5}
+                minzoom={4}
                 layout={{
                     "text-field": ["get", "pro_th"],
                     "text-font": [

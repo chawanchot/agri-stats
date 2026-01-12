@@ -3,8 +3,18 @@ import Chart from "react-apexcharts";
 import { useEffect, useState } from "react";
 
 type PropsType = {
-    data: any;
+    data: CropDetailType[];
     type: string;
+};
+
+type CropDetailType = {
+    crop: string;
+    harvest_area: number;
+    planted_area: number;
+    province: string;
+    year: number;
+    yield_per_rai: number;
+    yield_ton: number;
 };
 
 function MainChartComponent({ data, type }: PropsType) {
@@ -16,22 +26,22 @@ function MainChartComponent({ data, type }: PropsType) {
         if (data && data.length > 0) {
             if (type === "ผลผลิตต่อไร่") {
                 const sorted = data.sort(
-                    (a: any, b: any) => b.yield_per_rai - a.yield_per_rai
+                    (a: CropDetailType, b: CropDetailType) => b.yield_per_rai - a.yield_per_rai
                 );
 
-                const provinces = sorted.map((item: any) => item.province);
-                const values = sorted.map((item: any) => item.yield_per_rai);
+                const provinces = sorted.map((item: CropDetailType) => item.province);
+                const values = sorted.map((item: CropDetailType) => item.yield_per_rai);
 
                 setChartProvince(provinces);
                 setChartValue(values);
                 setUnit("กก./ไร่");
             } else {
                 const sorted = data.sort(
-                    (a: any, b: any) => b.yield_ton - a.yield_ton
+                    (a: CropDetailType, b: CropDetailType) => b.yield_ton - a.yield_ton
                 );
 
-                const provinces = sorted.map((item: any) => item.province);
-                const values = sorted.map((item: any) => item.yield_ton);
+                const provinces = sorted.map((item: CropDetailType) => item.province);
+                const values = sorted.map((item: CropDetailType) => item.yield_ton);
 
                 setChartProvince(provinces);
                 setChartValue(values);
