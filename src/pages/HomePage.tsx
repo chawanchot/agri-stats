@@ -64,6 +64,8 @@ function HomePage() {
     const onProvinceClick = async (event: any) => {
         const feature = event.features && event.features[0];
 
+        console.log(`LAT: ${event.lngLat.lat} - LNG: ${event.lngLat.lng}`);
+
         if (feature && feature.properties && !isModalOpen) {
             const { pro_th, pro_en, province_lat, province_lon } = feature.properties;
 
@@ -278,7 +280,7 @@ function HomePage() {
                     </div>
                 )}
 
-                <MainChartComponent data={mainChartData} />
+                <MainChartComponent data={mainChartData} type={cropCompareType} />
 
                 <Map
                     ref={mapRef}
