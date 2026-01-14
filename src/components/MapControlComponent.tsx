@@ -1,6 +1,5 @@
-import { MinusOutlined, PlusOutlined } from "@ant-design/icons";
 import { useAppDispatch, useAppSelector } from "@store/hook";
-import { setCompareSelected } from "@store/slice/controlSlice";
+import { setBaseMap, setCompareSelected } from "@store/slice/controlSlice";
 import { setCropCompareData, setCropMainChart } from "@store/slice/cropSlice";
 import { Cascader, FloatButton, Segmented, type CascaderProps } from "antd";
 import { forwardRef, useEffect, useState } from "react";
@@ -8,6 +7,8 @@ import type { MapRef } from "react-map-gl/maplibre";
 import ProvincesData from "../data/provinces.json";
 import type { FeatureCollection } from "geojson";
 import Axios from "axios";
+import { FiLayers } from "react-icons/fi";
+import { FaPlus, FaMinus } from "react-icons/fa";
 
 const ProvincesGeoJson = ProvincesData as FeatureCollection;
 
@@ -32,7 +33,8 @@ const MapControlComponent = forwardRef<MapRef>(({}, mapRef) => {
     const isModalOpen = useAppSelector((state) => state.control.modal);
     const cropCompareSelected = useAppSelector((state) => state.control.compare);
     const cropYearList: any = useAppSelector((state) => state.crop.cropYearList);
-
+    
+    const [layerOpen, setLayerOpen] = useState<boolean>(false);
     const [compareOptions, setCompareOptions] = useState<Option[] | []>([]);
 
     useEffect(() => {
@@ -105,6 +107,11 @@ const MapControlComponent = forwardRef<MapRef>(({}, mapRef) => {
         }
     };
 
+    const onChangeLayer = (base: string) => {
+        setLayerOpen(false);
+        dispatch(setBaseMap(base));
+    }
+
     return (
         <div>
             {!isModalOpen && (
@@ -134,14 +141,29 @@ const MapControlComponent = forwardRef<MapRef>(({}, mapRef) => {
                             />
                         </div>
                     </div>
+
+                    <FloatButton.Group
+                        open={layerOpen}
+                        trigger="click"
+                        placement="right"
+                        classNames={{ root: "left-5 bottom-35! w-fit!", item: "w-15!" }}
+                        icon={<FiLayers />}
+                        onClick={() => setLayerOpen(!layerOpen)}
+                        shape="square"
+                    >
+                        <FloatButton content="พื้นฐาน" onClick={() => onChangeLayer("base")} />
+                        <FloatButton content="เส้นทาง" onClick={() => onChangeLayer("streets")} />
+                        <FloatButton content="ดาวเทียม" onClick={() => onChangeLayer("satellite")} />
+                    </FloatButton.Group>
+
                     <FloatButton.Group className="left-5 w-fit!" shape="square">
                         <FloatButton
                             onClick={handleZoomIn}
-                            icon={<PlusOutlined />}
+                            icon={<FaPlus />}
                         />
                         <FloatButton
                             onClick={handleZoomOut}
-                            icon={<MinusOutlined />}
+                            icon={<FaMinus />}
                         />
                     </FloatButton.Group>
                 </>

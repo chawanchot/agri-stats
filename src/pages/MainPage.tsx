@@ -1,7 +1,7 @@
 import { Button } from "antd";
 import { useNavigate } from "react-router-dom";
-import Map from "react-map-gl/mapbox";
-import "mapbox-gl/dist/mapbox-gl.css";
+import Map from "react-map-gl/maplibre";
+import 'maplibre-gl/dist/maplibre-gl.css';
 import durian from "@assets/durian.png";
 import sweetcorn from "@assets/sweetcorn.png";
 import longan from "@assets/longan.png";
@@ -10,8 +10,6 @@ import mangosteen from "@assets/mangosteen.png";
 import lemon from "@assets/lemon.png";
 import coconut from "@assets/coconut.png";
 import tangerine from "@assets/tangerine.png";
-
-const MAPBOX_TOKEN = import.meta.env.VITE_MAPBOX_TOKEN;
 
 const MainPage = () => {
   const navigate = useNavigate();
@@ -40,8 +38,7 @@ const MainPage = () => {
             latitude: 13.5,
             zoom: 5.6,
           }}
-          mapStyle="mapbox://styles/mapbox/satellite-v9"
-          mapboxAccessToken={MAPBOX_TOKEN}
+          mapStyle="https://api.maptiler.com/maps/satellite/style.json?key=tyvX9K3LBlgWHkvFYjfl"
           interactive={false}
           attributionControl={false}
         />

@@ -1,7 +1,7 @@
 import ProvinceLabelsLayer from "@components/Map/ProvinceLabelsLayer";
 import ProvinceLayer from "@components/Map/ProvinceLayer";
 import { useAppDispatch, useAppSelector } from "@store/hook";
-import { openModal, setProvince, setZoom } from "@store/slice/controlSlice";
+import { openModal, setMainChartFilter, setProvince, setZoom } from "@store/slice/controlSlice";
 import { forwardRef, useState } from "react";
 import Map, { LogoControl, type MapRef } from "react-map-gl/maplibre";
 import 'maplibre-gl/dist/maplibre-gl.css';
@@ -17,6 +17,7 @@ const MainMap = forwardRef<MapRef>(({}, mapRef) => {
     const isModalOpen = useAppSelector((state) => state.control.modal);
     const zoom = useAppSelector((state) => state.control.zoom);
     const compareSelected = useAppSelector((state) => state.control.compare);
+    const baseMap = useAppSelector((state) => state.control.baseMap);
 
     const [hoverInfo, setHoverInfo] = useState<string | null>(null);
     const [hoverSoil, setHoverSoil] = useState<any>(null);
@@ -54,6 +55,16 @@ const MainMap = forwardRef<MapRef>(({}, mapRef) => {
         }
     };
 
+    const onIdleHandle = () => {
+        if (mapRef && typeof mapRef !== 'function' && mapRef.current) {
+            const features = mapRef.current.queryRenderedFeatures({ layers: ["province-hover-fills"] });
+            const provinces = features.map((item) => item.properties.pro_th);
+            const uniqueProvinces = [...new Set(provinces)];
+            
+            dispatch(setMainChartFilter(uniqueProvinces));
+        }
+    }
+
     return (
         <Map
             initialViewState={{
@@ -61,13 +72,14 @@ const MainMap = forwardRef<MapRef>(({}, mapRef) => {
                 latitude: 13.18,
                 zoom: 5,
             }}
-            mapStyle="https://api.maptiler.com/maps/satellite/style.json?key=tyvX9K3LBlgWHkvFYjfl"
+            mapStyle={`https://api.maptiler.com/maps/${baseMap}/style.json?key=tyvX9K3LBlgWHkvFYjfl`}
             ref={mapRef}
             maxBounds={[82.28, 4.77, 119.53, 21.32]}
             dragPan={!isModalOpen}
             scrollZoom={!isModalOpen}
             onZoom={(e) => dispatch(setZoom(e.viewState.zoom))}
             onClick={onProvinceClick}
+            onIdle={onIdleHandle}
             onMouseMove={(e) => {
                 if (e.features && e.features.length > 0) {
                     const provinceFeature = e.features.find(

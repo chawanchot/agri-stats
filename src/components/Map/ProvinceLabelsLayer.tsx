@@ -34,7 +34,8 @@ const ProvinceLabelsLayer = ({ data }: PropsType) => {
                 }}
                 paint={{
                     "text-color": "#ffffff",
-                    "text-halo-color": "#4f4f4f",
+                    "text-opacity": 1,
+                    "text-halo-color": "#242323",
                     "text-halo-width": 1,
                 }}
             />

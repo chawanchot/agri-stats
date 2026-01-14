@@ -21,11 +21,14 @@ function MainChartComponent() {
 
     const cropCompareSelected = useAppSelector((state) => state.control.compare);
     const cropCompareData = useAppSelector((state) => state.crop.cropMainChart);
+    const provincesFilter: string[] = useAppSelector((state) => state.control.mainChartFilter);
 
     useEffect(() => {
-        if (cropCompareData && cropCompareData.length > 0) {
+        if (cropCompareData.length > 0 && provincesFilter.length > 0) {
+            const filtered = cropCompareData.filter((item: any) => provincesFilter.includes(item.province));
+
             if (cropCompareSelected.type === "ผลผลิตต่อไร่") {
-                const sorted = [...cropCompareData].sort(
+                const sorted = filtered.sort(
                     (a: CropDetailType, b: CropDetailType) => b.yield_per_rai - a.yield_per_rai
                 );
 
@@ -36,7 +39,7 @@ function MainChartComponent() {
                 setChartValue(values);
                 setUnit("กก./ไร่");
             } else {
-                const sorted = [...cropCompareData].sort(
+                const sorted = filtered.sort(
                     (a: CropDetailType, b: CropDetailType) => b.yield_ton - a.yield_ton
                 );
 
@@ -51,7 +54,7 @@ function MainChartComponent() {
             setChartProvince([]);
             setChartValue([]);
         }
-    }, [cropCompareData, cropCompareSelected.type]);
+    }, [cropCompareData, cropCompareSelected.type, provincesFilter]);
 
     const chartOptions: ApexOptions = {
         chart: {
@@ -135,7 +138,7 @@ function MainChartComponent() {
                             options={chartOptions}
                             series={chartData}
                             type="bar"
-                            height={cropCompareData.length * 40}
+                            height={chartProvince.length * 40}
                         />
                     </div>
                 )}
