@@ -1,5 +1,6 @@
 import HomePage from "@pages/HomePage";
 import MainPage from "@pages/MainPage";
+
 import { useRoutes } from "react-router-dom";
 
 const MainRouter = () => {
@@ -11,8 +12,7 @@ const MainRouter = () => {
         {
             path: "/home",
             element: <HomePage />,
-            
-        }
+        },
     ]);
 };
 

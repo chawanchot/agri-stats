@@ -1,11 +1,11 @@
 import type { FeatureCollection } from "geojson";
-import { Layer, Source } from "react-map-gl/mapbox";
+import { Layer, Source } from "react-map-gl/maplibre";
 
 type PropsType = {
     data: FeatureCollection;
 };
 
-function ProvinceLabelsSource({ data }: PropsType) {
+const ProvinceLabelsLayer = ({ data }: PropsType) => {
     const LabelPoints: FeatureCollection = {
         type: "FeatureCollection",
         features: data.features.map((feature: any) => ({
@@ -29,10 +29,7 @@ function ProvinceLabelsSource({ data }: PropsType) {
                 minzoom={4}
                 layout={{
                     "text-field": ["get", "pro_th"],
-                    "text-font": [
-                        "Open Sans Regular",
-                        "Arial Unicode MS Regular",
-                    ],
+                    "text-font": ["Kanit"],
                     "text-size": 14,
                 }}
                 paint={{
@@ -45,4 +42,4 @@ function ProvinceLabelsSource({ data }: PropsType) {
     );
 }
 
-export default ProvinceLabelsSource;
+export default ProvinceLabelsLayer;

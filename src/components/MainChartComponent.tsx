@@ -1,11 +1,8 @@
 import type { ApexOptions } from "apexcharts";
 import Chart from "react-apexcharts";
 import { useEffect, useState } from "react";
+import { useAppSelector } from "@store/hook";
 
-type PropsType = {
-    data: CropDetailType[];
-    type: string;
-};
 
 type CropDetailType = {
     crop: string;
@@ -17,15 +14,18 @@ type CropDetailType = {
     yield_ton: number;
 };
 
-function MainChartComponent({ data, type }: PropsType) {
+function MainChartComponent() {
     const [chartProvince, setChartProvince] = useState<string[]>([]);
     const [chartValue, setChartValue] = useState<number[]>([]);
     const [unit, setUnit] = useState<string>("");
 
+    const cropCompareSelected = useAppSelector((state) => state.control.compare);
+    const cropCompareData = useAppSelector((state) => state.crop.cropMainChart);
+
     useEffect(() => {
-        if (data && data.length > 0) {
-            if (type === "ผลผลิตต่อไร่") {
-                const sorted = data.sort(
+        if (cropCompareData && cropCompareData.length > 0) {
+            if (cropCompareSelected.type === "ผลผลิตต่อไร่") {
+                const sorted = [...cropCompareData].sort(
                     (a: CropDetailType, b: CropDetailType) => b.yield_per_rai - a.yield_per_rai
                 );
 
@@ -36,7 +36,7 @@ function MainChartComponent({ data, type }: PropsType) {
                 setChartValue(values);
                 setUnit("กก./ไร่");
             } else {
-                const sorted = data.sort(
+                const sorted = [...cropCompareData].sort(
                     (a: CropDetailType, b: CropDetailType) => b.yield_ton - a.yield_ton
                 );
 
@@ -51,7 +51,7 @@ function MainChartComponent({ data, type }: PropsType) {
             setChartProvince([]);
             setChartValue([]);
         }
-    }, [data, type]);
+    }, [cropCompareData, cropCompareSelected.type]);
 
     const chartOptions: ApexOptions = {
         chart: {
@@ -126,16 +126,16 @@ function MainChartComponent({ data, type }: PropsType) {
         },
     ];
 
-    if (data.length > 0) {
+    if (cropCompareData.length > 0) {
         return (
             <>
-                {data.length && (
+                {cropCompareData.length && (
                     <div className="absolute right-0 z-10 bg-white h-full overflow-y-auto overflow-x-hidden w-80">
                         <Chart
                             options={chartOptions}
                             series={chartData}
                             type="bar"
-                            height={data.length * 40}
+                            height={cropCompareData.length * 40}
                         />
                     </div>
                 )}

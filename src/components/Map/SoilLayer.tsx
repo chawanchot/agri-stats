@@ -1,4 +1,4 @@
-import { Layer, Popup, Source } from "react-map-gl/mapbox";
+import { Layer, Popup, Source } from "react-map-gl/maplibre";
 import type { FeatureCollection } from "geojson";
 
 type PropsType = {
@@ -6,7 +6,7 @@ type PropsType = {
     hoverData: any;
 };
 
-function SoilSource({ data, hoverData }: PropsType) {
+const SoilLayer = ({ data, hoverData }: PropsType) => {
     return (
         <Source id="soil-layer" type="geojson" data={data}>
             <Layer
@@ -41,4 +41,4 @@ function SoilSource({ data, hoverData }: PropsType) {
     );
 }
 
-export default SoilSource;
+export default SoilLayer;

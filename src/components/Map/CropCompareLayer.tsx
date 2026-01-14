@@ -1,17 +1,22 @@
-import { Layer, Popup, Source } from "react-map-gl/mapbox";
-import type { FeatureCollection } from "geojson";
+import { Layer, Popup, Source } from "react-map-gl/maplibre";
+import { useAppSelector } from "@store/hook";
 
 type PropsType = {
-    data: FeatureCollection;
     hoverData: any;
     type: string;
 };
 
-const CropCompareSource = ({ data, hoverData, type }: PropsType) => {
+const CropCompareLayer = ({ hoverData, type }: PropsType) => {
+    const cropCompareData: any = useAppSelector((state) => state.crop.cropCompareData);
+
     const findDynamicColorRange = () => {
+        if (!cropCompareData?.features || cropCompareData.features.length === 0) {
+            return [0, "#f2f0f7"];
+        }
+
         const field = type === "ผลผลิตต่อไร่" ? "yield_per_rai" : "yield_ton";
 
-        const values = data.features.map((feature: any) => feature.properties[field]);
+        const values = cropCompareData.features.map((feature: any) => feature.properties[field]);
         const max = Math.max(...values);
         const min = Math.min(...values);
 
@@ -27,7 +32,7 @@ const CropCompareSource = ({ data, hoverData, type }: PropsType) => {
     }
 
     return (
-        <Source id="provinces-source" type="geojson" data={data}>
+        <Source id="provinces-source" type="geojson" data={cropCompareData}>
             <Layer
                 id="province-compare-fills"
                 type="fill"
@@ -38,7 +43,7 @@ const CropCompareSource = ({ data, hoverData, type }: PropsType) => {
                         ["linear"],
                         [
                             "get",
-                            type === "ผลผลิตต่อไร"
+                            type === "ผลผลิตต่อไร่"
                                 ? "yield_per_rai"
                                 : "yield_ton",
                         ],
@@ -74,4 +79,4 @@ const CropCompareSource = ({ data, hoverData, type }: PropsType) => {
     );
 };
 
-export default CropCompareSource;
+export default CropCompareLayer;

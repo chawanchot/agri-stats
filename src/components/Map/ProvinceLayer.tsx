@@ -1,12 +1,12 @@
 import type { FeatureCollection } from "geojson";
-import { Layer, Source } from "react-map-gl/mapbox";
+import { Layer, Source } from "react-map-gl/maplibre";
 
 type PropsType = {
     data: FeatureCollection;
     hoverData: any;
 };
 
-function ProvinceSource({ data, hoverData }: PropsType) {
+const ProvinceLayer = ({ data, hoverData }: PropsType) => {
     return (
         <>
             <Source id="provincesData" type="geojson" data={data}>
@@ -38,4 +38,4 @@ function ProvinceSource({ data, hoverData }: PropsType) {
     );
 }
 
-export default ProvinceSource;
+export default ProvinceLayer;
