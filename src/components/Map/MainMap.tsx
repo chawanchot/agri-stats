@@ -16,7 +16,7 @@ import Map, {
     type MarkerEvent,
 } from "react-map-gl/maplibre";
 import "maplibre-gl/dist/maplibre-gl.css";
-import ProvincesData from "@data/provinces.json";
+import ProvincesData from "@assets/data/provinces.json";
 import type { FeatureCollection } from "geojson";
 import SoilSource from "@components/Map/SoilLayer";
 import CropCompareLayer from "@components/Map/CropCompareLayer";
@@ -67,7 +67,7 @@ const MainMap = forwardRef<MapRef>(({}, mapRef) => {
 
             try {
                 const soilName = pro_en.replaceAll(" ", "").toLowerCase();
-                const data = await import(`../../data/soils/${soilName}.json`);
+                const data = await import(`../../assets/data/soils/${soilName}.json`);
 
                 setSoilData(data.default);
             } catch (error) {

@@ -22,7 +22,6 @@
       "@pages/*": ["pages/*"],
       "@components/*": ["components/*"],
       "@assets/*": ["assets/*"],
-      "@data/*": ["data/*"],
       "@router/*": ["router/*"],
       "@store/*": ["store/*"],
     },

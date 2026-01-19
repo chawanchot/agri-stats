@@ -3,7 +3,7 @@ import { setBaseMap, setMenuSelected } from "@store/slice/controlSlice";
 import { setCropCompareData, setCropMainChart } from "@store/slice/cropSlice";
 import { Cascader, FloatButton, Segmented, Tag, type CascaderProps } from "antd";
 import { useEffect, useState } from "react";
-import ProvincesData from "../data/provinces.json";
+import ProvincesData from "../assets/data/provinces.json";
 import type { FeatureCollection } from "geojson";
 import Axios from "axios";
 import { FiLayers } from "react-icons/fi";
