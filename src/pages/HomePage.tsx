@@ -39,7 +39,7 @@ function HomePage() {
                     </div>
                 )}
 
-                <MapControlComponent ref={mapRef} />
+                <MapControlComponent />
                 <MainChartComponent />
                 <MainMap ref={mapRef} />
 

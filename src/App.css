@@ -1,0 +1,8 @@
+.maplibregl-popup-content {
+    padding: 10px !important;
+    border-radius: 10px;
+    overflow: hidden;
+    min-width: fit-content;
+
+    font-family: "Kanit", sans-serif;
+}

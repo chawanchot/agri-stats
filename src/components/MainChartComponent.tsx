@@ -2,24 +2,18 @@ import type { ApexOptions } from "apexcharts";
 import Chart from "react-apexcharts";
 import { useEffect, useState } from "react";
 import { useAppSelector } from "@store/hook";
+import type { CropDetailType } from "types";
+import ProvincesData from "@data/provinces.json";
+import type { FeatureCollection } from "geojson";
 
-
-type CropDetailType = {
-    crop: string;
-    harvest_area: number;
-    planted_area: number;
-    province: string;
-    year: number;
-    yield_per_rai: number;
-    yield_ton: number;
-};
+const ProvincesGeoJson = ProvincesData as FeatureCollection;
 
 function MainChartComponent() {
     const [chartProvince, setChartProvince] = useState<string[]>([]);
     const [chartValue, setChartValue] = useState<number[]>([]);
     const [unit, setUnit] = useState<string>("");
 
-    const cropCompareSelected = useAppSelector((state) => state.control.compare);
+    const menuSelected = useAppSelector((state) => state.control.menu);
     const cropCompareData = useAppSelector((state) => state.crop.cropMainChart);
     const provincesFilter: string[] = useAppSelector((state) => state.control.mainChartFilter);
 
@@ -27,7 +21,7 @@ function MainChartComponent() {
         if (cropCompareData.length > 0 && provincesFilter.length > 0) {
             const filtered = cropCompareData.filter((item: any) => provincesFilter.includes(item.province));
 
-            if (cropCompareSelected.type === "ผลผลิตต่อไร่") {
+            if (menuSelected.type === "ผลผลิตต่อไร่") {
                 const sorted = filtered.sort(
                     (a: CropDetailType, b: CropDetailType) => b.yield_per_rai - a.yield_per_rai
                 );
@@ -54,7 +48,7 @@ function MainChartComponent() {
             setChartProvince([]);
             setChartValue([]);
         }
-    }, [cropCompareData, cropCompareSelected.type, provincesFilter]);
+    }, [cropCompareData, menuSelected.type, provincesFilter]);
 
     const chartOptions: ApexOptions = {
         chart: {
@@ -62,6 +56,15 @@ function MainChartComponent() {
                 show: false,
             },
             sparkline: { enabled: true },
+            events: {
+                dataPointSelection(_event, _chart, options) {
+                    const dataIndex = options.dataPointIndex;
+                    const province = options.w.config.xaxis.categories[dataIndex];
+
+                    console.log(province);
+                    // const find = ProvincesGeoJson.features.filter((item) => )
+                },
+            }
         },
         legend: {
             show: false,
@@ -76,6 +79,7 @@ function MainChartComponent() {
                 },
                 borderRadius: 5,
                 borderRadiusApplication: "end",
+                hideZeroBarsWhenGrouped: true
             },
         },
         dataLabels: {
@@ -129,19 +133,17 @@ function MainChartComponent() {
         },
     ];
 
-    if (cropCompareData.length > 0) {
+    if (chartProvince.length > 0) {
         return (
             <>
-                {cropCompareData.length && (
-                    <div className="absolute right-0 z-10 bg-white h-full overflow-y-auto overflow-x-hidden w-80">
-                        <Chart
-                            options={chartOptions}
-                            series={chartData}
-                            type="bar"
-                            height={chartProvince.length * 40}
-                        />
-                    </div>
-                )}
+                <div className="absolute right-0 z-10 bg-white h-full overflow-y-auto overflow-x-hidden w-80">
+                    <Chart
+                        options={chartOptions}
+                        series={chartData}
+                        type="bar"
+                        height={chartProvince.length * 40}
+                    />
+                </div>
             </>
         );
     }

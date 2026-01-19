@@ -12,13 +12,14 @@ export const controlSlice = createSlice({
         modal: false,
         province: "",
         zoom: 5,
-        compare: {
+        menu: {
             crop: "",
             year: "",
+            mode: "",
             type: "ผลผลิตต่อไร่",
         },
         mainChartFilter: [],
-        baseMap: BASE_MAP.satellite,
+        baseMap: BASE_MAP.base,
     },
     reducers: {
         openModal: (state) => {
@@ -33,8 +34,8 @@ export const controlSlice = createSlice({
         setZoom: (state, action) => {
             state.zoom = action.payload;
         },
-        setCompareSelected: (state, action) => {
-            state.compare = { ...state.compare, ...action.payload };
+        setMenuSelected: (state, action) => {
+            state.menu = { ...state.menu, ...action.payload };
         },
         setMainChartFilter: (state, action) => {
             state.mainChartFilter = action.payload;
@@ -50,7 +51,7 @@ export const {
     closeModal,
     setProvince,
     setZoom,
-    setCompareSelected,
+    setMenuSelected,
     setMainChartFilter,
     setBaseMap
 } = controlSlice.actions;

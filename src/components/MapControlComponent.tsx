@@ -1,77 +1,64 @@
 import { useAppDispatch, useAppSelector } from "@store/hook";
-import { setBaseMap, setCompareSelected } from "@store/slice/controlSlice";
+import { setBaseMap, setMenuSelected } from "@store/slice/controlSlice";
 import { setCropCompareData, setCropMainChart } from "@store/slice/cropSlice";
-import { Cascader, FloatButton, Segmented, type CascaderProps } from "antd";
-import { forwardRef, useEffect, useState } from "react";
-import type { MapRef } from "react-map-gl/maplibre";
+import { Cascader, FloatButton, Segmented, Tag, type CascaderProps } from "antd";
+import { useEffect, useState } from "react";
 import ProvincesData from "../data/provinces.json";
 import type { FeatureCollection } from "geojson";
 import Axios from "axios";
 import { FiLayers } from "react-icons/fi";
-import { FaPlus, FaMinus } from "react-icons/fa";
+import type { CropDetailType, OptionType } from "types";
+import { PiWarningOctagonBold } from "react-icons/pi";
 
 const ProvincesGeoJson = ProvincesData as FeatureCollection;
 
-type Option = {
-    value: string;
-    label: string;
-    children?: Option[];
-};
-
-type CropDetailType = {
-    crop: string;
-    harvest_area: number;
-    planted_area: number;
-    province: string;
-    year: number;
-    yield_per_rai: number;
-    yield_ton: number;
-};
-
-const MapControlComponent = forwardRef<MapRef>(({}, mapRef) => {
+const MapControlComponent = () => {
     const dispatch = useAppDispatch();
     const isModalOpen = useAppSelector((state) => state.control.modal);
-    const cropCompareSelected = useAppSelector((state) => state.control.compare);
+    const cropCompareSelected = useAppSelector((state) => state.control.menu);
     const cropYearList: any = useAppSelector((state) => state.crop.cropYearList);
+    const menuSelected = useAppSelector((state) => state.control.menu);
     
     const [layerOpen, setLayerOpen] = useState<boolean>(false);
-    const [compareOptions, setCompareOptions] = useState<Option[] | []>([]);
+    const [compareOptions, setCompareOptions] = useState<OptionType[] | []>([]);
 
     useEffect(() => {
-        let options: any = [];
+        let options: OptionType[] = [];
         for (const item of cropYearList) {
             options = [...options, {
                 value: item.name,
                 label: item.name,
-                children: item.data.map((year: string) => {
-                    return {value: year, label: year}
-                })
+                children: [
+                    {
+                        value: "ผลผลิต",
+                        label: "ผลผลิต",
+                        children: item.data.map((year: string) => {
+                            return {value: year, label: year}
+                        })
+                    },
+                    {
+                        value: "ราคา",
+                        label: "ราคา"
+                    }
+                ]
             }]
         }
 
         setCompareOptions(options);
     }, [cropYearList])
 
-    const handleZoomIn = () => {
-        if (mapRef && typeof mapRef !== "function" && mapRef.current) {
-            mapRef.current?.zoomIn();
-        }
-    };
-
-    const handleZoomOut = () => {
-        if (mapRef && typeof mapRef !== "function" && mapRef.current) {
-            mapRef.current?.zoomOut();
-        }
-    };
-
-    const onCropsSelectedChange: CascaderProps<Option>["onChange"] = (value) => {
+    const onCropsSelectedChange: CascaderProps<OptionType>["onChange"] = (value) => {
         dispatch(setCropMainChart([]));
         dispatch(setCropCompareData([]));
-        dispatch(setCompareSelected({ crop: "", year: "" }));
+        dispatch(setMenuSelected({ crop: "", mode: "", year: "" }));
         
         if (value) {
-            dispatch(setCompareSelected({ crop: value[0], year: value[1] }));
-            fetchCropCompareData(value[0], value[1]);
+            if (value[1] === "ผลผลิต") {
+                dispatch(setMenuSelected({ crop: value[0], mode: value[1], year: value[2] }));
+                fetchCropCompareData(value[0], value[2]);
+            } else if (value[1] === "ราคา") {
+                dispatch(setMenuSelected({ crop: value[0], mode: value[1] }))
+            }
         }
     };
 
@@ -116,29 +103,32 @@ const MapControlComponent = forwardRef<MapRef>(({}, mapRef) => {
         <div>
             {!isModalOpen && (
                 <>
-                    <div className="absolute top-5 left-5 z-10 flex flex-col rounded-md">
-                        <div className="flex flex-col gap-2 p-3">
-                            <div className="text-xs text-white">
-                                เปรียบเทียบผลผลิต
+                    <Tag variant="outlined" color="warning" icon={(<PiWarningOctagonBold />)} className="absolute! z-10 left-2 top-2 flex! items-center gap-1">หมายเหตุ: แสดงข้อมูลผลผลิตช่วงปี พ.ศ. 2563-2567</Tag>
+                    <div className="absolute top-10 left-2 z-10 w-56 flex flex-col rounded-md">
+                        <div className="flex flex-col gap-2">
+                            <div className="text-sm text-white text-shadow-2xs">
+                                เลือกข้อมูล
                             </div>
-                            <Segmented
-                                size="small"
-                                value={cropCompareSelected.type}
-                                options={["ผลผลิตต่อไร่", "ผลผลิตทั้งหมด"]}
-                                onChange={(value) =>
-                                    dispatch(
-                                        setCompareSelected({ type: value })
-                                    )
-                                }
-                                classNames={{ item: "py-1" }}
-                                className="shadow-md"
-                            />
                             <Cascader
-                                placeholder="เลือกชนิดพืช..."
+                                placeholder="เลือกข้อมูล..."
                                 options={compareOptions}
                                 onChange={onCropsSelectedChange}
                                 className="w-full! shadow-md"
                             />
+                            {menuSelected.mode === "ผลผลิต" && (
+                                <Segmented
+                                    size="small"
+                                    value={cropCompareSelected.type}
+                                    options={["ผลผลิตต่อไร่", "ผลผลิตทั้งหมด"]}
+                                    onChange={(value) =>
+                                        dispatch(
+                                            setMenuSelected({ type: value })
+                                        )
+                                    }
+                                    classNames={{ item: "py-1 w-full" }}
+                                    className="shadow-md"
+                                />
+                            )}
                         </div>
                     </div>
 
@@ -146,8 +136,8 @@ const MapControlComponent = forwardRef<MapRef>(({}, mapRef) => {
                         open={layerOpen}
                         trigger="click"
                         placement="right"
-                        classNames={{ root: "left-5 bottom-35! w-fit!", item: "w-15!" }}
-                        icon={<FiLayers />}
+                        classNames={{ root: "left-2.5 bottom-34! w-fit!", item: "w-15! min-h-[29px]!", trigger: "min-h-[29px]! w-[29px]! rounded! shadow-md!" }}
+                        icon={<FiLayers className="text-base" />}
                         onClick={() => setLayerOpen(!layerOpen)}
                         shape="square"
                     >
@@ -155,21 +145,10 @@ const MapControlComponent = forwardRef<MapRef>(({}, mapRef) => {
                         <FloatButton content="เส้นทาง" onClick={() => onChangeLayer("streets")} />
                         <FloatButton content="ดาวเทียม" onClick={() => onChangeLayer("satellite")} />
                     </FloatButton.Group>
-
-                    <FloatButton.Group className="left-5 w-fit!" shape="square">
-                        <FloatButton
-                            onClick={handleZoomIn}
-                            icon={<FaPlus />}
-                        />
-                        <FloatButton
-                            onClick={handleZoomOut}
-                            icon={<FaMinus />}
-                        />
-                    </FloatButton.Group>
                 </>
             )}
         </div>
     );
-});
+};
 
 export default MapControlComponent;
