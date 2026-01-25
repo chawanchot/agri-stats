@@ -1,0 +1,3197 @@
+[
+    {
+        "year": 2563,
+        "crop": "ลำไย",
+        "province": "เชียงราย",
+        "planted_area": 246135,
+        "harvest_area": 219137,
+        "yield_ton": 95428,
+        "yield_per_rai": 435
+    },
+    {
+        "year": 2563,
+        "crop": "ลำไย",
+        "province": "พะเยา",
+        "planted_area": 96780,
+        "harvest_area": 79737,
+        "yield_ton": 31716,
+        "yield_per_rai": 398
+    },
+    {
+        "year": 2563,
+        "crop": "ลำไย",
+        "province": "ลำปาง",
+        "planted_area": 23371,
+        "harvest_area": 19170,
+        "yield_ton": 5816,
+        "yield_per_rai": 303
+    },
+    {
+        "year": 2563,
+        "crop": "ลำไย",
+        "province": "ลำพูน",
+        "planted_area": 354701,
+        "harvest_area": 321038,
+        "yield_ton": 289657,
+        "yield_per_rai": 902
+    },
+    {
+        "year": 2563,
+        "crop": "ลำไย",
+        "province": "เชียงใหม่",
+        "planted_area": 451723,
+        "harvest_area": 406183,
+        "yield_ton": 342543,
+        "yield_per_rai": 843
+    },
+    {
+        "year": 2563,
+        "crop": "ลำไย",
+        "province": "แม่ฮ่องสอน",
+        "planted_area": 1141,
+        "harvest_area": 751,
+        "yield_ton": 318,
+        "yield_per_rai": 423
+    },
+    {
+        "year": 2563,
+        "crop": "ลำไย",
+        "province": "ตาก",
+        "planted_area": 29903,
+        "harvest_area": 29811,
+        "yield_ton": 17840,
+        "yield_per_rai": 598
+    },
+    {
+        "year": 2563,
+        "crop": "ลำไย",
+        "province": "กำแพงเพชร",
+        "planted_area": 13202,
+        "harvest_area": 12339,
+        "yield_ton": 7591,
+        "yield_per_rai": 615
+    },
+    {
+        "year": 2563,
+        "crop": "ลำไย",
+        "province": "สุโขทัย",
+        "planted_area": 1508,
+        "harvest_area": 1254,
+        "yield_ton": 411,
+        "yield_per_rai": 328
+    },
+    {
+        "year": 2563,
+        "crop": "ลำไย",
+        "province": "แพร่",
+        "planted_area": 3726,
+        "harvest_area": 3573,
+        "yield_ton": 1587,
+        "yield_per_rai": 444
+    },
+    {
+        "year": 2563,
+        "crop": "ลำไย",
+        "province": "น่าน",
+        "planted_area": 64407,
+        "harvest_area": 57119,
+        "yield_ton": 22016,
+        "yield_per_rai": 385
+    },
+    {
+        "year": 2563,
+        "crop": "ลำไย",
+        "province": "อุตรดิตถ์",
+        "planted_area": 2551,
+        "harvest_area": 2441,
+        "yield_ton": 458,
+        "yield_per_rai": 188
+    },
+    {
+        "year": 2563,
+        "crop": "ลำไย",
+        "province": "พิษณุโลก",
+        "planted_area": 2826,
+        "harvest_area": 1421,
+        "yield_ton": 710,
+        "yield_per_rai": 500
+    },
+    {
+        "year": 2563,
+        "crop": "ลำไย",
+        "province": "พิจิตร",
+        "planted_area": 288,
+        "harvest_area": 179,
+        "yield_ton": 100.64,
+        "yield_per_rai": 562
+    },
+    {
+        "year": 2563,
+        "crop": "ลำไย",
+        "province": "นครสวรรค์",
+        "planted_area": 480,
+        "harvest_area": 367,
+        "yield_ton": 244,
+        "yield_per_rai": 665
+    },
+    {
+        "year": 2563,
+        "crop": "ลำไย",
+        "province": "อุทัยธานี",
+        "planted_area": 266,
+        "harvest_area": 202,
+        "yield_ton": 151,
+        "yield_per_rai": 748
+    },
+    {
+        "year": 2563,
+        "crop": "ลำไย",
+        "province": "เพชรบูรณ์",
+        "planted_area": 942,
+        "harvest_area": 637,
+        "yield_ton": 434,
+        "yield_per_rai": 681
+    },
+    {
+        "year": 2563,
+        "crop": "ลำไย",
+        "province": "เลย",
+        "planted_area": 15642,
+        "harvest_area": 15414,
+        "yield_ton": 8505,
+        "yield_per_rai": 552
+    },
+    {
+        "year": 2563,
+        "crop": "ลำไย",
+        "province": "หนองบัวลำภู",
+        "planted_area": 1680,
+        "harvest_area": 1547,
+        "yield_ton": 611,
+        "yield_per_rai": 395
+    },
+    {
+        "year": 2563,
+        "crop": "ลำไย",
+        "province": "อุดรธานี",
+        "planted_area": 581,
+        "harvest_area": 567,
+        "yield_ton": 197.33,
+        "yield_per_rai": 348
+    },
+    {
+        "year": 2563,
+        "crop": "ลำไย",
+        "province": "หนองคาย",
+        "planted_area": 763,
+        "harvest_area": 736,
+        "yield_ton": 504,
+        "yield_per_rai": 685
+    },
+    {
+        "year": 2563,
+        "crop": "ลำไย",
+        "province": "บึงกาฬ",
+        "planted_area": 67,
+        "harvest_area": 62,
+        "yield_ton": 24,
+        "yield_per_rai": 387
+    },
+    {
+        "year": 2563,
+        "crop": "ลำไย",
+        "province": "สกลนคร",
+        "planted_area": 1618,
+        "harvest_area": 1590,
+        "yield_ton": 771.86,
+        "yield_per_rai": 485
+    },
+    {
+        "year": 2563,
+        "crop": "ลำไย",
+        "province": "นครพนม",
+        "planted_area": 62,
+        "harvest_area": 41,
+        "yield_ton": 14.02,
+        "yield_per_rai": 342
+    },
+    {
+        "year": 2563,
+        "crop": "ลำไย",
+        "province": "มุกดาหาร",
+        "planted_area": 85,
+        "harvest_area": 44,
+        "yield_ton": 19,
+        "yield_per_rai": 432
+    },
+    {
+        "year": 2563,
+        "crop": "ลำไย",
+        "province": "ยโสธร",
+        "planted_area": 88,
+        "harvest_area": 84,
+        "yield_ton": 42,
+        "yield_per_rai": 500
+    },
+    {
+        "year": 2563,
+        "crop": "ลำไย",
+        "province": "อำนาจเจริญ",
+        "planted_area": 320,
+        "harvest_area": 317,
+        "yield_ton": 113,
+        "yield_per_rai": 356
+    },
+    {
+        "year": 2563,
+        "crop": "ลำไย",
+        "province": "อุบลราชธานี",
+        "planted_area": 1397,
+        "harvest_area": 1057,
+        "yield_ton": 658,
+        "yield_per_rai": 623
+    },
+    {
+        "year": 2563,
+        "crop": "ลำไย",
+        "province": "ศรีสะเกษ",
+        "planted_area": 1203,
+        "harvest_area": 1194,
+        "yield_ton": 949,
+        "yield_per_rai": 795
+    },
+    {
+        "year": 2563,
+        "crop": "ลำไย",
+        "province": "สุรินทร์",
+        "planted_area": 136,
+        "harvest_area": 135,
+        "yield_ton": 136,
+        "yield_per_rai": 1007
+    },
+    {
+        "year": 2563,
+        "crop": "ลำไย",
+        "province": "บุรีรัมย์",
+        "planted_area": 3772,
+        "harvest_area": 2534,
+        "yield_ton": 2194.50,
+        "yield_per_rai": 866
+    },
+    {
+        "year": 2563,
+        "crop": "ลำไย",
+        "province": "ร้อยเอ็ด",
+        "planted_area": 71,
+        "harvest_area": 69,
+        "yield_ton": 40,
+        "yield_per_rai": 582
+    },
+    {
+        "year": 2563,
+        "crop": "ลำไย",
+        "province": "กาฬสินธุ์",
+        "planted_area": 318,
+        "harvest_area": 242,
+        "yield_ton": 104,
+        "yield_per_rai": 431
+    },
+    {
+        "year": 2563,
+        "crop": "ลำไย",
+        "province": "ขอนแก่น",
+        "planted_area": 848,
+        "harvest_area": 752,
+        "yield_ton": 323.45,
+        "yield_per_rai": 430
+    },
+    {
+        "year": 2563,
+        "crop": "ลำไย",
+        "province": "ชัยภูมิ",
+        "planted_area": 2828,
+        "harvest_area": 2533,
+        "yield_ton": 1587,
+        "yield_per_rai": 627
+    },
+    {
+        "year": 2563,
+        "crop": "ลำไย",
+        "province": "นครราชสีมา",
+        "planted_area": 2659,
+        "harvest_area": 2048,
+        "yield_ton": 1521,
+        "yield_per_rai": 743
+    },
+    {
+        "year": 2563,
+        "crop": "ลำไย",
+        "province": "สระบุรี",
+        "planted_area": 456,
+        "harvest_area": 334,
+        "yield_ton": 286.27,
+        "yield_per_rai": 857
+    },
+    {
+        "year": 2563,
+        "crop": "ลำไย",
+        "province": "ลพบุรี",
+        "planted_area": 385,
+        "harvest_area": 209,
+        "yield_ton": 56.89,
+        "yield_per_rai": 272
+    },
+    {
+        "year": 2563,
+        "crop": "ลำไย",
+        "province": "สุพรรณบุรี",
+        "planted_area": 445,
+        "harvest_area": 346,
+        "yield_ton": 240.18,
+        "yield_per_rai": 694
+    },
+    {
+        "year": 2563,
+        "crop": "ลำไย",
+        "province": "พระนครศรีอยุธยา",
+        "planted_area": 15,
+        "harvest_area": 12,
+        "yield_ton": 7.98,
+        "yield_per_rai": 665
+    },
+    {
+        "year": 2563,
+        "crop": "ลำไย",
+        "province": "นนทบุรี",
+        "planted_area": 31,
+        "harvest_area": 17,
+        "yield_ton": 3.80,
+        "yield_per_rai": 224
+    },
+    {
+        "year": 2563,
+        "crop": "ลำไย",
+        "province": "กรุงเทพมหานคร",
+        "planted_area": 62,
+        "harvest_area": 57,
+        "yield_ton": 45,
+        "yield_per_rai": 789
+    },
+    {
+        "year": 2563,
+        "crop": "ลำไย",
+        "province": "ปทุมธานี",
+        "planted_area": 422,
+        "harvest_area": 356,
+        "yield_ton": 331.56,
+        "yield_per_rai": 931
+    },
+    {
+        "year": 2563,
+        "crop": "ลำไย",
+        "province": "นครนายก",
+        "planted_area": 90,
+        "harvest_area": 60,
+        "yield_ton": 54,
+        "yield_per_rai": 900
+    },
+    {
+        "year": 2563,
+        "crop": "ลำไย",
+        "province": "ปราจีนบุรี",
+        "planted_area": 2116,
+        "harvest_area": 1563,
+        "yield_ton": 2187,
+        "yield_per_rai": 1399
+    },
+    {
+        "year": 2563,
+        "crop": "ลำไย",
+        "province": "ฉะเชิงเทรา",
+        "planted_area": 3742,
+        "harvest_area": 3371,
+        "yield_ton": 2510,
+        "yield_per_rai": 745
+    },
+    {
+        "year": 2563,
+        "crop": "ลำไย",
+        "province": "สระแก้ว",
+        "planted_area": 82256,
+        "harvest_area": 77120,
+        "yield_ton": 76592,
+        "yield_per_rai": 993
+    },
+    {
+        "year": 2563,
+        "crop": "ลำไย",
+        "province": "จันทบุรี",
+        "planted_area": 296640,
+        "harvest_area": 294413,
+        "yield_ton": 244161,
+        "yield_per_rai": 829
+    },
+    {
+        "year": 2563,
+        "crop": "ลำไย",
+        "province": "ตราด",
+        "planted_area": 3077,
+        "harvest_area": 3010,
+        "yield_ton": 3376,
+        "yield_per_rai": 1122
+    },
+    {
+        "year": 2563,
+        "crop": "ลำไย",
+        "province": "ระยอง",
+        "planted_area": 2947,
+        "harvest_area": 2749,
+        "yield_ton": 1550,
+        "yield_per_rai": 564
+    },
+    {
+        "year": 2563,
+        "crop": "ลำไย",
+        "province": "ชลบุรี",
+        "planted_area": 1527,
+        "harvest_area": 653,
+        "yield_ton": 464.60,
+        "yield_per_rai": 711
+    },
+    {
+        "year": 2563,
+        "crop": "ลำไย",
+        "province": "สมุทรสาคร",
+        "planted_area": 4414,
+        "harvest_area": 4195,
+        "yield_ton": 6667,
+        "yield_per_rai": 1589
+    },
+    {
+        "year": 2563,
+        "crop": "ลำไย",
+        "province": "นครปฐม",
+        "planted_area": 3297,
+        "harvest_area": 2721,
+        "yield_ton": 3546,
+        "yield_per_rai": 1303
+    },
+    {
+        "year": 2563,
+        "crop": "ลำไย",
+        "province": "กาญจนบุรี",
+        "planted_area": 1301,
+        "harvest_area": 889,
+        "yield_ton": 648,
+        "yield_per_rai": 729
+    },
+    {
+        "year": 2563,
+        "crop": "ลำไย",
+        "province": "ราชบุรี",
+        "planted_area": 4817,
+        "harvest_area": 4483,
+        "yield_ton": 4026,
+        "yield_per_rai": 898
+    },
+    {
+        "year": 2563,
+        "crop": "ลำไย",
+        "province": "เพชรบุรี",
+        "planted_area": 615,
+        "harvest_area": 497,
+        "yield_ton": 285,
+        "yield_per_rai": 573
+    },
+    {
+        "year": 2563,
+        "crop": "ลำไย",
+        "province": "ประจวบคีรีขันธ์",
+        "planted_area": 194,
+        "harvest_area": 169,
+        "yield_ton": 65,
+        "yield_per_rai": 385
+    },
+    {
+        "year": 2563,
+        "crop": "ลำไย",
+        "province": "ชุมพร",
+        "planted_area": 21,
+        "harvest_area": 20,
+        "yield_ton": 15.05,
+        "yield_per_rai": 753
+    },
+    {
+        "year": 2563,
+        "crop": "ลำไย",
+        "province": "ระนอง",
+        "planted_area": 1,
+        "harvest_area": 0,
+        "yield_ton": 0,
+        "yield_per_rai": 0
+    },
+    {
+        "year": 2563,
+        "crop": "ลำไย",
+        "province": "สุราษฎร์ธานี",
+        "planted_area": 69,
+        "harvest_area": 64,
+        "yield_ton": 36.12,
+        "yield_per_rai": 564
+    },
+    {
+        "year": 2563,
+        "crop": "ลำไย",
+        "province": "พังงา",
+        "planted_area": 1,
+        "harvest_area": 1,
+        "yield_ton": 2,
+        "yield_per_rai": 1600
+    },
+    {
+        "year": 2563,
+        "crop": "ลำไย",
+        "province": "ภูเก็ต",
+        "planted_area": 6,
+        "harvest_area": 6,
+        "yield_ton": 1,
+        "yield_per_rai": 101
+    },
+    {
+        "year": 2563,
+        "crop": "ลำไย",
+        "province": "กระบี่",
+        "planted_area": 5,
+        "harvest_area": 2,
+        "yield_ton": 3,
+        "yield_per_rai": 1425
+    },
+    {
+        "year": 2563,
+        "crop": "ลำไย",
+        "province": "ตรัง",
+        "planted_area": 48,
+        "harvest_area": 42,
+        "yield_ton": 18,
+        "yield_per_rai": 429
+    },
+    {
+        "year": 2563,
+        "crop": "ลำไย",
+        "province": "นครศรีธรรมราช",
+        "planted_area": 15,
+        "harvest_area": 12,
+        "yield_ton": 20,
+        "yield_per_rai": 1667
+    },
+    {
+        "year": 2563,
+        "crop": "ลำไย",
+        "province": "พัทลุง",
+        "planted_area": 54,
+        "harvest_area": 15,
+        "yield_ton": 7.44,
+        "yield_per_rai": 496
+    },
+    {
+        "year": 2563,
+        "crop": "ลำไย",
+        "province": "สงขลา",
+        "planted_area": 184,
+        "harvest_area": 182,
+        "yield_ton": 101.91,
+        "yield_per_rai": 560
+    },
+    {
+        "year": 2563,
+        "crop": "ลำไย",
+        "province": "สตูล",
+        "planted_area": 20,
+        "harvest_area": 20,
+        "yield_ton": 7.14,
+        "yield_per_rai": 357
+    },
+    {
+        "year": 2563,
+        "crop": "ลำไย",
+        "province": "ปัตตานี",
+        "planted_area": 4,
+        "harvest_area": 4,
+        "yield_ton": 0.94,
+        "yield_per_rai": 235
+    },
+    {
+        "year": 2563,
+        "crop": "ลำไย",
+        "province": "ยะลา",
+        "planted_area": 14,
+        "harvest_area": 4,
+        "yield_ton": 1.85,
+        "yield_per_rai": 462
+    },
+    {
+        "year": 2563,
+        "crop": "ลำไย",
+        "province": "นราธิวาส",
+        "planted_area": 13,
+        "harvest_area": 0,
+        "yield_ton": 0,
+        "yield_per_rai": 0
+    },
+    {
+        "year": 2564,
+        "crop": "ลำไย",
+        "province": "เชียงราย",
+        "planted_area": 245853,
+        "harvest_area": 236239,
+        "yield_ton": 108598,
+        "yield_per_rai": 460
+    },
+    {
+        "year": 2564,
+        "crop": "ลำไย",
+        "province": "พะเยา",
+        "planted_area": 97823,
+        "harvest_area": 85303,
+        "yield_ton": 40605,
+        "yield_per_rai": 476
+    },
+    {
+        "year": 2564,
+        "crop": "ลำไย",
+        "province": "ลำปาง",
+        "planted_area": 24047,
+        "harvest_area": 19395,
+        "yield_ton": 7148,
+        "yield_per_rai": 369
+    },
+    {
+        "year": 2564,
+        "crop": "ลำไย",
+        "province": "ลำพูน",
+        "planted_area": 362298,
+        "harvest_area": 325972,
+        "yield_ton": 335903,
+        "yield_per_rai": 1030
+    },
+    {
+        "year": 2564,
+        "crop": "ลำไย",
+        "province": "เชียงใหม่",
+        "planted_area": 455291,
+        "harvest_area": 430381,
+        "yield_ton": 397852,
+        "yield_per_rai": 924
+    },
+    {
+        "year": 2564,
+        "crop": "ลำไย",
+        "province": "แม่ฮ่องสอน",
+        "planted_area": 1279,
+        "harvest_area": 902,
+        "yield_ton": 562,
+        "yield_per_rai": 623
+    },
+    {
+        "year": 2564,
+        "crop": "ลำไย",
+        "province": "ตาก",
+        "planted_area": 29991,
+        "harvest_area": 29761,
+        "yield_ton": 20594,
+        "yield_per_rai": 692
+    },
+    {
+        "year": 2564,
+        "crop": "ลำไย",
+        "province": "กำแพงเพชร",
+        "planted_area": 13221,
+        "harvest_area": 12471,
+        "yield_ton": 10268,
+        "yield_per_rai": 823
+    },
+    {
+        "year": 2564,
+        "crop": "ลำไย",
+        "province": "สุโขทัย",
+        "planted_area": 1545,
+        "harvest_area": 1431,
+        "yield_ton": 555,
+        "yield_per_rai": 388
+    },
+    {
+        "year": 2564,
+        "crop": "ลำไย",
+        "province": "แพร่",
+        "planted_area": 3736,
+        "harvest_area": 3667,
+        "yield_ton": 1407,
+        "yield_per_rai": 384
+    },
+    {
+        "year": 2564,
+        "crop": "ลำไย",
+        "province": "น่าน",
+        "planted_area": 64646,
+        "harvest_area": 63238,
+        "yield_ton": 28464,
+        "yield_per_rai": 450
+    },
+    {
+        "year": 2564,
+        "crop": "ลำไย",
+        "province": "อุตรดิตถ์",
+        "planted_area": 2368,
+        "harvest_area": 2289,
+        "yield_ton": 525,
+        "yield_per_rai": 229
+    },
+    {
+        "year": 2564,
+        "crop": "ลำไย",
+        "province": "พิษณุโลก",
+        "planted_area": 2698,
+        "harvest_area": 2657,
+        "yield_ton": 1179.6,
+        "yield_per_rai": 444
+    },
+    {
+        "year": 2564,
+        "crop": "ลำไย",
+        "province": "พิจิตร",
+        "planted_area": 281,
+        "harvest_area": 279,
+        "yield_ton": 175.97,
+        "yield_per_rai": 631
+    },
+    {
+        "year": 2564,
+        "crop": "ลำไย",
+        "province": "นครสวรรค์",
+        "planted_area": 489,
+        "harvest_area": 462,
+        "yield_ton": 331,
+        "yield_per_rai": 716
+    },
+    {
+        "year": 2564,
+        "crop": "ลำไย",
+        "province": "อุทัยธานี",
+        "planted_area": 276,
+        "harvest_area": 209,
+        "yield_ton": 162,
+        "yield_per_rai": 775
+    },
+    {
+        "year": 2564,
+        "crop": "ลำไย",
+        "province": "เพชรบูรณ์",
+        "planted_area": 947,
+        "harvest_area": 710,
+        "yield_ton": 490,
+        "yield_per_rai": 690
+    },
+    {
+        "year": 2564,
+        "crop": "ลำไย",
+        "province": "เลย",
+        "planted_area": 15432,
+        "harvest_area": 15429,
+        "yield_ton": 10461,
+        "yield_per_rai": 678
+    },
+    {
+        "year": 2564,
+        "crop": "ลำไย",
+        "province": "หนองบัวลำภู",
+        "planted_area": 1680,
+        "harvest_area": 1660,
+        "yield_ton": 1020,
+        "yield_per_rai": 614
+    },
+    {
+        "year": 2564,
+        "crop": "ลำไย",
+        "province": "อุดรธานี",
+        "planted_area": 526,
+        "harvest_area": 496,
+        "yield_ton": 227.41,
+        "yield_per_rai": 458
+    },
+    {
+        "year": 2564,
+        "crop": "ลำไย",
+        "province": "หนองคาย",
+        "planted_area": 771,
+        "harvest_area": 759,
+        "yield_ton": 592,
+        "yield_per_rai": 780
+    },
+    {
+        "year": 2564,
+        "crop": "ลำไย",
+        "province": "บึงกาฬ",
+        "planted_area": 76,
+        "harvest_area": 67,
+        "yield_ton": 39.3,
+        "yield_per_rai": 587
+    },
+    {
+        "year": 2564,
+        "crop": "ลำไย",
+        "province": "สกลนคร",
+        "planted_area": 1592,
+        "harvest_area": 1556,
+        "yield_ton": 1075,
+        "yield_per_rai": 691
+    },
+    {
+        "year": 2564,
+        "crop": "ลำไย",
+        "province": "นครพนม",
+        "planted_area": 66,
+        "harvest_area": 41,
+        "yield_ton": 21.98,
+        "yield_per_rai": 536
+    },
+    {
+        "year": 2564,
+        "crop": "ลำไย",
+        "province": "มุกดาหาร",
+        "planted_area": 115,
+        "harvest_area": 46,
+        "yield_ton": 26.98,
+        "yield_per_rai": 587
+    },
+    {
+        "year": 2564,
+        "crop": "ลำไย",
+        "province": "ยโสธร",
+        "planted_area": 152,
+        "harvest_area": 87,
+        "yield_ton": 65.98,
+        "yield_per_rai": 758
+    },
+    {
+        "year": 2564,
+        "crop": "ลำไย",
+        "province": "อำนาจเจริญ",
+        "planted_area": 390,
+        "harvest_area": 318,
+        "yield_ton": 260.98,
+        "yield_per_rai": 821
+    },
+    {
+        "year": 2564,
+        "crop": "ลำไย",
+        "province": "อุบลราชธานี",
+        "planted_area": 1585,
+        "harvest_area": 1117,
+        "yield_ton": 849,
+        "yield_per_rai": 760
+    },
+    {
+        "year": 2564,
+        "crop": "ลำไย",
+        "province": "ศรีสะเกษ",
+        "planted_area": 725,
+        "harvest_area": 692,
+        "yield_ton": 680,
+        "yield_per_rai": 983
+    },
+    {
+        "year": 2564,
+        "crop": "ลำไย",
+        "province": "สุรินทร์",
+        "planted_area": 164,
+        "harvest_area": 136,
+        "yield_ton": 167.22,
+        "yield_per_rai": 1230
+    },
+    {
+        "year": 2564,
+        "crop": "ลำไย",
+        "province": "บุรีรัมย์",
+        "planted_area": 3665,
+        "harvest_area": 3248,
+        "yield_ton": 3377.84,
+        "yield_per_rai": 1040
+    },
+    {
+        "year": 2564,
+        "crop": "ลำไย",
+        "province": "ร้อยเอ็ด",
+        "planted_area": 72,
+        "harvest_area": 69,
+        "yield_ton": 48,
+        "yield_per_rai": 696
+    },
+    {
+        "year": 2564,
+        "crop": "ลำไย",
+        "province": "กาฬสินธุ์",
+        "planted_area": 349,
+        "harvest_area": 269,
+        "yield_ton": 158,
+        "yield_per_rai": 587
+    },
+    {
+        "year": 2564,
+        "crop": "ลำไย",
+        "province": "ขอนแก่น",
+        "planted_area": 848,
+        "harvest_area": 805,
+        "yield_ton": 461.71,
+        "yield_per_rai": 574
+    },
+    {
+        "year": 2564,
+        "crop": "ลำไย",
+        "province": "ชัยภูมิ",
+        "planted_area": 2794,
+        "harvest_area": 2765,
+        "yield_ton": 1711,
+        "yield_per_rai": 619
+    },
+    {
+        "year": 2564,
+        "crop": "ลำไย",
+        "province": "นครราชสีมา",
+        "planted_area": 2761,
+        "harvest_area": 2090,
+        "yield_ton": 1891,
+        "yield_per_rai": 905
+    },
+    {
+        "year": 2564,
+        "crop": "ลำไย",
+        "province": "สระบุรี",
+        "planted_area": 437,
+        "harvest_area": 357,
+        "yield_ton": 244.22,
+        "yield_per_rai": 684
+    },
+    {
+        "year": 2564,
+        "crop": "ลำไย",
+        "province": "ลพบุรี",
+        "planted_area": 390,
+        "harvest_area": 374,
+        "yield_ton": 110,
+        "yield_per_rai": 294
+    },
+    {
+        "year": 2564,
+        "crop": "ลำไย",
+        "province": "สุพรรณบุรี",
+        "planted_area": 444,
+        "harvest_area": 409,
+        "yield_ton": 294,
+        "yield_per_rai": 719
+    },
+    {
+        "year": 2564,
+        "crop": "ลำไย",
+        "province": "พระนครศรีอยุธยา",
+        "planted_area": 15,
+        "harvest_area": 12,
+        "yield_ton": 0.65,
+        "yield_per_rai": 54
+    },
+    {
+        "year": 2564,
+        "crop": "ลำไย",
+        "province": "นนทบุรี",
+        "planted_area": 29,
+        "harvest_area": 21,
+        "yield_ton": 5.07,
+        "yield_per_rai": 241
+    },
+    {
+        "year": 2564,
+        "crop": "ลำไย",
+        "province": "กรุงเทพมหานคร",
+        "planted_area": 65,
+        "harvest_area": 58,
+        "yield_ton": 47.41,
+        "yield_per_rai": 817
+    },
+    {
+        "year": 2564,
+        "crop": "ลำไย",
+        "province": "ปทุมธานี",
+        "planted_area": 422,
+        "harvest_area": 404,
+        "yield_ton": 355.73,
+        "yield_per_rai": 881
+    },
+    {
+        "year": 2564,
+        "crop": "ลำไย",
+        "province": "นครนายก",
+        "planted_area": 90,
+        "harvest_area": 60,
+        "yield_ton": 60,
+        "yield_per_rai": 1000
+    },
+    {
+        "year": 2564,
+        "crop": "ลำไย",
+        "province": "ปราจีนบุรี",
+        "planted_area": 2123,
+        "harvest_area": 2081,
+        "yield_ton": 2570,
+        "yield_per_rai": 1235
+    },
+    {
+        "year": 2564,
+        "crop": "ลำไย",
+        "province": "ฉะเชิงเทรา",
+        "planted_area": 3691,
+        "harvest_area": 3652,
+        "yield_ton": 4464,
+        "yield_per_rai": 1222
+    },
+    {
+        "year": 2564,
+        "crop": "ลำไย",
+        "province": "สระแก้ว",
+        "planted_area": 82593,
+        "harvest_area": 80237,
+        "yield_ton": 97613,
+        "yield_per_rai": 1217
+    },
+    {
+        "year": 2564,
+        "crop": "ลำไย",
+        "province": "จันทบุรี",
+        "planted_area": 295940,
+        "harvest_area": 294935,
+        "yield_ton": 460947,
+        "yield_per_rai": 1563
+    },
+    {
+        "year": 2564,
+        "crop": "ลำไย",
+        "province": "ตราด",
+        "planted_area": 2421,
+        "harvest_area": 2403,
+        "yield_ton": 2603,
+        "yield_per_rai": 1083
+    },
+    {
+        "year": 2564,
+        "crop": "ลำไย",
+        "province": "ระยอง",
+        "planted_area": 2883,
+        "harvest_area": 2882,
+        "yield_ton": 2138,
+        "yield_per_rai": 742
+    },
+    {
+        "year": 2564,
+        "crop": "ลำไย",
+        "province": "ชลบุรี",
+        "planted_area": 1531,
+        "harvest_area": 1213,
+        "yield_ton": 1161.88,
+        "yield_per_rai": 958
+    },
+    {
+        "year": 2564,
+        "crop": "ลำไย",
+        "province": "สมุทรสาคร",
+        "planted_area": 4693,
+        "harvest_area": 4291,
+        "yield_ton": 6514,
+        "yield_per_rai": 1518
+    },
+    {
+        "year": 2564,
+        "crop": "ลำไย",
+        "province": "นครปฐม",
+        "planted_area": 3313,
+        "harvest_area": 2770,
+        "yield_ton": 3506,
+        "yield_per_rai": 1266
+    },
+    {
+        "year": 2564,
+        "crop": "ลำไย",
+        "province": "กาญจนบุรี",
+        "planted_area": 1301,
+        "harvest_area": 1160,
+        "yield_ton": 995,
+        "yield_per_rai": 858
+    },
+    {
+        "year": 2564,
+        "crop": "ลำไย",
+        "province": "ราชบุรี",
+        "planted_area": 4795,
+        "harvest_area": 4624,
+        "yield_ton": 4853,
+        "yield_per_rai": 1050
+    },
+    {
+        "year": 2564,
+        "crop": "ลำไย",
+        "province": "เพชรบุรี",
+        "planted_area": 683,
+        "harvest_area": 607,
+        "yield_ton": 382,
+        "yield_per_rai": 629
+    },
+    {
+        "year": 2564,
+        "crop": "ลำไย",
+        "province": "ประจวบคีรีขันธ์",
+        "planted_area": 204,
+        "harvest_area": 189,
+        "yield_ton": 61.6,
+        "yield_per_rai": 326
+    },
+    {
+        "year": 2564,
+        "crop": "ลำไย",
+        "province": "ชุมพร",
+        "planted_area": 21,
+        "harvest_area": 20,
+        "yield_ton": 11.5,
+        "yield_per_rai": 575
+    },
+    {
+        "year": 2564,
+        "crop": "ลำไย",
+        "province": "ระนอง",
+        "planted_area": 1,
+        "harvest_area": 0,
+        "yield_ton": 0,
+        "yield_per_rai": 0
+    },
+    {
+        "year": 2564,
+        "crop": "ลำไย",
+        "province": "สุราษฎร์ธานี",
+        "planted_area": 63,
+        "harvest_area": 48,
+        "yield_ton": 20.84,
+        "yield_per_rai": 434
+    },
+    {
+        "year": 2564,
+        "crop": "ลำไย",
+        "province": "พังงา",
+        "planted_area": 1,
+        "harvest_area": 1,
+        "yield_ton": 0,
+        "yield_per_rai": 0
+    },
+    {
+        "year": 2564,
+        "crop": "ลำไย",
+        "province": "ภูเก็ต",
+        "planted_area": 5,
+        "harvest_area": 5,
+        "yield_ton": 2,
+        "yield_per_rai": 400
+    },
+    {
+        "year": 2564,
+        "crop": "ลำไย",
+        "province": "กระบี่",
+        "planted_area": 5,
+        "harvest_area": 2,
+        "yield_ton": 0.96,
+        "yield_per_rai": 480
+    },
+    {
+        "year": 2564,
+        "crop": "ลำไย",
+        "province": "ตรัง",
+        "planted_area": 48,
+        "harvest_area": 46,
+        "yield_ton": 25.59,
+        "yield_per_rai": 556
+    },
+    {
+        "year": 2564,
+        "crop": "ลำไย",
+        "province": "นครศรีธรรมราช",
+        "planted_area": 15,
+        "harvest_area": 13,
+        "yield_ton": 8.04,
+        "yield_per_rai": 618
+    },
+    {
+        "year": 2564,
+        "crop": "ลำไย",
+        "province": "พัทลุง",
+        "planted_area": 45,
+        "harvest_area": 22,
+        "yield_ton": 10,
+        "yield_per_rai": 455
+    },
+    {
+        "year": 2564,
+        "crop": "ลำไย",
+        "province": "สงขลา",
+        "planted_area": 184,
+        "harvest_area": 183,
+        "yield_ton": 115.76,
+        "yield_per_rai": 633
+    },
+    {
+        "year": 2564,
+        "crop": "ลำไย",
+        "province": "สตูล",
+        "planted_area": 18,
+        "harvest_area": 11,
+        "yield_ton": 4.25,
+        "yield_per_rai": 386
+    },
+    {
+        "year": 2564,
+        "crop": "ลำไย",
+        "province": "ปัตตานี",
+        "planted_area": 2,
+        "harvest_area": 1,
+        "yield_ton": 0.9,
+        "yield_per_rai": 900
+    },
+    {
+        "year": 2564,
+        "crop": "ลำไย",
+        "province": "ยะลา",
+        "planted_area": 14,
+        "harvest_area": 14,
+        "yield_ton": 7,
+        "yield_per_rai": 500
+    },
+    {
+        "year": 2564,
+        "crop": "ลำไย",
+        "province": "นราธิวาส",
+        "planted_area": 5,
+        "harvest_area": 3,
+        "yield_ton": 0.99,
+        "yield_per_rai": 330
+    },
+    {
+        "year": 2565,
+        "crop": "ลำไย",
+        "province": "เชียงราย",
+        "planted_area": 245311,
+        "harvest_area": 242598,
+        "yield_ton": 109796,
+        "yield_per_rai": 453
+    },
+    {
+        "year": 2565,
+        "crop": "ลำไย",
+        "province": "พะเยา",
+        "planted_area": 96504,
+        "harvest_area": 94406,
+        "yield_ton": 43309,
+        "yield_per_rai": 459
+    },
+    {
+        "year": 2565,
+        "crop": "ลำไย",
+        "province": "ลำปาง",
+        "planted_area": 24047,
+        "harvest_area": 22502,
+        "yield_ton": 9995,
+        "yield_per_rai": 444
+    },
+    {
+        "year": 2565,
+        "crop": "ลำไย",
+        "province": "ลำพูน",
+        "planted_area": 367943,
+        "harvest_area": 346393,
+        "yield_ton": 366807,
+        "yield_per_rai": 1059
+    },
+    {
+        "year": 2565,
+        "crop": "ลำไย",
+        "province": "เชียงใหม่",
+        "planted_area": 456444,
+        "harvest_area": 444767,
+        "yield_ton": 439230,
+        "yield_per_rai": 988
+    },
+    {
+        "year": 2565,
+        "crop": "ลำไย",
+        "province": "แม่ฮ่องสอน",
+        "planted_area": 1321,
+        "harvest_area": 1110,
+        "yield_ton": 780,
+        "yield_per_rai": 703
+    },
+    {
+        "year": 2565,
+        "crop": "ลำไย",
+        "province": "ตาก",
+        "planted_area": 30410,
+        "harvest_area": 29812,
+        "yield_ton": 19844,
+        "yield_per_rai": 666
+    },
+    {
+        "year": 2565,
+        "crop": "ลำไย",
+        "province": "กำแพงเพชร",
+        "planted_area": 12084,
+        "harvest_area": 11360,
+        "yield_ton": 9962,
+        "yield_per_rai": 877
+    },
+    {
+        "year": 2565,
+        "crop": "ลำไย",
+        "province": "สุโขทัย",
+        "planted_area": 1510,
+        "harvest_area": 1460,
+        "yield_ton": 660,
+        "yield_per_rai": 452
+    },
+    {
+        "year": 2565,
+        "crop": "ลำไย",
+        "province": "แพร่",
+        "planted_area": 3732,
+        "harvest_area": 3682,
+        "yield_ton": 1413,
+        "yield_per_rai": 384
+    },
+    {
+        "year": 2565,
+        "crop": "ลำไย",
+        "province": "น่าน",
+        "planted_area": 64366,
+        "harvest_area": 63822,
+        "yield_ton": 33514,
+        "yield_per_rai": 525
+    },
+    {
+        "year": 2565,
+        "crop": "ลำไย",
+        "province": "อุตรดิตถ์",
+        "planted_area": 2339,
+        "harvest_area": 2322,
+        "yield_ton": 560,
+        "yield_per_rai": 241
+    },
+    {
+        "year": 2565,
+        "crop": "ลำไย",
+        "province": "พิษณุโลก",
+        "planted_area": 2689,
+        "harvest_area": 2667,
+        "yield_ton": 1264,
+        "yield_per_rai": 474
+    },
+    {
+        "year": 2565,
+        "crop": "ลำไย",
+        "province": "พิจิตร",
+        "planted_area": 286,
+        "harvest_area": 278,
+        "yield_ton": 207,
+        "yield_per_rai": 743
+    },
+    {
+        "year": 2565,
+        "crop": "ลำไย",
+        "province": "นครสวรรค์",
+        "planted_area": 550,
+        "harvest_area": 471,
+        "yield_ton": 311,
+        "yield_per_rai": 661
+    },
+    {
+        "year": 2565,
+        "crop": "ลำไย",
+        "province": "อุทัยธานี",
+        "planted_area": 275,
+        "harvest_area": 244,
+        "yield_ton": 176,
+        "yield_per_rai": 721
+    },
+    {
+        "year": 2565,
+        "crop": "ลำไย",
+        "province": "เพชรบูรณ์",
+        "planted_area": 1012,
+        "harvest_area": 747,
+        "yield_ton": 536,
+        "yield_per_rai": 716
+    },
+    {
+        "year": 2565,
+        "crop": "ลำไย",
+        "province": "เลย",
+        "planted_area": 14881,
+        "harvest_area": 14858,
+        "yield_ton": 8427,
+        "yield_per_rai": 567
+    },
+    {
+        "year": 2565,
+        "crop": "ลำไย",
+        "province": "หนองบัวลำภู",
+        "planted_area": 1677,
+        "harvest_area": 1665,
+        "yield_ton": 914,
+        "yield_per_rai": 549
+    },
+    {
+        "year": 2565,
+        "crop": "ลำไย",
+        "province": "อุดรธานี",
+        "planted_area": 527,
+        "harvest_area": 510,
+        "yield_ton": 217,
+        "yield_per_rai": 426
+    },
+    {
+        "year": 2565,
+        "crop": "ลำไย",
+        "province": "หนองคาย",
+        "planted_area": 837,
+        "harvest_area": 749,
+        "yield_ton": 571,
+        "yield_per_rai": 762
+    },
+    {
+        "year": 2565,
+        "crop": "ลำไย",
+        "province": "บึงกาฬ",
+        "planted_area": 90,
+        "harvest_area": 67,
+        "yield_ton": 36,
+        "yield_per_rai": 543
+    },
+    {
+        "year": 2565,
+        "crop": "ลำไย",
+        "province": "สกลนคร",
+        "planted_area": 1612,
+        "harvest_area": 1567,
+        "yield_ton": 975,
+        "yield_per_rai": 622
+    },
+    {
+        "year": 2565,
+        "crop": "ลำไย",
+        "province": "นครพนม",
+        "planted_area": 69,
+        "harvest_area": 62,
+        "yield_ton": 27,
+        "yield_per_rai": 436
+    },
+    {
+        "year": 2565,
+        "crop": "ลำไย",
+        "province": "มุกดาหาร",
+        "planted_area": 115,
+        "harvest_area": 85,
+        "yield_ton": 43,
+        "yield_per_rai": 512
+    },
+    {
+        "year": 2565,
+        "crop": "ลำไย",
+        "province": "ยโสธร",
+        "planted_area": 153,
+        "harvest_area": 88,
+        "yield_ton": 63,
+        "yield_per_rai": 717
+    },
+    {
+        "year": 2565,
+        "crop": "ลำไย",
+        "province": "อำนาจเจริญ",
+        "planted_area": 406,
+        "harvest_area": 311,
+        "yield_ton": 224,
+        "yield_per_rai": 721
+    },
+    {
+        "year": 2565,
+        "crop": "ลำไย",
+        "province": "อุบลราชธานี",
+        "planted_area": 1513,
+        "harvest_area": 1325,
+        "yield_ton": 1004,
+        "yield_per_rai": 758
+    },
+    {
+        "year": 2565,
+        "crop": "ลำไย",
+        "province": "ศรีสะเกษ",
+        "planted_area": 725,
+        "harvest_area": 694,
+        "yield_ton": 670,
+        "yield_per_rai": 966
+    },
+    {
+        "year": 2565,
+        "crop": "ลำไย",
+        "province": "สุรินทร์",
+        "planted_area": 172,
+        "harvest_area": 142,
+        "yield_ton": 155,
+        "yield_per_rai": 1089
+    },
+    {
+        "year": 2565,
+        "crop": "ลำไย",
+        "province": "บุรีรัมย์",
+        "planted_area": 3710,
+        "harvest_area": 3350,
+        "yield_ton": 3171,
+        "yield_per_rai": 946
+    },
+    {
+        "year": 2565,
+        "crop": "ลำไย",
+        "province": "ร้อยเอ็ด",
+        "planted_area": 72,
+        "harvest_area": 69,
+        "yield_ton": 30,
+        "yield_per_rai": 429
+    },
+    {
+        "year": 2565,
+        "crop": "ลำไย",
+        "province": "กาฬสินธุ์",
+        "planted_area": 349,
+        "harvest_area": 316,
+        "yield_ton": 175,
+        "yield_per_rai": 553
+    },
+    {
+        "year": 2565,
+        "crop": "ลำไย",
+        "province": "ขอนแก่น",
+        "planted_area": 848,
+        "harvest_area": 848,
+        "yield_ton": 391,
+        "yield_per_rai": 461
+    },
+    {
+        "year": 2565,
+        "crop": "ลำไย",
+        "province": "ชัยภูมิ",
+        "planted_area": 2579,
+        "harvest_area": 2552,
+        "yield_ton": 1533,
+        "yield_per_rai": 601
+    },
+    {
+        "year": 2565,
+        "crop": "ลำไย",
+        "province": "นครราชสีมา",
+        "planted_area": 2520,
+        "harvest_area": 2389,
+        "yield_ton": 1965,
+        "yield_per_rai": 823
+    },
+    {
+        "year": 2565,
+        "crop": "ลำไย",
+        "province": "สระบุรี",
+        "planted_area": 426,
+        "harvest_area": 390,
+        "yield_ton": 238,
+        "yield_per_rai": 611
+    },
+    {
+        "year": 2565,
+        "crop": "ลำไย",
+        "province": "ลพบุรี",
+        "planted_area": 390,
+        "harvest_area": 375,
+        "yield_ton": 113,
+        "yield_per_rai": 302
+    },
+    {
+        "year": 2565,
+        "crop": "ลำไย",
+        "province": "สุพรรณบุรี",
+        "planted_area": 423,
+        "harvest_area": 392,
+        "yield_ton": 281,
+        "yield_per_rai": 717
+    },
+    {
+        "year": 2565,
+        "crop": "ลำไย",
+        "province": "พระนครศรีอยุธยา",
+        "planted_area": 16,
+        "harvest_area": 14,
+        "yield_ton": 0.44,
+        "yield_per_rai": 31
+    },
+    {
+        "year": 2565,
+        "crop": "ลำไย",
+        "province": "นนทบุรี",
+        "planted_area": 30,
+        "harvest_area": 25,
+        "yield_ton": 4.16,
+        "yield_per_rai": 166
+    },
+    {
+        "year": 2565,
+        "crop": "ลำไย",
+        "province": "กรุงเทพมหานคร",
+        "planted_area": 65,
+        "harvest_area": 61,
+        "yield_ton": 12,
+        "yield_per_rai": 195
+    },
+    {
+        "year": 2565,
+        "crop": "ลำไย",
+        "province": "ปทุมธานี",
+        "planted_area": 417,
+        "harvest_area": 409,
+        "yield_ton": 383,
+        "yield_per_rai": 937
+    },
+    {
+        "year": 2565,
+        "crop": "ลำไย",
+        "province": "นครนายก",
+        "planted_area": 90,
+        "harvest_area": 63,
+        "yield_ton": 59,
+        "yield_per_rai": 937
+    },
+    {
+        "year": 2565,
+        "crop": "ลำไย",
+        "province": "ปราจีนบุรี",
+        "planted_area": 2046,
+        "harvest_area": 2007,
+        "yield_ton": 2436,
+        "yield_per_rai": 1214
+    },
+    {
+        "year": 2565,
+        "crop": "ลำไย",
+        "province": "ฉะเชิงเทรา",
+        "planted_area": 3512,
+        "harvest_area": 3512,
+        "yield_ton": 2824,
+        "yield_per_rai": 804
+    },
+    {
+        "year": 2565,
+        "crop": "ลำไย",
+        "province": "สระแก้ว",
+        "planted_area": 80999,
+        "harvest_area": 80221,
+        "yield_ton": 83616,
+        "yield_per_rai": 1042
+    },
+    {
+        "year": 2565,
+        "crop": "ลำไย",
+        "province": "จันทบุรี",
+        "planted_area": 285699,
+        "harvest_area": 285489,
+        "yield_ton": 386819,
+        "yield_per_rai": 1355
+    },
+    {
+        "year": 2565,
+        "crop": "ลำไย",
+        "province": "ตราด",
+        "planted_area": 1676,
+        "harvest_area": 1675,
+        "yield_ton": 1112,
+        "yield_per_rai": 664
+    },
+    {
+        "year": 2565,
+        "crop": "ลำไย",
+        "province": "ระยอง",
+        "planted_area": 2218,
+        "harvest_area": 2218,
+        "yield_ton": 1327,
+        "yield_per_rai": 598
+    },
+    {
+        "year": 2565,
+        "crop": "ลำไย",
+        "province": "ชลบุรี",
+        "planted_area": 1522,
+        "harvest_area": 1518,
+        "yield_ton": 1154,
+        "yield_per_rai": 760
+    },
+    {
+        "year": 2565,
+        "crop": "ลำไย",
+        "province": "สมุทรสาคร",
+        "planted_area": 4647,
+        "harvest_area": 4457,
+        "yield_ton": 6219,
+        "yield_per_rai": 1395
+    },
+    {
+        "year": 2565,
+        "crop": "ลำไย",
+        "province": "นครปฐม",
+        "planted_area": 3251,
+        "harvest_area": 3183,
+        "yield_ton": 4029,
+        "yield_per_rai": 1266
+    },
+    {
+        "year": 2565,
+        "crop": "ลำไย",
+        "province": "กาญจนบุรี",
+        "planted_area": 1356,
+        "harvest_area": 1229,
+        "yield_ton": 1056,
+        "yield_per_rai": 859
+    },
+    {
+        "year": 2565,
+        "crop": "ลำไย",
+        "province": "ราชบุรี",
+        "planted_area": 4726,
+        "harvest_area": 4578,
+        "yield_ton": 4074,
+        "yield_per_rai": 890
+    },
+    {
+        "year": 2565,
+        "crop": "ลำไย",
+        "province": "เพชรบุรี",
+        "planted_area": 686,
+        "harvest_area": 611,
+        "yield_ton": 394,
+        "yield_per_rai": 645
+    },
+    {
+        "year": 2565,
+        "crop": "ลำไย",
+        "province": "ประจวบคีรีขันธ์",
+        "planted_area": 205,
+        "harvest_area": 189,
+        "yield_ton": 54,
+        "yield_per_rai": 284
+    },
+    {
+        "year": 2565,
+        "crop": "ลำไย",
+        "province": "ชุมพร",
+        "planted_area": 14,
+        "harvest_area": 10,
+        "yield_ton": 0.4,
+        "yield_per_rai": 40
+    },
+    {
+        "year": 2565,
+        "crop": "ลำไย",
+        "province": "ระนอง",
+        "planted_area": 1,
+        "harvest_area": 1,
+        "yield_ton": 0.15,
+        "yield_per_rai": 150
+    },
+    {
+        "year": 2565,
+        "crop": "ลำไย",
+        "province": "สุราษฎร์ธานี",
+        "planted_area": 63,
+        "harvest_area": 48,
+        "yield_ton": 2.83,
+        "yield_per_rai": 59
+    },
+    {
+        "year": 2565,
+        "crop": "ลำไย",
+        "province": "พังงา",
+        "planted_area": 1,
+        "harvest_area": 1,
+        "yield_ton": 0,
+        "yield_per_rai": 0
+    },
+    {
+        "year": 2565,
+        "crop": "ลำไย",
+        "province": "ภูเก็ต",
+        "planted_area": 5,
+        "harvest_area": 5,
+        "yield_ton": 0,
+        "yield_per_rai": 0
+    },
+    {
+        "year": 2565,
+        "crop": "ลำไย",
+        "province": "กระบี่",
+        "planted_area": 6,
+        "harvest_area": 5,
+        "yield_ton": 0.6,
+        "yield_per_rai": 120
+    },
+    {
+        "year": 2565,
+        "crop": "ลำไย",
+        "province": "ตรัง",
+        "planted_area": 48,
+        "harvest_area": 48,
+        "yield_ton": 23,
+        "yield_per_rai": 489
+    },
+    {
+        "year": 2565,
+        "crop": "ลำไย",
+        "province": "นครศรีธรรมราช",
+        "planted_area": 31,
+        "harvest_area": 15,
+        "yield_ton": 7.13,
+        "yield_per_rai": 475
+    },
+    {
+        "year": 2565,
+        "crop": "ลำไย",
+        "province": "พัทลุง",
+        "planted_area": 45,
+        "harvest_area": 29,
+        "yield_ton": 7.19,
+        "yield_per_rai": 248
+    },
+    {
+        "year": 2565,
+        "crop": "ลำไย",
+        "province": "สงขลา",
+        "planted_area": 176,
+        "harvest_area": 168,
+        "yield_ton": 149,
+        "yield_per_rai": 888
+    },
+    {
+        "year": 2565,
+        "crop": "ลำไย",
+        "province": "สตูล",
+        "planted_area": 16,
+        "harvest_area": 9,
+        "yield_ton": 1.41,
+        "yield_per_rai": 157
+    },
+    {
+        "year": 2565,
+        "crop": "ลำไย",
+        "province": "ปัตตานี",
+        "planted_area": 1,
+        "harvest_area": 1,
+        "yield_ton": 0,
+        "yield_per_rai": 0
+    },
+    {
+        "year": 2565,
+        "crop": "ลำไย",
+        "province": "ยะลา",
+        "planted_area": 14,
+        "harvest_area": 14,
+        "yield_ton": 5.98,
+        "yield_per_rai": 427
+    },
+    {
+        "year": 2565,
+        "crop": "ลำไย",
+        "province": "นราธิวาส",
+        "planted_area": 7,
+        "harvest_area": 3,
+        "yield_ton": 1.5,
+        "yield_per_rai": 500
+    },
+    {
+        "year": 2566,
+        "crop": "ลำไย",
+        "province": "เชียงราย",
+        "planted_area": 238128,
+        "harvest_area": 238074,
+        "yield_ton": 85264,
+        "yield_per_rai": 358
+    },
+    {
+        "year": 2566,
+        "crop": "ลำไย",
+        "province": "พะเยา",
+        "planted_area": 94311,
+        "harvest_area": 93651,
+        "yield_ton": 38186,
+        "yield_per_rai": 408
+    },
+    {
+        "year": 2566,
+        "crop": "ลำไย",
+        "province": "ลำปาง",
+        "planted_area": 24047,
+        "harvest_area": 22730,
+        "yield_ton": 6187,
+        "yield_per_rai": 272
+    },
+    {
+        "year": 2566,
+        "crop": "ลำไย",
+        "province": "ลำพูน",
+        "planted_area": 363626,
+        "harvest_area": 345830,
+        "yield_ton": 337639,
+        "yield_per_rai": 976
+    },
+    {
+        "year": 2566,
+        "crop": "ลำไย",
+        "province": "เชียงใหม่",
+        "planted_area": 453443,
+        "harvest_area": 448291,
+        "yield_ton": 431354,
+        "yield_per_rai": 962
+    },
+    {
+        "year": 2566,
+        "crop": "ลำไย",
+        "province": "แม่ฮ่องสอน",
+        "planted_area": 1318,
+        "harvest_area": 1273,
+        "yield_ton": 745,
+        "yield_per_rai": 585
+    },
+    {
+        "year": 2566,
+        "crop": "ลำไย",
+        "province": "ตาก",
+        "planted_area": 30212,
+        "harvest_area": 29776,
+        "yield_ton": 20387,
+        "yield_per_rai": 685
+    },
+    {
+        "year": 2566,
+        "crop": "ลำไย",
+        "province": "กำแพงเพชร",
+        "planted_area": 11680,
+        "harvest_area": 11229,
+        "yield_ton": 11784,
+        "yield_per_rai": 1049
+    },
+    {
+        "year": 2566,
+        "crop": "ลำไย",
+        "province": "สุโขทัย",
+        "planted_area": 1416,
+        "harvest_area": 1406,
+        "yield_ton": 596,
+        "yield_per_rai": 424
+    },
+    {
+        "year": 2566,
+        "crop": "ลำไย",
+        "province": "แพร่",
+        "planted_area": 3614,
+        "harvest_area": 3596,
+        "yield_ton": 1355,
+        "yield_per_rai": 377
+    },
+    {
+        "year": 2566,
+        "crop": "ลำไย",
+        "province": "น่าน",
+        "planted_area": 61963,
+        "harvest_area": 61801,
+        "yield_ton": 29101,
+        "yield_per_rai": 471
+    },
+    {
+        "year": 2566,
+        "crop": "ลำไย",
+        "province": "อุตรดิตถ์",
+        "planted_area": 2184,
+        "harvest_area": 2174,
+        "yield_ton": 472,
+        "yield_per_rai": 217
+    },
+    {
+        "year": 2566,
+        "crop": "ลำไย",
+        "province": "พิษณุโลก",
+        "planted_area": 2705,
+        "harvest_area": 2676,
+        "yield_ton": 1222,
+        "yield_per_rai": 457
+    },
+    {
+        "year": 2566,
+        "crop": "ลำไย",
+        "province": "พิจิตร",
+        "planted_area": 307,
+        "harvest_area": 250,
+        "yield_ton": 189,
+        "yield_per_rai": 756
+    },
+    {
+        "year": 2566,
+        "crop": "ลำไย",
+        "province": "นครสวรรค์",
+        "planted_area": 472,
+        "harvest_area": 392,
+        "yield_ton": 246,
+        "yield_per_rai": 628
+    },
+    {
+        "year": 2566,
+        "crop": "ลำไย",
+        "province": "อุทัยธานี",
+        "planted_area": 276,
+        "harvest_area": 250,
+        "yield_ton": 125,
+        "yield_per_rai": 500
+    },
+    {
+        "year": 2566,
+        "crop": "ลำไย",
+        "province": "เพชรบูรณ์",
+        "planted_area": 999,
+        "harvest_area": 827,
+        "yield_ton": 543,
+        "yield_per_rai": 657
+    },
+    {
+        "year": 2566,
+        "crop": "ลำไย",
+        "province": "เลย",
+        "planted_area": 14816,
+        "harvest_area": 14568,
+        "yield_ton": 4165,
+        "yield_per_rai": 286
+    },
+    {
+        "year": 2566,
+        "crop": "ลำไย",
+        "province": "หนองบัวลำภู",
+        "planted_area": 1638,
+        "harvest_area": 1624,
+        "yield_ton": 708,
+        "yield_per_rai": 436
+    },
+    {
+        "year": 2566,
+        "crop": "ลำไย",
+        "province": "อุดรธานี",
+        "planted_area": 482,
+        "harvest_area": 475,
+        "yield_ton": 81,
+        "yield_per_rai": 171
+    },
+    {
+        "year": 2566,
+        "crop": "ลำไย",
+        "province": "หนองคาย",
+        "planted_area": 733,
+        "harvest_area": 656,
+        "yield_ton": 163,
+        "yield_per_rai": 248
+    },
+    {
+        "year": 2566,
+        "crop": "ลำไย",
+        "province": "บึงกาฬ",
+        "planted_area": 104,
+        "harvest_area": 76,
+        "yield_ton": 26,
+        "yield_per_rai": 342
+    },
+    {
+        "year": 2566,
+        "crop": "ลำไย",
+        "province": "สกลนคร",
+        "planted_area": 1720,
+        "harvest_area": 1587,
+        "yield_ton": 775,
+        "yield_per_rai": 488
+    },
+    {
+        "year": 2566,
+        "crop": "ลำไย",
+        "province": "นครพนม",
+        "planted_area": 76,
+        "harvest_area": 66,
+        "yield_ton": 13,
+        "yield_per_rai": 197
+    },
+    {
+        "year": 2566,
+        "crop": "ลำไย",
+        "province": "มุกดาหาร",
+        "planted_area": 180,
+        "harvest_area": 115,
+        "yield_ton": 49,
+        "yield_per_rai": 426
+    },
+    {
+        "year": 2566,
+        "crop": "ลำไย",
+        "province": "ยโสธร",
+        "planted_area": 158,
+        "harvest_area": 152,
+        "yield_ton": 102,
+        "yield_per_rai": 671
+    },
+    {
+        "year": 2566,
+        "crop": "ลำไย",
+        "province": "อำนาจเจริญ",
+        "planted_area": 406,
+        "harvest_area": 381,
+        "yield_ton": 250,
+        "yield_per_rai": 656
+    },
+    {
+        "year": 2566,
+        "crop": "ลำไย",
+        "province": "อุบลราชธานี",
+        "planted_area": 1542,
+        "harvest_area": 1503,
+        "yield_ton": 1111,
+        "yield_per_rai": 739
+    },
+    {
+        "year": 2566,
+        "crop": "ลำไย",
+        "province": "ศรีสะเกษ",
+        "planted_area": 709,
+        "harvest_area": 682,
+        "yield_ton": 654,
+        "yield_per_rai": 959
+    },
+    {
+        "year": 2566,
+        "crop": "ลำไย",
+        "province": "สุรินทร์",
+        "planted_area": 178,
+        "harvest_area": 162,
+        "yield_ton": 164,
+        "yield_per_rai": 1012
+    },
+    {
+        "year": 2566,
+        "crop": "ลำไย",
+        "province": "บุรีรัมย์",
+        "planted_area": 3561,
+        "harvest_area": 3477,
+        "yield_ton": 3620,
+        "yield_per_rai": 1041
+    },
+    {
+        "year": 2566,
+        "crop": "ลำไย",
+        "province": "ร้อยเอ็ด",
+        "planted_area": 72,
+        "harvest_area": 70,
+        "yield_ton": 26,
+        "yield_per_rai": 371
+    },
+    {
+        "year": 2566,
+        "crop": "ลำไย",
+        "province": "กาฬสินธุ์",
+        "planted_area": 343,
+        "harvest_area": 308,
+        "yield_ton": 158,
+        "yield_per_rai": 513
+    },
+    {
+        "year": 2566,
+        "crop": "ลำไย",
+        "province": "ขอนแก่น",
+        "planted_area": 848,
+        "harvest_area": 848,
+        "yield_ton": 351,
+        "yield_per_rai": 414
+    },
+    {
+        "year": 2566,
+        "crop": "ลำไย",
+        "province": "ชัยภูมิ",
+        "planted_area": 2668,
+        "harvest_area": 2569,
+        "yield_ton": 1421,
+        "yield_per_rai": 553
+    },
+    {
+        "year": 2566,
+        "crop": "ลำไย",
+        "province": "นครราชสีมา",
+        "planted_area": 2522,
+        "harvest_area": 2430,
+        "yield_ton": 1759,
+        "yield_per_rai": 724
+    },
+    {
+        "year": 2566,
+        "crop": "ลำไย",
+        "province": "สระบุรี",
+        "planted_area": 430,
+        "harvest_area": 409,
+        "yield_ton": 268,
+        "yield_per_rai": 655
+    },
+    {
+        "year": 2566,
+        "crop": "ลำไย",
+        "province": "ลพบุรี",
+        "planted_area": 401,
+        "harvest_area": 364,
+        "yield_ton": 125,
+        "yield_per_rai": 343
+    },
+    {
+        "year": 2566,
+        "crop": "ลำไย",
+        "province": "สุพรรณบุรี",
+        "planted_area": 406,
+        "harvest_area": 378,
+        "yield_ton": 284,
+        "yield_per_rai": 751
+    },
+    {
+        "year": 2566,
+        "crop": "ลำไย",
+        "province": "พระนครศรีอยุธยา",
+        "planted_area": 14,
+        "harvest_area": 14,
+        "yield_ton": 0.3,
+        "yield_per_rai": 21
+    },
+    {
+        "year": 2566,
+        "crop": "ลำไย",
+        "province": "นนทบุรี",
+        "planted_area": 28,
+        "harvest_area": 20,
+        "yield_ton": 1.95,
+        "yield_per_rai": 98
+    },
+    {
+        "year": 2566,
+        "crop": "ลำไย",
+        "province": "กรุงเทพมหานคร",
+        "planted_area": 64,
+        "harvest_area": 63,
+        "yield_ton": 5.29,
+        "yield_per_rai": 84
+    },
+    {
+        "year": 2566,
+        "crop": "ลำไย",
+        "province": "ปทุมธานี",
+        "planted_area": 423,
+        "harvest_area": 411,
+        "yield_ton": 340,
+        "yield_per_rai": 827
+    },
+    {
+        "year": 2566,
+        "crop": "ลำไย",
+        "province": "นครนายก",
+        "planted_area": 90,
+        "harvest_area": 90,
+        "yield_ton": 74,
+        "yield_per_rai": 822
+    },
+    {
+        "year": 2566,
+        "crop": "ลำไย",
+        "province": "ปราจีนบุรี",
+        "planted_area": 1896,
+        "harvest_area": 1894,
+        "yield_ton": 2015,
+        "yield_per_rai": 1064
+    },
+    {
+        "year": 2566,
+        "crop": "ลำไย",
+        "province": "ฉะเชิงเทรา",
+        "planted_area": 3067,
+        "harvest_area": 3067,
+        "yield_ton": 2174,
+        "yield_per_rai": 709
+    },
+    {
+        "year": 2566,
+        "crop": "ลำไย",
+        "province": "สระแก้ว",
+        "planted_area": 78224,
+        "harvest_area": 78134,
+        "yield_ton": 67640,
+        "yield_per_rai": 866
+    },
+    {
+        "year": 2566,
+        "crop": "ลำไย",
+        "province": "จันทบุรี",
+        "planted_area": 267588,
+        "harvest_area": 266637,
+        "yield_ton": 342309,
+        "yield_per_rai": 1284
+    },
+    {
+        "year": 2566,
+        "crop": "ลำไย",
+        "province": "ตราด",
+        "planted_area": 1179,
+        "harvest_area": 1178,
+        "yield_ton": 572,
+        "yield_per_rai": 486
+    },
+    {
+        "year": 2566,
+        "crop": "ลำไย",
+        "province": "ระยอง",
+        "planted_area": 1711,
+        "harvest_area": 1711,
+        "yield_ton": 1441,
+        "yield_per_rai": 842
+    },
+    {
+        "year": 2566,
+        "crop": "ลำไย",
+        "province": "ชลบุรี",
+        "planted_area": 1506,
+        "harvest_area": 1506,
+        "yield_ton": 1212,
+        "yield_per_rai": 805
+    },
+    {
+        "year": 2566,
+        "crop": "ลำไย",
+        "province": "สมุทรสาคร",
+        "planted_area": 4637,
+        "harvest_area": 4621,
+        "yield_ton": 6168,
+        "yield_per_rai": 1335
+    },
+    {
+        "year": 2566,
+        "crop": "ลำไย",
+        "province": "นครปฐม",
+        "planted_area": 3230,
+        "harvest_area": 3181,
+        "yield_ton": 3884,
+        "yield_per_rai": 1221
+    },
+    {
+        "year": 2566,
+        "crop": "ลำไย",
+        "province": "กาญจนบุรี",
+        "planted_area": 1324,
+        "harvest_area": 1189,
+        "yield_ton": 1002,
+        "yield_per_rai": 843
+    },
+    {
+        "year": 2566,
+        "crop": "ลำไย",
+        "province": "ราชบุรี",
+        "planted_area": 4620,
+        "harvest_area": 4425,
+        "yield_ton": 3775,
+        "yield_per_rai": 853
+    },
+    {
+        "year": 2566,
+        "crop": "ลำไย",
+        "province": "เพชรบุรี",
+        "planted_area": 687,
+        "harvest_area": 589,
+        "yield_ton": 377,
+        "yield_per_rai": 640
+    },
+    {
+        "year": 2566,
+        "crop": "ลำไย",
+        "province": "ประจวบคีรีขันธ์",
+        "planted_area": 204,
+        "harvest_area": 189,
+        "yield_ton": 19,
+        "yield_per_rai": 101
+    },
+    {
+        "year": 2566,
+        "crop": "ลำไย",
+        "province": "ชุมพร",
+        "planted_area": 5,
+        "harvest_area": 4,
+        "yield_ton": 0,
+        "yield_per_rai": 0
+    },
+    {
+        "year": 2566,
+        "crop": "ลำไย",
+        "province": "ระนอง",
+        "planted_area": 1,
+        "harvest_area": 1,
+        "yield_ton": 0.12,
+        "yield_per_rai": 120
+    },
+    {
+        "year": 2566,
+        "crop": "ลำไย",
+        "province": "สุราษฎร์ธานี",
+        "planted_area": 54,
+        "harvest_area": 49,
+        "yield_ton": 4.18,
+        "yield_per_rai": 85
+    },
+    {
+        "year": 2566,
+        "crop": "ลำไย",
+        "province": "พังงา",
+        "planted_area": 1,
+        "harvest_area": 1,
+        "yield_ton": 0,
+        "yield_per_rai": 0
+    },
+    {
+        "year": 2566,
+        "crop": "ลำไย",
+        "province": "ภูเก็ต",
+        "planted_area": 8,
+        "harvest_area": 5,
+        "yield_ton": 1.88,
+        "yield_per_rai": 376
+    },
+    {
+        "year": 2566,
+        "crop": "ลำไย",
+        "province": "กระบี่",
+        "planted_area": 6,
+        "harvest_area": 5,
+        "yield_ton": 0.31,
+        "yield_per_rai": 62
+    },
+    {
+        "year": 2566,
+        "crop": "ลำไย",
+        "province": "ตรัง",
+        "planted_area": 23,
+        "harvest_area": 23,
+        "yield_ton": 15,
+        "yield_per_rai": 652
+    },
+    {
+        "year": 2566,
+        "crop": "ลำไย",
+        "province": "นครศรีธรรมราช",
+        "planted_area": 26,
+        "harvest_area": 14,
+        "yield_ton": 7.4,
+        "yield_per_rai": 529
+    },
+    {
+        "year": 2566,
+        "crop": "ลำไย",
+        "province": "พัทลุง",
+        "planted_area": 43,
+        "harvest_area": 25,
+        "yield_ton": 4.86,
+        "yield_per_rai": 194
+    },
+    {
+        "year": 2566,
+        "crop": "ลำไย",
+        "province": "สงขลา",
+        "planted_area": 176,
+        "harvest_area": 168,
+        "yield_ton": 156,
+        "yield_per_rai": 929
+    },
+    {
+        "year": 2566,
+        "crop": "ลำไย",
+        "province": "สตูล",
+        "planted_area": 11,
+        "harvest_area": 6,
+        "yield_ton": 1.1,
+        "yield_per_rai": 183
+    },
+    {
+        "year": 2566,
+        "crop": "ลำไย",
+        "province": "ปัตตานี",
+        "planted_area": 1,
+        "harvest_area": 1,
+        "yield_ton": 0,
+        "yield_per_rai": 0
+    },
+    {
+        "year": 2566,
+        "crop": "ลำไย",
+        "province": "ยะลา",
+        "planted_area": 14,
+        "harvest_area": 14,
+        "yield_ton": 3.84,
+        "yield_per_rai": 274
+    },
+    {
+        "year": 2566,
+        "crop": "ลำไย",
+        "province": "นราธิวาส",
+        "planted_area": 8,
+        "harvest_area": 3,
+        "yield_ton": 1.25,
+        "yield_per_rai": 417
+    },
+    {
+        "year": 2567,
+        "crop": "ลำไย",
+        "province": "เชียงราย",
+        "planted_area": 230799,
+        "harvest_area": 230749,
+        "yield_ton": 64419,
+        "yield_per_rai": 279
+    },
+    {
+        "year": 2567,
+        "crop": "ลำไย",
+        "province": "พะเยา",
+        "planted_area": 93205,
+        "harvest_area": 92684,
+        "yield_ton": 33994,
+        "yield_per_rai": 367
+    },
+    {
+        "year": 2567,
+        "crop": "ลำไย",
+        "province": "ลำปาง",
+        "planted_area": 22993,
+        "harvest_area": 22989,
+        "yield_ton": 5285,
+        "yield_per_rai": 230
+    },
+    {
+        "year": 2567,
+        "crop": "ลำไย",
+        "province": "ลำพูน",
+        "planted_area": 362202,
+        "harvest_area": 349381,
+        "yield_ton": 350591,
+        "yield_per_rai": 1003
+    },
+    {
+        "year": 2567,
+        "crop": "ลำไย",
+        "province": "เชียงใหม่",
+        "planted_area": 448801,
+        "harvest_area": 447039,
+        "yield_ton": 425240,
+        "yield_per_rai": 951
+    },
+    {
+        "year": 2567,
+        "crop": "ลำไย",
+        "province": "แม่ฮ่องสอน",
+        "planted_area": 1206,
+        "harvest_area": 1161,
+        "yield_ton": 446,
+        "yield_per_rai": 384
+    },
+    {
+        "year": 2567,
+        "crop": "ลำไย",
+        "province": "ตาก",
+        "planted_area": 29573,
+        "harvest_area": 29454,
+        "yield_ton": 38519,
+        "yield_per_rai": 1308
+    },
+    {
+        "year": 2567,
+        "crop": "ลำไย",
+        "province": "กำแพงเพชร",
+        "planted_area": 11774,
+        "harvest_area": 11504,
+        "yield_ton": 12204,
+        "yield_per_rai": 1061
+    },
+    {
+        "year": 2567,
+        "crop": "ลำไย",
+        "province": "สุโขทัย",
+        "planted_area": 1404,
+        "harvest_area": 1404,
+        "yield_ton": 498,
+        "yield_per_rai": 355
+    },
+    {
+        "year": 2567,
+        "crop": "ลำไย",
+        "province": "แพร่",
+        "planted_area": 2954,
+        "harvest_area": 2892,
+        "yield_ton": 735,
+        "yield_per_rai": 254
+    },
+    {
+        "year": 2567,
+        "crop": "ลำไย",
+        "province": "น่าน",
+        "planted_area": 60979,
+        "harvest_area": 60979,
+        "yield_ton": 28357,
+        "yield_per_rai": 465
+    },
+    {
+        "year": 2567,
+        "crop": "ลำไย",
+        "province": "อุตรดิตถ์",
+        "planted_area": 1635,
+        "harvest_area": 1634,
+        "yield_ton": 287,
+        "yield_per_rai": 176
+    },
+    {
+        "year": 2567,
+        "crop": "ลำไย",
+        "province": "พิษณุโลก",
+        "planted_area": 2581,
+        "harvest_area": 2571,
+        "yield_ton": 1105,
+        "yield_per_rai": 430
+    },
+    {
+        "year": 2567,
+        "crop": "ลำไย",
+        "province": "พิจิตร",
+        "planted_area": 312,
+        "harvest_area": 250,
+        "yield_ton": 214,
+        "yield_per_rai": 856
+    },
+    {
+        "year": 2567,
+        "crop": "ลำไย",
+        "province": "นครสวรรค์",
+        "planted_area": 439,
+        "harvest_area": 430,
+        "yield_ton": 361,
+        "yield_per_rai": 840
+    },
+    {
+        "year": 2567,
+        "crop": "ลำไย",
+        "province": "อุทัยธานี",
+        "planted_area": 256,
+        "harvest_area": 234,
+        "yield_ton": 122,
+        "yield_per_rai": 521
+    },
+    {
+        "year": 2567,
+        "crop": "ลำไย",
+        "province": "เพชรบูรณ์",
+        "planted_area": 852,
+        "harvest_area": 757,
+        "yield_ton": 450,
+        "yield_per_rai": 594
+    },
+    {
+        "year": 2567,
+        "crop": "ลำไย",
+        "province": "เลย",
+        "planted_area": 13738,
+        "harvest_area": 13479,
+        "yield_ton": 4751,
+        "yield_per_rai": 352
+    },
+    {
+        "year": 2567,
+        "crop": "ลำไย",
+        "province": "หนองบัวลำภู",
+        "planted_area": 1624,
+        "harvest_area": 1622,
+        "yield_ton": 524,
+        "yield_per_rai": 323
+    },
+    {
+        "year": 2567,
+        "crop": "ลำไย",
+        "province": "อุดรธานี",
+        "planted_area": 486,
+        "harvest_area": 468,
+        "yield_ton": 52,
+        "yield_per_rai": 111
+    },
+    {
+        "year": 2567,
+        "crop": "ลำไย",
+        "province": "หนองคาย",
+        "planted_area": 711,
+        "harvest_area": 707,
+        "yield_ton": 195,
+        "yield_per_rai": 276
+    },
+    {
+        "year": 2567,
+        "crop": "ลำไย",
+        "province": "บึงกาฬ",
+        "planted_area": 107,
+        "harvest_area": 90,
+        "yield_ton": 27,
+        "yield_per_rai": 300
+    },
+    {
+        "year": 2567,
+        "crop": "ลำไย",
+        "province": "สกลนคร",
+        "planted_area": 1707,
+        "harvest_area": 1586,
+        "yield_ton": 595,
+        "yield_per_rai": 375
+    },
+    {
+        "year": 2567,
+        "crop": "ลำไย",
+        "province": "นครพนม",
+        "planted_area": 69,
+        "harvest_area": 62,
+        "yield_ton": 11,
+        "yield_per_rai": 177
+    },
+    {
+        "year": 2567,
+        "crop": "ลำไย",
+        "province": "มุกดาหาร",
+        "planted_area": 171,
+        "harvest_area": 104,
+        "yield_ton": 35,
+        "yield_per_rai": 337
+    },
+    {
+        "year": 2567,
+        "crop": "ลำไย",
+        "province": "ยโสธร",
+        "planted_area": 200,
+        "harvest_area": 138,
+        "yield_ton": 60,
+        "yield_per_rai": 435
+    },
+    {
+        "year": 2567,
+        "crop": "ลำไย",
+        "province": "อำนาจเจริญ",
+        "planted_area": 396,
+        "harvest_area": 396,
+        "yield_ton": 178,
+        "yield_per_rai": 449
+    },
+    {
+        "year": 2567,
+        "crop": "ลำไย",
+        "province": "อุบลราชธานี",
+        "planted_area": 1552,
+        "harvest_area": 1480,
+        "yield_ton": 906,
+        "yield_per_rai": 612
+    },
+    {
+        "year": 2567,
+        "crop": "ลำไย",
+        "province": "ศรีสะเกษ",
+        "planted_area": 704,
+        "harvest_area": 699,
+        "yield_ton": 727,
+        "yield_per_rai": 1040
+    },
+    {
+        "year": 2567,
+        "crop": "ลำไย",
+        "province": "สุรินทร์",
+        "planted_area": 177,
+        "harvest_area": 161,
+        "yield_ton": 84,
+        "yield_per_rai": 522
+    },
+    {
+        "year": 2567,
+        "crop": "ลำไย",
+        "province": "บุรีรัมย์",
+        "planted_area": 3285,
+        "harvest_area": 3243,
+        "yield_ton": 2880,
+        "yield_per_rai": 888
+    },
+    {
+        "year": 2567,
+        "crop": "ลำไย",
+        "province": "ร้อยเอ็ด",
+        "planted_area": 62,
+        "harvest_area": 61,
+        "yield_ton": 14,
+        "yield_per_rai": 230
+    },
+    {
+        "year": 2567,
+        "crop": "ลำไย",
+        "province": "กาฬสินธุ์",
+        "planted_area": 337,
+        "harvest_area": 334,
+        "yield_ton": 136,
+        "yield_per_rai": 407
+    },
+    {
+        "year": 2567,
+        "crop": "ลำไย",
+        "province": "ขอนแก่น",
+        "planted_area": 844,
+        "harvest_area": 841,
+        "yield_ton": 248,
+        "yield_per_rai": 295
+    },
+    {
+        "year": 2567,
+        "crop": "ลำไย",
+        "province": "ชัยภูมิ",
+        "planted_area": 2591,
+        "harvest_area": 2489,
+        "yield_ton": 788,
+        "yield_per_rai": 317
+    },
+    {
+        "year": 2567,
+        "crop": "ลำไย",
+        "province": "นครราชสีมา",
+        "planted_area": 2370,
+        "harvest_area": 2297,
+        "yield_ton": 1122,
+        "yield_per_rai": 488
+    },
+    {
+        "year": 2567,
+        "crop": "ลำไย",
+        "province": "สระบุรี",
+        "planted_area": 393,
+        "harvest_area": 371,
+        "yield_ton": 188,
+        "yield_per_rai": 507
+    },
+    {
+        "year": 2567,
+        "crop": "ลำไย",
+        "province": "ลพบุรี",
+        "planted_area": 397,
+        "harvest_area": 367,
+        "yield_ton": 69,
+        "yield_per_rai": 188
+    },
+    {
+        "year": 2567,
+        "crop": "ลำไย",
+        "province": "สุพรรณบุรี",
+        "planted_area": 384,
+        "harvest_area": 334,
+        "yield_ton": 159,
+        "yield_per_rai": 476
+    },
+    {
+        "year": 2567,
+        "crop": "ลำไย",
+        "province": "พระนครศรีอยุธยา",
+        "planted_area": 14,
+        "harvest_area": 14,
+        "yield_ton": 0.20,
+        "yield_per_rai": 14
+    },
+    {
+        "year": 2567,
+        "crop": "ลำไย",
+        "province": "นนทบุรี",
+        "planted_area": 23,
+        "harvest_area": 16,
+        "yield_ton": 1.05,
+        "yield_per_rai": 66
+    },
+    {
+        "year": 2567,
+        "crop": "ลำไย",
+        "province": "กรุงเทพมหานคร",
+        "planted_area": 13,
+        "harvest_area": 13,
+        "yield_ton": 1.97,
+        "yield_per_rai": 152
+    },
+    {
+        "year": 2567,
+        "crop": "ลำไย",
+        "province": "ปทุมธานี",
+        "planted_area": 299,
+        "harvest_area": 292,
+        "yield_ton": 204,
+        "yield_per_rai": 699
+    },
+    {
+        "year": 2567,
+        "crop": "ลำไย",
+        "province": "นครนายก",
+        "planted_area": 64,
+        "harvest_area": 61,
+        "yield_ton": 52,
+        "yield_per_rai": 852
+    },
+    {
+        "year": 2567,
+        "crop": "ลำไย",
+        "province": "ปราจีนบุรี",
+        "planted_area": 1667,
+        "harvest_area": 1667,
+        "yield_ton": 1943,
+        "yield_per_rai": 1166
+    },
+    {
+        "year": 2567,
+        "crop": "ลำไย",
+        "province": "ฉะเชิงเทรา",
+        "planted_area": 2910,
+        "harvest_area": 2910,
+        "yield_ton": 2097,
+        "yield_per_rai": 721
+    },
+    {
+        "year": 2567,
+        "crop": "ลำไย",
+        "province": "สระแก้ว",
+        "planted_area": 77801,
+        "harvest_area": 77780,
+        "yield_ton": 74628,
+        "yield_per_rai": 959
+    },
+    {
+        "year": 2567,
+        "crop": "ลำไย",
+        "province": "จันทบุรี",
+        "planted_area": 258262,
+        "harvest_area": 257374,
+        "yield_ton": 349071,
+        "yield_per_rai": 1356
+    },
+    {
+        "year": 2567,
+        "crop": "ลำไย",
+        "province": "ตราด",
+        "planted_area": 488,
+        "harvest_area": 488,
+        "yield_ton": 282,
+        "yield_per_rai": 578
+    },
+    {
+        "year": 2567,
+        "crop": "ลำไย",
+        "province": "ระยอง",
+        "planted_area": 1552,
+        "harvest_area": 1552,
+        "yield_ton": 1060,
+        "yield_per_rai": 683
+    },
+    {
+        "year": 2567,
+        "crop": "ลำไย",
+        "province": "ชลบุรี",
+        "planted_area": 1358,
+        "harvest_area": 1356,
+        "yield_ton": 761,
+        "yield_per_rai": 561
+    },
+    {
+        "year": 2567,
+        "crop": "ลำไย",
+        "province": "สมุทรสาคร",
+        "planted_area": 4494,
+        "harvest_area": 4494,
+        "yield_ton": 5609,
+        "yield_per_rai": 1248
+    },
+    {
+        "year": 2567,
+        "crop": "ลำไย",
+        "province": "นครปฐม",
+        "planted_area": 2865,
+        "harvest_area": 2744,
+        "yield_ton": 3265,
+        "yield_per_rai": 1190
+    },
+    {
+        "year": 2567,
+        "crop": "ลำไย",
+        "province": "กาญจนบุรี",
+        "planted_area": 1294,
+        "harvest_area": 1205,
+        "yield_ton": 965,
+        "yield_per_rai": 801
+    },
+    {
+        "year": 2567,
+        "crop": "ลำไย",
+        "province": "ราชบุรี",
+        "planted_area": 4420,
+        "harvest_area": 4227,
+        "yield_ton": 3338,
+        "yield_per_rai": 790
+    },
+    {
+        "year": 2567,
+        "crop": "ลำไย",
+        "province": "เพชรบุรี",
+        "planted_area": 644,
+        "harvest_area": 564,
+        "yield_ton": 287,
+        "yield_per_rai": 509
+    },
+    {
+        "year": 2567,
+        "crop": "ลำไย",
+        "province": "ประจวบคีรีขันธ์",
+        "planted_area": 103,
+        "harvest_area": 86,
+        "yield_ton": 11,
+        "yield_per_rai": 128
+    },
+    {
+        "year": 2567,
+        "crop": "ลำไย",
+        "province": "ชุมพร",
+        "planted_area": 4,
+        "harvest_area": 3,
+        "yield_ton": 0.09,
+        "yield_per_rai": 30
+    },
+    {
+        "year": 2567,
+        "crop": "ลำไย",
+        "province": "ระนอง",
+        "planted_area": 1,
+        "harvest_area": 1,
+        "yield_ton": 0.08,
+        "yield_per_rai": 80
+    },
+    {
+        "year": 2567,
+        "crop": "ลำไย",
+        "province": "สุราษฎร์ธานี",
+        "planted_area": 30,
+        "harvest_area": 16,
+        "yield_ton": 0.98,
+        "yield_per_rai": 61
+    },
+    {
+        "year": 2567,
+        "crop": "ลำไย",
+        "province": "พังงา",
+        "planted_area": 1,
+        "harvest_area": 1,
+        "yield_ton": 0,
+        "yield_per_rai": 0
+    },
+    {
+        "year": 2567,
+        "crop": "ลำไย",
+        "province": "ภูเก็ต",
+        "planted_area": 8,
+        "harvest_area": 5,
+        "yield_ton": 1.2,
+        "yield_per_rai": 240
+    },
+    {
+        "year": 2567,
+        "crop": "ลำไย",
+        "province": "กระบี่",
+        "planted_area": 9,
+        "harvest_area": 6,
+        "yield_ton": 0.52,
+        "yield_per_rai": 87
+    },
+    {
+        "year": 2567,
+        "crop": "ลำไย",
+        "province": "ตรัง",
+        "planted_area": 37,
+        "harvest_area": 17,
+        "yield_ton": 20,
+        "yield_per_rai": 1176
+    },
+    {
+        "year": 2567,
+        "crop": "ลำไย",
+        "province": "นครศรีธรรมราช",
+        "planted_area": 24,
+        "harvest_area": 18,
+        "yield_ton": 7.55,
+        "yield_per_rai": 419
+    },
+    {
+        "year": 2567,
+        "crop": "ลำไย",
+        "province": "พัทลุง",
+        "planted_area": 43,
+        "harvest_area": 25,
+        "yield_ton": 5,
+        "yield_per_rai": 200
+    },
+    {
+        "year": 2567,
+        "crop": "ลำไย",
+        "province": "สงขลา",
+        "planted_area": 167,
+        "harvest_area": 159,
+        "yield_ton": 103,
+        "yield_per_rai": 648
+    },
+    {
+        "year": 2567,
+        "crop": "ลำไย",
+        "province": "สตูล",
+        "planted_area": 11,
+        "harvest_area": 6,
+        "yield_ton": 0,
+        "yield_per_rai": 0
+    },
+    {
+        "year": 2567,
+        "crop": "ลำไย",
+        "province": "ปัตตานี",
+        "planted_area": 1,
+        "harvest_area": 1,
+        "yield_ton": 0,
+        "yield_per_rai": 0
+    },
+    {
+        "year": 2567,
+        "crop": "ลำไย",
+        "province": "ยะลา",
+        "planted_area": 14,
+        "harvest_area": 14,
+        "yield_ton": 0,
+        "yield_per_rai": 0
+    },
+    {
+        "year": 2567,
+        "crop": "ลำไย",
+        "province": "นราธิวาส",
+        "planted_area": 8,
+        "harvest_area": 3,
+        "yield_ton": 1.89,
+        "yield_per_rai": 630
+    }
+]

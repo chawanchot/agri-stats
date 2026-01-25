@@ -1,0 +1,2117 @@
+[
+    {
+        "year": 2563,
+        "crop": "มันสำปะหลัง",
+        "province": "เชียงราย",
+        "planted_area": 33088,
+        "harvest_area": 31598,
+        "yield_ton": 81250,
+        "yield_per_rai": 2571
+    },
+    {
+        "year": 2563,
+        "crop": "มันสำปะหลัง",
+        "province": "พะเยา",
+        "planted_area": 21638,
+        "harvest_area": 21112,
+        "yield_ton": 57807,
+        "yield_per_rai": 2738
+    },
+    {
+        "year": 2563,
+        "crop": "มันสำปะหลัง",
+        "province": "ลำปาง",
+        "planted_area": 40313,
+        "harvest_area": 39782,
+        "yield_ton": 114852,
+        "yield_per_rai": 2887
+    },
+    {
+        "year": 2563,
+        "crop": "มันสำปะหลัง",
+        "province": "ลำพูน",
+        "planted_area": 3046,
+        "harvest_area": 3041,
+        "yield_ton": 8136,
+        "yield_per_rai": 2675
+    },
+    {
+        "year": 2563,
+        "crop": "มันสำปะหลัง",
+        "province": "เชียงใหม่",
+        "planted_area": 3579,
+        "harvest_area": 3579,
+        "yield_ton": 10468,
+        "yield_per_rai": 2925
+    },
+    {
+        "year": 2563,
+        "crop": "มันสำปะหลัง",
+        "province": "ตาก",
+        "planted_area": 139037,
+        "harvest_area": 134064,
+        "yield_ton": 435333,
+        "yield_per_rai": 3247
+    },
+    {
+        "year": 2563,
+        "crop": "มันสำปะหลัง",
+        "province": "กำแพงเพชร",
+        "planted_area": 713159,
+        "harvest_area": 706739,
+        "yield_ton": 2250642,
+        "yield_per_rai": 3185
+    },
+    {
+        "year": 2563,
+        "crop": "มันสำปะหลัง",
+        "province": "สุโขทัย",
+        "planted_area": 87079,
+        "harvest_area": 84733,
+        "yield_ton": 253555,
+        "yield_per_rai": 2992
+    },
+    {
+        "year": 2563,
+        "crop": "มันสำปะหลัง",
+        "province": "แพร่",
+        "planted_area": 25499,
+        "harvest_area": 24531,
+        "yield_ton": 72560,
+        "yield_per_rai": 2958
+    },
+    {
+        "year": 2563,
+        "crop": "มันสำปะหลัง",
+        "province": "น่าน",
+        "planted_area": 125720,
+        "harvest_area": 124195,
+        "yield_ton": 375690,
+        "yield_per_rai": 3025
+    },
+    {
+        "year": 2563,
+        "crop": "มันสำปะหลัง",
+        "province": "อุตรดิตถ์",
+        "planted_area": 82593,
+        "harvest_area": 81858,
+        "yield_ton": 265220,
+        "yield_per_rai": 3240
+    },
+    {
+        "year": 2563,
+        "crop": "มันสำปะหลัง",
+        "province": "พิษณุโลก",
+        "planted_area": 147723,
+        "harvest_area": 145218,
+        "yield_ton": 450176,
+        "yield_per_rai": 3100
+    },
+    {
+        "year": 2563,
+        "crop": "มันสำปะหลัง",
+        "province": "พิจิตร",
+        "planted_area": 61732,
+        "harvest_area": 60457,
+        "yield_ton": 205554,
+        "yield_per_rai": 3400
+    },
+    {
+        "year": 2563,
+        "crop": "มันสำปะหลัง",
+        "province": "นครสวรรค์",
+        "planted_area": 666549,
+        "harvest_area": 653884,
+        "yield_ton": 2190511,
+        "yield_per_rai": 3350
+    },
+    {
+        "year": 2563,
+        "crop": "มันสำปะหลัง",
+        "province": "อุทัยธานี",
+        "planted_area": 248639,
+        "harvest_area": 243165,
+        "yield_ton": 778128,
+        "yield_per_rai": 3200
+    },
+    {
+        "year": 2563,
+        "crop": "มันสำปะหลัง",
+        "province": "เพชรบูรณ์",
+        "planted_area": 427525,
+        "harvest_area": 412479,
+        "yield_ton": 1443677,
+        "yield_per_rai": 3500
+    },
+    {
+        "year": 2563,
+        "crop": "มันสำปะหลัง",
+        "province": "เลย",
+        "planted_area": 364570,
+        "harvest_area": 355456,
+        "yield_ton": 1066368,
+        "yield_per_rai": 3000
+    },
+    {
+        "year": 2563,
+        "crop": "มันสำปะหลัง",
+        "province": "หนองบัวลำภู",
+        "planted_area": 176335,
+        "harvest_area": 172808,
+        "yield_ton": 518424,
+        "yield_per_rai": 3000
+    },
+    {
+        "year": 2563,
+        "crop": "มันสำปะหลัง",
+        "province": "อุดรธานี",
+        "planted_area": 174010,
+        "harvest_area": 168790,
+        "yield_ton": 506370,
+        "yield_per_rai": 3000
+    },
+    {
+        "year": 2563,
+        "crop": "มันสำปะหลัง",
+        "province": "หนองคาย",
+        "planted_area": 34312,
+        "harvest_area": 33626,
+        "yield_ton": 100878,
+        "yield_per_rai": 3000
+    },
+    {
+        "year": 2563,
+        "crop": "มันสำปะหลัง",
+        "province": "บึงกาฬ",
+        "planted_area": 30123,
+        "harvest_area": 29521,
+        "yield_ton": 88563,
+        "yield_per_rai": 3000
+    },
+    {
+        "year": 2563,
+        "crop": "มันสำปะหลัง",
+        "province": "สกลนคร",
+        "planted_area": 131048,
+        "harvest_area": 127117,
+        "yield_ton": 406774,
+        "yield_per_rai": 3200
+    },
+    {
+        "year": 2563,
+        "crop": "มันสำปะหลัง",
+        "province": "นครพนม",
+        "planted_area": 24874,
+        "harvest_area": 24128,
+        "yield_ton": 72384,
+        "yield_per_rai": 3000
+    },
+    {
+        "year": 2563,
+        "crop": "มันสำปะหลัง",
+        "province": "มุกดาหาร",
+        "planted_area": 106629,
+        "harvest_area": 104496,
+        "yield_ton": 313488,
+        "yield_per_rai": 3000
+    },
+    {
+        "year": 2563,
+        "crop": "มันสำปะหลัง",
+        "province": "ยโสธร",
+        "planted_area": 38595,
+        "harvest_area": 37823,
+        "yield_ton": 113469,
+        "yield_per_rai": 3000
+    },
+    {
+        "year": 2563,
+        "crop": "มันสำปะหลัง",
+        "province": "อำนาจเจริญ",
+        "planted_area": 54586,
+        "harvest_area": 53494,
+        "yield_ton": 160482,
+        "yield_per_rai": 3000
+    },
+    {
+        "year": 2563,
+        "crop": "มันสำปะหลัง",
+        "province": "อุบลราชธานี",
+        "planted_area": 362819,
+        "harvest_area": 355563,
+        "yield_ton": 1137802,
+        "yield_per_rai": 3200
+    },
+    {
+        "year": 2563,
+        "crop": "มันสำปะหลัง",
+        "province": "ศรีสะเกษ",
+        "planted_area": 175992,
+        "harvest_area": 172472,
+        "yield_ton": 551910,
+        "yield_per_rai": 3200
+    },
+    {
+        "year": 2563,
+        "crop": "มันสำปะหลัง",
+        "province": "สุรินทร์",
+        "planted_area": 143626,
+        "harvest_area": 140753,
+        "yield_ton": 450410,
+        "yield_per_rai": 3200
+    },
+    {
+        "year": 2563,
+        "crop": "มันสำปะหลัง",
+        "province": "บุรีรัมย์",
+        "planted_area": 277546,
+        "harvest_area": 268186,
+        "yield_ton": 989256,
+        "yield_per_rai": 3689
+    },
+    {
+        "year": 2563,
+        "crop": "มันสำปะหลัง",
+        "province": "มหาสารคาม",
+        "planted_area": 156248,
+        "harvest_area": 152859,
+        "yield_ton": 488907,
+        "yield_per_rai": 3198
+    },
+    {
+        "year": 2563,
+        "crop": "มันสำปะหลัง",
+        "province": "ร้อยเอ็ด",
+        "planted_area": 63403,
+        "harvest_area": 62703,
+        "yield_ton": 218292,
+        "yield_per_rai": 3481
+    },
+    {
+        "year": 2563,
+        "crop": "มันสำปะหลัง",
+        "province": "กาฬสินธุ์",
+        "planted_area": 274692,
+        "harvest_area": 271433,
+        "yield_ton": 971296,
+        "yield_per_rai": 3578
+    },
+    {
+        "year": 2563,
+        "crop": "มันสำปะหลัง",
+        "province": "ขอนแก่น",
+        "planted_area": 241684,
+        "harvest_area": 235940,
+        "yield_ton": 758090,
+        "yield_per_rai": 3213
+    },
+    {
+        "year": 2563,
+        "crop": "มันสำปะหลัง",
+        "province": "ชัยภูมิ",
+        "planted_area": 735629,
+        "harvest_area": 648646,
+        "yield_ton": 1847589,
+        "yield_per_rai": 2848
+    },
+    {
+        "year": 2563,
+        "crop": "มันสำปะหลัง",
+        "province": "นครราชสีมา",
+        "planted_area": 1524187,
+        "harvest_area": 1398488,
+        "yield_ton": 4628006,
+        "yield_per_rai": 3309
+    },
+    {
+        "year": 2563,
+        "crop": "มันสำปะหลัง",
+        "province": "สระบุรี",
+        "planted_area": 40873,
+        "harvest_area": 40062,
+        "yield_ton": 120123,
+        "yield_per_rai": 2998
+    },
+    {
+        "year": 2564,
+        "crop": "มันสำปะหลัง",
+        "province": "เชียงราย",
+        "planted_area": 50207,
+        "harvest_area": 49861,
+        "yield_ton": 144414,
+        "yield_per_rai": 2896
+    },
+    {
+        "year": 2564,
+        "crop": "มันสำปะหลัง",
+        "province": "พะเยา",
+        "planted_area": 32228,
+        "harvest_area": 31914,
+        "yield_ton": 91961,
+        "yield_per_rai": 2882
+    },
+    {
+        "year": 2564,
+        "crop": "มันสำปะหลัง",
+        "province": "ลำปาง",
+        "planted_area": 83350,
+        "harvest_area": 83350,
+        "yield_ton": 256789,
+        "yield_per_rai": 3081
+    },
+    {
+        "year": 2564,
+        "crop": "มันสำปะหลัง",
+        "province": "ลำพูน",
+        "planted_area": 4017,
+        "harvest_area": 4017,
+        "yield_ton": 12412,
+        "yield_per_rai": 3090
+    },
+    {
+        "year": 2564,
+        "crop": "มันสำปะหลัง",
+        "province": "เชียงใหม่",
+        "planted_area": 6343,
+        "harvest_area": 6328,
+        "yield_ton": 19911,
+        "yield_per_rai": 3146
+    },
+    {
+        "year": 2564,
+        "crop": "มันสำปะหลัง",
+        "province": "ตาก",
+        "planted_area": 207091,
+        "harvest_area": 201950,
+        "yield_ton": 648994,
+        "yield_per_rai": 3134
+    },
+    {
+        "year": 2564,
+        "crop": "มันสำปะหลัง",
+        "province": "กำแพงเพชร",
+        "planted_area": 792322,
+        "harvest_area": 761358,
+        "yield_ton": 2403525,
+        "yield_per_rai": 3034
+    },
+    {
+        "year": 2564,
+        "crop": "มันสำปะหลัง",
+        "province": "สุโขทัย",
+        "planted_area": 105593,
+        "harvest_area": 100013,
+        "yield_ton": 300048,
+        "yield_per_rai": 2842
+    },
+    {
+        "year": 2564,
+        "crop": "มันสำปะหลัง",
+        "province": "แพร่",
+        "planted_area": 31997,
+        "harvest_area": 31016,
+        "yield_ton": 90413,
+        "yield_per_rai": 2826
+    },
+    {
+        "year": 2564,
+        "crop": "มันสำปะหลัง",
+        "province": "น่าน",
+        "planted_area": 64689,
+        "harvest_area": 64412,
+        "yield_ton": 190360,
+        "yield_per_rai": 2943
+    },
+    {
+        "year": 2564,
+        "crop": "มันสำปะหลัง",
+        "province": "อุตรดิตถ์",
+        "planted_area": 39756,
+        "harvest_area": 39370,
+        "yield_ton": 128604,
+        "yield_per_rai": 3267
+    },
+    {
+        "year": 2564,
+        "crop": "มันสำปะหลัง",
+        "province": "พิษณุโลก",
+        "planted_area": 193533,
+        "harvest_area": 185771,
+        "yield_ton": 597748,
+        "yield_per_rai": 3218
+    },
+    {
+        "year": 2564,
+        "crop": "มันสำปะหลัง",
+        "province": "พิจิตร",
+        "planted_area": 16334,
+        "harvest_area": 16132,
+        "yield_ton": 49804,
+        "yield_per_rai": 3087
+    },
+    {
+        "year": 2564,
+        "crop": "มันสำปะหลัง",
+        "province": "นครสวรรค์",
+        "planted_area": 480302,
+        "harvest_area": 479065,
+        "yield_ton": 1472476,
+        "yield_per_rai": 3074
+    },
+    {
+        "year": 2564,
+        "crop": "มันสำปะหลัง",
+        "province": "อุทัยธานี",
+        "planted_area": 293489,
+        "harvest_area": 258304,
+        "yield_ton": 839711,
+        "yield_per_rai": 2861
+    },
+    {
+        "year": 2564,
+        "crop": "มันสำปะหลัง",
+        "province": "เพชรบูรณ์",
+        "planted_area": 286316,
+        "harvest_area": 281426,
+        "yield_ton": 919600,
+        "yield_per_rai": 3212
+    },
+    {
+        "year": 2564,
+        "crop": "มันสำปะหลัง",
+        "province": "เลย",
+        "planted_area": 316987,
+        "harvest_area": 314642,
+        "yield_ton": 958704,
+        "yield_per_rai": 3024
+    },
+    {
+        "year": 2564,
+        "crop": "มันสำปะหลัง",
+        "province": "หนองบัวลำภู",
+        "planted_area": 97413,
+        "harvest_area": 96391,
+        "yield_ton": 319147,
+        "yield_per_rai": 3276
+    },
+    {
+        "year": 2564,
+        "crop": "มันสำปะหลัง",
+        "province": "อุดรธานี",
+        "planted_area": 420844,
+        "harvest_area": 418325,
+        "yield_ton": 1484884,
+        "yield_per_rai": 3528
+    },
+    {
+        "year": 2564,
+        "crop": "มันสำปะหลัง",
+        "province": "หนองคาย",
+        "planted_area": 20714,
+        "harvest_area": 20629,
+        "yield_ton": 65870,
+        "yield_per_rai": 3193
+    },
+    {
+        "year": 2564,
+        "crop": "มันสำปะหลัง",
+        "province": "บึงกาฬ",
+        "planted_area": 7161,
+        "harvest_area": 7161,
+        "yield_ton": 20573,
+        "yield_per_rai": 2873
+    },
+    {
+        "year": 2564,
+        "crop": "มันสำปะหลัง",
+        "province": "สกลนคร",
+        "planted_area": 158490,
+        "harvest_area": 156343,
+        "yield_ton": 501954,
+        "yield_per_rai": 3211
+    },
+    {
+        "year": 2564,
+        "crop": "มันสำปะหลัง",
+        "province": "นครพนม",
+        "planted_area": 24631,
+        "harvest_area": 24430,
+        "yield_ton": 70658,
+        "yield_per_rai": 2892
+    },
+    {
+        "year": 2564,
+        "crop": "มันสำปะหลัง",
+        "province": "มุกดาหาร",
+        "planted_area": 137512,
+        "harvest_area": 136871,
+        "yield_ton": 461580,
+        "yield_per_rai": 3372
+    },
+    {
+        "year": 2564,
+        "crop": "มันสำปะหลัง",
+        "province": "ยโสธร",
+        "planted_area": 103547,
+        "harvest_area": 102498,
+        "yield_ton": 361800,
+        "yield_per_rai": 3494
+    },
+    {
+        "year": 2564,
+        "crop": "มันสำปะหลัง",
+        "province": "อำนาจเจริญ",
+        "planted_area": 132255,
+        "harvest_area": 130579,
+        "yield_ton": 432265,
+        "yield_per_rai": 3268
+    },
+    {
+        "year": 2564,
+        "crop": "มันสำปะหลัง",
+        "province": "อุบลราชธานี",
+        "planted_area": 511518,
+        "harvest_area": 503740,
+        "yield_ton": 1759654,
+        "yield_per_rai": 3493
+    },
+    {
+        "year": 2564,
+        "crop": "มันสำปะหลัง",
+        "province": "ศรีสะเกษ",
+        "planted_area": 222030,
+        "harvest_area": 212891,
+        "yield_ton": 704785,
+        "yield_per_rai": 3311
+    },
+    {
+        "year": 2564,
+        "crop": "มันสำปะหลัง",
+        "province": "สุรินทร์",
+        "planted_area": 158978,
+        "harvest_area": 156807,
+        "yield_ton": 549522,
+        "yield_per_rai": 3504
+    },
+    {
+        "year": 2564,
+        "crop": "มันสำปะหลัง",
+        "province": "บุรีรัมย์",
+        "planted_area": 387601,
+        "harvest_area": 373106,
+        "yield_ton": 1394821,
+        "yield_per_rai": 3738
+    },
+    {
+        "year": 2564,
+        "crop": "มันสำปะหลัง",
+        "province": "มหาสารคาม",
+        "planted_area": 172625,
+        "harvest_area": 169540,
+        "yield_ton": 554045,
+        "yield_per_rai": 3268
+    },
+    {
+        "year": 2564,
+        "crop": "มันสำปะหลัง",
+        "province": "ร้อยเอ็ด",
+        "planted_area": 71182,
+        "harvest_area": 70642,
+        "yield_ton": 250118,
+        "yield_per_rai": 3514
+    },
+    {
+        "year": 2564,
+        "crop": "มันสำปะหลัง",
+        "province": "กาฬสินธุ์",
+        "planted_area": 296494,
+        "harvest_area": 294142,
+        "yield_ton": 1056100,
+        "yield_per_rai": 3562
+    },
+    {
+        "year": 2564,
+        "crop": "มันสำปะหลัง",
+        "province": "ขอนแก่น",
+        "planted_area": 268826,
+        "harvest_area": 264781,
+        "yield_ton": 876223,
+        "yield_per_rai": 3309
+    },
+    {
+        "year": 2564,
+        "crop": "มันสำปะหลัง",
+        "province": "ชัยภูมิ",
+        "planted_area": 894588,
+        "harvest_area": 731837,
+        "yield_ton": 2533502,
+        "yield_per_rai": 3462
+    },
+    {
+        "year": 2564,
+        "crop": "มันสำปะหลัง",
+        "province": "นครราชสีมา",
+        "planted_area": 1676987,
+        "harvest_area": 1548240,
+        "yield_ton": 5507286,
+        "yield_per_rai": 3557
+    },
+    {
+        "year": 2564,
+        "crop": "มันสำปะหลัง",
+        "province": "สระบุรี",
+        "planted_area": 53730,
+        "harvest_area": 52238,
+        "yield_ton": 159980,
+        "yield_per_rai": 3063
+    },
+    {
+        "year": 2564,
+        "crop": "มันสำปะหลัง",
+        "province": "ลพบุรี",
+        "planted_area": 369728,
+        "harvest_area": 364140,
+        "yield_ton": 1171314,
+        "yield_per_rai": 3217
+    },
+    {
+        "year": 2564,
+        "crop": "มันสำปะหลัง",
+        "province": "สิงห์บุรี",
+        "planted_area": 17,
+        "harvest_area": 17,
+        "yield_ton": 65,
+        "yield_per_rai": 3823
+    },
+    {
+        "year": 2565,
+        "crop": "มันสำปะหลัง",
+        "province": "เชียงราย",
+        "planted_area": 49161,
+        "harvest_area": 44053,
+        "yield_ton": 128522,
+        "yield_per_rai": 2917
+    },
+    {
+        "year": 2565,
+        "crop": "มันสำปะหลัง",
+        "province": "พะเยา",
+        "planted_area": 33454,
+        "harvest_area": 30873,
+        "yield_ton": 90708,
+        "yield_per_rai": 2938
+    },
+    {
+        "year": 2565,
+        "crop": "มันสำปะหลัง",
+        "province": "ลำปาง",
+        "planted_area": 84151,
+        "harvest_area": 73063,
+        "yield_ton": 218705,
+        "yield_per_rai": 2993
+    },
+    {
+        "year": 2565,
+        "crop": "มันสำปะหลัง",
+        "province": "ลำพูน",
+        "planted_area": 3957,
+        "harvest_area": 3957,
+        "yield_ton": 12176,
+        "yield_per_rai": 3077
+    },
+    {
+        "year": 2565,
+        "crop": "มันสำปะหลัง",
+        "province": "เชียงใหม่",
+        "planted_area": 5323,
+        "harvest_area": 5122,
+        "yield_ton": 16999,
+        "yield_per_rai": 3319
+    },
+    {
+        "year": 2565,
+        "crop": "มันสำปะหลัง",
+        "province": "ตาก",
+        "planted_area": 250550,
+        "harvest_area": 217277,
+        "yield_ton": 687884,
+        "yield_per_rai": 3166
+    },
+    {
+        "year": 2565,
+        "crop": "มันสำปะหลัง",
+        "province": "กำแพงเพชร",
+        "planted_area": 792742,
+        "harvest_area": 757879,
+        "yield_ton": 2530263,
+        "yield_per_rai": 3339
+    },
+    {
+        "year": 2565,
+        "crop": "มันสำปะหลัง",
+        "province": "สุโขทัย",
+        "planted_area": 111306,
+        "harvest_area": 103289,
+        "yield_ton": 303724,
+        "yield_per_rai": 2941
+    },
+    {
+        "year": 2565,
+        "crop": "มันสำปะหลัง",
+        "province": "แพร่",
+        "planted_area": 33719,
+        "harvest_area": 29806,
+        "yield_ton": 85721,
+        "yield_per_rai": 2876
+    },
+    {
+        "year": 2565,
+        "crop": "มันสำปะหลัง",
+        "province": "น่าน",
+        "planted_area": 71833,
+        "harvest_area": 62310,
+        "yield_ton": 182705,
+        "yield_per_rai": 2932
+    },
+    {
+        "year": 2565,
+        "crop": "มันสำปะหลัง",
+        "province": "อุตรดิตถ์",
+        "planted_area": 43236,
+        "harvest_area": 40388,
+        "yield_ton": 133481,
+        "yield_per_rai": 3305
+    },
+    {
+        "year": 2565,
+        "crop": "มันสำปะหลัง",
+        "province": "พิษณุโลก",
+        "planted_area": 222668,
+        "harvest_area": 204369,
+        "yield_ton": 622955,
+        "yield_per_rai": 3048
+    },
+    {
+        "year": 2565,
+        "crop": "มันสำปะหลัง",
+        "province": "พิจิตร",
+        "planted_area": 21915,
+        "harvest_area": 18519,
+        "yield_ton": 54622,
+        "yield_per_rai": 2949
+    },
+    {
+        "year": 2565,
+        "crop": "มันสำปะหลัง",
+        "province": "นครสวรรค์",
+        "planted_area": 512396,
+        "harvest_area": 481176,
+        "yield_ton": 1500609,
+        "yield_per_rai": 3119
+    },
+    {
+        "year": 2565,
+        "crop": "มันสำปะหลัง",
+        "province": "อุทัยธานี",
+        "planted_area": 286576,
+        "harvest_area": 236257,
+        "yield_ton": 841577,
+        "yield_per_rai": 3562
+    },
+    {
+        "year": 2565,
+        "crop": "มันสำปะหลัง",
+        "province": "เพชรบูรณ์",
+        "planted_area": 309142,
+        "harvest_area": 283233,
+        "yield_ton": 999858,
+        "yield_per_rai": 3530
+    },
+    {
+        "year": 2565,
+        "crop": "มันสำปะหลัง",
+        "province": "เลย",
+        "planted_area": 334583,
+        "harvest_area": 331464,
+        "yield_ton": 1058091,
+        "yield_per_rai": 3192
+    },
+    {
+        "year": 2565,
+        "crop": "มันสำปะหลัง",
+        "province": "หนองบัวลำภู",
+        "planted_area": 105952,
+        "harvest_area": 105151,
+        "yield_ton": 349635,
+        "yield_per_rai": 3325
+    },
+    {
+        "year": 2565,
+        "crop": "มันสำปะหลัง",
+        "province": "อุดรธานี",
+        "planted_area": 427210,
+        "harvest_area": 425257,
+        "yield_ton": 1555627,
+        "yield_per_rai": 3658
+    },
+    {
+        "year": 2565,
+        "crop": "มันสำปะหลัง",
+        "province": "หนองคาย",
+        "planted_area": 22171,
+        "harvest_area": 22171,
+        "yield_ton": 84191,
+        "yield_per_rai": 3797
+    },
+    {
+        "year": 2565,
+        "crop": "มันสำปะหลัง",
+        "province": "บึงกาฬ",
+        "planted_area": 7378,
+        "harvest_area": 7378,
+        "yield_ton": 21303,
+        "yield_per_rai": 2887
+    },
+    {
+        "year": 2565,
+        "crop": "มันสำปะหลัง",
+        "province": "สกลนคร",
+        "planted_area": 169542,
+        "harvest_area": 168661,
+        "yield_ton": 551970,
+        "yield_per_rai": 3273
+    },
+    {
+        "year": 2565,
+        "crop": "มันสำปะหลัง",
+        "province": "นครพนม",
+        "planted_area": 26866,
+        "harvest_area": 26866,
+        "yield_ton": 80119,
+        "yield_per_rai": 2982
+    },
+    {
+        "year": 2565,
+        "crop": "มันสำปะหลัง",
+        "province": "มุกดาหาร",
+        "planted_area": 144670,
+        "harvest_area": 144577,
+        "yield_ton": 501308,
+        "yield_per_rai": 3467
+    },
+    {
+        "year": 2565,
+        "crop": "มันสำปะหลัง",
+        "province": "ยโสธร",
+        "planted_area": 103204,
+        "harvest_area": 102146,
+        "yield_ton": 352136,
+        "yield_per_rai": 3447
+    },
+    {
+        "year": 2565,
+        "crop": "มันสำปะหลัง",
+        "province": "อำนาจเจริญ",
+        "planted_area": 133203,
+        "harvest_area": 131804,
+        "yield_ton": 435749,
+        "yield_per_rai": 3306
+    },
+    {
+        "year": 2565,
+        "crop": "มันสำปะหลัง",
+        "province": "อุบลราชธานี",
+        "planted_area": 551717,
+        "harvest_area": 503527,
+        "yield_ton": 1801592,
+        "yield_per_rai": 3578
+    },
+    {
+        "year": 2565,
+        "crop": "มันสำปะหลัง",
+        "province": "ศรีสะเกษ",
+        "planted_area": 223508,
+        "harvest_area": 204918,
+        "yield_ton": 677028,
+        "yield_per_rai": 3304
+    },
+    {
+        "year": 2565,
+        "crop": "มันสำปะหลัง",
+        "province": "สุรินทร์",
+        "planted_area": 158319,
+        "harvest_area": 142168,
+        "yield_ton": 490659,
+        "yield_per_rai": 3451
+    },
+    {
+        "year": 2565,
+        "crop": "มันสำปะหลัง",
+        "province": "บุรีรัมย์",
+        "planted_area": 412585,
+        "harvest_area": 366258,
+        "yield_ton": 1319762,
+        "yield_per_rai": 3603
+    },
+    {
+        "year": 2565,
+        "crop": "มันสำปะหลัง",
+        "province": "มหาสารคาม",
+        "planted_area": 178209,
+        "harvest_area": 170356,
+        "yield_ton": 534246,
+        "yield_per_rai": 3136
+    },
+    {
+        "year": 2565,
+        "crop": "มันสำปะหลัง",
+        "province": "ร้อยเอ็ด",
+        "planted_area": 66130,
+        "harvest_area": 65399,
+        "yield_ton": 233861,
+        "yield_per_rai": 3576
+    },
+    {
+        "year": 2565,
+        "crop": "มันสำปะหลัง",
+        "province": "กาฬสินธุ์",
+        "planted_area": 304995,
+        "harvest_area": 302912,
+        "yield_ton": 1115068,
+        "yield_per_rai": 3681
+    },
+    {
+        "year": 2565,
+        "crop": "มันสำปะหลัง",
+        "province": "ขอนแก่น",
+        "planted_area": 275808,
+        "harvest_area": 270484,
+        "yield_ton": 909351,
+        "yield_per_rai": 3362
+    },
+    {
+        "year": 2565,
+        "crop": "มันสำปะหลัง",
+        "province": "ชัยภูมิ",
+        "planted_area": 879394,
+        "harvest_area": 598128,
+        "yield_ton": 1931446,
+        "yield_per_rai": 3229
+    },
+    {
+        "year": 2565,
+        "crop": "มันสำปะหลัง",
+        "province": "นครราชสีมา",
+        "planted_area": 1481929,
+        "harvest_area": 1321026,
+        "yield_ton": 4636085,
+        "yield_per_rai": 3509
+    },
+    {
+        "year": 2565,
+        "crop": "มันสำปะหลัง",
+        "province": "สระบุรี",
+        "planted_area": 54981,
+        "harvest_area": 53528,
+        "yield_ton": 175500,
+        "yield_per_rai": 3279
+    },
+    {
+        "year": 2565,
+        "crop": "มันสำปะหลัง",
+        "province": "ลพบุรี",
+        "planted_area": 383997,
+        "harvest_area": 346839,
+        "yield_ton": 1077115,
+        "yield_per_rai": 3106
+    },
+    {
+        "year": 2565,
+        "crop": "มันสำปะหลัง",
+        "province": "สิงห์บุรี",
+        "planted_area": 33,
+        "harvest_area": 27,
+        "yield_ton": 160,
+        "yield_per_rai": 5926
+    },
+    {
+        "year": 2565,
+        "crop": "มันสำปะหลัง",
+        "province": "ชัยนาท",
+        "planted_area": 16990,
+        "harvest_area": 15993,
+        "yield_ton": 59573,
+        "yield_per_rai": 3725
+    },
+    {
+        "year": 2565,
+        "crop": "มันสำปะหลัง",
+        "province": "สุพรรณบุรี",
+        "planted_area": 73787,
+        "harvest_area": 62232,
+        "yield_ton": 227653,
+        "yield_per_rai": 3658
+    },
+    {
+        "year": 2565,
+        "crop": "มันสำปะหลัง",
+        "province": "ราชบุรี",
+        "planted_area": 57169,
+        "harvest_area": 54728,
+        "yield_ton": 193808,
+        "yield_per_rai": 3541
+    },
+    {
+        "year": 2565,
+        "crop": "มันสำปะหลัง",
+        "province": "กาญจนบุรี",
+        "planted_area": 482613,
+        "harvest_area": 468351,
+        "yield_ton": 1530932,
+        "yield_per_rai": 3269
+    },
+    {
+        "year": 2565,
+        "crop": "มันสำปะหลัง",
+        "province": "เพชรบุรี",
+        "planted_area": 17564,
+        "harvest_area": 17409,
+        "yield_ton": 56008,
+        "yield_per_rai": 3217
+    },
+    {
+        "year": 2565,
+        "crop": "มันสำปะหลัง",
+        "province": "ประจวบคีรีขันธ์",
+        "planted_area": 6279,
+        "harvest_area": 5590,
+        "yield_ton": 18265,
+        "yield_per_rai": 3267
+    },
+    {
+        "year": 2565,
+        "crop": "มันสำปะหลัง",
+        "province": "นครปฐม",
+        "planted_area": 196,
+        "harvest_area": 196,
+        "yield_ton": 984,
+        "yield_per_rai": 5020
+    },
+    {
+        "year": 2565,
+        "crop": "มันสำปะหลัง",
+        "province": "ฉะเชิงเทรา",
+        "planted_area": 637731,
+        "harvest_area": 605175,
+        "yield_ton": 2187313,
+        "yield_per_rai": 3614
+    },
+    {
+        "year": 2565,
+        "crop": "มันสำปะหลัง",
+        "province": "สระแก้ว",
+        "planted_area": 393963,
+        "harvest_area": 341885,
+        "yield_ton": 1303250,
+        "yield_per_rai": 3812
+    },
+    {
+        "year": 2565,
+        "crop": "มันสำปะหลัง",
+        "province": "จันทบุรี",
+        "planted_area": 1572,
+        "harvest_area": 1572,
+        "yield_ton": 5304,
+        "yield_per_rai": 3374
+    },
+    {
+        "year": 2565,
+        "crop": "มันสำปะหลัง",
+        "province": "ระยอง",
+        "planted_area": 40167,
+        "harvest_area": 13535,
+        "yield_ton": 33935,
+        "yield_per_rai": 2507
+    },
+    {
+        "year": 2565,
+        "crop": "มันสำปะหลัง",
+        "province": "ชลบุรี",
+        "planted_area": 9530,
+        "harvest_area": 313,
+        "yield_ton": 219,
+        "yield_per_rai": 700
+    },
+    {
+        "year": 2566,
+        "crop": "มันสำปะหลัง",
+        "province": "เชียงราย",
+        "planted_area": 47107,
+        "harvest_area": 41370,
+        "yield_ton": 115069,
+        "yield_per_rai": 2781
+    },
+    {
+        "year": 2566,
+        "crop": "มันสำปะหลัง",
+        "province": "พะเยา",
+        "planted_area": 30888,
+        "harvest_area": 30696,
+        "yield_ton": 93544,
+        "yield_per_rai": 3047
+    },
+    {
+        "year": 2566,
+        "crop": "มันสำปะหลัง",
+        "province": "ลำปาง",
+        "planted_area": 82925,
+        "harvest_area": 81128,
+        "yield_ton": 244879,
+        "yield_per_rai": 3018
+    },
+    {
+        "year": 2566,
+        "crop": "มันสำปะหลัง",
+        "province": "ลำพูน",
+        "planted_area": 6611,
+        "harvest_area": 6556,
+        "yield_ton": 20021,
+        "yield_per_rai": 3054
+    },
+    {
+        "year": 2566,
+        "crop": "มันสำปะหลัง",
+        "province": "เชียงใหม่",
+        "planted_area": 7172,
+        "harvest_area": 7139,
+        "yield_ton": 22065,
+        "yield_per_rai": 3091
+    },
+    {
+        "year": 2566,
+        "crop": "มันสำปะหลัง",
+        "province": "ตาก",
+        "planted_area": 212748,
+        "harvest_area": 195348,
+        "yield_ton": 635516,
+        "yield_per_rai": 3253
+    },
+    {
+        "year": 2566,
+        "crop": "มันสำปะหลัง",
+        "province": "กำแพงเพชร",
+        "planted_area": 724489,
+        "harvest_area": 669557,
+        "yield_ton": 2146896,
+        "yield_per_rai": 3206
+    },
+    {
+        "year": 2566,
+        "crop": "มันสำปะหลัง",
+        "province": "สุโขทัย",
+        "planted_area": 94424,
+        "harvest_area": 88510,
+        "yield_ton": 258884,
+        "yield_per_rai": 2925
+    },
+    {
+        "year": 2566,
+        "crop": "มันสำปะหลัง",
+        "province": "แพร่",
+        "planted_area": 31715,
+        "harvest_area": 31038,
+        "yield_ton": 90736,
+        "yield_per_rai": 2923
+    },
+    {
+        "year": 2566,
+        "crop": "มันสำปะหลัง",
+        "province": "น่าน",
+        "planted_area": 78188,
+        "harvest_area": 77961,
+        "yield_ton": 233676,
+        "yield_per_rai": 2997
+    },
+    {
+        "year": 2566,
+        "crop": "มันสำปะหลัง",
+        "province": "อุตรดิตถ์",
+        "planted_area": 52028,
+        "harvest_area": 48887,
+        "yield_ton": 160607,
+        "yield_per_rai": 3285
+    },
+    {
+        "year": 2566,
+        "crop": "มันสำปะหลัง",
+        "province": "พิษณุโลก",
+        "planted_area": 205115,
+        "harvest_area": 194894,
+        "yield_ton": 615172,
+        "yield_per_rai": 3156
+    },
+    {
+        "year": 2566,
+        "crop": "มันสำปะหลัง",
+        "province": "พิจิตร",
+        "planted_area": 16186,
+        "harvest_area": 15341,
+        "yield_ton": 49652,
+        "yield_per_rai": 3237
+    },
+    {
+        "year": 2566,
+        "crop": "มันสำปะหลัง",
+        "province": "นครสวรรค์",
+        "planted_area": 526179,
+        "harvest_area": 388166,
+        "yield_ton": 1215034,
+        "yield_per_rai": 3130
+    },
+    {
+        "year": 2566,
+        "crop": "มันสำปะหลัง",
+        "province": "อุทัยธานี",
+        "planted_area": 315658,
+        "harvest_area": 257212,
+        "yield_ton": 862205,
+        "yield_per_rai": 3352
+    },
+    {
+        "year": 2566,
+        "crop": "มันสำปะหลัง",
+        "province": "เพชรบูรณ์",
+        "planted_area": 326153,
+        "harvest_area": 295166,
+        "yield_ton": 943895,
+        "yield_per_rai": 3198
+    },
+    {
+        "year": 2566,
+        "crop": "มันสำปะหลัง",
+        "province": "เลย",
+        "planted_area": 304348,
+        "harvest_area": 301664,
+        "yield_ton": 947159,
+        "yield_per_rai": 3140
+    },
+    {
+        "year": 2566,
+        "crop": "มันสำปะหลัง",
+        "province": "หนองบัวลำภู",
+        "planted_area": 100660,
+        "harvest_area": 98198,
+        "yield_ton": 328061,
+        "yield_per_rai": 3341
+    },
+    {
+        "year": 2566,
+        "crop": "มันสำปะหลัง",
+        "province": "อุดรธานี",
+        "planted_area": 423695,
+        "harvest_area": 418971,
+        "yield_ton": 1510367,
+        "yield_per_rai": 3605
+    },
+    {
+        "year": 2566,
+        "crop": "มันสำปะหลัง",
+        "province": "หนองคาย",
+        "planted_area": 20945,
+        "harvest_area": 20662,
+        "yield_ton": 66430,
+        "yield_per_rai": 3215
+    },
+    {
+        "year": 2566,
+        "crop": "มันสำปะหลัง",
+        "province": "บึงกาฬ",
+        "planted_area": 7752,
+        "harvest_area": 7736,
+        "yield_ton": 22107,
+        "yield_per_rai": 2858
+    },
+    {
+        "year": 2566,
+        "crop": "มันสำปะหลัง",
+        "province": "สกลนคร",
+        "planted_area": 165409,
+        "harvest_area": 162752,
+        "yield_ton": 514072,
+        "yield_per_rai": 3159
+    },
+    {
+        "year": 2566,
+        "crop": "มันสำปะหลัง",
+        "province": "นครพนม",
+        "planted_area": 27938,
+        "harvest_area": 27735,
+        "yield_ton": 83339,
+        "yield_per_rai": 3005
+    },
+    {
+        "year": 2566,
+        "crop": "มันสำปะหลัง",
+        "province": "มุกดาหาร",
+        "planted_area": 135534,
+        "harvest_area": 134627,
+        "yield_ton": 465901,
+        "yield_per_rai": 3461
+    },
+    {
+        "year": 2566,
+        "crop": "มันสำปะหลัง",
+        "province": "ยโสธร",
+        "planted_area": 104716,
+        "harvest_area": 99227,
+        "yield_ton": 351249,
+        "yield_per_rai": 3540
+    },
+    {
+        "year": 2566,
+        "crop": "มันสำปะหลัง",
+        "province": "อำนาจเจริญ",
+        "planted_area": 158056,
+        "harvest_area": 105188,
+        "yield_ton": 337012,
+        "yield_per_rai": 3204
+    },
+    {
+        "year": 2566,
+        "crop": "มันสำปะหลัง",
+        "province": "อุบลราชธานี",
+        "planted_area": 545023,
+        "harvest_area": 469241,
+        "yield_ton": 1606811,
+        "yield_per_rai": 3424
+    },
+    {
+        "year": 2566,
+        "crop": "มันสำปะหลัง",
+        "province": "ศรีสะเกษ",
+        "planted_area": 187266,
+        "harvest_area": 182490,
+        "yield_ton": 606185,
+        "yield_per_rai": 3322
+    },
+    {
+        "year": 2566,
+        "crop": "มันสำปะหลัง",
+        "province": "สุรินทร์",
+        "planted_area": 169003,
+        "harvest_area": 134545,
+        "yield_ton": 476901,
+        "yield_per_rai": 3545
+    },
+    {
+        "year": 2566,
+        "crop": "มันสำปะหลัง",
+        "province": "บุรีรัมย์",
+        "planted_area": 319411,
+        "harvest_area": 254018,
+        "yield_ton": 942860,
+        "yield_per_rai": 3712
+    },
+    {
+        "year": 2566,
+        "crop": "มันสำปะหลัง",
+        "province": "มหาสารคาม",
+        "planted_area": 163261,
+        "harvest_area": 151620,
+        "yield_ton": 492875,
+        "yield_per_rai": 3251
+    },
+    {
+        "year": 2566,
+        "crop": "มันสำปะหลัง",
+        "province": "ร้อยเอ็ด",
+        "planted_area": 67516,
+        "harvest_area": 66536,
+        "yield_ton": 226362,
+        "yield_per_rai": 3402
+    },
+    {
+        "year": 2566,
+        "crop": "มันสำปะหลัง",
+        "province": "กาฬสินธุ์",
+        "planted_area": 306598,
+        "harvest_area": 304126,
+        "yield_ton": 1092324,
+        "yield_per_rai": 3592
+    },
+    {
+        "year": 2566,
+        "crop": "มันสำปะหลัง",
+        "province": "ขอนแก่น",
+        "planted_area": 277095,
+        "harvest_area": 215637,
+        "yield_ton": 697247,
+        "yield_per_rai": 3233
+    },
+    {
+        "year": 2566,
+        "crop": "มันสำปะหลัง",
+        "province": "ชัยภูมิ",
+        "planted_area": 858156,
+        "harvest_area": 600953,
+        "yield_ton": 1912329,
+        "yield_per_rai": 3182
+    },
+    {
+        "year": 2566,
+        "crop": "มันสำปะหลัง",
+        "province": "นครราชสีมา",
+        "planted_area": 1334459,
+        "harvest_area": 1190701,
+        "yield_ton": 3964883,
+        "yield_per_rai": 3330
+    },
+    {
+        "year": 2566,
+        "crop": "มันสำปะหลัง",
+        "province": "สระบุรี",
+        "planted_area": 48351,
+        "harvest_area": 46029,
+        "yield_ton": 157408,
+        "yield_per_rai": 3420
+    },
+    {
+        "year": 2566,
+        "crop": "มันสำปะหลัง",
+        "province": "ลพบุรี",
+        "planted_area": 366056,
+        "harvest_area": 319356,
+        "yield_ton": 981957,
+        "yield_per_rai": 3075
+    },
+    {
+        "year": 2566,
+        "crop": "มันสำปะหลัง",
+        "province": "สิงห์บุรี",
+        "planted_area": 30,
+        "harvest_area": 25,
+        "yield_ton": 159,
+        "yield_per_rai": 6360
+    },
+    {
+        "year": 2566,
+        "crop": "มันสำปะหลัง",
+        "province": "ชัยนาท",
+        "planted_area": 99137,
+        "harvest_area": 86102,
+        "yield_ton": 242540,
+        "yield_per_rai": 2817
+    },
+    {
+        "year": 2566,
+        "crop": "มันสำปะหลัง",
+        "province": "สุพรรณบุรี",
+        "planted_area": 110397,
+        "harvest_area": 100652,
+        "yield_ton": 315036,
+        "yield_per_rai": 3130
+    },
+    {
+        "year": 2566,
+        "crop": "มันสำปะหลัง",
+        "province": "พระนครศรีอยุธยา",
+        "planted_area": 7,
+        "harvest_area": 7,
+        "yield_ton": 5,
+        "yield_per_rai": 714
+    },
+    {
+        "year": 2566,
+        "crop": "มันสำปะหลัง",
+        "province": "นครนายก",
+        "planted_area": 266,
+        "harvest_area": 266,
+        "yield_ton": 901,
+        "yield_per_rai": 3387
+    },
+    {
+        "year": 2566,
+        "crop": "มันสำปะหลัง",
+        "province": "ปราจีนบุรี",
+        "planted_area": 103843,
+        "harvest_area": 99005,
+        "yield_ton": 322614,
+        "yield_per_rai": 3259
+    },
+    {
+        "year": 2566,
+        "crop": "มันสำปะหลัง",
+        "province": "ฉะเชิงเทรา",
+        "planted_area": 559264,
+        "harvest_area": 553438,
+        "yield_ton": 1929485,
+        "yield_per_rai": 3486
+    },
+    {
+        "year": 2566,
+        "crop": "มันสำปะหลัง",
+        "province": "ระยอง",
+        "planted_area": 35295,
+        "harvest_area": 34716,
+        "yield_ton": 142916,
+        "yield_per_rai": 4117
+    },
+    {
+        "year": 2566,
+        "crop": "มันสำปะหลัง",
+        "province": "กาญจนบุรี",
+        "planted_area": 315254,
+        "harvest_area": 224156,
+        "yield_ton": 681064,
+        "yield_per_rai": 3038
+    },
+    {
+        "year": 2566,
+        "crop": "มันสำปะหลัง",
+        "province": "สระแก้ว",
+        "planted_area": 201342,
+        "harvest_area": 193421,
+        "yield_ton": 637820,
+        "yield_per_rai": 3298
+    },
+    {
+        "year": 2566,
+        "crop": "มันสำปะหลัง",
+        "province": "จันทบุรี",
+        "planted_area": 3516,
+        "harvest_area": 3420,
+        "yield_ton": 11479,
+        "yield_per_rai": 3356
+    },
+    {
+        "year": 2566,
+        "crop": "มันสำปะหลัง",
+        "province": "ชลบุรี",
+        "planted_area": 135478,
+        "harvest_area": 133542,
+        "yield_ton": 511174,
+        "yield_per_rai": 3828
+    },
+    {
+        "year": 2566,
+        "crop": "มันสำปะหลัง",
+        "province": "นครปฐม",
+        "planted_area": 40,
+        "harvest_area": 40,
+        "yield_ton": 157,
+        "yield_per_rai": 3925
+    },
+    {
+        "year": 2566,
+        "crop": "มันสำปะหลัง",
+        "province": "ราชบุรี",
+        "planted_area": 90555,
+        "harvest_area": 90338,
+        "yield_ton": 305523,
+        "yield_per_rai": 3382
+    },
+    {
+        "year": 2566,
+        "crop": "มันสำปะหลัง",
+        "province": "เพชรบุรี",
+        "planted_area": 7013,
+        "harvest_area": 6945,
+        "yield_ton": 20658,
+        "yield_per_rai": 2975
+    },
+    {
+        "year": 2566,
+        "crop": "มันสำปะหลัง",
+        "province": "ประจวบคีรีขันธ์",
+        "planted_area": 900,
+        "harvest_area": 900,
+        "yield_ton": 3365,
+        "yield_per_rai": 3739
+    },
+    {
+        "year": 2567,
+        "crop": "มันสำปะหลัง",
+        "province": "เชียงราย",
+        "planted_area": 37973,
+        "harvest_area": 34312,
+        "yield_ton": 93670,
+        "yield_per_rai": 2730
+    },
+    {
+        "year": 2567,
+        "crop": "มันสำปะหลัง",
+        "province": "พะเยา",
+        "planted_area": 26951,
+        "harvest_area": 25299,
+        "yield_ton": 70340,
+        "yield_per_rai": 2780
+    },
+    {
+        "year": 2567,
+        "crop": "มันสำปะหลัง",
+        "province": "ลำปาง",
+        "planted_area": 73693,
+        "harvest_area": 72002,
+        "yield_ton": 180569,
+        "yield_per_rai": 2508
+    },
+    {
+        "year": 2567,
+        "crop": "มันสำปะหลัง",
+        "province": "ลำพูน",
+        "planted_area": 9572,
+        "harvest_area": 9558,
+        "yield_ton": 21258,
+        "yield_per_rai": 2224
+    },
+    {
+        "year": 2567,
+        "crop": "มันสำปะหลัง",
+        "province": "เชียงใหม่",
+        "planted_area": 7069,
+        "harvest_area": 7018,
+        "yield_ton": 17476,
+        "yield_per_rai": 2490
+    },
+    {
+        "year": 2567,
+        "crop": "มันสำปะหลัง",
+        "province": "ตาก",
+        "planted_area": 196532,
+        "harvest_area": 190283,
+        "yield_ton": 592671,
+        "yield_per_rai": 3115
+    },
+    {
+        "year": 2567,
+        "crop": "มันสำปะหลัง",
+        "province": "กำแพงเพชร",
+        "planted_area": 694764,
+        "harvest_area": 682130,
+        "yield_ton": 2159618,
+        "yield_per_rai": 3166
+    },
+    {
+        "year": 2567,
+        "crop": "มันสำปะหลัง",
+        "province": "สุโขทัย",
+        "planted_area": 76928,
+        "harvest_area": 75181,
+        "yield_ton": 213050,
+        "yield_per_rai": 2834
+    },
+    {
+        "year": 2567,
+        "crop": "มันสำปะหลัง",
+        "province": "แพร่",
+        "planted_area": 24907,
+        "harvest_area": 23972,
+        "yield_ton": 66230,
+        "yield_per_rai": 2763
+    },
+    {
+        "year": 2567,
+        "crop": "มันสำปะหลัง",
+        "province": "น่าน",
+        "planted_area": 70044,
+        "harvest_area": 69883,
+        "yield_ton": 192633,
+        "yield_per_rai": 2757
+    },
+    {
+        "year": 2567,
+        "crop": "มันสำปะหลัง",
+        "province": "อุตรดิตถ์",
+        "planted_area": 38071,
+        "harvest_area": 34258,
+        "yield_ton": 102121,
+        "yield_per_rai": 2981
+    },
+    {
+        "year": 2567,
+        "crop": "มันสำปะหลัง",
+        "province": "พิษณุโลก",
+        "planted_area": 190434,
+        "harvest_area": 186063,
+        "yield_ton": 558068,
+        "yield_per_rai": 2999
+    },
+    {
+        "year": 2567,
+        "crop": "มันสำปะหลัง",
+        "province": "พิจิตร",
+        "planted_area": 10620,
+        "harvest_area": 10555,
+        "yield_ton": 32743,
+        "yield_per_rai": 3102
+    },
+    {
+        "year": 2567,
+        "crop": "มันสำปะหลัง",
+        "province": "นครสวรรค์",
+        "planted_area": 438951,
+        "harvest_area": 402529,
+        "yield_ton": 1243599,
+        "yield_per_rai": 3089
+    },
+    {
+        "year": 2567,
+        "crop": "มันสำปะหลัง",
+        "province": "อุทัยธานี",
+        "planted_area": 282465,
+        "harvest_area": 219243,
+        "yield_ton": 722279,
+        "yield_per_rai": 3294
+    },
+    {
+        "year": 2567,
+        "crop": "มันสำปะหลัง",
+        "province": "เพชรบูรณ์",
+        "planted_area": 242572,
+        "harvest_area": 224743,
+        "yield_ton": 703453,
+        "yield_per_rai": 3130
+    },
+    {
+        "year": 2567,
+        "crop": "มันสำปะหลัง",
+        "province": "เลย",
+        "planted_area": 225350,
+        "harvest_area": 222153,
+        "yield_ton": 688175,
+        "yield_per_rai": 3098
+    },
+    {
+        "year": 2567,
+        "crop": "มันสำปะหลัง",
+        "province": "หนองบัวลำภู",
+        "planted_area": 82644,
+        "harvest_area": 80969,
+        "yield_ton": 263334,
+        "yield_per_rai": 3252
+    },
+    {
+        "year": 2567,
+        "crop": "มันสำปะหลัง",
+        "province": "อุดรธานี",
+        "planted_area": 374263,
+        "harvest_area": 366582,
+        "yield_ton": 1313067,
+        "yield_per_rai": 3582
+    },
+    {
+        "year": 2567,
+        "crop": "มันสำปะหลัง",
+        "province": "หนองคาย",
+        "planted_area": 18530,
+        "harvest_area": 17919,
+        "yield_ton": 55541,
+        "yield_per_rai": 3100
+    },
+    {
+        "year": 2567,
+        "crop": "มันสำปะหลัง",
+        "province": "บึงกาฬ",
+        "planted_area": 7979,
+        "harvest_area": 7896,
+        "yield_ton": 22145,
+        "yield_per_rai": 2805
+    },
+    {
+        "year": 2567,
+        "crop": "มันสำปะหลัง",
+        "province": "สกลนคร",
+        "planted_area": 150870,
+        "harvest_area": 146171,
+        "yield_ton": 446107,
+        "yield_per_rai": 3052
+    },
+    {
+        "year": 2567,
+        "crop": "มันสำปะหลัง",
+        "province": "นครพนม",
+        "planted_area": 28295,
+        "harvest_area": 28039,
+        "yield_ton": 81820,
+        "yield_per_rai": 2918
+    },
+    {
+        "year": 2567,
+        "crop": "มันสำปะหลัง",
+        "province": "มุกดาหาร",
+        "planted_area": 126631,
+        "harvest_area": 123159,
+        "yield_ton": 416793,
+        "yield_per_rai": 3384
+    },
+    {
+        "year": 2567,
+        "crop": "มันสำปะหลัง",
+        "province": "ยโสธร",
+        "planted_area": 99918,
+        "harvest_area": 98024,
+        "yield_ton": 348100,
+        "yield_per_rai": 3551
+    },
+    {
+        "year": 2567,
+        "crop": "มันสำปะหลัง",
+        "province": "อำนาจเจริญ",
+        "planted_area": 144202,
+        "harvest_area": 141076,
+        "yield_ton": 449391,
+        "yield_per_rai": 3185
+    },
+    {
+        "year": 2567,
+        "crop": "มันสำปะหลัง",
+        "province": "อุบลราชธานี",
+        "planted_area": 508046,
+        "harvest_area": 488485,
+        "yield_ton": 1667501,
+        "yield_per_rai": 3414
+    },
+    {
+        "year": 2567,
+        "crop": "มันสำปะหลัง",
+        "province": "ศรีสะเกษ",
+        "planted_area": 162226,
+        "harvest_area": 159534,
+        "yield_ton": 531326,
+        "yield_per_rai": 3330
+    },
+    {
+        "year": 2567,
+        "crop": "มันสำปะหลัง",
+        "province": "สุรินทร์",
+        "planted_area": 135004,
+        "harvest_area": 132855,
+        "yield_ton": 481008,
+        "yield_per_rai": 3621
+    },
+    {
+        "year": 2567,
+        "crop": "มันสำปะหลัง",
+        "province": "บุรีรัมย์",
+        "planted_area": 260212,
+        "harvest_area": 253156,
+        "yield_ton": 964436,
+        "yield_per_rai": 3810
+    },
+    {
+        "year": 2567,
+        "crop": "มันสำปะหลัง",
+        "province": "มหาสารคาม",
+        "planted_area": 148095,
+        "harvest_area": 140654,
+        "yield_ton": 440965,
+        "yield_per_rai": 3135
+    },
+    {
+        "year": 2567,
+        "crop": "มันสำปะหลัง",
+        "province": "ร้อยเอ็ด",
+        "planted_area": 55496,
+        "harvest_area": 54503,
+        "yield_ton": 176279,
+        "yield_per_rai": 3234
+    },
+    {
+        "year": 2567,
+        "crop": "มันสำปะหลัง",
+        "province": "กาฬสินธุ์",
+        "planted_area": 286887,
+        "harvest_area": 281900,
+        "yield_ton": 993355,
+        "yield_per_rai": 3524
+    },
+    {
+        "year": 2567,
+        "crop": "มันสำปะหลัง",
+        "province": "ขอนแก่น",
+        "planted_area": 247121,
+        "harvest_area": 227165,
+        "yield_ton": 710032,
+        "yield_per_rai": 3126
+    },
+    {
+        "year": 2567,
+        "crop": "มันสำปะหลัง",
+        "province": "ชัยภูมิ",
+        "planted_area": 800870,
+        "harvest_area": 766203,
+        "yield_ton": 2505908,
+        "yield_per_rai": 3271
+    },
+    {
+        "year": 2567,
+        "crop": "มันสำปะหลัง",
+        "province": "นครราชสีมา",
+        "planted_area": 1153074,
+        "harvest_area": 1083310,
+        "yield_ton": 3660849,
+        "yield_per_rai": 3379
+    },
+    {
+        "year": 2567,
+        "crop": "มันสำปะหลัง",
+        "province": "สระบุรี",
+        "planted_area": 43011,
+        "harvest_area": 40427,
+        "yield_ton": 132764,
+        "yield_per_rai": 3284
+    },
+    {
+        "year": 2567,
+        "crop": "มันสำปะหลัง",
+        "province": "ลพบุรี",
+        "planted_area": 304191,
+        "harvest_area": 280743,
+        "yield_ton": 865357,
+        "yield_per_rai": 3082
+    },
+    {
+        "year": 2567,
+        "crop": "มันสำปะหลัง",
+        "province": "สิงห์บุรี",
+        "planted_area": 44,
+        "harvest_area": 38,
+        "yield_ton": 187,
+        "yield_per_rai": 4921
+    },
+    {
+        "year": 2567,
+        "crop": "มันสำปะหลัง",
+        "province": "ชัยนาท",
+        "planted_area": 84274,
+        "harvest_area": 74769,
+        "yield_ton": 206177,
+        "yield_per_rai": 2758
+    },
+    {
+        "year": 2567,
+        "crop": "มันสำปะหลัง",
+        "province": "สุพรรณบุรี",
+        "planted_area": 91932,
+        "harvest_area": 87092,
+        "yield_ton": 265104,
+        "yield_per_rai": 3044
+    },
+    {
+        "year": 2567,
+        "crop": "มันสำปะหลัง",
+        "province": "พระนครศรีอยุธยา",
+        "planted_area": 39,
+        "harvest_area": 5,
+        "yield_ton": 3,
+        "yield_per_rai": 600
+    },
+    {
+        "year": 2567,
+        "crop": "มันสำปะหลัง",
+        "province": "นครนายก",
+        "planted_area": 59,
+        "harvest_area": 59,
+        "yield_ton": 189,
+        "yield_per_rai": 3203
+    },
+    {
+        "year": 2567,
+        "crop": "มันสำปะหลัง",
+        "province": "ปราจีนบุรี",
+        "planted_area": 94885,
+        "harvest_area": 88863,
+        "yield_ton": 265771,
+        "yield_per_rai": 2991
+    },
+    {
+        "year": 2567,
+        "crop": "มันสำปะหลัง",
+        "province": "ฉะเชิงเทรา",
+        "planted_area": 176360,
+        "harvest_area": 167317,
+        "yield_ton": 500462,
+        "yield_per_rai": 2991
+    },
+    {
+        "year": 2567,
+        "crop": "มันสำปะหลัง",
+        "province": "สระแก้ว",
+        "planted_area": 266538,
+        "harvest_area": 255024,
+        "yield_ton": 755687,
+        "yield_per_rai": 2963
+    },
+    {
+        "year": 2567,
+        "crop": "มันสำปะหลัง",
+        "province": "จันทบุรี",
+        "planted_area": 4270,
+        "harvest_area": 4078,
+        "yield_ton": 13002,
+        "yield_per_rai": 3188
+    },
+    {
+        "year": 2567,
+        "crop": "มันสำปะหลัง",
+        "province": "ระยอง",
+        "planted_area": 38412,
+        "harvest_area": 36918,
+        "yield_ton": 149250,
+        "yield_per_rai": 4043
+    },
+    {
+        "year": 2567,
+        "crop": "มันสำปะหลัง",
+        "province": "ชลบุรี",
+        "planted_area": 122529,
+        "harvest_area": 120648,
+        "yield_ton": 374351,
+        "yield_per_rai": 3103
+    },
+    {
+        "year": 2567,
+        "crop": "มันสำปะหลัง",
+        "province": "นครปฐม",
+        "planted_area": 59,
+        "harvest_area": 48,
+        "yield_ton": 179,
+        "yield_per_rai": 3729
+    },
+    {
+        "year": 2567,
+        "crop": "มันสำปะหลัง",
+        "province": "กาญจนบุรี",
+        "planted_area": 565647,
+        "harvest_area": 540151,
+        "yield_ton": 1636187,
+        "yield_per_rai": 3029
+    },
+    {
+        "year": 2567,
+        "crop": "มันสำปะหลัง",
+        "province": "ราชบุรี",
+        "planted_area": 83406,
+        "harvest_area": 81777,
+        "yield_ton": 248232,
+        "yield_per_rai": 3035
+    },
+    {
+        "year": 2567,
+        "crop": "มันสำปะหลัง",
+        "province": "เพชรบุรี",
+        "planted_area": 8019,
+        "harvest_area": 7894,
+        "yield_ton": 22219,
+        "yield_per_rai": 2815
+    },
+    {
+        "year": 2567,
+        "crop": "มันสำปะหลัง",
+        "province": "ประจวบคีรีขันธ์",
+        "planted_area": 905,
+        "harvest_area": 905,
+        "yield_ton": 3281,
+        "yield_per_rai": 3625
+    }
+]

@@ -1,0 +1,2792 @@
+[
+    {
+        "year": 2563,
+        "crop": "ยางพารา",
+        "province": "เชียงราย",
+        "planted_area": 377268,
+        "harvest_area": 299300,
+        "yield_ton": 62087,
+        "yield_per_rai": 207
+    },
+    {
+        "year": 2563,
+        "crop": "ยางพารา",
+        "province": "พะเยา",
+        "planted_area": 153855,
+        "harvest_area": 147213,
+        "yield_ton": 30937,
+        "yield_per_rai": 210
+    },
+    {
+        "year": 2563,
+        "crop": "ยางพารา",
+        "province": "ลำปาง",
+        "planted_area": 39142,
+        "harvest_area": 32896,
+        "yield_ton": 3991,
+        "yield_per_rai": 121
+    },
+    {
+        "year": 2563,
+        "crop": "ยางพารา",
+        "province": "ลำพูน",
+        "planted_area": 6688,
+        "harvest_area": 5748,
+        "yield_ton": 1035,
+        "yield_per_rai": 180
+    },
+    {
+        "year": 2563,
+        "crop": "ยางพารา",
+        "province": "เชียงใหม่",
+        "planted_area": 25112,
+        "harvest_area": 22615,
+        "yield_ton": 4073,
+        "yield_per_rai": 180
+    },
+    {
+        "year": 2563,
+        "crop": "ยางพารา",
+        "province": "แม่ฮ่องสอน",
+        "planted_area": 1288,
+        "harvest_area": 1024,
+        "yield_ton": 126,
+        "yield_per_rai": 123
+    },
+    {
+        "year": 2563,
+        "crop": "ยางพารา",
+        "province": "ตาก",
+        "planted_area": 14687,
+        "harvest_area": 9623,
+        "yield_ton": 1603,
+        "yield_per_rai": 167
+    },
+    {
+        "year": 2563,
+        "crop": "ยางพารา",
+        "province": "กำแพงเพชร",
+        "planted_area": 36074,
+        "harvest_area": 33571,
+        "yield_ton": 6039,
+        "yield_per_rai": 180
+    },
+    {
+        "year": 2563,
+        "crop": "ยางพารา",
+        "province": "สุโขทัย",
+        "planted_area": 51825,
+        "harvest_area": 50789,
+        "yield_ton": 8544,
+        "yield_per_rai": 168
+    },
+    {
+        "year": 2563,
+        "crop": "ยางพารา",
+        "province": "แพร่",
+        "planted_area": 31055,
+        "harvest_area": 21387,
+        "yield_ton": 3656,
+        "yield_per_rai": 171
+    },
+    {
+        "year": 2563,
+        "crop": "ยางพารา",
+        "province": "น่าน",
+        "planted_area": 302314,
+        "harvest_area": 241059,
+        "yield_ton": 41014,
+        "yield_per_rai": 170
+    },
+    {
+        "year": 2563,
+        "crop": "ยางพารา",
+        "province": "อุตรดิตถ์",
+        "planted_area": 26572,
+        "harvest_area": 16850,
+        "yield_ton": 2350,
+        "yield_per_rai": 139
+    },
+    {
+        "year": 2563,
+        "crop": "ยางพารา",
+        "province": "พิษณุโลก",
+        "planted_area": 339483,
+        "harvest_area": 323247,
+        "yield_ton": 54808,
+        "yield_per_rai": 170
+    },
+    {
+        "year": 2563,
+        "crop": "ยางพารา",
+        "province": "พิจิตร",
+        "planted_area": 2748,
+        "harvest_area": 1494,
+        "yield_ton": 184,
+        "yield_per_rai": 123
+    },
+    {
+        "year": 2563,
+        "crop": "ยางพารา",
+        "province": "นครสวรรค์",
+        "planted_area": 7909,
+        "harvest_area": 6708,
+        "yield_ton": 1010,
+        "yield_per_rai": 151
+    },
+    {
+        "year": 2563,
+        "crop": "ยางพารา",
+        "province": "อุทัยธานี",
+        "planted_area": 37059,
+        "harvest_area": 31623,
+        "yield_ton": 5797,
+        "yield_per_rai": 183
+    },
+    {
+        "year": 2563,
+        "crop": "ยางพารา",
+        "province": "เพชรบูรณ์",
+        "planted_area": 92538,
+        "harvest_area": 76001,
+        "yield_ton": 11530,
+        "yield_per_rai": 152
+    },
+    {
+        "year": 2563,
+        "crop": "ยางพารา",
+        "province": "เลย",
+        "planted_area": 927596,
+        "harvest_area": 817491,
+        "yield_ton": 186257,
+        "yield_per_rai": 228
+    },
+    {
+        "year": 2563,
+        "crop": "ยางพารา",
+        "province": "หนองบัวลำภู",
+        "planted_area": 113259,
+        "harvest_area": 108063,
+        "yield_ton": 20814,
+        "yield_per_rai": 193
+    },
+    {
+        "year": 2563,
+        "crop": "ยางพารา",
+        "province": "อุดรธานี",
+        "planted_area": 582669,
+        "harvest_area": 561730,
+        "yield_ton": 124864,
+        "yield_per_rai": 222
+    },
+    {
+        "year": 2563,
+        "crop": "ยางพารา",
+        "province": "หนองคาย",
+        "planted_area": 334560,
+        "harvest_area": 313294,
+        "yield_ton": 69588,
+        "yield_per_rai": 222
+    },
+    {
+        "year": 2563,
+        "crop": "ยางพารา",
+        "province": "บึงกาฬ",
+        "planted_area": 876734,
+        "harvest_area": 841929,
+        "yield_ton": 206556,
+        "yield_per_rai": 245
+    },
+    {
+        "year": 2563,
+        "crop": "ยางพารา",
+        "province": "สกลนคร",
+        "planted_area": 399728,
+        "harvest_area": 373162,
+        "yield_ton": 82051,
+        "yield_per_rai": 220
+    },
+    {
+        "year": 2563,
+        "crop": "ยางพารา",
+        "province": "นครพนม",
+        "planted_area": 367308,
+        "harvest_area": 356284,
+        "yield_ton": 75662,
+        "yield_per_rai": 212
+    },
+    {
+        "year": 2563,
+        "crop": "ยางพารา",
+        "province": "มุกดาหาร",
+        "planted_area": 263295,
+        "harvest_area": 247295,
+        "yield_ton": 52574,
+        "yield_per_rai": 213
+    },
+    {
+        "year": 2563,
+        "crop": "ยางพารา",
+        "province": "ยโสธร",
+        "planted_area": 117083,
+        "harvest_area": 106117,
+        "yield_ton": 21600,
+        "yield_per_rai": 204
+    },
+    {
+        "year": 2563,
+        "crop": "ยางพารา",
+        "province": "อำนาจเจริญ",
+        "planted_area": 92430,
+        "harvest_area": 83099,
+        "yield_ton": 17338,
+        "yield_per_rai": 209
+    },
+    {
+        "year": 2563,
+        "crop": "ยางพารา",
+        "province": "อุบลราชธานี",
+        "planted_area": 622969,
+        "harvest_area": 605294,
+        "yield_ton": 125816,
+        "yield_per_rai": 208
+    },
+    {
+        "year": 2563,
+        "crop": "ยางพารา",
+        "province": "ศรีสะเกษ",
+        "planted_area": 370308,
+        "harvest_area": 344106,
+        "yield_ton": 74945,
+        "yield_per_rai": 218
+    },
+    {
+        "year": 2563,
+        "crop": "ยางพารา",
+        "province": "สุรินทร์",
+        "planted_area": 248241,
+        "harvest_area": 217761,
+        "yield_ton": 41165,
+        "yield_per_rai": 189
+    },
+    {
+        "year": 2563,
+        "crop": "ยางพารา",
+        "province": "บุรีรัมย์",
+        "planted_area": 311203,
+        "harvest_area": 295525,
+        "yield_ton": 64375,
+        "yield_per_rai": 218
+    },
+    {
+        "year": 2563,
+        "crop": "ยางพารา",
+        "province": "มหาสารคาม",
+        "planted_area": 11989,
+        "harvest_area": 10486,
+        "yield_ton": 1604,
+        "yield_per_rai": 153
+    },
+    {
+        "year": 2563,
+        "crop": "ยางพารา",
+        "province": "ร้อยเอ็ด",
+        "planted_area": 106295,
+        "harvest_area": 98290,
+        "yield_ton": 18786,
+        "yield_per_rai": 191
+    },
+    {
+        "year": 2563,
+        "crop": "ยางพารา",
+        "province": "กาฬสินธุ์",
+        "planted_area": 202544,
+        "harvest_area": 190532,
+        "yield_ton": 36142,
+        "yield_per_rai": 190
+    },
+    {
+        "year": 2564,
+        "crop": "ยางพารา",
+        "province": "เชียงราย",
+        "planted_area": 378382,
+        "harvest_area": 301313,
+        "yield_ton": 61751,
+        "yield_per_rai": 205
+    },
+    {
+        "year": 2564,
+        "crop": "ยางพารา",
+        "province": "พะเยา",
+        "planted_area": 153426,
+        "harvest_area": 147392,
+        "yield_ton": 32142,
+        "yield_per_rai": 218
+    },
+    {
+        "year": 2564,
+        "crop": "ยางพารา",
+        "province": "ลำปาง",
+        "planted_area": 38737,
+        "harvest_area": 33239,
+        "yield_ton": 4267,
+        "yield_per_rai": 128
+    },
+    {
+        "year": 2564,
+        "crop": "ยางพารา",
+        "province": "ลำพูน",
+        "planted_area": 6688,
+        "harvest_area": 5748,
+        "yield_ton": 1062,
+        "yield_per_rai": 185
+    },
+    {
+        "year": 2564,
+        "crop": "ยางพารา",
+        "province": "เชียงใหม่",
+        "planted_area": 24990,
+        "harvest_area": 22493,
+        "yield_ton": 4327,
+        "yield_per_rai": 192
+    },
+    {
+        "year": 2564,
+        "crop": "ยางพารา",
+        "province": "แม่ฮ่องสอน",
+        "planted_area": 1288,
+        "harvest_area": 1024,
+        "yield_ton": 137,
+        "yield_per_rai": 134
+    },
+    {
+        "year": 2564,
+        "crop": "ยางพารา",
+        "province": "ตาก",
+        "planted_area": 14460,
+        "harvest_area": 9421,
+        "yield_ton": 1662,
+        "yield_per_rai": 176
+    },
+    {
+        "year": 2564,
+        "crop": "ยางพารา",
+        "province": "กำแพงเพชร",
+        "planted_area": 32761,
+        "harvest_area": 30465,
+        "yield_ton": 5874,
+        "yield_per_rai": 193
+    },
+    {
+        "year": 2564,
+        "crop": "ยางพารา",
+        "province": "สุโขทัย",
+        "planted_area": 52862,
+        "harvest_area": 51527,
+        "yield_ton": 9692,
+        "yield_per_rai": 188
+    },
+    {
+        "year": 2564,
+        "crop": "ยางพารา",
+        "province": "แพร่",
+        "planted_area": 36489,
+        "harvest_area": 21932,
+        "yield_ton": 3937,
+        "yield_per_rai": 180
+    },
+    {
+        "year": 2564,
+        "crop": "ยางพารา",
+        "province": "น่าน",
+        "planted_area": 300999,
+        "harvest_area": 241241,
+        "yield_ton": 42141,
+        "yield_per_rai": 175
+    },
+    {
+        "year": 2564,
+        "crop": "ยางพารา",
+        "province": "อุตรดิตถ์",
+        "planted_area": 27114,
+        "harvest_area": 17911,
+        "yield_ton": 2825,
+        "yield_per_rai": 158
+    },
+    {
+        "year": 2564,
+        "crop": "ยางพารา",
+        "province": "พิษณุโลก",
+        "planted_area": 338422,
+        "harvest_area": 323576,
+        "yield_ton": 57788,
+        "yield_per_rai": 179
+    },
+    {
+        "year": 2564,
+        "crop": "ยางพารา",
+        "province": "พิจิตร",
+        "planted_area": 2683,
+        "harvest_area": 2052,
+        "yield_ton": 264,
+        "yield_per_rai": 129
+    },
+    {
+        "year": 2564,
+        "crop": "ยางพารา",
+        "province": "นครสวรรค์",
+        "planted_area": 6666,
+        "harvest_area": 5514,
+        "yield_ton": 765,
+        "yield_per_rai": 139
+    },
+    {
+        "year": 2564,
+        "crop": "ยางพารา",
+        "province": "อุทัยธานี",
+        "planted_area": 36977,
+        "harvest_area": 30874,
+        "yield_ton": 6080,
+        "yield_per_rai": 197
+    },
+    {
+        "year": 2564,
+        "crop": "ยางพารา",
+        "province": "เพชรบูรณ์",
+        "planted_area": 91924,
+        "harvest_area": 76526,
+        "yield_ton": 12298,
+        "yield_per_rai": 161
+    },
+    {
+        "year": 2564,
+        "crop": "ยางพารา",
+        "province": "เลย",
+        "planted_area": 926453,
+        "harvest_area": 826443,
+        "yield_ton": 193149,
+        "yield_per_rai": 234
+    },
+    {
+        "year": 2564,
+        "crop": "ยางพารา",
+        "province": "หนองบัวลำภู",
+        "planted_area": 113294,
+        "harvest_area": 109065,
+        "yield_ton": 21890,
+        "yield_per_rai": 201
+    },
+    {
+        "year": 2564,
+        "crop": "ยางพารา",
+        "province": "อุดรธานี",
+        "planted_area": 581780,
+        "harvest_area": 564199,
+        "yield_ton": 128031,
+        "yield_per_rai": 227
+    },
+    {
+        "year": 2564,
+        "crop": "ยางพารา",
+        "province": "หนองคาย",
+        "planted_area": 335196,
+        "harvest_area": 315232,
+        "yield_ton": 71801,
+        "yield_per_rai": 228
+    },
+    {
+        "year": 2564,
+        "crop": "ยางพารา",
+        "province": "บึงกาฬ",
+        "planted_area": 876355,
+        "harvest_area": 840051,
+        "yield_ton": 208058,
+        "yield_per_rai": 248
+    },
+    {
+        "year": 2564,
+        "crop": "ยางพารา",
+        "province": "สกลนคร",
+        "planted_area": 400199,
+        "harvest_area": 373882,
+        "yield_ton": 84697,
+        "yield_per_rai": 227
+    },
+    {
+        "year": 2564,
+        "crop": "ยางพารา",
+        "province": "นครพนม",
+        "planted_area": 367178,
+        "harvest_area": 356549,
+        "yield_ton": 78232,
+        "yield_per_rai": 219
+    },
+    {
+        "year": 2564,
+        "crop": "ยางพารา",
+        "province": "มุกดาหาร",
+        "planted_area": 263938,
+        "harvest_area": 249305,
+        "yield_ton": 54986,
+        "yield_per_rai": 221
+    },
+    {
+        "year": 2564,
+        "crop": "ยางพารา",
+        "province": "ยโสธร",
+        "planted_area": 117596,
+        "harvest_area": 107270,
+        "yield_ton": 22772,
+        "yield_per_rai": 212
+    },
+    {
+        "year": 2564,
+        "crop": "ยางพารา",
+        "province": "อำนาจเจริญ",
+        "planted_area": 92755,
+        "harvest_area": 83316,
+        "yield_ton": 17940,
+        "yield_per_rai": 215
+    },
+    {
+        "year": 2564,
+        "crop": "ยางพารา",
+        "province": "อุบลราชธานี",
+        "planted_area": 621128,
+        "harvest_area": 603683,
+        "yield_ton": 129299,
+        "yield_per_rai": 214
+    },
+    {
+        "year": 2564,
+        "crop": "ยางพารา",
+        "province": "ศรีสะเกษ",
+        "planted_area": 369173,
+        "harvest_area": 344801,
+        "yield_ton": 76739,
+        "yield_per_rai": 223
+    },
+    {
+        "year": 2564,
+        "crop": "ยางพารา",
+        "province": "สุรินทร์",
+        "planted_area": 247253,
+        "harvest_area": 217441,
+        "yield_ton": 44048,
+        "yield_per_rai": 203
+    },
+    {
+        "year": 2564,
+        "crop": "ยางพารา",
+        "province": "บุรีรัมย์",
+        "planted_area": 304273,
+        "harvest_area": 289610,
+        "yield_ton": 66143,
+        "yield_per_rai": 228
+    },
+    {
+        "year": 2564,
+        "crop": "ยางพารา",
+        "province": "มหาสารคาม",
+        "planted_area": 11516,
+        "harvest_area": 10008,
+        "yield_ton": 1580,
+        "yield_per_rai": 158
+    },
+    {
+        "year": 2564,
+        "crop": "ยางพารา",
+        "province": "ร้อยเอ็ด",
+        "planted_area": 105656,
+        "harvest_area": 97760,
+        "yield_ton": 19327,
+        "yield_per_rai": 198
+    },
+    {
+        "year": 2564,
+        "crop": "ยางพารา",
+        "province": "กาฬสินธุ์",
+        "planted_area": 201337,
+        "harvest_area": 189589,
+        "yield_ton": 37563,
+        "yield_per_rai": 198
+    },
+    {
+        "year": 2564,
+        "crop": "ยางพารา",
+        "province": "ขอนแก่น",
+        "planted_area": 86407,
+        "harvest_area": 80101,
+        "yield_ton": 14774,
+        "yield_per_rai": 184
+    },
+    {
+        "year": 2564,
+        "crop": "ยางพารา",
+        "province": "ชัยภูมิ",
+        "planted_area": 123167,
+        "harvest_area": 118224,
+        "yield_ton": 25233,
+        "yield_per_rai": 213
+    },
+    {
+        "year": 2564,
+        "crop": "ยางพารา",
+        "province": "นครราชสีมา",
+        "planted_area": 85087,
+        "harvest_area": 76766,
+        "yield_ton": 15271,
+        "yield_per_rai": 199
+    },
+    {
+        "year": 2564,
+        "crop": "ยางพารา",
+        "province": "สระบุรี",
+        "planted_area": 2052,
+        "harvest_area": 1906,
+        "yield_ton": 242,
+        "yield_per_rai": 127
+    },
+    {
+        "year": 2564,
+        "crop": "ยางพารา",
+        "province": "ลพบุรี",
+        "planted_area": 1983,
+        "harvest_area": 1149,
+        "yield_ton": 110,
+        "yield_per_rai": 96
+    },
+    {
+        "year": 2564,
+        "crop": "ยางพารา",
+        "province": "ชัยนาท",
+        "planted_area": 1531,
+        "harvest_area": 1311,
+        "yield_ton": 0,
+        "yield_per_rai": 0
+    },
+    {
+        "year": 2564,
+        "crop": "ยางพารา",
+        "province": "สุพรรณบุรี",
+        "planted_area": 6586,
+        "harvest_area": 4864,
+        "yield_ton": 654,
+        "yield_per_rai": 134
+    },
+    {
+        "year": 2564,
+        "crop": "ยางพารา",
+        "province": "ปทุมธานี",
+        "planted_area": 363,
+        "harvest_area": 339,
+        "yield_ton": 0,
+        "yield_per_rai": 0
+    },
+    {
+        "year": 2564,
+        "crop": "ยางพารา",
+        "province": "นครนายก",
+        "planted_area": 877,
+        "harvest_area": 541,
+        "yield_ton": 95,
+        "yield_per_rai": 176
+    },
+    {
+        "year": 2564,
+        "crop": "ยางพารา",
+        "province": "ปราจีนบุรี",
+        "planted_area": 37516,
+        "harvest_area": 34505,
+        "yield_ton": 6707,
+        "yield_per_rai": 194
+    },
+    {
+        "year": 2564,
+        "crop": "ยางพารา",
+        "province": "ฉะเชิงเทรา",
+        "planted_area": 235915,
+        "harvest_area": 187197,
+        "yield_ton": 34203,
+        "yield_per_rai": 183
+    },
+    {
+        "year": 2564,
+        "crop": "ยางพารา",
+        "province": "สระแก้ว",
+        "planted_area": 71090,
+        "harvest_area": 62735,
+        "yield_ton": 12268,
+        "yield_per_rai": 196
+    },
+    {
+        "year": 2564,
+        "crop": "ยางพารา",
+        "province": "จันทบุรี",
+        "planted_area": 527797,
+        "harvest_area": 501846,
+        "yield_ton": 96511,
+        "yield_per_rai": 192
+    },
+    {
+        "year": 2564,
+        "crop": "ยางพารา",
+        "province": "ตราด",
+        "planted_area": 317353,
+        "harvest_area": 288349,
+        "yield_ton": 58981,
+        "yield_per_rai": 205
+    },
+    {
+        "year": 2564,
+        "crop": "ยางพารา",
+        "province": "ระยอง",
+        "planted_area": 600582,
+        "harvest_area": 537897,
+        "yield_ton": 97876,
+        "yield_per_rai": 182
+    },
+    {
+        "year": 2564,
+        "crop": "ยางพารา",
+        "province": "ชลบุรี",
+        "planted_area": 233621,
+        "harvest_area": 197339,
+        "yield_ton": 41126,
+        "yield_per_rai": 208
+    },
+    {
+        "year": 2564,
+        "crop": "ยางพารา",
+        "province": "นครปฐม",
+        "planted_area": 18,
+        "harvest_area": 10,
+        "yield_ton": 0.80,
+        "yield_per_rai": 80
+    },
+    {
+        "year": 2564,
+        "crop": "ยางพารา",
+        "province": "กาญจนบุรี",
+        "planted_area": 130030,
+        "harvest_area": 123342,
+        "yield_ton": 22009,
+        "yield_per_rai": 178
+    },
+    {
+        "year": 2564,
+        "crop": "ยางพารา",
+        "province": "ราชบุรี",
+        "planted_area": 46277,
+        "harvest_area": 39068,
+        "yield_ton": 6337,
+        "yield_per_rai": 162
+    },
+    {
+        "year": 2564,
+        "crop": "ยางพารา",
+        "province": "เพชรบุรี",
+        "planted_area": 17818,
+        "harvest_area": 15082,
+        "yield_ton": 2420,
+        "yield_per_rai": 160
+    },
+    {
+        "year": 2564,
+        "crop": "ยางพารา",
+        "province": "ประจวบคีรีขันธ์",
+        "planted_area": 273297,
+        "harvest_area": 260341,
+        "yield_ton": 43530,
+        "yield_per_rai": 167
+    },
+    {
+        "year": 2564,
+        "crop": "ยางพารา",
+        "province": "ชุมพร",
+        "planted_area": 673552,
+        "harvest_area": 542483,
+        "yield_ton": 124808,
+        "yield_per_rai": 230
+    },
+    {
+        "year": 2564,
+        "crop": "ยางพารา",
+        "province": "ระนอง",
+        "planted_area": 353503,
+        "harvest_area": 313988,
+        "yield_ton": 72477,
+        "yield_per_rai": 231
+    },
+    {
+        "year": 2564,
+        "crop": "ยางพารา",
+        "province": "สุราษฎร์ธานี",
+        "planted_area": 2339591,
+        "harvest_area": 2045143,
+        "yield_ton": 512297,
+        "yield_per_rai": 250
+    },
+    {
+        "year": 2564,
+        "crop": "ยางพารา",
+        "province": "พังงา",
+        "planted_area": 551842,
+        "harvest_area": 515234,
+        "yield_ton": 120530,
+        "yield_per_rai": 234
+    },
+    {
+        "year": 2564,
+        "crop": "ยางพารา",
+        "province": "ภูเก็ต",
+        "planted_area": 73787,
+        "harvest_area": 67216,
+        "yield_ton": 12906,
+        "yield_per_rai": 192
+    },
+    {
+        "year": 2564,
+        "crop": "ยางพารา",
+        "province": "กระบี่",
+        "planted_area": 622421,
+        "harvest_area": 532822,
+        "yield_ton": 127209,
+        "yield_per_rai": 239
+    },
+    {
+        "year": 2564,
+        "crop": "ยางพารา",
+        "province": "ตรัง",
+        "planted_area": 1361556,
+        "harvest_area": 1184395,
+        "yield_ton": 275529,
+        "yield_per_rai": 233
+    },
+    {
+        "year": 2564,
+        "crop": "ยางพารา",
+        "province": "นครศรีธรรมราช",
+        "planted_area": 1923062,
+        "harvest_area": 1746215,
+        "yield_ton": 415309,
+        "yield_per_rai": 238
+    },
+    {
+        "year": 2564,
+        "crop": "ยางพารา",
+        "province": "พัทลุง",
+        "planted_area": 1007205,
+        "harvest_area": 903741,
+        "yield_ton": 199981,
+        "yield_per_rai": 221
+    },
+    {
+        "year": 2564,
+        "crop": "ยางพารา",
+        "province": "สงขลา",
+        "planted_area": 2215160,
+        "harvest_area": 1935817,
+        "yield_ton": 435338,
+        "yield_per_rai": 225
+    },
+    {
+        "year": 2564,
+        "crop": "ยางพารา",
+        "province": "สตูล",
+        "planted_area": 533475,
+        "harvest_area": 438011,
+        "yield_ton": 103310,
+        "yield_per_rai": 236
+    },
+    {
+        "year": 2564,
+        "crop": "ยางพารา",
+        "province": "ปัตตานี",
+        "planted_area": 404097,
+        "harvest_area": 361718,
+        "yield_ton": 81373,
+        "yield_per_rai": 225
+    },
+    {
+        "year": 2564,
+        "crop": "ยางพารา",
+        "province": "ยะลา",
+        "planted_area": 1183204,
+        "harvest_area": 1092789,
+        "yield_ton": 252924,
+        "yield_per_rai": 231
+    },
+    {
+        "year": 2564,
+        "crop": "ยางพารา",
+        "province": "นราธิวาส",
+        "planted_area": 942969,
+        "harvest_area": 860641,
+        "yield_ton": 172239,
+        "yield_per_rai": 200
+    },
+    {
+        "year": 2565,
+        "crop": "ยางพารา",
+        "province": "เชียงราย",
+        "planted_area": 382958,
+        "harvest_area": 329878,
+        "yield_ton": 70507,
+        "yield_per_rai": 214
+    },
+    {
+        "year": 2565,
+        "crop": "ยางพารา",
+        "province": "พะเยา",
+        "planted_area": 151893,
+        "harvest_area": 144833,
+        "yield_ton": 32799,
+        "yield_per_rai": 226
+    },
+    {
+        "year": 2565,
+        "crop": "ยางพารา",
+        "province": "ลำปาง",
+        "planted_area": 38581,
+        "harvest_area": 33555,
+        "yield_ton": 4253,
+        "yield_per_rai": 127
+    },
+    {
+        "year": 2565,
+        "crop": "ยางพารา",
+        "province": "ลำพูน",
+        "planted_area": 6914,
+        "harvest_area": 5772,
+        "yield_ton": 1123,
+        "yield_per_rai": 195
+    },
+    {
+        "year": 2565,
+        "crop": "ยางพารา",
+        "province": "เชียงใหม่",
+        "planted_area": 25079,
+        "harvest_area": 22865,
+        "yield_ton": 4421,
+        "yield_per_rai": 193
+    },
+    {
+        "year": 2565,
+        "crop": "ยางพารา",
+        "province": "แม่ฮ่องสอน",
+        "planted_area": 1150,
+        "harvest_area": 1075,
+        "yield_ton": 133,
+        "yield_per_rai": 124
+    },
+    {
+        "year": 2565,
+        "crop": "ยางพารา",
+        "province": "ตาก",
+        "planted_area": 12440,
+        "harvest_area": 11303,
+        "yield_ton": 2005,
+        "yield_per_rai": 177
+    },
+    {
+        "year": 2565,
+        "crop": "ยางพารา",
+        "province": "กำแพงเพชร",
+        "planted_area": 32924,
+        "harvest_area": 28539,
+        "yield_ton": 5224,
+        "yield_per_rai": 183
+    },
+    {
+        "year": 2565,
+        "crop": "ยางพารา",
+        "province": "สุโขทัย",
+        "planted_area": 53051,
+        "harvest_area": 50749,
+        "yield_ton": 10240,
+        "yield_per_rai": 202
+    },
+    {
+        "year": 2565,
+        "crop": "ยางพารา",
+        "province": "แพร่",
+        "planted_area": 35994,
+        "harvest_area": 24825,
+        "yield_ton": 4486,
+        "yield_per_rai": 181
+    },
+    {
+        "year": 2565,
+        "crop": "ยางพารา",
+        "province": "น่าน",
+        "planted_area": 310236,
+        "harvest_area": 249970,
+        "yield_ton": 47675,
+        "yield_per_rai": 191
+    },
+    {
+        "year": 2565,
+        "crop": "ยางพารา",
+        "province": "อุตรดิตถ์",
+        "planted_area": 27477,
+        "harvest_area": 19766,
+        "yield_ton": 3282,
+        "yield_per_rai": 166
+    },
+    {
+        "year": 2565,
+        "crop": "ยางพารา",
+        "province": "พิษณุโลก",
+        "planted_area": 337431,
+        "harvest_area": 324034,
+        "yield_ton": 59177,
+        "yield_per_rai": 183
+    },
+    {
+        "year": 2565,
+        "crop": "ยางพารา",
+        "province": "พิจิตร",
+        "planted_area": 2623,
+        "harvest_area": 2359,
+        "yield_ton": 307,
+        "yield_per_rai": 130
+    },
+    {
+        "year": 2565,
+        "crop": "ยางพารา",
+        "province": "นครสวรรค์",
+        "planted_area": 6282,
+        "harvest_area": 5312,
+        "yield_ton": 714,
+        "yield_per_rai": 134
+    },
+    {
+        "year": 2565,
+        "crop": "ยางพารา",
+        "province": "อุทัยธานี",
+        "planted_area": 36555,
+        "harvest_area": 31107,
+        "yield_ton": 6524,
+        "yield_per_rai": 210
+    },
+    {
+        "year": 2565,
+        "crop": "ยางพารา",
+        "province": "เพชรบูรณ์",
+        "planted_area": 90302,
+        "harvest_area": 78255,
+        "yield_ton": 12971,
+        "yield_per_rai": 166
+    },
+    {
+        "year": 2565,
+        "crop": "ยางพารา",
+        "province": "เลย",
+        "planted_area": 932539,
+        "harvest_area": 853798,
+        "yield_ton": 194127,
+        "yield_per_rai": 227
+    },
+    {
+        "year": 2565,
+        "crop": "ยางพารา",
+        "province": "หนองบัวลำภู",
+        "planted_area": 113486,
+        "harvest_area": 109176,
+        "yield_ton": 23036,
+        "yield_per_rai": 211
+    },
+    {
+        "year": 2565,
+        "crop": "ยางพารา",
+        "province": "อุดรธานี",
+        "planted_area": 581088,
+        "harvest_area": 563886,
+        "yield_ton": 129372,
+        "yield_per_rai": 229
+    },
+    {
+        "year": 2565,
+        "crop": "ยางพารา",
+        "province": "หนองคาย",
+        "planted_area": 340359,
+        "harvest_area": 318096,
+        "yield_ton": 73865,
+        "yield_per_rai": 232
+    },
+    {
+        "year": 2565,
+        "crop": "ยางพารา",
+        "province": "บึงกาฬ",
+        "planted_area": 876462,
+        "harvest_area": 838911,
+        "yield_ton": 208035,
+        "yield_per_rai": 248
+    },
+    {
+        "year": 2565,
+        "crop": "ยางพารา",
+        "province": "สกลนคร",
+        "planted_area": 398954,
+        "harvest_area": 375183,
+        "yield_ton": 85646,
+        "yield_per_rai": 228
+    },
+    {
+        "year": 2565,
+        "crop": "ยางพารา",
+        "province": "นครพนม",
+        "planted_area": 367114,
+        "harvest_area": 356143,
+        "yield_ton": 80220,
+        "yield_per_rai": 225
+    },
+    {
+        "year": 2565,
+        "crop": "ยางพารา",
+        "province": "มุกดาหาร",
+        "planted_area": 264057,
+        "harvest_area": 251016,
+        "yield_ton": 54997,
+        "yield_per_rai": 219
+    },
+    {
+        "year": 2565,
+        "crop": "ยางพารา",
+        "province": "ยโสธร",
+        "planted_area": 117359,
+        "harvest_area": 107420,
+        "yield_ton": 22676,
+        "yield_per_rai": 211
+    },
+    {
+        "year": 2565,
+        "crop": "ยางพารา",
+        "province": "อำนาจเจริญ",
+        "planted_area": 93100,
+        "harvest_area": 83810,
+        "yield_ton": 18545,
+        "yield_per_rai": 221
+    },
+    {
+        "year": 2565,
+        "crop": "ยางพารา",
+        "province": "อุบลราชธานี",
+        "planted_area": 619754,
+        "harvest_area": 600757,
+        "yield_ton": 130474,
+        "yield_per_rai": 217
+    },
+    {
+        "year": 2565,
+        "crop": "ยางพารา",
+        "province": "ศรีสะเกษ",
+        "planted_area": 368021,
+        "harvest_area": 350115,
+        "yield_ton": 77791,
+        "yield_per_rai": 222
+    },
+    {
+        "year": 2565,
+        "crop": "ยางพารา",
+        "province": "สุรินทร์",
+        "planted_area": 247605,
+        "harvest_area": 222264,
+        "yield_ton": 45857,
+        "yield_per_rai": 206
+    },
+    {
+        "year": 2565,
+        "crop": "ยางพารา",
+        "province": "บุรีรัมย์",
+        "planted_area": 303772,
+        "harvest_area": 289435,
+        "yield_ton": 67153,
+        "yield_per_rai": 232
+    },
+    {
+        "year": 2565,
+        "crop": "ยางพารา",
+        "province": "มหาสารคาม",
+        "planted_area": 11105,
+        "harvest_area": 9646,
+        "yield_ton": 1568,
+        "yield_per_rai": 163
+    },
+    {
+        "year": 2565,
+        "crop": "ยางพารา",
+        "province": "ร้อยเอ็ด",
+        "planted_area": 103347,
+        "harvest_area": 97779,
+        "yield_ton": 19819,
+        "yield_per_rai": 203
+    },
+    {
+        "year": 2565,
+        "crop": "ยางพารา",
+        "province": "กาฬสินธุ์",
+        "planted_area": 198829,
+        "harvest_area": 188461,
+        "yield_ton": 38441,
+        "yield_per_rai": 204
+    },
+    {
+        "year": 2565,
+        "crop": "ยางพารา",
+        "province": "ขอนแก่น",
+        "planted_area": 84900,
+        "harvest_area": 80315,
+        "yield_ton": 15131,
+        "yield_per_rai": 188
+    },
+    {
+        "year": 2565,
+        "crop": "ยางพารา",
+        "province": "ชัยภูมิ",
+        "planted_area": 123682,
+        "harvest_area": 117305,
+        "yield_ton": 25472,
+        "yield_per_rai": 217
+    },
+    {
+        "year": 2565,
+        "crop": "ยางพารา",
+        "province": "นครราชสีมา",
+        "planted_area": 78334,
+        "harvest_area": 71478,
+        "yield_ton": 14694,
+        "yield_per_rai": 206
+    },
+    {
+        "year": 2565,
+        "crop": "ยางพารา",
+        "province": "สระบุรี",
+        "planted_area": 1957,
+        "harvest_area": 1811,
+        "yield_ton": 345,
+        "yield_per_rai": 191
+    },
+    {
+        "year": 2565,
+        "crop": "ยางพารา",
+        "province": "ลพบุรี",
+        "planted_area": 1768,
+        "harvest_area": 1128,
+        "yield_ton": 134,
+        "yield_per_rai": 119
+    },
+    {
+        "year": 2565,
+        "crop": "ยางพารา",
+        "province": "ชัยนาท",
+        "planted_area": 946,
+        "harvest_area": 726,
+        "yield_ton": 8,
+        "yield_per_rai": 12
+    },
+    {
+        "year": 2565,
+        "crop": "ยางพารา",
+        "province": "สุพรรณบุรี",
+        "planted_area": 6509,
+        "harvest_area": 5484,
+        "yield_ton": 794,
+        "yield_per_rai": 145
+    },
+    {
+        "year": 2565,
+        "crop": "ยางพารา",
+        "province": "ปทุมธานี",
+        "planted_area": 267,
+        "harvest_area": 243,
+        "yield_ton": 0,
+        "yield_per_rai": 0
+    },
+    {
+        "year": 2565,
+        "crop": "ยางพารา",
+        "province": "นครนายก",
+        "planted_area": 766,
+        "harvest_area": 495,
+        "yield_ton": 78,
+        "yield_per_rai": 158
+    },
+    {
+        "year": 2565,
+        "crop": "ยางพารา",
+        "province": "ปราจีนบุรี",
+        "planted_area": 37583,
+        "harvest_area": 34516,
+        "yield_ton": 6784,
+        "yield_per_rai": 197
+    },
+    {
+        "year": 2565,
+        "crop": "ยางพารา",
+        "province": "ฉะเชิงเทรา",
+        "planted_area": 233490,
+        "harvest_area": 206336,
+        "yield_ton": 36755,
+        "yield_per_rai": 178
+    },
+    {
+        "year": 2565,
+        "crop": "ยางพารา",
+        "province": "สระแก้ว",
+        "planted_area": 70150,
+        "harvest_area": 64218,
+        "yield_ton": 11797,
+        "yield_per_rai": 184
+    },
+    {
+        "year": 2565,
+        "crop": "ยางพารา",
+        "province": "จันทบุรี",
+        "planted_area": 490368,
+        "harvest_area": 465019,
+        "yield_ton": 87045,
+        "yield_per_rai": 187
+    },
+    {
+        "year": 2565,
+        "crop": "ยางพารา",
+        "province": "ตราด",
+        "planted_area": 304692,
+        "harvest_area": 268824,
+        "yield_ton": 46822,
+        "yield_per_rai": 174
+    },
+    {
+        "year": 2565,
+        "crop": "ยางพารา",
+        "province": "ระยอง",
+        "planted_area": 576734,
+        "harvest_area": 513497,
+        "yield_ton": 87484,
+        "yield_per_rai": 170
+    },
+    {
+        "year": 2565,
+        "crop": "ยางพารา",
+        "province": "ชลบุรี",
+        "planted_area": 229961,
+        "harvest_area": 203488,
+        "yield_ton": 41237,
+        "yield_per_rai": 203
+    },
+    {
+        "year": 2565,
+        "crop": "ยางพารา",
+        "province": "นครปฐม",
+        "planted_area": 25,
+        "harvest_area": 18,
+        "yield_ton": 1.89,
+        "yield_per_rai": 105
+    },
+    {
+        "year": 2565,
+        "crop": "ยางพารา",
+        "province": "กาญจนบุรี",
+        "planted_area": 128703,
+        "harvest_area": 123011,
+        "yield_ton": 22531,
+        "yield_per_rai": 183
+    },
+    {
+        "year": 2565,
+        "crop": "ยางพารา",
+        "province": "ราชบุรี",
+        "planted_area": 45642,
+        "harvest_area": 42270,
+        "yield_ton": 6804,
+        "yield_per_rai": 161
+    },
+    {
+        "year": 2565,
+        "crop": "ยางพารา",
+        "province": "เพชรบุรี",
+        "planted_area": 17466,
+        "harvest_area": 14930,
+        "yield_ton": 2513,
+        "yield_per_rai": 168
+    },
+    {
+        "year": 2565,
+        "crop": "ยางพารา",
+        "province": "ประจวบคีรีขันธ์",
+        "planted_area": 274004,
+        "harvest_area": 262690,
+        "yield_ton": 44293,
+        "yield_per_rai": 169
+    },
+    {
+        "year": 2565,
+        "crop": "ยางพารา",
+        "province": "ชุมพร",
+        "planted_area": 676231,
+        "harvest_area": 569366,
+        "yield_ton": 126874,
+        "yield_per_rai": 223
+    },
+    {
+        "year": 2565,
+        "crop": "ยางพารา",
+        "province": "ระนอง",
+        "planted_area": 348400,
+        "harvest_area": 310869,
+        "yield_ton": 67838,
+        "yield_per_rai": 218
+    },
+    {
+        "year": 2565,
+        "crop": "ยางพารา",
+        "province": "สุราษฎร์ธานี",
+        "planted_area": 2330107,
+        "harvest_area": 2056603,
+        "yield_ton": 478893,
+        "yield_per_rai": 233
+    },
+    {
+        "year": 2565,
+        "crop": "ยางพารา",
+        "province": "พังงา",
+        "planted_area": 547399,
+        "harvest_area": 510934,
+        "yield_ton": 113672,
+        "yield_per_rai": 222
+    },
+    {
+        "year": 2565,
+        "crop": "ยางพารา",
+        "province": "ภูเก็ต",
+        "planted_area": 69378,
+        "harvest_area": 62269,
+        "yield_ton": 11275,
+        "yield_per_rai": 181
+    },
+    {
+        "year": 2565,
+        "crop": "ยางพารา",
+        "province": "กระบี่",
+        "planted_area": 616380,
+        "harvest_area": 540696,
+        "yield_ton": 124126,
+        "yield_per_rai": 230
+    },
+    {
+        "year": 2565,
+        "crop": "ยางพารา",
+        "province": "ตรัง",
+        "planted_area": 1336440,
+        "harvest_area": 1188417,
+        "yield_ton": 264326,
+        "yield_per_rai": 222
+    },
+    {
+        "year": 2565,
+        "crop": "ยางพารา",
+        "province": "นครศรีธรรมราช",
+        "planted_area": 1892185,
+        "harvest_area": 1750689,
+        "yield_ton": 398242,
+        "yield_per_rai": 227
+    },
+    {
+        "year": 2565,
+        "crop": "ยางพารา",
+        "province": "พัทลุง",
+        "planted_area": 980064,
+        "harvest_area": 903056,
+        "yield_ton": 190216,
+        "yield_per_rai": 211
+    },
+    {
+        "year": 2565,
+        "crop": "ยางพารา",
+        "province": "สงขลา",
+        "planted_area": 2195792,
+        "harvest_area": 1935317,
+        "yield_ton": 411181,
+        "yield_per_rai": 212
+    },
+    {
+        "year": 2565,
+        "crop": "ยางพารา",
+        "province": "สตูล",
+        "planted_area": 525162,
+        "harvest_area": 430874,
+        "yield_ton": 99432,
+        "yield_per_rai": 231
+    },
+    {
+        "year": 2565,
+        "crop": "ยางพารา",
+        "province": "ปัตตานี",
+        "planted_area": 404663,
+        "harvest_area": 363367,
+        "yield_ton": 82021,
+        "yield_per_rai": 226
+    },
+    {
+        "year": 2565,
+        "crop": "ยางพารา",
+        "province": "ยะลา",
+        "planted_area": 1185279,
+        "harvest_area": 1091851,
+        "yield_ton": 249273,
+        "yield_per_rai": 228
+    },
+    {
+        "year": 2565,
+        "crop": "ยางพารา",
+        "province": "นราธิวาส",
+        "planted_area": 925125,
+        "harvest_area": 856892,
+        "yield_ton": 180224,
+        "yield_per_rai": 210
+    },
+    {
+        "year": 2566,
+        "crop": "ยางพารา",
+        "province": "เชียงราย",
+        "planted_area": 386855,
+        "harvest_area": 355032,
+        "yield_ton": 80256,
+        "yield_per_rai": 226
+    },
+    {
+        "year": 2566,
+        "crop": "ยางพารา",
+        "province": "พะเยา",
+        "planted_area": 153801,
+        "harvest_area": 146875,
+        "yield_ton": 34188,
+        "yield_per_rai": 233
+    },
+    {
+        "year": 2566,
+        "crop": "ยางพารา",
+        "province": "ลำปาง",
+        "planted_area": 38884,
+        "harvest_area": 37187,
+        "yield_ton": 5008,
+        "yield_per_rai": 135
+    },
+    {
+        "year": 2566,
+        "crop": "ยางพารา",
+        "province": "ลำพูน",
+        "planted_area": 7566,
+        "harvest_area": 6299,
+        "yield_ton": 1291,
+        "yield_per_rai": 205
+    },
+    {
+        "year": 2566,
+        "crop": "ยางพารา",
+        "province": "เชียงใหม่",
+        "planted_area": 25165,
+        "harvest_area": 24277,
+        "yield_ton": 5107,
+        "yield_per_rai": 210
+    },
+    {
+        "year": 2566,
+        "crop": "ยางพารา",
+        "province": "แม่ฮ่องสอน",
+        "planted_area": 1178,
+        "harvest_area": 1103,
+        "yield_ton": 82,
+        "yield_per_rai": 74
+    },
+    {
+        "year": 2566,
+        "crop": "ยางพารา",
+        "province": "ตาก",
+        "planted_area": 12440,
+        "harvest_area": 11314,
+        "yield_ton": 2106,
+        "yield_per_rai": 186
+    },
+    {
+        "year": 2566,
+        "crop": "ยางพารา",
+        "province": "กำแพงเพชร",
+        "planted_area": 31709,
+        "harvest_area": 26823,
+        "yield_ton": 4855,
+        "yield_per_rai": 181
+    },
+    {
+        "year": 2566,
+        "crop": "ยางพารา",
+        "province": "สุโขทัย",
+        "planted_area": 52119,
+        "harvest_area": 49487,
+        "yield_ton": 10138,
+        "yield_per_rai": 205
+    },
+    {
+        "year": 2566,
+        "crop": "ยางพารา",
+        "province": "แพร่",
+        "planted_area": 32317,
+        "harvest_area": 23998,
+        "yield_ton": 4185,
+        "yield_per_rai": 174
+    },
+    {
+        "year": 2566,
+        "crop": "ยางพารา",
+        "province": "น่าน",
+        "planted_area": 311299,
+        "harvest_area": 261654,
+        "yield_ton": 48961,
+        "yield_per_rai": 187
+    },
+    {
+        "year": 2566,
+        "crop": "ยางพารา",
+        "province": "อุตรดิตถ์",
+        "planted_area": 28467,
+        "harvest_area": 21505,
+        "yield_ton": 3623,
+        "yield_per_rai": 168
+    },
+    {
+        "year": 2566,
+        "crop": "ยางพารา",
+        "province": "พิษณุโลก",
+        "planted_area": 336538,
+        "harvest_area": 327461,
+        "yield_ton": 61040,
+        "yield_per_rai": 186
+    },
+    {
+        "year": 2566,
+        "crop": "ยางพารา",
+        "province": "พิจิตร",
+        "planted_area": 2650,
+        "harvest_area": 2556,
+        "yield_ton": 315,
+        "yield_per_rai": 123
+    },
+    {
+        "year": 2566,
+        "crop": "ยางพารา",
+        "province": "นครสวรรค์",
+        "planted_area": 6506,
+        "harvest_area": 5825,
+        "yield_ton": 730,
+        "yield_per_rai": 125
+    },
+    {
+        "year": 2566,
+        "crop": "ยางพารา",
+        "province": "อุทัยธานี",
+        "planted_area": 36564,
+        "harvest_area": 31082,
+        "yield_ton": 6182,
+        "yield_per_rai": 199
+    },
+    {
+        "year": 2566,
+        "crop": "ยางพารา",
+        "province": "เพชรบูรณ์",
+        "planted_area": 92269,
+        "harvest_area": 83909,
+        "yield_ton": 13898,
+        "yield_per_rai": 166
+    },
+    {
+        "year": 2566,
+        "crop": "ยางพารา",
+        "province": "เลย",
+        "planted_area": 938069,
+        "harvest_area": 910250,
+        "yield_ton": 201744,
+        "yield_per_rai": 222
+    },
+    {
+        "year": 2566,
+        "crop": "ยางพารา",
+        "province": "หนองบัวลำภู",
+        "planted_area": 113486,
+        "harvest_area": 111671,
+        "yield_ton": 23968,
+        "yield_per_rai": 215
+    },
+    {
+        "year": 2566,
+        "crop": "ยางพารา",
+        "province": "อุดรธานี",
+        "planted_area": 580859,
+        "harvest_area": 571829,
+        "yield_ton": 131622,
+        "yield_per_rai": 230
+    },
+    {
+        "year": 2566,
+        "crop": "ยางพารา",
+        "province": "หนองคาย",
+        "planted_area": 340742,
+        "harvest_area": 325124,
+        "yield_ton": 76064,
+        "yield_per_rai": 234
+    },
+    {
+        "year": 2566,
+        "crop": "ยางพารา",
+        "province": "บึงกาฬ",
+        "planted_area": 875915,
+        "harvest_area": 845598,
+        "yield_ton": 211348,
+        "yield_per_rai": 250
+    },
+    {
+        "year": 2566,
+        "crop": "ยางพารา",
+        "province": "สกลนคร",
+        "planted_area": 401287,
+        "harvest_area": 390081,
+        "yield_ton": 90227,
+        "yield_per_rai": 231
+    },
+    {
+        "year": 2566,
+        "crop": "ยางพารา",
+        "province": "นครพนม",
+        "planted_area": 367013,
+        "harvest_area": 358373,
+        "yield_ton": 81852,
+        "yield_per_rai": 228
+    },
+    {
+        "year": 2566,
+        "crop": "ยางพารา",
+        "province": "มุกดาหาร",
+        "planted_area": 269239,
+        "harvest_area": 259307,
+        "yield_ton": 57365,
+        "yield_per_rai": 221
+    },
+    {
+        "year": 2566,
+        "crop": "ยางพารา",
+        "province": "ยโสธร",
+        "planted_area": 119776,
+        "harvest_area": 114041,
+        "yield_ton": 24529,
+        "yield_per_rai": 215
+    },
+    {
+        "year": 2566,
+        "crop": "ยางพารา",
+        "province": "อำนาจเจริญ",
+        "planted_area": 93229,
+        "harvest_area": 89780,
+        "yield_ton": 20218,
+        "yield_per_rai": 225
+    },
+    {
+        "year": 2566,
+        "crop": "ยางพารา",
+        "province": "อุบลราชธานี",
+        "planted_area": 619844,
+        "harvest_area": 607104,
+        "yield_ton": 134069,
+        "yield_per_rai": 221
+    },
+    {
+        "year": 2566,
+        "crop": "ยางพารา",
+        "province": "ศรีสะเกษ",
+        "planted_area": 366569,
+        "harvest_area": 357883,
+        "yield_ton": 80478,
+        "yield_per_rai": 225
+    },
+    {
+        "year": 2566,
+        "crop": "ยางพารา",
+        "province": "สุรินทร์",
+        "planted_area": 245108,
+        "harvest_area": 235882,
+        "yield_ton": 48179,
+        "yield_per_rai": 204
+    },
+    {
+        "year": 2566,
+        "crop": "ยางพารา",
+        "province": "บุรีรัมย์",
+        "planted_area": 303666,
+        "harvest_area": 291246,
+        "yield_ton": 68806,
+        "yield_per_rai": 236
+    },
+    {
+        "year": 2566,
+        "crop": "ยางพารา",
+        "province": "มหาสารคาม",
+        "planted_area": 11105,
+        "harvest_area": 10148,
+        "yield_ton": 1637,
+        "yield_per_rai": 161
+    },
+    {
+        "year": 2566,
+        "crop": "ยางพารา",
+        "province": "ร้อยเอ็ด",
+        "planted_area": 103629,
+        "harvest_area": 99776,
+        "yield_ton": 20349,
+        "yield_per_rai": 204
+    },
+    {
+        "year": 2566,
+        "crop": "ยางพารา",
+        "province": "กาฬสินธุ์",
+        "planted_area": 198829,
+        "harvest_area": 193844,
+        "yield_ton": 39763,
+        "yield_per_rai": 205
+    },
+    {
+        "year": 2566,
+        "crop": "ยางพารา",
+        "province": "ขอนแก่น",
+        "planted_area": 83977,
+        "harvest_area": 81319,
+        "yield_ton": 15155,
+        "yield_per_rai": 186
+    },
+    {
+        "year": 2566,
+        "crop": "ยางพารา",
+        "province": "ชัยภูมิ",
+        "planted_area": 121236,
+        "harvest_area": 116823,
+        "yield_ton": 25633,
+        "yield_per_rai": 219
+    },
+    {
+        "year": 2566,
+        "crop": "ยางพารา",
+        "province": "นครราชสีมา",
+        "planted_area": 76404,
+        "harvest_area": 74925,
+        "yield_ton": 15283,
+        "yield_per_rai": 204
+    },
+    {
+        "year": 2566,
+        "crop": "ยางพารา",
+        "province": "สระบุรี",
+        "planted_area": 1818,
+        "harvest_area": 1736,
+        "yield_ton": 319,
+        "yield_per_rai": 184
+    },
+    {
+        "year": 2566,
+        "crop": "ยางพารา",
+        "province": "ลพบุรี",
+        "planted_area": 1617,
+        "harvest_area": 988,
+        "yield_ton": 104,
+        "yield_per_rai": 105
+    },
+    {
+        "year": 2566,
+        "crop": "ยางพารา",
+        "province": "ชัยนาท",
+        "planted_area": 845,
+        "harvest_area": 731,
+        "yield_ton": 15,
+        "yield_per_rai": 21
+    },
+    {
+        "year": 2566,
+        "crop": "ยางพารา",
+        "province": "สุพรรณบุรี",
+        "planted_area": 6623,
+        "harvest_area": 5436,
+        "yield_ton": 723,
+        "yield_per_rai": 133
+    },
+    {
+        "year": 2566,
+        "crop": "ยางพารา",
+        "province": "ปทุมธานี",
+        "planted_area": 267,
+        "harvest_area": 243,
+        "yield_ton": 0,
+        "yield_per_rai": 0
+    },
+    {
+        "year": 2566,
+        "crop": "ยางพารา",
+        "province": "นครนายก",
+        "planted_area": 540,
+        "harvest_area": 482,
+        "yield_ton": 77,
+        "yield_per_rai": 160
+    },
+    {
+        "year": 2566,
+        "crop": "ยางพารา",
+        "province": "ปราจีนบุรี",
+        "planted_area": 37825,
+        "harvest_area": 36232,
+        "yield_ton": 7127,
+        "yield_per_rai": 197
+    },
+    {
+        "year": 2566,
+        "crop": "ยางพารา",
+        "province": "ฉะเชิงเทรา",
+        "planted_area": 232824,
+        "harvest_area": 214736,
+        "yield_ton": 37371,
+        "yield_per_rai": 174
+    },
+    {
+        "year": 2566,
+        "crop": "ยางพารา",
+        "province": "สระแก้ว",
+        "planted_area": 66538,
+        "harvest_area": 66221,
+        "yield_ton": 12727,
+        "yield_per_rai": 192
+    },
+    {
+        "year": 2566,
+        "crop": "ยางพารา",
+        "province": "จันทบุรี",
+        "planted_area": 470586,
+        "harvest_area": 450828,
+        "yield_ton": 81378,
+        "yield_per_rai": 181
+    },
+    {
+        "year": 2566,
+        "crop": "ยางพารา",
+        "province": "ตราด",
+        "planted_area": 295081,
+        "harvest_area": 250694,
+        "yield_ton": 50329,
+        "yield_per_rai": 201
+    },
+    {
+        "year": 2566,
+        "crop": "ยางพารา",
+        "province": "ระยอง",
+        "planted_area": 568464,
+        "harvest_area": 510157,
+        "yield_ton": 85969,
+        "yield_per_rai": 169
+    },
+    {
+        "year": 2566,
+        "crop": "ยางพารา",
+        "province": "ชลบุรี",
+        "planted_area": 229588,
+        "harvest_area": 208272,
+        "yield_ton": 42111,
+        "yield_per_rai": 202
+    },
+    {
+        "year": 2566,
+        "crop": "ยางพารา",
+        "province": "นครปฐม",
+        "planted_area": 25,
+        "harvest_area": 18,
+        "yield_ton": 1.82,
+        "yield_per_rai": 101
+    },
+    {
+        "year": 2566,
+        "crop": "ยางพารา",
+        "province": "กาญจนบุรี",
+        "planted_area": 169666,
+        "harvest_area": 146593,
+        "yield_ton": 26088,
+        "yield_per_rai": 178
+    },
+    {
+        "year": 2566,
+        "crop": "ยางพารา",
+        "province": "ราชบุรี",
+        "planted_area": 44528,
+        "harvest_area": 43661,
+        "yield_ton": 6897,
+        "yield_per_rai": 158
+    },
+    {
+        "year": 2566,
+        "crop": "ยางพารา",
+        "province": "เพชรบุรี",
+        "planted_area": 17409,
+        "harvest_area": 16614,
+        "yield_ton": 2691,
+        "yield_per_rai": 162
+    },
+    {
+        "year": 2566,
+        "crop": "ยางพารา",
+        "province": "ประจวบคีรีขันธ์",
+        "planted_area": 272009,
+        "harvest_area": 263703,
+        "yield_ton": 43356,
+        "yield_per_rai": 164
+    },
+    {
+        "year": 2566,
+        "crop": "ยางพารา",
+        "province": "ชุมพร",
+        "planted_area": 653875,
+        "harvest_area": 595310,
+        "yield_ton": 127609,
+        "yield_per_rai": 214
+    },
+    {
+        "year": 2566,
+        "crop": "ยางพารา",
+        "province": "ระนอง",
+        "planted_area": 341307,
+        "harvest_area": 326519,
+        "yield_ton": 69184,
+        "yield_per_rai": 212
+    },
+    {
+        "year": 2566,
+        "crop": "ยางพารา",
+        "province": "สุราษฎร์ธานี",
+        "planted_area": 2287004,
+        "harvest_area": 2083482,
+        "yield_ton": 469667,
+        "yield_per_rai": 225
+    },
+    {
+        "year": 2566,
+        "crop": "ยางพารา",
+        "province": "พังงา",
+        "planted_area": 535810,
+        "harvest_area": 508189,
+        "yield_ton": 110223,
+        "yield_per_rai": 217
+    },
+    {
+        "year": 2566,
+        "crop": "ยางพารา",
+        "province": "ภูเก็ต",
+        "planted_area": 69254,
+        "harvest_area": 66610,
+        "yield_ton": 11678,
+        "yield_per_rai": 175
+    },
+    {
+        "year": 2566,
+        "crop": "ยางพารา",
+        "province": "กระบี่",
+        "planted_area": 601923,
+        "harvest_area": 539264,
+        "yield_ton": 119869,
+        "yield_per_rai": 222
+    },
+    {
+        "year": 2566,
+        "crop": "ยางพารา",
+        "province": "ตรัง",
+        "planted_area": 1323297,
+        "harvest_area": 1211052,
+        "yield_ton": 264785,
+        "yield_per_rai": 219
+    },
+    {
+        "year": 2566,
+        "crop": "ยางพารา",
+        "province": "นครศรีธรรมราช",
+        "planted_area": 1871745,
+        "harvest_area": 1755420,
+        "yield_ton": 388186,
+        "yield_per_rai": 221
+    },
+    {
+        "year": 2566,
+        "crop": "ยางพารา",
+        "province": "พัทลุง",
+        "planted_area": 980522,
+        "harvest_area": 926010,
+        "yield_ton": 188438,
+        "yield_per_rai": 203
+    },
+    {
+        "year": 2566,
+        "crop": "ยางพารา",
+        "province": "สงขลา",
+        "planted_area": 2192446,
+        "harvest_area": 2031769,
+        "yield_ton": 417094,
+        "yield_per_rai": 205
+    },
+    {
+        "year": 2566,
+        "crop": "ยางพารา",
+        "province": "สตูล",
+        "planted_area": 525022,
+        "harvest_area": 432537,
+        "yield_ton": 96678,
+        "yield_per_rai": 224
+    },
+    {
+        "year": 2566,
+        "crop": "ยางพารา",
+        "province": "ปัตตานี",
+        "planted_area": 403977,
+        "harvest_area": 374500,
+        "yield_ton": 82147,
+        "yield_per_rai": 219
+    },
+    {
+        "year": 2566,
+        "crop": "ยางพารา",
+        "province": "ยะลา",
+        "planted_area": 1174340,
+        "harvest_area": 1107377,
+        "yield_ton": 244269,
+        "yield_per_rai": 221
+    },
+    {
+        "year": 2566,
+        "crop": "ยางพารา",
+        "province": "นราธิวาส",
+        "planted_area": 922442,
+        "harvest_area": 879018,
+        "yield_ton": 177142,
+        "yield_per_rai": 202
+    },
+    {
+        "year": 2567,
+        "crop": "ยางพารา",
+        "province": "เชียงราย",
+        "planted_area": 398150,
+        "harvest_area": 360490,
+        "yield_ton": 83909,
+        "yield_per_rai": 233
+    },
+    {
+        "year": 2567,
+        "crop": "ยางพารา",
+        "province": "พะเยา",
+        "planted_area": 159049,
+        "harvest_area": 147782,
+        "yield_ton": 35815,
+        "yield_per_rai": 242
+    },
+    {
+        "year": 2567,
+        "crop": "ยางพารา",
+        "province": "ลำปาง",
+        "planted_area": 39012,
+        "harvest_area": 37452,
+        "yield_ton": 5418,
+        "yield_per_rai": 145
+    },
+    {
+        "year": 2567,
+        "crop": "ยางพารา",
+        "province": "ลำพูน",
+        "planted_area": 7587,
+        "harvest_area": 6458,
+        "yield_ton": 1353,
+        "yield_per_rai": 210
+    },
+    {
+        "year": 2567,
+        "crop": "ยางพารา",
+        "province": "เชียงใหม่",
+        "planted_area": 25165,
+        "harvest_area": 24341,
+        "yield_ton": 5231,
+        "yield_per_rai": 215
+    },
+    {
+        "year": 2567,
+        "crop": "ยางพารา",
+        "province": "แม่ฮ่องสอน",
+        "planted_area": 1145,
+        "harvest_area": 1123,
+        "yield_ton": 144,
+        "yield_per_rai": 128
+    },
+    {
+        "year": 2567,
+        "crop": "ยางพารา",
+        "province": "ตาก",
+        "planted_area": 12899,
+        "harvest_area": 11742,
+        "yield_ton": 2202,
+        "yield_per_rai": 188
+    },
+    {
+        "year": 2567,
+        "crop": "ยางพารา",
+        "province": "กำแพงเพชร",
+        "planted_area": 31819,
+        "harvest_area": 27890,
+        "yield_ton": 5263,
+        "yield_per_rai": 189
+    },
+    {
+        "year": 2567,
+        "crop": "ยางพารา",
+        "province": "สุโขทัย",
+        "planted_area": 51996,
+        "harvest_area": 50364,
+        "yield_ton": 10540,
+        "yield_per_rai": 209
+    },
+    {
+        "year": 2567,
+        "crop": "ยางพารา",
+        "province": "แพร่",
+        "planted_area": 30574,
+        "harvest_area": 24108,
+        "yield_ton": 4230,
+        "yield_per_rai": 175
+    },
+    {
+        "year": 2567,
+        "crop": "ยางพารา",
+        "province": "น่าน",
+        "planted_area": 329606,
+        "harvest_area": 271175,
+        "yield_ton": 51774,
+        "yield_per_rai": 191
+    },
+    {
+        "year": 2567,
+        "crop": "ยางพารา",
+        "province": "อุตรดิตถ์",
+        "planted_area": 29035,
+        "harvest_area": 21567,
+        "yield_ton": 3759,
+        "yield_per_rai": 174
+    },
+    {
+        "year": 2567,
+        "crop": "ยางพารา",
+        "province": "พิษณุโลก",
+        "planted_area": 338225,
+        "harvest_area": 327048,
+        "yield_ton": 61730,
+        "yield_per_rai": 189
+    },
+    {
+        "year": 2567,
+        "crop": "ยางพารา",
+        "province": "พิจิตร",
+        "planted_area": 2584,
+        "harvest_area": 2503,
+        "yield_ton": 305,
+        "yield_per_rai": 122
+    },
+    {
+        "year": 2567,
+        "crop": "ยางพารา",
+        "province": "นครสวรรค์",
+        "planted_area": 5313,
+        "harvest_area": 4800,
+        "yield_ton": 755,
+        "yield_per_rai": 157
+    },
+    {
+        "year": 2567,
+        "crop": "ยางพารา",
+        "province": "อุทัยธานี",
+        "planted_area": 35499,
+        "harvest_area": 30190,
+        "yield_ton": 6550,
+        "yield_per_rai": 217
+    },
+    {
+        "year": 2567,
+        "crop": "ยางพารา",
+        "province": "เพชรบูรณ์",
+        "planted_area": 93212,
+        "harvest_area": 86412,
+        "yield_ton": 14875,
+        "yield_per_rai": 172
+    },
+    {
+        "year": 2567,
+        "crop": "ยางพารา",
+        "province": "เลย",
+        "planted_area": 938340,
+        "harvest_area": 919524,
+        "yield_ton": 212346,
+        "yield_per_rai": 231
+    },
+    {
+        "year": 2567,
+        "crop": "ยางพารา",
+        "province": "อุดรธานี",
+        "planted_area": 113389,
+        "harvest_area": 111942,
+        "yield_ton": 24753,
+        "yield_per_rai": 221
+    },
+    {
+        "year": 2567,
+        "crop": "ยางพารา",
+        "province": "หนองคาย",
+        "planted_area": 580793,
+        "harvest_area": 576670,
+        "yield_ton": 133992,
+        "yield_per_rai": 232
+    },
+    {
+        "year": 2567,
+        "crop": "ยางพารา",
+        "province": "บึงกาฬ",
+        "planted_area": 340790,
+        "harvest_area": 326979,
+        "yield_ton": 78214,
+        "yield_per_rai": 239
+    },
+    {
+        "year": 2567,
+        "crop": "ยางพารา",
+        "province": "สกลนคร",
+        "planted_area": 876112,
+        "harvest_area": 848575,
+        "yield_ton": 214259,
+        "yield_per_rai": 252
+    },
+    {
+        "year": 2567,
+        "crop": "ยางพารา",
+        "province": "นครพนม",
+        "planted_area": 401359,
+        "harvest_area": 396616,
+        "yield_ton": 94639,
+        "yield_per_rai": 239
+    },
+    {
+        "year": 2567,
+        "crop": "ยางพารา",
+        "province": "มุกดาหาร",
+        "planted_area": 366978,
+        "harvest_area": 361532,
+        "yield_ton": 84583,
+        "yield_per_rai": 234
+    },
+    {
+        "year": 2567,
+        "crop": "ยางพารา",
+        "province": "หนองบัวลำภู",
+        "planted_area": 273198,
+        "harvest_area": 260978,
+        "yield_ton": 59093,
+        "yield_per_rai": 226
+    },
+    {
+        "year": 2567,
+        "crop": "ยางพารา",
+        "province": "ยโสธร",
+        "planted_area": 121047,
+        "harvest_area": 114817,
+        "yield_ton": 25309,
+        "yield_per_rai": 220
+    },
+    {
+        "year": 2567,
+        "crop": "ยางพารา",
+        "province": "อำนาจเจริญ",
+        "planted_area": 95264,
+        "harvest_area": 90647,
+        "yield_ton": 20965,
+        "yield_per_rai": 231
+    },
+    {
+        "year": 2567,
+        "crop": "ยางพารา",
+        "province": "อุบลราชธานี",
+        "planted_area": 619094,
+        "harvest_area": 608447,
+        "yield_ton": 136982,
+        "yield_per_rai": 225
+    },
+    {
+        "year": 2567,
+        "crop": "ยางพารา",
+        "province": "ศรีสะเกษ",
+        "planted_area": 366797,
+        "harvest_area": 358752,
+        "yield_ton": 81906,
+        "yield_per_rai": 228
+    },
+    {
+        "year": 2567,
+        "crop": "ยางพารา",
+        "province": "สุรินทร์",
+        "planted_area": 237612,
+        "harvest_area": 234501,
+        "yield_ton": 49309,
+        "yield_per_rai": 210
+    },
+    {
+        "year": 2567,
+        "crop": "ยางพารา",
+        "province": "บุรีรัมย์",
+        "planted_area": 285595,
+        "harvest_area": 279976,
+        "yield_ton": 66565,
+        "yield_per_rai": 238
+    },
+    {
+        "year": 2567,
+        "crop": "ยางพารา",
+        "province": "มหาสารคาม",
+        "planted_area": 11096,
+        "harvest_area": 10103,
+        "yield_ton": 1676,
+        "yield_per_rai": 166
+    },
+    {
+        "year": 2567,
+        "crop": "ยางพารา",
+        "province": "ร้อยเอ็ด",
+        "planted_area": 103383,
+        "harvest_area": 101838,
+        "yield_ton": 21444,
+        "yield_per_rai": 211
+    },
+    {
+        "year": 2567,
+        "crop": "ยางพารา",
+        "province": "กาฬสินธุ์",
+        "planted_area": 198187,
+        "harvest_area": 196049,
+        "yield_ton": 41041,
+        "yield_per_rai": 209
+    },
+    {
+        "year": 2567,
+        "crop": "ยางพารา",
+        "province": "ขอนแก่น",
+        "planted_area": 83493,
+        "harvest_area": 81521,
+        "yield_ton": 15516,
+        "yield_per_rai": 190
+    },
+    {
+        "year": 2567,
+        "crop": "ยางพารา",
+        "province": "ชัยภูมิ",
+        "planted_area": 114653,
+        "harvest_area": 109750,
+        "yield_ton": 24359,
+        "yield_per_rai": 222
+    },
+    {
+        "year": 2567,
+        "crop": "ยางพารา",
+        "province": "นครราชสีมา",
+        "planted_area": 72461,
+        "harvest_area": 69735,
+        "yield_ton": 14489,
+        "yield_per_rai": 208
+    },
+    {
+        "year": 2567,
+        "crop": "ยางพารา",
+        "province": "สระบุรี",
+        "planted_area": 1798,
+        "harvest_area": 1716,
+        "yield_ton": 317,
+        "yield_per_rai": 185
+    },
+    {
+        "year": 2567,
+        "crop": "ยางพารา",
+        "province": "ลพบุรี",
+        "planted_area": 1379,
+        "harvest_area": 1087,
+        "yield_ton": 105,
+        "yield_per_rai": 97
+    },
+    {
+        "year": 2567,
+        "crop": "ยางพารา",
+        "province": "ชัยนาท",
+        "planted_area": 553,
+        "harvest_area": 449,
+        "yield_ton": 23,
+        "yield_per_rai": 51
+    },
+    {
+        "year": 2567,
+        "crop": "ยางพารา",
+        "province": "สุพรรณบุรี",
+        "planted_area": 6839,
+        "harvest_area": 5501,
+        "yield_ton": 743,
+        "yield_per_rai": 135
+    },
+    {
+        "year": 2567,
+        "crop": "ยางพารา",
+        "province": "ปทุมธานี",
+        "planted_area": 267,
+        "harvest_area": 243,
+        "yield_ton": 0,
+        "yield_per_rai": 0
+    },
+    {
+        "year": 2567,
+        "crop": "ยางพารา",
+        "province": "นครนายก",
+        "planted_area": 540,
+        "harvest_area": 540,
+        "yield_ton": 87,
+        "yield_per_rai": 161
+    },
+    {
+        "year": 2567,
+        "crop": "ยางพารา",
+        "province": "ปราจีนบุรี",
+        "planted_area": 37353,
+        "harvest_area": 36040,
+        "yield_ton": 7175,
+        "yield_per_rai": 199
+    },
+    {
+        "year": 2567,
+        "crop": "ยางพารา",
+        "province": "ฉะเชิงเทรา",
+        "planted_area": 232144,
+        "harvest_area": 210272,
+        "yield_ton": 41034,
+        "yield_per_rai": 195
+    },
+    {
+        "year": 2567,
+        "crop": "ยางพารา",
+        "province": "สระแก้ว",
+        "planted_area": 65737,
+        "harvest_area": 64644,
+        "yield_ton": 13048,
+        "yield_per_rai": 202
+    },
+    {
+        "year": 2567,
+        "crop": "ยางพารา",
+        "province": "จันทบุรี",
+        "planted_area": 441865,
+        "harvest_area": 419760,
+        "yield_ton": 85587,
+        "yield_per_rai": 204
+    },
+    {
+        "year": 2567,
+        "crop": "ยางพารา",
+        "province": "ตราด",
+        "planted_area": 293597,
+        "harvest_area": 243544,
+        "yield_ton": 51334,
+        "yield_per_rai": 211
+    },
+    {
+        "year": 2567,
+        "crop": "ยางพารา",
+        "province": "ระยอง",
+        "planted_area": 565145,
+        "harvest_area": 503893,
+        "yield_ton": 87834,
+        "yield_per_rai": 174
+    },
+    {
+        "year": 2567,
+        "crop": "ยางพารา",
+        "province": "ชลบุรี",
+        "planted_area": 228320,
+        "harvest_area": 209708,
+        "yield_ton": 42924,
+        "yield_per_rai": 205
+    },
+    {
+        "year": 2567,
+        "crop": "ยางพารา",
+        "province": "นครปฐม",
+        "planted_area": 25,
+        "harvest_area": 18,
+        "yield_ton": 0,
+        "yield_per_rai": 0
+    },
+    {
+        "year": 2567,
+        "crop": "ยางพารา",
+        "province": "กาญจนบุรี",
+        "planted_area": 168037,
+        "harvest_area": 145459,
+        "yield_ton": 26447,
+        "yield_per_rai": 182
+    },
+    {
+        "year": 2567,
+        "crop": "ยางพารา",
+        "province": "ราชบุรี",
+        "planted_area": 44429,
+        "harvest_area": 43560,
+        "yield_ton": 6923,
+        "yield_per_rai": 159
+    },
+    {
+        "year": 2567,
+        "crop": "ยางพารา",
+        "province": "เพชรบุรี",
+        "planted_area": 18834,
+        "harvest_area": 16655,
+        "yield_ton": 2595,
+        "yield_per_rai": 156
+    },
+    {
+        "year": 2567,
+        "crop": "ยางพารา",
+        "province": "ประจวบคีรีขันธ์",
+        "planted_area": 270147,
+        "harvest_area": 264223,
+        "yield_ton": 43849,
+        "yield_per_rai": 166
+    },
+    {
+        "year": 2567,
+        "crop": "ยางพารา",
+        "province": "ชุมพร",
+        "planted_area": 610919,
+        "harvest_area": 562765,
+        "yield_ton": 119025,
+        "yield_per_rai": 212
+    },
+    {
+        "year": 2567,
+        "crop": "ยางพารา",
+        "province": "ระนอง",
+        "planted_area": 333863,
+        "harvest_area": 319100,
+        "yield_ton": 66622,
+        "yield_per_rai": 209
+    },
+    {
+        "year": 2567,
+        "crop": "ยางพารา",
+        "province": "สุราษฎร์ธานี",
+        "planted_area": 2217015,
+        "harvest_area": 2036459,
+        "yield_ton": 443679,
+        "yield_per_rai": 218
+    },
+    {
+        "year": 2567,
+        "crop": "ยางพารา",
+        "province": "พังงา",
+        "planted_area": 528104,
+        "harvest_area": 500635,
+        "yield_ton": 105461,
+        "yield_per_rai": 211
+    },
+    {
+        "year": 2567,
+        "crop": "ยางพารา",
+        "province": "ภูเก็ต",
+        "planted_area": 68774,
+        "harvest_area": 67106,
+        "yield_ton": 11416,
+        "yield_per_rai": 170
+    },
+    {
+        "year": 2567,
+        "crop": "ยางพารา",
+        "province": "กระบี่",
+        "planted_area": 590014,
+        "harvest_area": 531065,
+        "yield_ton": 115593,
+        "yield_per_rai": 218
+    },
+    {
+        "year": 2567,
+        "crop": "ยางพารา",
+        "province": "ตรัง",
+        "planted_area": 1297411,
+        "harvest_area": 1195987,
+        "yield_ton": 265845,
+        "yield_per_rai": 222
+    },
+    {
+        "year": 2567,
+        "crop": "ยางพารา",
+        "province": "นครศรีธรรมราช",
+        "planted_area": 1841963,
+        "harvest_area": 1745716,
+        "yield_ton": 381145,
+        "yield_per_rai": 218
+    },
+    {
+        "year": 2567,
+        "crop": "ยางพารา",
+        "province": "พัทลุง",
+        "planted_area": 972068,
+        "harvest_area": 923844,
+        "yield_ton": 187057,
+        "yield_per_rai": 202
+    },
+    {
+        "year": 2567,
+        "crop": "ยางพารา",
+        "province": "สงขลา",
+        "planted_area": 2179449,
+        "harvest_area": 2023647,
+        "yield_ton": 408123,
+        "yield_per_rai": 202
+    },
+    {
+        "year": 2567,
+        "crop": "ยางพารา",
+        "province": "สตูล",
+        "planted_area": 519864,
+        "harvest_area": 436048,
+        "yield_ton": 98101,
+        "yield_per_rai": 225
+    },
+    {
+        "year": 2567,
+        "crop": "ยางพารา",
+        "province": "ปัตตานี",
+        "planted_area": 403369,
+        "harvest_area": 381164,
+        "yield_ton": 81990,
+        "yield_per_rai": 215
+    },
+    {
+        "year": 2567,
+        "crop": "ยางพารา",
+        "province": "ยะลา",
+        "planted_area": 1170483,
+        "harvest_area": 1111399,
+        "yield_ton": 238134,
+        "yield_per_rai": 214
+    },
+    {
+        "year": 2567,
+        "crop": "ยางพารา",
+        "province": "นราธิวาส",
+        "planted_area": 916325,
+        "harvest_area": 885302,
+        "yield_ton": 183524,
+        "yield_per_rai": 207
+    }
+]

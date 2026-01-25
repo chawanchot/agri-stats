@@ -1,5 +1,4 @@
 import { useEffect, useRef } from "react";
-import Axios from "axios";
 import MainChartComponent from "@components/MainChartComponent";
 import MainMap from "@components/Map/MainMap";
 import { useAppDispatch, useAppSelector } from "@store/hook";
@@ -7,6 +6,12 @@ import type { MapRef } from "react-map-gl/maplibre";
 import { setCropYearList } from '@store/slice/cropSlice';
 import MapControlComponent from "@components/MapControlComponent";
 import ProvinceModalComponent from "@components/ProvinceModalComponent";
+
+import cassavaData from "@assets/data/crops/cassava.json";
+import durianData from "@assets/data/crops/durian.json";
+import longanData from "@assets/data/crops/longan.json";
+import rubberData from "@assets/data/crops/rubber.json";
+const cropFiles = [cassavaData, durianData, longanData, rubberData];
 
 function HomePage() {
     const dispatch = useAppDispatch();
@@ -17,10 +22,22 @@ function HomePage() {
 
     const fetchCropsList = async () => {
         try {
-            const getCropsList = await Axios.get("http://localhost:5000/crops-list");
-            const cropsListData = getCropsList.data.data;
+            const allData: { name: string; data: number[] }[] = [];
 
-            dispatch(setCropYearList(cropsListData));
+            cropFiles.forEach((jsonData) => {
+                if (jsonData.length > 0) {
+                    const cropName = jsonData[0].crop;
+                    const years = jsonData.map((item) => item.year);
+                    const uniqueYears = [...new Set(years)];
+
+                    allData.push({
+                        name: cropName,
+                        data: uniqueYears
+                    });
+                }
+            });
+
+            dispatch(setCropYearList(allData));
         } catch (error) {
             console.log(error);
         }

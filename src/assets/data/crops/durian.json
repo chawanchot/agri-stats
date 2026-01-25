@@ -1,0 +1,2477 @@
+[
+    {
+        "year": 2563,
+        "crop": "ทุเรียน",
+        "province": "เชียงราย",
+        "planted_area": 1234,
+        "harvest_area": 68,
+        "yield_ton": 19,
+        "yield_per_rai": 279
+    },
+    {
+        "year": 2563,
+        "crop": "ทุเรียน",
+        "province": "พะเยา",
+        "planted_area": 154,
+        "harvest_area": 0,
+        "yield_ton": 0,
+        "yield_per_rai": 0
+    },
+    {
+        "year": 2563,
+        "crop": "ทุเรียน",
+        "province": "เชียงใหม่",
+        "planted_area": 2064,
+        "harvest_area": 115,
+        "yield_ton": 47,
+        "yield_per_rai": 409
+    },
+    {
+        "year": 2563,
+        "crop": "ทุเรียน",
+        "province": "ตาก",
+        "planted_area": 3615,
+        "harvest_area": 1170,
+        "yield_ton": 974,
+        "yield_per_rai": 833
+    },
+    {
+        "year": 2563,
+        "crop": "ทุเรียน",
+        "province": "กำแพงเพชร",
+        "planted_area": 1671,
+        "harvest_area": 426,
+        "yield_ton": 170,
+        "yield_per_rai": 399
+    },
+    {
+        "year": 2563,
+        "crop": "ทุเรียน",
+        "province": "สุโขทัย",
+        "planted_area": 13238,
+        "harvest_area": 7259,
+        "yield_ton": 3770,
+        "yield_per_rai": 519
+    },
+    {
+        "year": 2563,
+        "crop": "ทุเรียน",
+        "province": "แพร่",
+        "planted_area": 1869,
+        "harvest_area": 553,
+        "yield_ton": 192,
+        "yield_per_rai": 347
+    },
+    {
+        "year": 2563,
+        "crop": "ทุเรียน",
+        "province": "น่าน",
+        "planted_area": 1074,
+        "harvest_area": 136,
+        "yield_ton": 35,
+        "yield_per_rai": 258
+    },
+    {
+        "year": 2563,
+        "crop": "ทุเรียน",
+        "province": "อุตรดิตถ์",
+        "planted_area": 42699,
+        "harvest_area": 37549,
+        "yield_ton": 21012,
+        "yield_per_rai": 560
+    },
+    {
+        "year": 2563,
+        "crop": "ทุเรียน",
+        "province": "พิษณุโลก",
+        "planted_area": 3472,
+        "harvest_area": 916,
+        "yield_ton": 416,
+        "yield_per_rai": 454
+    },
+    {
+        "year": 2563,
+        "crop": "ทุเรียน",
+        "province": "พิจิตร",
+        "planted_area": 923,
+        "harvest_area": 756,
+        "yield_ton": 562,
+        "yield_per_rai": 743
+    },
+    {
+        "year": 2563,
+        "crop": "ทุเรียน",
+        "province": "นครสวรรค์",
+        "planted_area": 345,
+        "harvest_area": 47,
+        "yield_ton": 21,
+        "yield_per_rai": 456
+    },
+    {
+        "year": 2563,
+        "crop": "ทุเรียน",
+        "province": "อุทัยธานี",
+        "planted_area": 1284,
+        "harvest_area": 315,
+        "yield_ton": 176,
+        "yield_per_rai": 559
+    },
+    {
+        "year": 2563,
+        "crop": "ทุเรียน",
+        "province": "เพชรบูรณ์",
+        "planted_area": 2346,
+        "harvest_area": 1256,
+        "yield_ton": 742,
+        "yield_per_rai": 591
+    },
+    {
+        "year": 2563,
+        "crop": "ทุเรียน",
+        "province": "อุบลราชธานี",
+        "planted_area": 1773,
+        "harvest_area": 510,
+        "yield_ton": 351,
+        "yield_per_rai": 688
+    },
+    {
+        "year": 2563,
+        "crop": "ทุเรียน",
+        "province": "ศรีสะเกษ",
+        "planted_area": 8767,
+        "harvest_area": 3234,
+        "yield_ton": 3745,
+        "yield_per_rai": 1158
+    },
+    {
+        "year": 2563,
+        "crop": "ทุเรียน",
+        "province": "สุรินทร์",
+        "planted_area": 1324,
+        "harvest_area": 108,
+        "yield_ton": 49,
+        "yield_per_rai": 457
+    },
+    {
+        "year": 2563,
+        "crop": "ทุเรียน",
+        "province": "บุรีรัมย์",
+        "planted_area": 3017,
+        "harvest_area": 461,
+        "yield_ton": 317,
+        "yield_per_rai": 688
+    },
+    {
+        "year": 2563,
+        "crop": "ทุเรียน",
+        "province": "กาฬสินธุ์",
+        "planted_area": 400,
+        "harvest_area": 7,
+        "yield_ton": 2.18,
+        "yield_per_rai": 311
+    },
+    {
+        "year": 2563,
+        "crop": "ทุเรียน",
+        "province": "ชัยภูมิ",
+        "planted_area": 2840,
+        "harvest_area": 746,
+        "yield_ton": 454,
+        "yield_per_rai": 609
+    },
+    {
+        "year": 2563,
+        "crop": "ทุเรียน",
+        "province": "นครราชสีมา",
+        "planted_area": 3726,
+        "harvest_area": 1409,
+        "yield_ton": 576,
+        "yield_per_rai": 409
+    },
+    {
+        "year": 2563,
+        "crop": "ทุเรียน",
+        "province": "สระบุรี",
+        "planted_area": 1628,
+        "harvest_area": 180,
+        "yield_ton": 68,
+        "yield_per_rai": 375
+    },
+    {
+        "year": 2563,
+        "crop": "ทุเรียน",
+        "province": "ลพบุรี",
+        "planted_area": 269,
+        "harvest_area": 28,
+        "yield_ton": 2,
+        "yield_per_rai": 54
+    },
+    {
+        "year": 2563,
+        "crop": "ทุเรียน",
+        "province": "สุพรรณบุรี",
+        "planted_area": 300,
+        "harvest_area": 59,
+        "yield_ton": 1,
+        "yield_per_rai": 25
+    },
+    {
+        "year": 2563,
+        "crop": "ทุเรียน",
+        "province": "นนทบุรี",
+        "planted_area": 2272,
+        "harvest_area": 183,
+        "yield_ton": 7,
+        "yield_per_rai": 36
+    },
+    {
+        "year": 2563,
+        "crop": "ทุเรียน",
+        "province": "นครนายก",
+        "planted_area": 1330,
+        "harvest_area": 584,
+        "yield_ton": 459,
+        "yield_per_rai": 786
+    },
+    {
+        "year": 2563,
+        "crop": "ทุเรียน",
+        "province": "ปราจีนบุรี",
+        "planted_area": 3027,
+        "harvest_area": 1905,
+        "yield_ton": 1883,
+        "yield_per_rai": 988
+    },
+    {
+        "year": 2563,
+        "crop": "ทุเรียน",
+        "province": "จันทบุรี",
+        "planted_area": 307149,
+        "harvest_area": 222830,
+        "yield_ton": 429735,
+        "yield_per_rai": 1929
+    },
+    {
+        "year": 2563,
+        "crop": "ทุเรียน",
+        "province": "ตราด",
+        "planted_area": 50567,
+        "harvest_area": 27683,
+        "yield_ton": 55176,
+        "yield_per_rai": 1993
+    },
+    {
+        "year": 2563,
+        "crop": "ทุเรียน",
+        "province": "ระยอง",
+        "planted_area": 83352,
+        "harvest_area": 66382,
+        "yield_ton": 114413,
+        "yield_per_rai": 1724
+    },
+    {
+        "year": 2563,
+        "crop": "ทุเรียน",
+        "province": "ชลบุรี",
+        "planted_area": 766,
+        "harvest_area": 331,
+        "yield_ton": 280,
+        "yield_per_rai": 847
+    },
+    {
+        "year": 2563,
+        "crop": "ทุเรียน",
+        "province": "กาญจนบุรี",
+        "planted_area": 3897,
+        "harvest_area": 2131,
+        "yield_ton": 1224,
+        "yield_per_rai": 574
+    },
+    {
+        "year": 2563,
+        "crop": "ทุเรียน",
+        "province": "ราชบุรี",
+        "planted_area": 2566,
+        "harvest_area": 851,
+        "yield_ton": 487,
+        "yield_per_rai": 572
+    },
+    {
+        "year": 2563,
+        "crop": "ทุเรียน",
+        "province": "เพชรบุรี",
+        "planted_area": 5921,
+        "harvest_area": 1520,
+        "yield_ton": 475,
+        "yield_per_rai": 313
+    },
+    {
+        "year": 2563,
+        "crop": "ทุเรียน",
+        "province": "ประจวบคีรีขันธ์",
+        "planted_area": 14917,
+        "harvest_area": 9304,
+        "yield_ton": 10935,
+        "yield_per_rai": 1175
+    },
+    {
+        "year": 2563,
+        "crop": "ทุเรียน",
+        "province": "ชุมพร",
+        "planted_area": 232011,
+        "harvest_area": 196158,
+        "yield_ton": 315552,
+        "yield_per_rai": 1609
+    },
+    {
+        "year": 2563,
+        "crop": "ทุเรียน",
+        "province": "ระนอง",
+        "planted_area": 44014,
+        "harvest_area": 31197,
+        "yield_ton": 25847,
+        "yield_per_rai": 829
+    },
+    {
+        "year": 2563,
+        "crop": "ทุเรียน",
+        "province": "สุราษฎร์ธานี",
+        "planted_area": 79994,
+        "harvest_area": 40967,
+        "yield_ton": 39396,
+        "yield_per_rai": 962
+    },
+    {
+        "year": 2563,
+        "crop": "ทุเรียน",
+        "province": "พังงา",
+        "planted_area": 7855,
+        "harvest_area": 6326,
+        "yield_ton": 2916,
+        "yield_per_rai": 461
+    },
+    {
+        "year": 2563,
+        "crop": "ทุเรียน",
+        "province": "ภูเก็ต",
+        "planted_area": 2605,
+        "harvest_area": 2485,
+        "yield_ton": 742,
+        "yield_per_rai": 299
+    },
+    {
+        "year": 2563,
+        "crop": "ทุเรียน",
+        "province": "กระบี่",
+        "planted_area": 4555,
+        "harvest_area": 3258,
+        "yield_ton": 1323,
+        "yield_per_rai": 406
+    },
+    {
+        "year": 2563,
+        "crop": "ทุเรียน",
+        "province": "ตรัง",
+        "planted_area": 3339,
+        "harvest_area": 1736,
+        "yield_ton": 945,
+        "yield_per_rai": 544
+    },
+    {
+        "year": 2563,
+        "crop": "ทุเรียน",
+        "province": "นครศรีธรรมราช",
+        "planted_area": 73216,
+        "harvest_area": 53670,
+        "yield_ton": 51750,
+        "yield_per_rai": 964
+    },
+    {
+        "year": 2563,
+        "crop": "ทุเรียน",
+        "province": "พัทลุง",
+        "planted_area": 5927,
+        "harvest_area": 3493,
+        "yield_ton": 1651,
+        "yield_per_rai": 473
+    },
+    {
+        "year": 2563,
+        "crop": "ทุเรียน",
+        "province": "สงขลา",
+        "planted_area": 19182,
+        "harvest_area": 14805,
+        "yield_ton": 11772,
+        "yield_per_rai": 795
+    },
+    {
+        "year": 2563,
+        "crop": "ทุเรียน",
+        "province": "สตูล",
+        "planted_area": 2977,
+        "harvest_area": 1250,
+        "yield_ton": 642,
+        "yield_per_rai": 514
+    },
+    {
+        "year": 2563,
+        "crop": "ทุเรียน",
+        "province": "ปัตตานี",
+        "planted_area": 6678,
+        "harvest_area": 5405,
+        "yield_ton": 3993,
+        "yield_per_rai": 739
+    },
+    {
+        "year": 2563,
+        "crop": "ทุเรียน",
+        "province": "ยะลา",
+        "planted_area": 73890,
+        "harvest_area": 53621,
+        "yield_ton": 53023,
+        "yield_per_rai": 989
+    },
+    {
+        "year": 2563,
+        "crop": "ทุเรียน",
+        "province": "นราธิวาส",
+        "planted_area": 30155,
+        "harvest_area": 23622,
+        "yield_ton": 9344,
+        "yield_per_rai": 396
+    },
+    {
+        "year": 2564,
+        "crop": "ทุเรียน",
+        "province": "เชียงราย",
+        "planted_area": 1674,
+        "harvest_area": 176,
+        "yield_ton": 43,
+        "yield_per_rai": 244
+    },
+    {
+        "year": 2564,
+        "crop": "ทุเรียน",
+        "province": "พะเยา",
+        "planted_area": 220,
+        "harvest_area": 0,
+        "yield_ton": 0,
+        "yield_per_rai": 0
+    },
+    {
+        "year": 2564,
+        "crop": "ทุเรียน",
+        "province": "เชียงใหม่",
+        "planted_area": 2781,
+        "harvest_area": 456,
+        "yield_ton": 137,
+        "yield_per_rai": 301
+    },
+    {
+        "year": 2564,
+        "crop": "ทุเรียน",
+        "province": "ตาก",
+        "planted_area": 3813,
+        "harvest_area": 1649,
+        "yield_ton": 1331,
+        "yield_per_rai": 807
+    },
+    {
+        "year": 2564,
+        "crop": "ทุเรียน",
+        "province": "กำแพงเพชร",
+        "planted_area": 1934,
+        "harvest_area": 700,
+        "yield_ton": 259,
+        "yield_per_rai": 370
+    },
+    {
+        "year": 2564,
+        "crop": "ทุเรียน",
+        "province": "สุโขทัย",
+        "planted_area": 13687,
+        "harvest_area": 10433,
+        "yield_ton": 4658,
+        "yield_per_rai": 446
+    },
+    {
+        "year": 2564,
+        "crop": "ทุเรียน",
+        "province": "แพร่",
+        "planted_area": 2330,
+        "harvest_area": 600,
+        "yield_ton": 185,
+        "yield_per_rai": 308
+    },
+    {
+        "year": 2564,
+        "crop": "ทุเรียน",
+        "province": "น่าน",
+        "planted_area": 1507,
+        "harvest_area": 205,
+        "yield_ton": 46,
+        "yield_per_rai": 226
+    },
+    {
+        "year": 2564,
+        "crop": "ทุเรียน",
+        "province": "อุตรดิตถ์",
+        "planted_area": 42813,
+        "harvest_area": 39549,
+        "yield_ton": 27334,
+        "yield_per_rai": 691
+    },
+    {
+        "year": 2564,
+        "crop": "ทุเรียน",
+        "province": "พิษณุโลก",
+        "planted_area": 4228,
+        "harvest_area": 1131,
+        "yield_ton": 587,
+        "yield_per_rai": 519
+    },
+    {
+        "year": 2564,
+        "crop": "ทุเรียน",
+        "province": "พิจิตร",
+        "planted_area": 1195,
+        "harvest_area": 772,
+        "yield_ton": 666,
+        "yield_per_rai": 863
+    },
+    {
+        "year": 2564,
+        "crop": "ทุเรียน",
+        "province": "นครสวรรค์",
+        "planted_area": 433,
+        "harvest_area": 67,
+        "yield_ton": 35,
+        "yield_per_rai": 516
+    },
+    {
+        "year": 2564,
+        "crop": "ทุเรียน",
+        "province": "อุทัยธานี",
+        "planted_area": 1425,
+        "harvest_area": 551,
+        "yield_ton": 359,
+        "yield_per_rai": 652
+    },
+    {
+        "year": 2564,
+        "crop": "ทุเรียน",
+        "province": "เพชรบูรณ์",
+        "planted_area": 2998,
+        "harvest_area": 1521,
+        "yield_ton": 931,
+        "yield_per_rai": 612
+    },
+    {
+        "year": 2564,
+        "crop": "ทุเรียน",
+        "province": "อุบลราชธานี",
+        "planted_area": 2094,
+        "harvest_area": 586,
+        "yield_ton": 437,
+        "yield_per_rai": 745
+    },
+    {
+        "year": 2564,
+        "crop": "ทุเรียน",
+        "province": "ศรีสะเกษ",
+        "planted_area": 13561,
+        "harvest_area": 3542,
+        "yield_ton": 4739,
+        "yield_per_rai": 1338
+    },
+    {
+        "year": 2564,
+        "crop": "ทุเรียน",
+        "province": "สุรินทร์",
+        "planted_area": 968,
+        "harvest_area": 142,
+        "yield_ton": 67,
+        "yield_per_rai": 475
+    },
+    {
+        "year": 2564,
+        "crop": "ทุเรียน",
+        "province": "บุรีรัมย์",
+        "planted_area": 2879,
+        "harvest_area": 594,
+        "yield_ton": 361,
+        "yield_per_rai": 608
+    },
+    {
+        "year": 2564,
+        "crop": "ทุเรียน",
+        "province": "กาฬสินธุ์",
+        "planted_area": 399,
+        "harvest_area": 7,
+        "yield_ton": 3,
+        "yield_per_rai": 429
+    },
+    {
+        "year": 2564,
+        "crop": "ทุเรียน",
+        "province": "ชัยภูมิ",
+        "planted_area": 2742,
+        "harvest_area": 1148,
+        "yield_ton": 592,
+        "yield_per_rai": 516
+    },
+    {
+        "year": 2564,
+        "crop": "ทุเรียน",
+        "province": "นครราชสีมา",
+        "planted_area": 3976,
+        "harvest_area": 1653,
+        "yield_ton": 814,
+        "yield_per_rai": 492
+    },
+    {
+        "year": 2564,
+        "crop": "ทุเรียน",
+        "province": "สระบุรี",
+        "planted_area": 1855,
+        "harvest_area": 200,
+        "yield_ton": 74,
+        "yield_per_rai": 370
+    },
+    {
+        "year": 2564,
+        "crop": "ทุเรียน",
+        "province": "ลพบุรี",
+        "planted_area": 242,
+        "harvest_area": 40,
+        "yield_ton": 9.23,
+        "yield_per_rai": 231
+    },
+    {
+        "year": 2564,
+        "crop": "ทุเรียน",
+        "province": "สุพรรณบุรี",
+        "planted_area": 449,
+        "harvest_area": 125,
+        "yield_ton": 7.45,
+        "yield_per_rai": 60
+    },
+    {
+        "year": 2564,
+        "crop": "ทุเรียน",
+        "province": "นนทบุรี",
+        "planted_area": 2280,
+        "harvest_area": 287,
+        "yield_ton": 16,
+        "yield_per_rai": 56
+    },
+    {
+        "year": 2564,
+        "crop": "ทุเรียน",
+        "province": "นครนายก",
+        "planted_area": 1477,
+        "harvest_area": 722,
+        "yield_ton": 672,
+        "yield_per_rai": 931
+    },
+    {
+        "year": 2564,
+        "crop": "ทุเรียน",
+        "province": "ปราจีนบุรี",
+        "planted_area": 3265,
+        "harvest_area": 2190,
+        "yield_ton": 2733,
+        "yield_per_rai": 1248
+    },
+    {
+        "year": 2564,
+        "crop": "ทุเรียน",
+        "province": "จันทบุรี",
+        "planted_area": 340457,
+        "harvest_area": 238034,
+        "yield_ton": 438650,
+        "yield_per_rai": 1843
+    },
+    {
+        "year": 2564,
+        "crop": "ทุเรียน",
+        "province": "ตราด",
+        "planted_area": 63709,
+        "harvest_area": 32053,
+        "yield_ton": 56844,
+        "yield_per_rai": 1773
+    },
+    {
+        "year": 2564,
+        "crop": "ทุเรียน",
+        "province": "ระยอง",
+        "planted_area": 101034,
+        "harvest_area": 68555,
+        "yield_ton": 120080,
+        "yield_per_rai": 1752
+    },
+    {
+        "year": 2564,
+        "crop": "ทุเรียน",
+        "province": "ชลบุรี",
+        "planted_area": 999,
+        "harvest_area": 338,
+        "yield_ton": 421,
+        "yield_per_rai": 1245
+    },
+    {
+        "year": 2564,
+        "crop": "ทุเรียน",
+        "province": "กาญจนบุรี",
+        "planted_area": 4489,
+        "harvest_area": 2433,
+        "yield_ton": 1480,
+        "yield_per_rai": 608
+    },
+    {
+        "year": 2564,
+        "crop": "ทุเรียน",
+        "province": "ราชบุรี",
+        "planted_area": 3096,
+        "harvest_area": 783,
+        "yield_ton": 534,
+        "yield_per_rai": 682
+    },
+    {
+        "year": 2564,
+        "crop": "ทุเรียน",
+        "province": "เพชรบุรี",
+        "planted_area": 6507,
+        "harvest_area": 2418,
+        "yield_ton": 913,
+        "yield_per_rai": 378
+    },
+    {
+        "year": 2564,
+        "crop": "ทุเรียน",
+        "province": "ประจวบคีรีขันธ์",
+        "planted_area": 16362,
+        "harvest_area": 10052,
+        "yield_ton": 13460,
+        "yield_per_rai": 1339
+    },
+    {
+        "year": 2564,
+        "crop": "ทุเรียน",
+        "province": "ชุมพร",
+        "planted_area": 246580,
+        "harvest_area": 207376,
+        "yield_ton": 343900,
+        "yield_per_rai": 1658
+    },
+    {
+        "year": 2564,
+        "crop": "ทุเรียน",
+        "province": "ระนอง",
+        "planted_area": 45316,
+        "harvest_area": 32018,
+        "yield_ton": 29257,
+        "yield_per_rai": 914
+    },
+    {
+        "year": 2564,
+        "crop": "ทุเรียน",
+        "province": "สุราษฎร์ธานี",
+        "planted_area": 84252,
+        "harvest_area": 46489,
+        "yield_ton": 46957,
+        "yield_per_rai": 1010
+    },
+    {
+        "year": 2564,
+        "crop": "ทุเรียน",
+        "province": "พังงา",
+        "planted_area": 8888,
+        "harvest_area": 6504,
+        "yield_ton": 2856,
+        "yield_per_rai": 439
+    },
+    {
+        "year": 2564,
+        "crop": "ทุเรียน",
+        "province": "ภูเก็ต",
+        "planted_area": 2687,
+        "harvest_area": 2479,
+        "yield_ton": 724,
+        "yield_per_rai": 292
+    },
+    {
+        "year": 2564,
+        "crop": "ทุเรียน",
+        "province": "กระบี่",
+        "planted_area": 5415,
+        "harvest_area": 3269,
+        "yield_ton": 1299,
+        "yield_per_rai": 397
+    },
+    {
+        "year": 2564,
+        "crop": "ทุเรียน",
+        "province": "ตรัง",
+        "planted_area": 3731,
+        "harvest_area": 1806,
+        "yield_ton": 1005,
+        "yield_per_rai": 556
+    },
+    {
+        "year": 2564,
+        "crop": "ทุเรียน",
+        "province": "นครศรีธรรมราช",
+        "planted_area": 84756,
+        "harvest_area": 57695,
+        "yield_ton": 59738,
+        "yield_per_rai": 1035
+    },
+    {
+        "year": 2564,
+        "crop": "ทุเรียน",
+        "province": "พัทลุง",
+        "planted_area": 6591,
+        "harvest_area": 3651,
+        "yield_ton": 1836,
+        "yield_per_rai": 503
+    },
+    {
+        "year": 2564,
+        "crop": "ทุเรียน",
+        "province": "สงขลา",
+        "planted_area": 19694,
+        "harvest_area": 15879,
+        "yield_ton": 13437,
+        "yield_per_rai": 846
+    },
+    {
+        "year": 2564,
+        "crop": "ทุเรียน",
+        "province": "สตูล",
+        "planted_area": 3965,
+        "harvest_area": 1611,
+        "yield_ton": 866,
+        "yield_per_rai": 538
+    },
+    {
+        "year": 2564,
+        "crop": "ทุเรียน",
+        "province": "ปัตตานี",
+        "planted_area": 6938,
+        "harvest_area": 5766,
+        "yield_ton": 4447,
+        "yield_per_rai": 771
+    },
+    {
+        "year": 2564,
+        "crop": "ทุเรียน",
+        "province": "ยะลา",
+        "planted_area": 82817,
+        "harvest_area": 55872,
+        "yield_ton": 56695,
+        "yield_per_rai": 1015
+    },
+    {
+        "year": 2564,
+        "crop": "ทุเรียน",
+        "province": "นราธิวาส",
+        "planted_area": 30068,
+        "harvest_area": 24861,
+        "yield_ton": 13577,
+        "yield_per_rai": 546
+    },
+    {
+        "year": 2565,
+        "crop": "ทุเรียน",
+        "province": "เชียงราย",
+        "planted_area": 1868,
+        "harvest_area": 465,
+        "yield_ton": 102,
+        "yield_per_rai": 219
+    },
+    {
+        "year": 2565,
+        "crop": "ทุเรียน",
+        "province": "พะเยา",
+        "planted_area": 292,
+        "harvest_area": 23,
+        "yield_ton": 9,
+        "yield_per_rai": 382
+    },
+    {
+        "year": 2565,
+        "crop": "ทุเรียน",
+        "province": "ลำปาง",
+        "planted_area": 216,
+        "harvest_area": 122,
+        "yield_ton": 14,
+        "yield_per_rai": 118
+    },
+    {
+        "year": 2565,
+        "crop": "ทุเรียน",
+        "province": "ลำพูน",
+        "planted_area": 57,
+        "harvest_area": 8,
+        "yield_ton": 1,
+        "yield_per_rai": 150
+    },
+    {
+        "year": 2565,
+        "crop": "ทุเรียน",
+        "province": "เชียงใหม่",
+        "planted_area": 2866,
+        "harvest_area": 664,
+        "yield_ton": 255,
+        "yield_per_rai": 384
+    },
+    {
+        "year": 2565,
+        "crop": "ทุเรียน",
+        "province": "แม่ฮ่องสอน",
+        "planted_area": 60,
+        "harvest_area": 0,
+        "yield_ton": 0,
+        "yield_per_rai": 0
+    },
+    {
+        "year": 2565,
+        "crop": "ทุเรียน",
+        "province": "ตาก",
+        "planted_area": 4103,
+        "harvest_area": 2549,
+        "yield_ton": 2074,
+        "yield_per_rai": 814
+    },
+    {
+        "year": 2565,
+        "crop": "ทุเรียน",
+        "province": "กำแพงเพชร",
+        "planted_area": 2057,
+        "harvest_area": 804,
+        "yield_ton": 356,
+        "yield_per_rai": 443
+    },
+    {
+        "year": 2565,
+        "crop": "ทุเรียน",
+        "province": "สุโขทัย",
+        "planted_area": 15076,
+        "harvest_area": 12967,
+        "yield_ton": 6364,
+        "yield_per_rai": 491
+    },
+    {
+        "year": 2565,
+        "crop": "ทุเรียน",
+        "province": "แพร่",
+        "planted_area": 6683,
+        "harvest_area": 3443,
+        "yield_ton": 2789,
+        "yield_per_rai": 810
+    },
+    {
+        "year": 2565,
+        "crop": "ทุเรียน",
+        "province": "น่าน",
+        "planted_area": 2245,
+        "harvest_area": 671,
+        "yield_ton": 192,
+        "yield_per_rai": 286
+    },
+    {
+        "year": 2565,
+        "crop": "ทุเรียน",
+        "province": "อุตรดิตถ์",
+        "planted_area": 47776,
+        "harvest_area": 40985,
+        "yield_ton": 32747,
+        "yield_per_rai": 799
+    },
+    {
+        "year": 2565,
+        "crop": "ทุเรียน",
+        "province": "พิษณุโลก",
+        "planted_area": 4594,
+        "harvest_area": 1406,
+        "yield_ton": 838,
+        "yield_per_rai": 596
+    },
+    {
+        "year": 2565,
+        "crop": "ทุเรียน",
+        "province": "พิจิตร",
+        "planted_area": 1215,
+        "harvest_area": 802,
+        "yield_ton": 1004,
+        "yield_per_rai": 1252
+    },
+    {
+        "year": 2565,
+        "crop": "ทุเรียน",
+        "province": "นครสวรรค์",
+        "planted_area": 523,
+        "harvest_area": 173,
+        "yield_ton": 94,
+        "yield_per_rai": 543
+    },
+    {
+        "year": 2565,
+        "crop": "ทุเรียน",
+        "province": "อุทัยธานี",
+        "planted_area": 1509,
+        "harvest_area": 738,
+        "yield_ton": 542,
+        "yield_per_rai": 734
+    },
+    {
+        "year": 2565,
+        "crop": "ทุเรียน",
+        "province": "เพชรบูรณ์",
+        "planted_area": 3174,
+        "harvest_area": 1657,
+        "yield_ton": 966,
+        "yield_per_rai": 583
+    },
+    {
+        "year": 2565,
+        "crop": "ทุเรียน",
+        "province": "เลย",
+        "planted_area": 4874,
+        "harvest_area": 1659,
+        "yield_ton": 699,
+        "yield_per_rai": 421
+    },
+    {
+        "year": 2565,
+        "crop": "ทุเรียน",
+        "province": "หนองบัวลำภู",
+        "planted_area": 487,
+        "harvest_area": 12,
+        "yield_ton": 2,
+        "yield_per_rai": 150
+    },
+    {
+        "year": 2565,
+        "crop": "ทุเรียน",
+        "province": "อุดรธานี",
+        "planted_area": 1506,
+        "harvest_area": 254,
+        "yield_ton": 104,
+        "yield_per_rai": 409
+    },
+    {
+        "year": 2565,
+        "crop": "ทุเรียน",
+        "province": "หนองคาย",
+        "planted_area": 2064,
+        "harvest_area": 498,
+        "yield_ton": 170,
+        "yield_per_rai": 341
+    },
+    {
+        "year": 2565,
+        "crop": "ทุเรียน",
+        "province": "บึงกาฬ",
+        "planted_area": 3285,
+        "harvest_area": 924,
+        "yield_ton": 233,
+        "yield_per_rai": 252
+    },
+    {
+        "year": 2565,
+        "crop": "ทุเรียน",
+        "province": "สกลนคร",
+        "planted_area": 673,
+        "harvest_area": 177,
+        "yield_ton": 37,
+        "yield_per_rai": 209
+    },
+    {
+        "year": 2565,
+        "crop": "ทุเรียน",
+        "province": "นครพนม",
+        "planted_area": 1126,
+        "harvest_area": 199,
+        "yield_ton": 49,
+        "yield_per_rai": 246
+    },
+    {
+        "year": 2565,
+        "crop": "ทุเรียน",
+        "province": "อุบลราชธานี",
+        "planted_area": 2410,
+        "harvest_area": 862,
+        "yield_ton": 706,
+        "yield_per_rai": 819
+    },
+    {
+        "year": 2565,
+        "crop": "ทุเรียน",
+        "province": "ศรีสะเกษ",
+        "planted_area": 15137,
+        "harvest_area": 6110,
+        "yield_ton": 8235,
+        "yield_per_rai": 1348
+    },
+    {
+        "year": 2565,
+        "crop": "ทุเรียน",
+        "province": "สุรินทร์",
+        "planted_area": 1354,
+        "harvest_area": 200,
+        "yield_ton": 97,
+        "yield_per_rai": 487
+    },
+    {
+        "year": 2565,
+        "crop": "ทุเรียน",
+        "province": "บุรีรัมย์",
+        "planted_area": 3055,
+        "harvest_area": 916,
+        "yield_ton": 715,
+        "yield_per_rai": 780
+    },
+    {
+        "year": 2565,
+        "crop": "ทุเรียน",
+        "province": "กาฬสินธุ์",
+        "planted_area": 401,
+        "harvest_area": 9,
+        "yield_ton": 5,
+        "yield_per_rai": 510
+    },
+    {
+        "year": 2565,
+        "crop": "ทุเรียน",
+        "province": "ชัยภูมิ",
+        "planted_area": 2951,
+        "harvest_area": 1321,
+        "yield_ton": 744,
+        "yield_per_rai": 563
+    },
+    {
+        "year": 2565,
+        "crop": "ทุเรียน",
+        "province": "นครราชสีมา",
+        "planted_area": 6292,
+        "harvest_area": 2280,
+        "yield_ton": 1598,
+        "yield_per_rai": 701
+    },
+    {
+        "year": 2565,
+        "crop": "ทุเรียน",
+        "province": "สระบุรี",
+        "planted_area": 2038,
+        "harvest_area": 556,
+        "yield_ton": 152,
+        "yield_per_rai": 273
+    },
+    {
+        "year": 2565,
+        "crop": "ทุเรียน",
+        "province": "ลพบุรี",
+        "planted_area": 215,
+        "harvest_area": 45,
+        "yield_ton": 10,
+        "yield_per_rai": 212
+    },
+    {
+        "year": 2565,
+        "crop": "ทุเรียน",
+        "province": "สุพรรณบุรี",
+        "planted_area": 475,
+        "harvest_area": 147,
+        "yield_ton": 23,
+        "yield_per_rai": 156
+    },
+    {
+        "year": 2565,
+        "crop": "ทุเรียน",
+        "province": "นนทบุรี",
+        "planted_area": 2128,
+        "harvest_area": 278,
+        "yield_ton": 25,
+        "yield_per_rai": 90
+    },
+    {
+        "year": 2565,
+        "crop": "ทุเรียน",
+        "province": "นครนายก",
+        "planted_area": 2108,
+        "harvest_area": 836,
+        "yield_ton": 874,
+        "yield_per_rai": 1045
+    },
+    {
+        "year": 2565,
+        "crop": "ทุเรียน",
+        "province": "ปราจีนบุรี",
+        "planted_area": 4302,
+        "harvest_area": 2475,
+        "yield_ton": 3425,
+        "yield_per_rai": 1384
+    },
+    {
+        "year": 2565,
+        "crop": "ทุเรียน",
+        "province": "จันทบุรี",
+        "planted_area": 379121,
+        "harvest_area": 259815,
+        "yield_ton": 570137,
+        "yield_per_rai": 2194
+    },
+    {
+        "year": 2565,
+        "crop": "ทุเรียน",
+        "province": "ตราด",
+        "planted_area": 75136,
+        "harvest_area": 37172,
+        "yield_ton": 86336,
+        "yield_per_rai": 2323
+    },
+    {
+        "year": 2565,
+        "crop": "ทุเรียน",
+        "province": "ระยอง",
+        "planted_area": 117753,
+        "harvest_area": 71104,
+        "yield_ton": 149234,
+        "yield_per_rai": 2099
+    },
+    {
+        "year": 2565,
+        "crop": "ทุเรียน",
+        "province": "ชลบุรี",
+        "planted_area": 1537,
+        "harvest_area": 398,
+        "yield_ton": 544,
+        "yield_per_rai": 1367
+    },
+    {
+        "year": 2565,
+        "crop": "ทุเรียน",
+        "province": "กาญจนบุรี",
+        "planted_area": 5224,
+        "harvest_area": 2680,
+        "yield_ton": 1777,
+        "yield_per_rai": 663
+    },
+    {
+        "year": 2565,
+        "crop": "ทุเรียน",
+        "province": "ราชบุรี",
+        "planted_area": 3832,
+        "harvest_area": 1126,
+        "yield_ton": 761,
+        "yield_per_rai": 676
+    },
+    {
+        "year": 2565,
+        "crop": "ทุเรียน",
+        "province": "เพชรบุรี",
+        "planted_area": 6739,
+        "harvest_area": 3693,
+        "yield_ton": 2589,
+        "yield_per_rai": 701
+    },
+    {
+        "year": 2565,
+        "crop": "ทุเรียน",
+        "province": "ประจวบคีรีขันธ์",
+        "planted_area": 17161,
+        "harvest_area": 10523,
+        "yield_ton": 11935,
+        "yield_per_rai": 1134
+    },
+    {
+        "year": 2565,
+        "crop": "ทุเรียน",
+        "province": "ชุมพร",
+        "planted_area": 260768,
+        "harvest_area": 216141,
+        "yield_ton": 261232,
+        "yield_per_rai": 1209
+    },
+    {
+        "year": 2565,
+        "crop": "ทุเรียน",
+        "province": "ระนอง",
+        "planted_area": 45891,
+        "harvest_area": 33767,
+        "yield_ton": 28667,
+        "yield_per_rai": 849
+    },
+    {
+        "year": 2565,
+        "crop": "ทุเรียน",
+        "province": "สุราษฎร์ธานี",
+        "planted_area": 91710,
+        "harvest_area": 67207,
+        "yield_ton": 48327,
+        "yield_per_rai": 719
+    },
+    {
+        "year": 2565,
+        "crop": "ทุเรียน",
+        "province": "พังงา",
+        "planted_area": 9204,
+        "harvest_area": 6566,
+        "yield_ton": 1894,
+        "yield_per_rai": 288
+    },
+    {
+        "year": 2565,
+        "crop": "ทุเรียน",
+        "province": "ภูเก็ต",
+        "planted_area": 2689,
+        "harvest_area": 2511,
+        "yield_ton": 314,
+        "yield_per_rai": 125
+    },
+    {
+        "year": 2565,
+        "crop": "ทุเรียน",
+        "province": "กระบี่",
+        "planted_area": 6615,
+        "harvest_area": 3513,
+        "yield_ton": 1054,
+        "yield_per_rai": 300
+    },
+    {
+        "year": 2565,
+        "crop": "ทุเรียน",
+        "province": "ตรัง",
+        "planted_area": 4332,
+        "harvest_area": 1953,
+        "yield_ton": 485,
+        "yield_per_rai": 248
+    },
+    {
+        "year": 2565,
+        "crop": "ทุเรียน",
+        "province": "นครศรีธรรมราช",
+        "planted_area": 94811,
+        "harvest_area": 61169,
+        "yield_ton": 64990,
+        "yield_per_rai": 1062
+    },
+    {
+        "year": 2565,
+        "crop": "ทุเรียน",
+        "province": "พัทลุง",
+        "planted_area": 6891,
+        "harvest_area": 4352,
+        "yield_ton": 67,
+        "yield_per_rai": 15
+    },
+    {
+        "year": 2565,
+        "crop": "ทุเรียน",
+        "province": "สงขลา",
+        "planted_area": 21736,
+        "harvest_area": 16934,
+        "yield_ton": 5919,
+        "yield_per_rai": 350
+    },
+    {
+        "year": 2565,
+        "crop": "ทุเรียน",
+        "province": "สตูล",
+        "planted_area": 4138,
+        "harvest_area": 1890,
+        "yield_ton": 399,
+        "yield_per_rai": 211
+    },
+    {
+        "year": 2565,
+        "crop": "ทุเรียน",
+        "province": "ปัตตานี",
+        "planted_area": 7152,
+        "harvest_area": 6192,
+        "yield_ton": 2786,
+        "yield_per_rai": 450
+    },
+    {
+        "year": 2565,
+        "crop": "ทุเรียน",
+        "province": "ยะลา",
+        "planted_area": 90703,
+        "harvest_area": 60518,
+        "yield_ton": 28622,
+        "yield_per_rai": 473
+    },
+    {
+        "year": 2565,
+        "crop": "ทุเรียน",
+        "province": "นราธิวาส",
+        "planted_area": 30636,
+        "harvest_area": 26461,
+        "yield_ton": 3939,
+        "yield_per_rai": 149
+    },
+    {
+        "year": 2566,
+        "crop": "ทุเรียน",
+        "province": "เชียงราย",
+        "planted_area": 2528,
+        "harvest_area": 876,
+        "yield_ton": 213,
+        "yield_per_rai": 243
+    },
+    {
+        "year": 2566,
+        "crop": "ทุเรียน",
+        "province": "พะเยา",
+        "planted_area": 365,
+        "harvest_area": 38,
+        "yield_ton": 18,
+        "yield_per_rai": 474
+    },
+    {
+        "year": 2566,
+        "crop": "ทุเรียน",
+        "province": "ลำปาง",
+        "planted_area": 307,
+        "harvest_area": 122,
+        "yield_ton": 31,
+        "yield_per_rai": 254
+    },
+    {
+        "year": 2566,
+        "crop": "ทุเรียน",
+        "province": "ลำพูน",
+        "planted_area": 91,
+        "harvest_area": 26,
+        "yield_ton": 2,
+        "yield_per_rai": 88
+    },
+    {
+        "year": 2566,
+        "crop": "ทุเรียน",
+        "province": "เชียงใหม่",
+        "planted_area": 3108,
+        "harvest_area": 843,
+        "yield_ton": 338,
+        "yield_per_rai": 401
+    },
+    {
+        "year": 2566,
+        "crop": "ทุเรียน",
+        "province": "แม่ฮ่องสอน",
+        "planted_area": 67,
+        "harvest_area": 19,
+        "yield_ton": 2,
+        "yield_per_rai": 104
+    },
+    {
+        "year": 2566,
+        "crop": "ทุเรียน",
+        "province": "ตาก",
+        "planted_area": 5667,
+        "harvest_area": 3105,
+        "yield_ton": 2646,
+        "yield_per_rai": 852
+    },
+    {
+        "year": 2566,
+        "crop": "ทุเรียน",
+        "province": "กำแพงเพชร",
+        "planted_area": 2038,
+        "harvest_area": 1103,
+        "yield_ton": 455,
+        "yield_per_rai": 413
+    },
+    {
+        "year": 2566,
+        "crop": "ทุเรียน",
+        "province": "สุโขทัย",
+        "planted_area": 15696,
+        "harvest_area": 13117,
+        "yield_ton": 6845,
+        "yield_per_rai": 522
+    },
+    {
+        "year": 2566,
+        "crop": "ทุเรียน",
+        "province": "แพร่",
+        "planted_area": 7701,
+        "harvest_area": 4108,
+        "yield_ton": 3005,
+        "yield_per_rai": 731
+    },
+    {
+        "year": 2566,
+        "crop": "ทุเรียน",
+        "province": "น่าน",
+        "planted_area": 2372,
+        "harvest_area": 745,
+        "yield_ton": 222,
+        "yield_per_rai": 298
+    },
+    {
+        "year": 2566,
+        "crop": "ทุเรียน",
+        "province": "อุตรดิตถ์",
+        "planted_area": 48856,
+        "harvest_area": 41398,
+        "yield_ton": 35189,
+        "yield_per_rai": 850
+    },
+    {
+        "year": 2566,
+        "crop": "ทุเรียน",
+        "province": "พิษณุโลก",
+        "planted_area": 5349,
+        "harvest_area": 2388,
+        "yield_ton": 1205,
+        "yield_per_rai": 505
+    },
+    {
+        "year": 2566,
+        "crop": "ทุเรียน",
+        "province": "พิจิตร",
+        "planted_area": 954,
+        "harvest_area": 729,
+        "yield_ton": 908,
+        "yield_per_rai": 1246
+    },
+    {
+        "year": 2566,
+        "crop": "ทุเรียน",
+        "province": "นครสวรรค์",
+        "planted_area": 706,
+        "harvest_area": 117,
+        "yield_ton": 46,
+        "yield_per_rai": 393
+    },
+    {
+        "year": 2566,
+        "crop": "ทุเรียน",
+        "province": "อุทัยธานี",
+        "planted_area": 1888,
+        "harvest_area": 1016,
+        "yield_ton": 587,
+        "yield_per_rai": 578
+    },
+    {
+        "year": 2566,
+        "crop": "ทุเรียน",
+        "province": "เพชรบูรณ์",
+        "planted_area": 3827,
+        "harvest_area": 1837,
+        "yield_ton": 1129,
+        "yield_per_rai": 615
+    },
+    {
+        "year": 2566,
+        "crop": "ทุเรียน",
+        "province": "เลย",
+        "planted_area": 5815,
+        "harvest_area": 2486,
+        "yield_ton": 1143,
+        "yield_per_rai": 460
+    },
+    {
+        "year": 2566,
+        "crop": "ทุเรียน",
+        "province": "หนองบัวลำภู",
+        "planted_area": 938,
+        "harvest_area": 35,
+        "yield_ton": 8,
+        "yield_per_rai": 217
+    },
+    {
+        "year": 2566,
+        "crop": "ทุเรียน",
+        "province": "อุดรธานี",
+        "planted_area": 2036,
+        "harvest_area": 400,
+        "yield_ton": 190,
+        "yield_per_rai": 475
+    },
+    {
+        "year": 2566,
+        "crop": "ทุเรียน",
+        "province": "หนองคาย",
+        "planted_area": 2252,
+        "harvest_area": 916,
+        "yield_ton": 428,
+        "yield_per_rai": 467
+    },
+    {
+        "year": 2566,
+        "crop": "ทุเรียน",
+        "province": "บึงกาฬ",
+        "planted_area": 3701,
+        "harvest_area": 1801,
+        "yield_ton": 857,
+        "yield_per_rai": 476
+    },
+    {
+        "year": 2566,
+        "crop": "ทุเรียน",
+        "province": "สกลนคร",
+        "planted_area": 831,
+        "harvest_area": 252,
+        "yield_ton": 107,
+        "yield_per_rai": 425
+    },
+    {
+        "year": 2566,
+        "crop": "ทุเรียน",
+        "province": "นครพนม",
+        "planted_area": 1224,
+        "harvest_area": 366,
+        "yield_ton": 119,
+        "yield_per_rai": 325
+    },
+    {
+        "year": 2566,
+        "crop": "ทุเรียน",
+        "province": "อุบลราชธานี",
+        "planted_area": 3832,
+        "harvest_area": 1571,
+        "yield_ton": 1576,
+        "yield_per_rai": 1003
+    },
+    {
+        "year": 2566,
+        "crop": "ทุเรียน",
+        "province": "ศรีสะเกษ",
+        "planted_area": 16159,
+        "harvest_area": 8351,
+        "yield_ton": 10599,
+        "yield_per_rai": 1269
+    },
+    {
+        "year": 2566,
+        "crop": "ทุเรียน",
+        "province": "สุรินทร์",
+        "planted_area": 1774,
+        "harvest_area": 358,
+        "yield_ton": 169,
+        "yield_per_rai": 472
+    },
+    {
+        "year": 2566,
+        "crop": "ทุเรียน",
+        "province": "บุรีรัมย์",
+        "planted_area": 3606,
+        "harvest_area": 1129,
+        "yield_ton": 934,
+        "yield_per_rai": 827
+    },
+    {
+        "year": 2566,
+        "crop": "ทุเรียน",
+        "province": "กาฬสินธุ์",
+        "planted_area": 412,
+        "harvest_area": 68,
+        "yield_ton": 11,
+        "yield_per_rai": 162
+    },
+    {
+        "year": 2566,
+        "crop": "ทุเรียน",
+        "province": "ชัยภูมิ",
+        "planted_area": 3263,
+        "harvest_area": 1665,
+        "yield_ton": 1196,
+        "yield_per_rai": 718
+    },
+    {
+        "year": 2566,
+        "crop": "ทุเรียน",
+        "province": "นครราชสีมา",
+        "planted_area": 10889,
+        "harvest_area": 3525,
+        "yield_ton": 2455,
+        "yield_per_rai": 696
+    },
+    {
+        "year": 2566,
+        "crop": "ทุเรียน",
+        "province": "สระบุรี",
+        "planted_area": 2921,
+        "harvest_area": 947,
+        "yield_ton": 262,
+        "yield_per_rai": 277
+    },
+    {
+        "year": 2566,
+        "crop": "ทุเรียน",
+        "province": "ลพบุรี",
+        "planted_area": 527,
+        "harvest_area": 71,
+        "yield_ton": 18,
+        "yield_per_rai": 254
+    },
+    {
+        "year": 2566,
+        "crop": "ทุเรียน",
+        "province": "สุพรรณบุรี",
+        "planted_area": 623,
+        "harvest_area": 211,
+        "yield_ton": 47,
+        "yield_per_rai": 223
+    },
+    {
+        "year": 2566,
+        "crop": "ทุเรียน",
+        "province": "นนทบุรี",
+        "planted_area": 1978,
+        "harvest_area": 362,
+        "yield_ton": 84,
+        "yield_per_rai": 232
+    },
+    {
+        "year": 2566,
+        "crop": "ทุเรียน",
+        "province": "นครนายก",
+        "planted_area": 3050,
+        "harvest_area": 1053,
+        "yield_ton": 595,
+        "yield_per_rai": 565
+    },
+    {
+        "year": 2566,
+        "crop": "ทุเรียน",
+        "province": "ปราจีนบุรี",
+        "planted_area": 5762,
+        "harvest_area": 2665,
+        "yield_ton": 2571,
+        "yield_per_rai": 965
+    },
+    {
+        "year": 2566,
+        "crop": "ทุเรียน",
+        "province": "จันทบุรี",
+        "planted_area": 420420,
+        "harvest_area": 273648,
+        "yield_ton": 538461,
+        "yield_per_rai": 1968
+    },
+    {
+        "year": 2566,
+        "crop": "ทุเรียน",
+        "province": "ตราด",
+        "planted_area": 94175,
+        "harvest_area": 42591,
+        "yield_ton": 89511,
+        "yield_per_rai": 2102
+    },
+    {
+        "year": 2566,
+        "crop": "ทุเรียน",
+        "province": "ระยอง",
+        "planted_area": 128763,
+        "harvest_area": 73938,
+        "yield_ton": 148942,
+        "yield_per_rai": 2014
+    },
+    {
+        "year": 2566,
+        "crop": "ทุเรียน",
+        "province": "ชลบุรี",
+        "planted_area": 1989,
+        "harvest_area": 471,
+        "yield_ton": 417,
+        "yield_per_rai": 885
+    },
+    {
+        "year": 2566,
+        "crop": "ทุเรียน",
+        "province": "กาญจนบุรี",
+        "planted_area": 6020,
+        "harvest_area": 3104,
+        "yield_ton": 1248,
+        "yield_per_rai": 402
+    },
+    {
+        "year": 2566,
+        "crop": "ทุเรียน",
+        "province": "ราชบุรี",
+        "planted_area": 4739,
+        "harvest_area": 1465,
+        "yield_ton": 670,
+        "yield_per_rai": 457
+    },
+    {
+        "year": 2566,
+        "crop": "ทุเรียน",
+        "province": "เพชรบุรี",
+        "planted_area": 7249,
+        "harvest_area": 4527,
+        "yield_ton": 2482,
+        "yield_per_rai": 548
+    },
+    {
+        "year": 2566,
+        "crop": "ทุเรียน",
+        "province": "ประจวบคีรีขันธ์",
+        "planted_area": 17931,
+        "harvest_area": 12962,
+        "yield_ton": 11435,
+        "yield_per_rai": 882
+    },
+    {
+        "year": 2566,
+        "crop": "ทุเรียน",
+        "province": "ชุมพร",
+        "planted_area": 279254,
+        "harvest_area": 221768,
+        "yield_ton": 271470,
+        "yield_per_rai": 1224
+    },
+    {
+        "year": 2566,
+        "crop": "ทุเรียน",
+        "province": "ระนอง",
+        "planted_area": 46190,
+        "harvest_area": 37287,
+        "yield_ton": 35636,
+        "yield_per_rai": 956
+    },
+    {
+        "year": 2566,
+        "crop": "ทุเรียน",
+        "province": "สุราษฎร์ธานี",
+        "planted_area": 104065,
+        "harvest_area": 74543,
+        "yield_ton": 77017,
+        "yield_per_rai": 1033
+    },
+    {
+        "year": 2566,
+        "crop": "ทุเรียน",
+        "province": "พังงา",
+        "planted_area": 9380,
+        "harvest_area": 7499,
+        "yield_ton": 4173,
+        "yield_per_rai": 556
+    },
+    {
+        "year": 2566,
+        "crop": "ทุเรียน",
+        "province": "ภูเก็ต",
+        "planted_area": 2688,
+        "harvest_area": 2558,
+        "yield_ton": 808,
+        "yield_per_rai": 316
+    },
+    {
+        "year": 2566,
+        "crop": "ทุเรียน",
+        "province": "กระบี่",
+        "planted_area": 8497,
+        "harvest_area": 4267,
+        "yield_ton": 2991,
+        "yield_per_rai": 701
+    },
+    {
+        "year": 2566,
+        "crop": "ทุเรียน",
+        "province": "ตรัง",
+        "planted_area": 4749,
+        "harvest_area": 2304,
+        "yield_ton": 1582,
+        "yield_per_rai": 687
+    },
+    {
+        "year": 2566,
+        "crop": "ทุเรียน",
+        "province": "นครศรีธรรมราช",
+        "planted_area": 101648,
+        "harvest_area": 69994,
+        "yield_ton": 82275,
+        "yield_per_rai": 1175
+    },
+    {
+        "year": 2566,
+        "crop": "ทุเรียน",
+        "province": "พัทลุง",
+        "planted_area": 7442,
+        "harvest_area": 4628,
+        "yield_ton": 3468,
+        "yield_per_rai": 749
+    },
+    {
+        "year": 2566,
+        "crop": "ทุเรียน",
+        "province": "สงขลา",
+        "planted_area": 23057,
+        "harvest_area": 18237,
+        "yield_ton": 13243,
+        "yield_per_rai": 726
+    },
+    {
+        "year": 2566,
+        "crop": "ทุเรียน",
+        "province": "สตูล",
+        "planted_area": 4383,
+        "harvest_area": 2101,
+        "yield_ton": 1124,
+        "yield_per_rai": 535
+    },
+    {
+        "year": 2566,
+        "crop": "ทุเรียน",
+        "province": "ปัตตานี",
+        "planted_area": 7945,
+        "harvest_area": 6521,
+        "yield_ton": 5145,
+        "yield_per_rai": 789
+    },
+    {
+        "year": 2566,
+        "crop": "ทุเรียน",
+        "province": "ยะลา",
+        "planted_area": 96234,
+        "harvest_area": 66788,
+        "yield_ton": 89661,
+        "yield_per_rai": 1342
+    },
+    {
+        "year": 2566,
+        "crop": "ทุเรียน",
+        "province": "นราธิวาส",
+        "planted_area": 30994,
+        "harvest_area": 28738,
+        "yield_ton": 23830,
+        "yield_per_rai": 829
+    },
+    {
+        "year": 2567,
+        "crop": "ทุเรียน",
+        "province": "เชียงราย",
+        "planted_area": 3289,
+        "harvest_area": 1176,
+        "yield_ton": 280,
+        "yield_per_rai": 238
+    },
+    {
+        "year": 2567,
+        "crop": "ทุเรียน",
+        "province": "พะเยา",
+        "planted_area": 1179,
+        "harvest_area": 100,
+        "yield_ton": 34,
+        "yield_per_rai": 340
+    },
+    {
+        "year": 2567,
+        "crop": "ทุเรียน",
+        "province": "ลำปาง",
+        "planted_area": 420,
+        "harvest_area": 126,
+        "yield_ton": 52,
+        "yield_per_rai": 413
+    },
+    {
+        "year": 2567,
+        "crop": "ทุเรียน",
+        "province": "ลำพูน",
+        "planted_area": 353,
+        "harvest_area": 35,
+        "yield_ton": 5,
+        "yield_per_rai": 150
+    },
+    {
+        "year": 2567,
+        "crop": "ทุเรียน",
+        "province": "เชียงใหม่",
+        "planted_area": 3918,
+        "harvest_area": 1488,
+        "yield_ton": 629,
+        "yield_per_rai": 423
+    },
+    {
+        "year": 2567,
+        "crop": "ทุเรียน",
+        "province": "แม่ฮ่องสอน",
+        "planted_area": 112,
+        "harvest_area": 31,
+        "yield_ton": 3,
+        "yield_per_rai": 110
+    },
+    {
+        "year": 2567,
+        "crop": "ทุเรียน",
+        "province": "ตาก",
+        "planted_area": 6117,
+        "harvest_area": 3666,
+        "yield_ton": 2844,
+        "yield_per_rai": 776
+    },
+    {
+        "year": 2567,
+        "crop": "ทุเรียน",
+        "province": "กำแพงเพชร",
+        "planted_area": 2194,
+        "harvest_area": 1167,
+        "yield_ton": 466,
+        "yield_per_rai": 399
+    },
+    {
+        "year": 2567,
+        "crop": "ทุเรียน",
+        "province": "สุโขทัย",
+        "planted_area": 16514,
+        "harvest_area": 13232,
+        "yield_ton": 6762,
+        "yield_per_rai": 511
+    },
+    {
+        "year": 2567,
+        "crop": "ทุเรียน",
+        "province": "แพร่",
+        "planted_area": 8023,
+        "harvest_area": 4414,
+        "yield_ton": 3003,
+        "yield_per_rai": 680
+    },
+    {
+        "year": 2567,
+        "crop": "ทุเรียน",
+        "province": "น่าน",
+        "planted_area": 2976,
+        "harvest_area": 1008,
+        "yield_ton": 273,
+        "yield_per_rai": 271
+    },
+    {
+        "year": 2567,
+        "crop": "ทุเรียน",
+        "province": "อุตรดิตถ์",
+        "planted_area": 51133,
+        "harvest_area": 42215,
+        "yield_ton": 34028,
+        "yield_per_rai": 806
+    },
+    {
+        "year": 2567,
+        "crop": "ทุเรียน",
+        "province": "พิษณุโลก",
+        "planted_area": 7711,
+        "harvest_area": 3445,
+        "yield_ton": 1537,
+        "yield_per_rai": 446
+    },
+    {
+        "year": 2567,
+        "crop": "ทุเรียน",
+        "province": "พิจิตร",
+        "planted_area": 964,
+        "harvest_area": 738,
+        "yield_ton": 865,
+        "yield_per_rai": 1172
+    },
+    {
+        "year": 2567,
+        "crop": "ทุเรียน",
+        "province": "นครสวรรค์",
+        "planted_area": 480,
+        "harvest_area": 119,
+        "yield_ton": 47,
+        "yield_per_rai": 395
+    },
+    {
+        "year": 2567,
+        "crop": "ทุเรียน",
+        "province": "อุทัยธานี",
+        "planted_area": 1950,
+        "harvest_area": 1089,
+        "yield_ton": 349,
+        "yield_per_rai": 320
+    },
+    {
+        "year": 2567,
+        "crop": "ทุเรียน",
+        "province": "เพชรบูรณ์",
+        "planted_area": 3918,
+        "harvest_area": 2303,
+        "yield_ton": 1211,
+        "yield_per_rai": 526
+    },
+    {
+        "year": 2567,
+        "crop": "ทุเรียน",
+        "province": "เลย",
+        "planted_area": 6036,
+        "harvest_area": 2970,
+        "yield_ton": 1704,
+        "yield_per_rai": 574
+    },
+    {
+        "year": 2567,
+        "crop": "ทุเรียน",
+        "province": "หนองบัวลำภู",
+        "planted_area": 778,
+        "harvest_area": 86,
+        "yield_ton": 15,
+        "yield_per_rai": 174
+    },
+    {
+        "year": 2567,
+        "crop": "ทุเรียน",
+        "province": "อุดรธานี",
+        "planted_area": 2256,
+        "harvest_area": 662,
+        "yield_ton": 305,
+        "yield_per_rai": 461
+    },
+    {
+        "year": 2567,
+        "crop": "ทุเรียน",
+        "province": "หนองคาย",
+        "planted_area": 2389,
+        "harvest_area": 1384,
+        "yield_ton": 791,
+        "yield_per_rai": 572
+    },
+    {
+        "year": 2567,
+        "crop": "ทุเรียน",
+        "province": "บึงกาฬ",
+        "planted_area": 3894,
+        "harvest_area": 2498,
+        "yield_ton": 1345,
+        "yield_per_rai": 538
+    },
+    {
+        "year": 2567,
+        "crop": "ทุเรียน",
+        "province": "สกลนคร",
+        "planted_area": 1019,
+        "harvest_area": 347,
+        "yield_ton": 171,
+        "yield_per_rai": 493
+    },
+    {
+        "year": 2567,
+        "crop": "ทุเรียน",
+        "province": "นครพนม",
+        "planted_area": 1366,
+        "harvest_area": 648,
+        "yield_ton": 227,
+        "yield_per_rai": 350
+    },
+    {
+        "year": 2567,
+        "crop": "ทุเรียน",
+        "province": "อุบลราชธานี",
+        "planted_area": 5471,
+        "harvest_area": 1773,
+        "yield_ton": 1850,
+        "yield_per_rai": 1043
+    },
+    {
+        "year": 2567,
+        "crop": "ทุเรียน",
+        "province": "ศรีสะเกษ",
+        "planted_area": 18989,
+        "harvest_area": 8783,
+        "yield_ton": 9388,
+        "yield_per_rai": 1069
+    },
+    {
+        "year": 2567,
+        "crop": "ทุเรียน",
+        "province": "สุรินทร์",
+        "planted_area": 1824,
+        "harvest_area": 466,
+        "yield_ton": 208,
+        "yield_per_rai": 446
+    },
+    {
+        "year": 2567,
+        "crop": "ทุเรียน",
+        "province": "บุรีรัมย์",
+        "planted_area": 5070,
+        "harvest_area": 1722,
+        "yield_ton": 1296,
+        "yield_per_rai": 753
+    },
+    {
+        "year": 2567,
+        "crop": "ทุเรียน",
+        "province": "กาฬสินธุ์",
+        "planted_area": 465,
+        "harvest_area": 202,
+        "yield_ton": 42,
+        "yield_per_rai": 208
+    },
+    {
+        "year": 2567,
+        "crop": "ทุเรียน",
+        "province": "ชัยภูมิ",
+        "planted_area": 3543,
+        "harvest_area": 2149,
+        "yield_ton": 1365,
+        "yield_per_rai": 635
+    },
+    {
+        "year": 2567,
+        "crop": "ทุเรียน",
+        "province": "นครราชสีมา",
+        "planted_area": 12572,
+        "harvest_area": 4680,
+        "yield_ton": 3697,
+        "yield_per_rai": 790
+    },
+    {
+        "year": 2567,
+        "crop": "ทุเรียน",
+        "province": "สระบุรี",
+        "planted_area": 2933,
+        "harvest_area": 1507,
+        "yield_ton": 543,
+        "yield_per_rai": 360
+    },
+    {
+        "year": 2567,
+        "crop": "ทุเรียน",
+        "province": "ลพบุรี",
+        "planted_area": 519,
+        "harvest_area": 78,
+        "yield_ton": 21,
+        "yield_per_rai": 269
+    },
+    {
+        "year": 2567,
+        "crop": "ทุเรียน",
+        "province": "สุพรรณบุรี",
+        "planted_area": 723,
+        "harvest_area": 267,
+        "yield_ton": 57,
+        "yield_per_rai": 213
+    },
+    {
+        "year": 2567,
+        "crop": "ทุเรียน",
+        "province": "นนทบุรี",
+        "planted_area": 1953,
+        "harvest_area": 457,
+        "yield_ton": 8,
+        "yield_per_rai": 17
+    },
+    {
+        "year": 2567,
+        "crop": "ทุเรียน",
+        "province": "นครนายก",
+        "planted_area": 3155,
+        "harvest_area": 1301,
+        "yield_ton": 550,
+        "yield_per_rai": 423
+    },
+    {
+        "year": 2567,
+        "crop": "ทุเรียน",
+        "province": "ปราจีนบุรี",
+        "planted_area": 7468,
+        "harvest_area": 2903,
+        "yield_ton": 2134,
+        "yield_per_rai": 735
+    },
+    {
+        "year": 2567,
+        "crop": "ทุเรียน",
+        "province": "จันทบุรี",
+        "planted_area": 447356,
+        "harvest_area": 295273,
+        "yield_ton": 448692,
+        "yield_per_rai": 1520
+    },
+    {
+        "year": 2567,
+        "crop": "ทุเรียน",
+        "province": "ตราด",
+        "planted_area": 109160,
+        "harvest_area": 48086,
+        "yield_ton": 82094,
+        "yield_per_rai": 1707
+    },
+    {
+        "year": 2567,
+        "crop": "ทุเรียน",
+        "province": "ระยอง",
+        "planted_area": 138428,
+        "harvest_area": 81365,
+        "yield_ton": 135543,
+        "yield_per_rai": 1666
+    },
+    {
+        "year": 2567,
+        "crop": "ทุเรียน",
+        "province": "ชลบุรี",
+        "planted_area": 2589,
+        "harvest_area": 633,
+        "yield_ton": 410,
+        "yield_per_rai": 648
+    },
+    {
+        "year": 2567,
+        "crop": "ทุเรียน",
+        "province": "กาญจนบุรี",
+        "planted_area": 8519,
+        "harvest_area": 3342,
+        "yield_ton": 1206,
+        "yield_per_rai": 361
+    },
+    {
+        "year": 2567,
+        "crop": "ทุเรียน",
+        "province": "ราชบุรี",
+        "planted_area": 5281,
+        "harvest_area": 1654,
+        "yield_ton": 667,
+        "yield_per_rai": 403
+    },
+    {
+        "year": 2567,
+        "crop": "ทุเรียน",
+        "province": "เพชรบุรี",
+        "planted_area": 7348,
+        "harvest_area": 5039,
+        "yield_ton": 2528,
+        "yield_per_rai": 502
+    },
+    {
+        "year": 2567,
+        "crop": "ทุเรียน",
+        "province": "ประจวบคีรีขันธ์",
+        "planted_area": 18442,
+        "harvest_area": 13344,
+        "yield_ton": 7544,
+        "yield_per_rai": 565
+    },
+    {
+        "year": 2567,
+        "crop": "ทุเรียน",
+        "province": "ชุมพร",
+        "planted_area": 327793,
+        "harvest_area": 228672,
+        "yield_ton": 226574,
+        "yield_per_rai": 991
+    },
+    {
+        "year": 2567,
+        "crop": "ทุเรียน",
+        "province": "ระนอง",
+        "planted_area": 46776,
+        "harvest_area": 42416,
+        "yield_ton": 38353,
+        "yield_per_rai": 904
+    },
+    {
+        "year": 2567,
+        "crop": "ทุเรียน",
+        "province": "สุราษฎร์ธานี",
+        "planted_area": 116216,
+        "harvest_area": 80186,
+        "yield_ton": 68611,
+        "yield_per_rai": 856
+    },
+    {
+        "year": 2567,
+        "crop": "ทุเรียน",
+        "province": "พังงา",
+        "planted_area": 9701,
+        "harvest_area": 7696,
+        "yield_ton": 3284,
+        "yield_per_rai": 427
+    },
+    {
+        "year": 2567,
+        "crop": "ทุเรียน",
+        "province": "ภูเก็ต",
+        "planted_area": 2953,
+        "harvest_area": 2585,
+        "yield_ton": 485,
+        "yield_per_rai": 188
+    },
+    {
+        "year": 2567,
+        "crop": "ทุเรียน",
+        "province": "กระบี่",
+        "planted_area": 11656,
+        "harvest_area": 4815,
+        "yield_ton": 3023,
+        "yield_per_rai": 628
+    },
+    {
+        "year": 2567,
+        "crop": "ทุเรียน",
+        "province": "ตรัง",
+        "planted_area": 6744,
+        "harvest_area": 3227,
+        "yield_ton": 1739,
+        "yield_per_rai": 539
+    },
+    {
+        "year": 2567,
+        "crop": "ทุเรียน",
+        "province": "นครศรีธรรมราช",
+        "planted_area": 109776,
+        "harvest_area": 72882,
+        "yield_ton": 84784,
+        "yield_per_rai": 1163
+    },
+    {
+        "year": 2567,
+        "crop": "ทุเรียน",
+        "province": "พัทลุง",
+        "planted_area": 8148,
+        "harvest_area": 5681,
+        "yield_ton": 2161,
+        "yield_per_rai": 380
+    },
+    {
+        "year": 2567,
+        "crop": "ทุเรียน",
+        "province": "สงขลา",
+        "planted_area": 24942,
+        "harvest_area": 19286,
+        "yield_ton": 11392,
+        "yield_per_rai": 591
+    },
+    {
+        "year": 2567,
+        "crop": "ทุเรียน",
+        "province": "สตูล",
+        "planted_area": 4846,
+        "harvest_area": 2867,
+        "yield_ton": 1166,
+        "yield_per_rai": 407
+    },
+    {
+        "year": 2567,
+        "crop": "ทุเรียน",
+        "province": "ปัตตานี",
+        "planted_area": 8513,
+        "harvest_area": 6567,
+        "yield_ton": 3997,
+        "yield_per_rai": 609
+    },
+    {
+        "year": 2567,
+        "crop": "ทุเรียน",
+        "province": "ยะลา",
+        "planted_area": 105401,
+        "harvest_area": 73382,
+        "yield_ton": 71210,
+        "yield_per_rai": 970
+    },
+    {
+        "year": 2567,
+        "crop": "ทุเรียน",
+        "province": "นราธิวาส",
+        "planted_area": 31116,
+        "harvest_area": 28242,
+        "yield_ton": 13479,
+        "yield_per_rai": 477
+    }
+]

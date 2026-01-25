@@ -8,6 +8,11 @@ import type { MapRef } from "react-map-gl/maplibre";
 import ModalChartComponent from "./ModalChartComponent";
 import type { CropDetailType, CropType, PriceType } from "types";
 
+import cassavaData from "@assets/data/crops/cassava.json";
+import durianData from "@assets/data/crops/durian.json";
+import longanData from "@assets/data/crops/longan.json";
+import rubberData from "@assets/data/crops/rubber.json";
+
 const ProvinceModalComponent = forwardRef<MapRef>(({}, mapRef) => {
     const dispatch = useAppDispatch();
     const isModalOpen = useAppSelector((state) => state.control.modal);
@@ -16,6 +21,7 @@ const ProvinceModalComponent = forwardRef<MapRef>(({}, mapRef) => {
         (state) => state.crop.cropByProvinceData
     );
     const [treeData, setTreeData] = useState<any>([]);
+    const cropDataFiles = [cassavaData, durianData, longanData, rubberData];
 
     const exitProvince = () => {
         dispatch(closeModal());
@@ -33,10 +39,27 @@ const ProvinceModalComponent = forwardRef<MapRef>(({}, mapRef) => {
 
     const fetchCropByProvince = async () => {
         try {
-            const getCropsByProvince = await Axios.get(
-                `http://localhost:5000/crops-by-province?province=${provinceSelected}`
-            );
-            const cropsData = getCropsByProvince.data.data;
+            let cropsData: CropType[] = [];
+            
+            cropDataFiles.forEach((jsonData: any) => {
+                const filtered = jsonData.filter(
+                    (item: CropDetailType) => item.province === provinceSelected
+                );
+                
+                if (filtered.length > 0) {
+                    const cropName = filtered[0].crop;
+                    const existingCrop = cropsData.find(crop => crop.name === cropName);
+                    
+                    if (existingCrop) {
+                        existingCrop.data.push(...filtered);
+                    } else {
+                        cropsData.push({
+                            name: cropName,
+                            data: filtered
+                        });
+                    }
+                }
+            });
 
             dispatch(setCropByProvinceData(cropsData));
             fetchCropPrice(cropsData);

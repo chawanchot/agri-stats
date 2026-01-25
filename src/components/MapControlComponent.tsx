@@ -5,12 +5,17 @@ import { Cascader, FloatButton, Segmented, Tag, type CascaderProps } from "antd"
 import { useEffect, useState } from "react";
 import ProvincesData from "../assets/data/provinces.json";
 import type { FeatureCollection } from "geojson";
-import Axios from "axios";
 import { FiLayers } from "react-icons/fi";
 import type { CropDetailType, OptionType } from "types";
 import { PiWarningOctagonBold } from "react-icons/pi";
 
+import cassavaData from "@assets/data/crops/cassava.json";
+import durianData from "@assets/data/crops/durian.json";
+import longanData from "@assets/data/crops/longan.json";
+import rubberData from "@assets/data/crops/rubber.json";
+
 const ProvincesGeoJson = ProvincesData as FeatureCollection;
+const cropDataFiles = [cassavaData, durianData, longanData, rubberData];
 
 const MapControlComponent = () => {
     const dispatch = useAppDispatch();
@@ -64,8 +69,17 @@ const MapControlComponent = () => {
 
     const fetchCropCompareData = async (crop: string, year: string) => {
         try {
-            const getCropData = await Axios.get(`http://localhost:5000/crops-by-year?crop=${crop}&year=${year}`);
-            const cropData = getCropData.data.data;
+            let cropData: CropDetailType[] = [];
+            
+            cropDataFiles.forEach((jsonData: any) => {
+                const filtered = jsonData.filter(
+                    (item: CropDetailType) => item.crop === crop && item.year === Number(year)
+                );
+                
+                if (filtered.length > 0) {
+                    cropData.push(...filtered);
+                }
+            });
 
             const updatedGeoJson = {
                 ...ProvincesGeoJson,
