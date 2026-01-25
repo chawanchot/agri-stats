@@ -3,10 +3,10 @@ import Chart from "react-apexcharts";
 import { useEffect, useState } from "react";
 import { useAppSelector } from "@store/hook";
 import type { CropDetailType } from "types";
-import ProvincesData from "@assets/data/provinces.json";
-import type { FeatureCollection } from "geojson";
+// import ProvincesData from "@assets/data/provinces.json";
+// import type { FeatureCollection } from "geojson";
 
-const ProvincesGeoJson = ProvincesData as FeatureCollection;
+// const ProvincesGeoJson = ProvincesData as FeatureCollection;
 
 function MainChartComponent() {
     const [chartProvince, setChartProvince] = useState<string[]>([]);
