@@ -46,7 +46,7 @@ const MainPage = () => {
         timers.current.push(
             setTimeout(() => {
                 navigate("/home");
-            }, 3500),
+            }, 3500)
         );
     };
 
@@ -114,9 +114,7 @@ const MainPage = () => {
                             />
 
                             <h1 className="select-none font-black tracking-tighter uppercase mb-2 md:mb-4 drop-shadow-md">
-                                <span className="block responsive-title text-white">
-                                    Agricultural
-                                </span>
+                                <span className="block responsive-title text-white">Agricultural</span>
                                 <span className="block responsive-subtitle bg-linear-to-r from-[#d9f99d] via-[#a3e635] to-[#84bd22] bg-clip-text text-transparent">
                                     Statistics
                                 </span>
@@ -130,10 +128,8 @@ const MainPage = () => {
                         >
                             <p className="text-white text-lg md:text-1xl font-light tracking-wide leading-relaxed drop-shadow-sm whitespace-nowrap md:whitespace-normal uppercase">
                                 A system for displaying{" "}
-                                <span className="font-semibold text-green-300">
-                                    agricultural statistics
-                                </span>{" "}
-                                using mapping technology.
+                                <span className="font-semibold text-green-300">agricultural statistics</span> using mapping
+                                technology.
                             </p>
 
                             <div className="h-px w-24 bg-linear-to-r from-transparent via-white/40 to-transparent" />

@@ -1,0 +1,1631 @@
+[
+    {
+        "year": 2563,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "เชียงราย",
+        "planted_area": 353232,
+        "harvest_area": 352467,
+        "yield_ton": 251786,
+        "yield_per_rai": 714
+    },
+    {
+        "year": 2563,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "พะเยา",
+        "planted_area": 196521,
+        "harvest_area": 194178,
+        "yield_ton": 140024,
+        "yield_per_rai": 721
+    },
+    {
+        "year": 2563,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "ลำปาง",
+        "planted_area": 198305,
+        "harvest_area": 195768,
+        "yield_ton": 133461,
+        "yield_per_rai": 682
+    },
+    {
+        "year": 2563,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "ลำพูน",
+        "planted_area": 100465,
+        "harvest_area": 97893,
+        "yield_ton": 67341,
+        "yield_per_rai": 688
+    },
+    {
+        "year": 2563,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "เชียงใหม่",
+        "planted_area": 147576,
+        "harvest_area": 146604,
+        "yield_ton": 104724,
+        "yield_per_rai": 714
+    },
+    {
+        "year": 2563,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "แม่ฮ่องสอน",
+        "planted_area": 52627,
+        "harvest_area": 51954,
+        "yield_ton": 32813,
+        "yield_per_rai": 632
+    },
+    {
+        "year": 2563,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "ตาก",
+        "planted_area": 534572,
+        "harvest_area": 532840,
+        "yield_ton": 395015,
+        "yield_per_rai": 741
+    },
+    {
+        "year": 2563,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "กำแพงเพชร",
+        "planted_area": 148117,
+        "harvest_area": 145963,
+        "yield_ton": 111100,
+        "yield_per_rai": 761
+    },
+    {
+        "year": 2563,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "สุโขทัย",
+        "planted_area": 111400,
+        "harvest_area": 108398,
+        "yield_ton": 76742,
+        "yield_per_rai": 708
+    },
+    {
+        "year": 2563,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "แพร่",
+        "planted_area": 222165,
+        "harvest_area": 220970,
+        "yield_ton": 158331,
+        "yield_per_rai": 717
+    },
+    {
+        "year": 2563,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "น่าน",
+        "planted_area": 841539,
+        "harvest_area": 839466,
+        "yield_ton": 551062,
+        "yield_per_rai": 656
+    },
+    {
+        "year": 2563,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "อุตรดิตถ์",
+        "planted_area": 204381,
+        "harvest_area": 202778,
+        "yield_ton": 141973,
+        "yield_per_rai": 700
+    },
+    {
+        "year": 2563,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "พิษณุโลก",
+        "planted_area": 269096,
+        "harvest_area": 264627,
+        "yield_ton": 196942,
+        "yield_per_rai": 744
+    },
+    {
+        "year": 2563,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "พิจิตร",
+        "planted_area": 22353,
+        "harvest_area": 16904,
+        "yield_ton": 10984,
+        "yield_per_rai": 650
+    },
+    {
+        "year": 2563,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "นครสวรรค์",
+        "planted_area": 516892,
+        "harvest_area": 501338,
+        "yield_ton": 353842,
+        "yield_per_rai": 706
+    },
+    {
+        "year": 2563,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "อุทัยธานี",
+        "planted_area": 162982,
+        "harvest_area": 159930,
+        "yield_ton": 113702,
+        "yield_per_rai": 711
+    },
+    {
+        "year": 2563,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "เพชรบูรณ์",
+        "planted_area": 863260,
+        "harvest_area": 855523,
+        "yield_ton": 673449,
+        "yield_per_rai": 787
+    },
+    {
+        "year": 2563,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "เลย",
+        "planted_area": 526270,
+        "harvest_area": 523674,
+        "yield_ton": 371199,
+        "yield_per_rai": 709
+    },
+    {
+        "year": 2563,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "หนองบัวลำภู",
+        "planted_area": 56001,
+        "harvest_area": 54131,
+        "yield_ton": 34976,
+        "yield_per_rai": 646
+    },
+    {
+        "year": 2563,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "อุดรธานี",
+        "planted_area": 42095,
+        "harvest_area": 40329,
+        "yield_ton": 26978,
+        "yield_per_rai": 669
+    },
+    {
+        "year": 2563,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "หนองคาย",
+        "planted_area": 8343,
+        "harvest_area": 7378,
+        "yield_ton": 4725,
+        "yield_per_rai": 640
+    },
+    {
+        "year": 2563,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "สกลนคร",
+        "planted_area": 2901,
+        "harvest_area": 2867,
+        "yield_ton": 1819,
+        "yield_per_rai": 634
+    },
+    {
+        "year": 2563,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "นครพนม",
+        "planted_area": 7618,
+        "harvest_area": 7578,
+        "yield_ton": 4794,
+        "yield_per_rai": 633
+    },
+    {
+        "year": 2563,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "มุกดาหาร",
+        "planted_area": 361,
+        "harvest_area": 361,
+        "yield_ton": 222,
+        "yield_per_rai": 615
+    },
+    {
+        "year": 2563,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "ยโสธร",
+        "planted_area": 951,
+        "harvest_area": 951,
+        "yield_ton": 595,
+        "yield_per_rai": 626
+    },
+    {
+        "year": 2563,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "อุบลราชธานี",
+        "planted_area": 27764,
+        "harvest_area": 26932,
+        "yield_ton": 18366,
+        "yield_per_rai": 682
+    },
+    {
+        "year": 2563,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "ศรีสะเกษ",
+        "planted_area": 31336,
+        "harvest_area": 30751,
+        "yield_ton": 19472,
+        "yield_per_rai": 633
+    },
+    {
+        "year": 2563,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "สุรินทร์",
+        "planted_area": 6296,
+        "harvest_area": 5891,
+        "yield_ton": 3326,
+        "yield_per_rai": 565
+    },
+    {
+        "year": 2563,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "บุรีรัมย์",
+        "planted_area": 12891,
+        "harvest_area": 12450,
+        "yield_ton": 7434,
+        "yield_per_rai": 597
+    },
+    {
+        "year": 2563,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "มหาสารคาม",
+        "planted_area": 1416,
+        "harvest_area": 1374,
+        "yield_ton": 894,
+        "yield_per_rai": 651
+    },
+    {
+        "year": 2563,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "ร้อยเอ็ด",
+        "planted_area": 732,
+        "harvest_area": 712,
+        "yield_ton": 451,
+        "yield_per_rai": 633
+    },
+    {
+        "year": 2563,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "กาฬสินธุ์",
+        "planted_area": 22358,
+        "harvest_area": 21764,
+        "yield_ton": 14036,
+        "yield_per_rai": 645
+    },
+    {
+        "year": 2563,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "ขอนแก่น",
+        "planted_area": 48259,
+        "harvest_area": 46006,
+        "yield_ton": 31804,
+        "yield_per_rai": 691
+    },
+    {
+        "year": 2563,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "ชัยภูมิ",
+        "planted_area": 182740,
+        "harvest_area": 179576,
+        "yield_ton": 118835,
+        "yield_per_rai": 662
+    },
+    {
+        "year": 2563,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "นครราชสีมา",
+        "planted_area": 579737,
+        "harvest_area": 571616,
+        "yield_ton": 372691,
+        "yield_per_rai": 652
+    },
+    {
+        "year": 2563,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "สระบุรี",
+        "planted_area": 171754,
+        "harvest_area": 170087,
+        "yield_ton": 126666,
+        "yield_per_rai": 745
+    },
+    {
+        "year": 2563,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "ลพบุรี",
+        "planted_area": 390080,
+        "harvest_area": 383481,
+        "yield_ton": 275128,
+        "yield_per_rai": 717
+    },
+    {
+        "year": 2563,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "ชัยนาท",
+        "planted_area": 26879,
+        "harvest_area": 26769,
+        "yield_ton": 18029,
+        "yield_per_rai": 674
+    },
+    {
+        "year": 2563,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "สุพรรณบุรี",
+        "planted_area": 27694,
+        "harvest_area": 27557,
+        "yield_ton": 19634,
+        "yield_per_rai": 712
+    },
+    {
+        "year": 2563,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "ปราจีนบุรี",
+        "planted_area": 16904,
+        "harvest_area": 16738,
+        "yield_ton": 12159,
+        "yield_per_rai": 726
+    },
+    {
+        "year": 2563,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "ฉะเชิงเทรา",
+        "planted_area": 5013,
+        "harvest_area": 5013,
+        "yield_ton": 3811,
+        "yield_per_rai": 760
+    },
+    {
+        "year": 2563,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "สระแก้ว",
+        "planted_area": 174092,
+        "harvest_area": 167812,
+        "yield_ton": 113978,
+        "yield_per_rai": 679
+    },
+    {
+        "year": 2563,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "จันทบุรี",
+        "planted_area": 21453,
+        "harvest_area": 21398,
+        "yield_ton": 16047,
+        "yield_per_rai": 750
+    },
+    {
+        "year": 2563,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "กาญจนบุรี",
+        "planted_area": 36171,
+        "harvest_area": 36111,
+        "yield_ton": 24901,
+        "yield_per_rai": 690
+    },
+    {
+        "year": 2563,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "ราชบุรี",
+        "planted_area": 12051,
+        "harvest_area": 12015,
+        "yield_ton": 8519,
+        "yield_per_rai": 709
+    },
+    {
+        "year": 2563,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "ประจวบคีรีขันธ์",
+        "planted_area": 487,
+        "harvest_area": 479,
+        "yield_ton": 345,
+        "yield_per_rai": 720
+    },
+    {
+        "year": 2564,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "เชียงราย",
+        "planted_area": 353066,
+        "harvest_area": 352723,
+        "yield_ton": 257761,
+        "yield_per_rai": 731
+    },
+    {
+        "year": 2564,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "พะเยา",
+        "planted_area": 196582,
+        "harvest_area": 193355,
+        "yield_ton": 141974,
+        "yield_per_rai": 734
+    },
+    {
+        "year": 2564,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "ลำปาง",
+        "planted_area": 194723,
+        "harvest_area": 188812,
+        "yield_ton": 133276,
+        "yield_per_rai": 706
+    },
+    {
+        "year": 2564,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "ลำพูน",
+        "planted_area": 89437,
+        "harvest_area": 83120,
+        "yield_ton": 58688,
+        "yield_per_rai": 706
+    },
+    {
+        "year": 2564,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "เชียงใหม่",
+        "planted_area": 133033,
+        "harvest_area": 132049,
+        "yield_ton": 96620,
+        "yield_per_rai": 732
+    },
+    {
+        "year": 2564,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "แม่ฮ่องสอน",
+        "planted_area": 51000,
+        "harvest_area": 50664,
+        "yield_ton": 32800,
+        "yield_per_rai": 647
+    },
+    {
+        "year": 2564,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "ตาก",
+        "planted_area": 530491,
+        "harvest_area": 526279,
+        "yield_ton": 401666,
+        "yield_per_rai": 763
+    },
+    {
+        "year": 2564,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "กำแพงเพชร",
+        "planted_area": 145945,
+        "harvest_area": 141873,
+        "yield_ton": 109404,
+        "yield_per_rai": 771
+    },
+    {
+        "year": 2564,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "สุโขทัย",
+        "planted_area": 101689,
+        "harvest_area": 95101,
+        "yield_ton": 68677,
+        "yield_per_rai": 722
+    },
+    {
+        "year": 2564,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "แพร่",
+        "planted_area": 204987,
+        "harvest_area": 203874,
+        "yield_ton": 149487,
+        "yield_per_rai": 733
+    },
+    {
+        "year": 2564,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "น่าน",
+        "planted_area": 838703,
+        "harvest_area": 833621,
+        "yield_ton": 558117,
+        "yield_per_rai": 669
+    },
+    {
+        "year": 2564,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "อุตรดิตถ์",
+        "planted_area": 196886,
+        "harvest_area": 195743,
+        "yield_ton": 142079,
+        "yield_per_rai": 726
+    },
+    {
+        "year": 2564,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "พิษณุโลก",
+        "planted_area": 258071,
+        "harvest_area": 249870,
+        "yield_ton": 191264,
+        "yield_per_rai": 765
+    },
+    {
+        "year": 2564,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "พิจิตร",
+        "planted_area": 20973,
+        "harvest_area": 14167,
+        "yield_ton": 9276,
+        "yield_per_rai": 655
+    },
+    {
+        "year": 2564,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "นครสวรรค์",
+        "planted_area": 490274,
+        "harvest_area": 470438,
+        "yield_ton": 341517,
+        "yield_per_rai": 726
+    },
+    {
+        "year": 2564,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "อุทัยธานี",
+        "planted_area": 164219,
+        "harvest_area": 162973,
+        "yield_ton": 118433,
+        "yield_per_rai": 727
+    },
+    {
+        "year": 2564,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "เพชรบูรณ์",
+        "planted_area": 854129,
+        "harvest_area": 839337,
+        "yield_ton": 663453,
+        "yield_per_rai": 790
+    },
+    {
+        "year": 2564,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "เลย",
+        "planted_area": 517409,
+        "harvest_area": 514312,
+        "yield_ton": 366224,
+        "yield_per_rai": 712
+    },
+    {
+        "year": 2564,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "หนองบัวลำภู",
+        "planted_area": 55106,
+        "harvest_area": 53265,
+        "yield_ton": 35327,
+        "yield_per_rai": 663
+    },
+    {
+        "year": 2564,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "อุดรธานี",
+        "planted_area": 41421,
+        "harvest_area": 39684,
+        "yield_ton": 27072,
+        "yield_per_rai": 682
+    },
+    {
+        "year": 2564,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "หนองคาย",
+        "planted_area": 8209,
+        "harvest_area": 7260,
+        "yield_ton": 4749,
+        "yield_per_rai": 654
+    },
+    {
+        "year": 2564,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "สกลนคร",
+        "planted_area": 2855,
+        "harvest_area": 2821,
+        "yield_ton": 1820,
+        "yield_per_rai": 645
+    },
+    {
+        "year": 2564,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "นครพนม",
+        "planted_area": 7496,
+        "harvest_area": 7457,
+        "yield_ton": 4811,
+        "yield_per_rai": 645
+    },
+    {
+        "year": 2564,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "มุกดาหาร",
+        "planted_area": 355,
+        "harvest_area": 355,
+        "yield_ton": 222,
+        "yield_per_rai": 625
+    },
+    {
+        "year": 2564,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "ยโสธร",
+        "planted_area": 936,
+        "harvest_area": 936,
+        "yield_ton": 595,
+        "yield_per_rai": 636
+    },
+    {
+        "year": 2564,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "อุบลราชธานี",
+        "planted_area": 27320,
+        "harvest_area": 26501,
+        "yield_ton": 18365,
+        "yield_per_rai": 693
+    },
+    {
+        "year": 2564,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "ศรีสะเกษ",
+        "planted_area": 30835,
+        "harvest_area": 30259,
+        "yield_ton": 19487,
+        "yield_per_rai": 644
+    },
+    {
+        "year": 2564,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "สุรินทร์",
+        "planted_area": 6195,
+        "harvest_area": 5797,
+        "yield_ton": 3343,
+        "yield_per_rai": 577
+    },
+    {
+        "year": 2564,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "บุรีรัมย์",
+        "planted_area": 12685,
+        "harvest_area": 12251,
+        "yield_ton": 7460,
+        "yield_per_rai": 609
+    },
+    {
+        "year": 2564,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "มหาสารคาม",
+        "planted_area": 1393,
+        "harvest_area": 1352,
+        "yield_ton": 894,
+        "yield_per_rai": 661
+    },
+    {
+        "year": 2564,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "ร้อยเอ็ด",
+        "planted_area": 720,
+        "harvest_area": 701,
+        "yield_ton": 451,
+        "yield_per_rai": 643
+    },
+    {
+        "year": 2564,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "กาฬสินธุ์",
+        "planted_area": 22000,
+        "harvest_area": 21416,
+        "yield_ton": 14038,
+        "yield_per_rai": 656
+    },
+    {
+        "year": 2564,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "ขอนแก่น",
+        "planted_area": 47487,
+        "harvest_area": 45270,
+        "yield_ton": 31799,
+        "yield_per_rai": 702
+    },
+    {
+        "year": 2564,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "ชัยภูมิ",
+        "planted_area": 179816,
+        "harvest_area": 176703,
+        "yield_ton": 118939,
+        "yield_per_rai": 673
+    },
+    {
+        "year": 2564,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "นครราชสีมา",
+        "planted_area": 570460,
+        "harvest_area": 562469,
+        "yield_ton": 371948,
+        "yield_per_rai": 661
+    },
+    {
+        "year": 2564,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "สระบุรี",
+        "planted_area": 170828,
+        "harvest_area": 160408,
+        "yield_ton": 116402,
+        "yield_per_rai": 726
+    },
+    {
+        "year": 2564,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "ลพบุรี",
+        "planted_area": 396596,
+        "harvest_area": 388666,
+        "yield_ton": 285124,
+        "yield_per_rai": 734
+    },
+    {
+        "year": 2564,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "ชัยนาท",
+        "planted_area": 21735,
+        "harvest_area": 21513,
+        "yield_ton": 14944,
+        "yield_per_rai": 695
+    },
+    {
+        "year": 2564,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "สุพรรณบุรี",
+        "planted_area": 61878,
+        "harvest_area": 61173,
+        "yield_ton": 42181,
+        "yield_per_rai": 690
+    },
+    {
+        "year": 2564,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "ปราจีนบุรี",
+        "planted_area": 16738,
+        "harvest_area": 16573,
+        "yield_ton": 12159,
+        "yield_per_rai": 734
+    },
+    {
+        "year": 2564,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "ฉะเชิงเทรา",
+        "planted_area": 4964,
+        "harvest_area": 4964,
+        "yield_ton": 3811,
+        "yield_per_rai": 768
+    },
+    {
+        "year": 2564,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "สระแก้ว",
+        "planted_area": 172386,
+        "harvest_area": 166168,
+        "yield_ton": 113977,
+        "yield_per_rai": 686
+    },
+    {
+        "year": 2564,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "จันทบุรี",
+        "planted_area": 21243,
+        "harvest_area": 21188,
+        "yield_ton": 16047,
+        "yield_per_rai": 757
+    },
+    {
+        "year": 2564,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "กาญจนบุรี",
+        "planted_area": 35817,
+        "harvest_area": 35757,
+        "yield_ton": 24901,
+        "yield_per_rai": 696
+    },
+    {
+        "year": 2564,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "ราชบุรี",
+        "planted_area": 11933,
+        "harvest_area": 11897,
+        "yield_ton": 8519,
+        "yield_per_rai": 716
+    },
+    {
+        "year": 2564,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "ประจวบคีรีขันธ์",
+        "planted_area": 482,
+        "harvest_area": 474,
+        "yield_ton": 345,
+        "yield_per_rai": 728
+    },
+    {
+        "year": 2565,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "เชียงราย",
+        "planted_area": 354120,
+        "harvest_area": 353890,
+        "yield_ton": 260815,
+        "yield_per_rai": 737
+    },
+    {
+        "year": 2565,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "พะเยา",
+        "planted_area": 197050,
+        "harvest_area": 196800,
+        "yield_ton": 145042,
+        "yield_per_rai": 737
+    },
+    {
+        "year": 2565,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "ลำปาง",
+        "planted_area": 195200,
+        "harvest_area": 190150,
+        "yield_ton": 135196,
+        "yield_per_rai": 711
+    },
+    {
+        "year": 2565,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "ลำพูน",
+        "planted_area": 88900,
+        "harvest_area": 84500,
+        "yield_ton": 60164,
+        "yield_per_rai": 712
+    },
+    {
+        "year": 2565,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "เชียงใหม่",
+        "planted_area": 134500,
+        "harvest_area": 133800,
+        "yield_ton": 98477,
+        "yield_per_rai": 736
+    },
+    {
+        "year": 2565,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "แม่ฮ่องสอน",
+        "planted_area": 51500,
+        "harvest_area": 51200,
+        "yield_ton": 33280,
+        "yield_per_rai": 650
+    },
+    {
+        "year": 2565,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "ตาก",
+        "planted_area": 525800,
+        "harvest_area": 522100,
+        "yield_ton": 403061,
+        "yield_per_rai": 772
+    },
+    {
+        "year": 2565,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "กำแพงเพชร",
+        "planted_area": 144500,
+        "harvest_area": 142100,
+        "yield_ton": 110554,
+        "yield_per_rai": 778
+    },
+    {
+        "year": 2565,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "สุโขทัย",
+        "planted_area": 100800,
+        "harvest_area": 98500,
+        "yield_ton": 71511,
+        "yield_per_rai": 726
+    },
+    {
+        "year": 2565,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "แพร่",
+        "planted_area": 203500,
+        "harvest_area": 202800,
+        "yield_ton": 149464,
+        "yield_per_rai": 737
+    },
+    {
+        "year": 2565,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "น่าน",
+        "planted_area": 825600,
+        "harvest_area": 821500,
+        "yield_ton": 554513,
+        "yield_per_rai": 675
+    },
+    {
+        "year": 2565,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "อุตรดิตถ์",
+        "planted_area": 194500,
+        "harvest_area": 193800,
+        "yield_ton": 142055,
+        "yield_per_rai": 733
+    },
+    {
+        "year": 2565,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "พิษณุโลก",
+        "planted_area": 255200,
+        "harvest_area": 248500,
+        "yield_ton": 192091,
+        "yield_per_rai": 773
+    },
+    {
+        "year": 2565,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "พิจิตร",
+        "planted_area": 20500,
+        "harvest_area": 15800,
+        "yield_ton": 10475,
+        "yield_per_rai": 663
+    },
+    {
+        "year": 2565,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "นครสวรรค์",
+        "planted_area": 485000,
+        "harvest_area": 468500,
+        "yield_ton": 343411,
+        "yield_per_rai": 733
+    },
+    {
+        "year": 2565,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "อุทัยธานี",
+        "planted_area": 162500,
+        "harvest_area": 161800,
+        "yield_ton": 118599,
+        "yield_per_rai": 733
+    },
+    {
+        "year": 2565,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "เพชรบูรณ์",
+        "planted_area": 845000,
+        "harvest_area": 835000,
+        "yield_ton": 664660,
+        "yield_per_rai": 796
+    },
+    {
+        "year": 2565,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "เลย",
+        "planted_area": 512000,
+        "harvest_area": 509500,
+        "yield_ton": 365821,
+        "yield_per_rai": 718
+    },
+    {
+        "year": 2565,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "หนองบัวลำภู",
+        "planted_area": 54500,
+        "harvest_area": 53800,
+        "yield_ton": 35885,
+        "yield_per_rai": 667
+    },
+    {
+        "year": 2565,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "อุดรธานี",
+        "planted_area": 40800,
+        "harvest_area": 39500,
+        "yield_ton": 27255,
+        "yield_per_rai": 690
+    },
+    {
+        "year": 2565,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "หนองคาย",
+        "planted_area": 8100,
+        "harvest_area": 7500,
+        "yield_ton": 4950,
+        "yield_per_rai": 660
+    },
+    {
+        "year": 2565,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "สกลนคร",
+        "planted_area": 2800,
+        "harvest_area": 2800,
+        "yield_ton": 1823,
+        "yield_per_rai": 651
+    },
+    {
+        "year": 2565,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "นครพนม",
+        "planted_area": 7400,
+        "harvest_area": 7400,
+        "yield_ton": 4810,
+        "yield_per_rai": 650
+    },
+    {
+        "year": 2565,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "มุกดาหาร",
+        "planted_area": 350,
+        "harvest_area": 350,
+        "yield_ton": 221,
+        "yield_per_rai": 631
+    },
+    {
+        "year": 2565,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "ยโสธร",
+        "planted_area": 920,
+        "harvest_area": 920,
+        "yield_ton": 589,
+        "yield_per_rai": 640
+    },
+    {
+        "year": 2565,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "อุบลราชธานี",
+        "planted_area": 26800,
+        "harvest_area": 26200,
+        "yield_ton": 18340,
+        "yield_per_rai": 700
+    },
+    {
+        "year": 2565,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "ศรีสะเกษ",
+        "planted_area": 30200,
+        "harvest_area": 29800,
+        "yield_ton": 19370,
+        "yield_per_rai": 650
+    },
+    {
+        "year": 2565,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "สุรินทร์",
+        "planted_area": 6100,
+        "harvest_area": 5800,
+        "yield_ton": 3381,
+        "yield_per_rai": 583
+    },
+    {
+        "year": 2565,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "บุรีรัมย์",
+        "planted_area": 12500,
+        "harvest_area": 12100,
+        "yield_ton": 7502,
+        "yield_per_rai": 620
+    },
+    {
+        "year": 2565,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "มหาสารคาม",
+        "planted_area": 1380,
+        "harvest_area": 1350,
+        "yield_ton": 905,
+        "yield_per_rai": 670
+    },
+    {
+        "year": 2565,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "ร้อยเอ็ด",
+        "planted_area": 710,
+        "harvest_area": 700,
+        "yield_ton": 455,
+        "yield_per_rai": 650
+    },
+    {
+        "year": 2565,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "กาฬสินธุ์",
+        "planted_area": 21500,
+        "harvest_area": 21100,
+        "yield_ton": 14032,
+        "yield_per_rai": 665
+    },
+    {
+        "year": 2565,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "ขอนแก่น",
+        "planted_area": 46800,
+        "harvest_area": 45100,
+        "yield_ton": 32021,
+        "yield_per_rai": 710
+    },
+    {
+        "year": 2565,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "ชัยภูมิ",
+        "planted_area": 178500,
+        "harvest_area": 175200,
+        "yield_ton": 119837,
+        "yield_per_rai": 684
+    },
+    {
+        "year": 2565,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "นครราชสีมา",
+        "planted_area": 562500,
+        "harvest_area": 558200,
+        "yield_ton": 374552,
+        "yield_per_rai": 671
+    },
+    {
+        "year": 2565,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "สระบุรี",
+        "planted_area": 169500,
+        "harvest_area": 168200,
+        "yield_ton": 126991,
+        "yield_per_rai": 755
+    },
+    {
+        "year": 2565,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "ลพบุรี",
+        "planted_area": 386950,
+        "harvest_area": 381324,
+        "yield_ton": 290388,
+        "yield_per_rai": 762
+    },
+    {
+        "year": 2565,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "ชัยนาท",
+        "planted_area": 16240,
+        "harvest_area": 16089,
+        "yield_ton": 11359,
+        "yield_per_rai": 706
+    },
+    {
+        "year": 2565,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "สุพรรณบุรี",
+        "planted_area": 42058,
+        "harvest_area": 42047,
+        "yield_ton": 29760,
+        "yield_per_rai": 708
+    },
+    {
+        "year": 2565,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "นครนายก",
+        "planted_area": 268,
+        "harvest_area": 268,
+        "yield_ton": 239,
+        "yield_per_rai": 892
+    },
+    {
+        "year": 2565,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "ปราจีนบุรี",
+        "planted_area": 16500,
+        "harvest_area": 16400,
+        "yield_ton": 12136,
+        "yield_per_rai": 740
+    },
+    {
+        "year": 2565,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "ฉะเชิงเทรา",
+        "planted_area": 4900,
+        "harvest_area": 4900,
+        "yield_ton": 3802,
+        "yield_per_rai": 776
+    },
+    {
+        "year": 2565,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "สระแก้ว",
+        "planted_area": 170500,
+        "harvest_area": 165800,
+        "yield_ton": 115065,
+        "yield_per_rai": 694
+    },
+    {
+        "year": 2565,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "จันทบุรี",
+        "planted_area": 21000,
+        "harvest_area": 20950,
+        "yield_ton": 16027,
+        "yield_per_rai": 765
+    },
+    {
+        "year": 2565,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "กาญจนบุรี",
+        "planted_area": 35500,
+        "harvest_area": 35450,
+        "yield_ton": 24992,
+        "yield_per_rai": 705
+    },
+    {
+        "year": 2565,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "ราชบุรี",
+        "planted_area": 11800,
+        "harvest_area": 11750,
+        "yield_ton": 8460,
+        "yield_per_rai": 720
+    },
+    {
+        "year": 2565,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "ประจวบคีรีขันธ์",
+        "planted_area": 480,
+        "harvest_area": 470,
+        "yield_ton": 343,
+        "yield_per_rai": 730
+    },
+    {
+        "year": 2566,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "เชียงราย",
+        "planted_area": 222638,
+        "harvest_area": 221223,
+        "yield_ton": 160177,
+        "yield_per_rai": 724
+    },
+    {
+        "year": 2566,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "พะเยา",
+        "planted_area": 151707,
+        "harvest_area": 151281,
+        "yield_ton": 108225,
+        "yield_per_rai": 715
+    },
+    {
+        "year": 2566,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "ลำปาง",
+        "planted_area": 271711,
+        "harvest_area": 269700,
+        "yield_ton": 197098,
+        "yield_per_rai": 731
+    },
+    {
+        "year": 2566,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "ลำพูน",
+        "planted_area": 56360,
+        "harvest_area": 56285,
+        "yield_ton": 39213,
+        "yield_per_rai": 697
+    },
+    {
+        "year": 2566,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "เชียงใหม่",
+        "planted_area": 274115,
+        "harvest_area": 273655,
+        "yield_ton": 208683,
+        "yield_per_rai": 763
+    },
+    {
+        "year": 2566,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "แม่ฮ่องสอน",
+        "planted_area": 168159,
+        "harvest_area": 167507,
+        "yield_ton": 129012,
+        "yield_per_rai": 770
+    },
+    {
+        "year": 2566,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "ตาก",
+        "planted_area": 574741,
+        "harvest_area": 565709,
+        "yield_ton": 402302,
+        "yield_per_rai": 711
+    },
+    {
+        "year": 2566,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "กำแพงเพชร",
+        "planted_area": 121633,
+        "harvest_area": 120866,
+        "yield_ton": 97604,
+        "yield_per_rai": 808
+    },
+    {
+        "year": 2566,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "สุโขทัย",
+        "planted_area": 88703,
+        "harvest_area": 88179,
+        "yield_ton": 61800,
+        "yield_per_rai": 701
+    },
+    {
+        "year": 2566,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "แพร่",
+        "planted_area": 243598,
+        "harvest_area": 242707,
+        "yield_ton": 164040,
+        "yield_per_rai": 676
+    },
+    {
+        "year": 2566,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "น่าน",
+        "planted_area": 453195,
+        "harvest_area": 450552,
+        "yield_ton": 304994,
+        "yield_per_rai": 677
+    },
+    {
+        "year": 2566,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "อุตรดิตถ์",
+        "planted_area": 164101,
+        "harvest_area": 151300,
+        "yield_ton": 95119,
+        "yield_per_rai": 629
+    },
+    {
+        "year": 2566,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "พิษณุโลก",
+        "planted_area": 232677,
+        "harvest_area": 231212,
+        "yield_ton": 162884,
+        "yield_per_rai": 704
+    },
+    {
+        "year": 2566,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "พิจิตร",
+        "planted_area": 49127,
+        "harvest_area": 48187,
+        "yield_ton": 36168,
+        "yield_per_rai": 751
+    },
+    {
+        "year": 2566,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "นครสวรรค์",
+        "planted_area": 335308,
+        "harvest_area": 335208,
+        "yield_ton": 278635,
+        "yield_per_rai": 831
+    },
+    {
+        "year": 2566,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "อุทัยธานี",
+        "planted_area": 119328,
+        "harvest_area": 112297,
+        "yield_ton": 95576,
+        "yield_per_rai": 851
+    },
+    {
+        "year": 2566,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "เพชรบูรณ์",
+        "planted_area": 681666,
+        "harvest_area": 674440,
+        "yield_ton": 535904,
+        "yield_per_rai": 795
+    },
+    {
+        "year": 2566,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "เลย",
+        "planted_area": 282474,
+        "harvest_area": 279307,
+        "yield_ton": 179087,
+        "yield_per_rai": 641
+    },
+    {
+        "year": 2566,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "หนองบัวลำภู",
+        "planted_area": 14202,
+        "harvest_area": 14107,
+        "yield_ton": 9096,
+        "yield_per_rai": 645
+    },
+    {
+        "year": 2566,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "อุดรธานี",
+        "planted_area": 1654,
+        "harvest_area": 1639,
+        "yield_ton": 1124,
+        "yield_per_rai": 686
+    },
+    {
+        "year": 2566,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "อำนาจเจริญ",
+        "planted_area": 10,
+        "harvest_area": 10,
+        "yield_ton": 6,
+        "yield_per_rai": 600
+    },
+    {
+        "year": 2566,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "อุบลราชธานี",
+        "planted_area": 80200,
+        "harvest_area": 80200,
+        "yield_ton": 66445,
+        "yield_per_rai": 828
+    },
+    {
+        "year": 2566,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "ศรีสะเกษ",
+        "planted_area": 36433,
+        "harvest_area": 36433,
+        "yield_ton": 31533,
+        "yield_per_rai": 866
+    },
+    {
+        "year": 2566,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "สุรินทร์",
+        "planted_area": 339,
+        "harvest_area": 339,
+        "yield_ton": 238,
+        "yield_per_rai": 702
+    },
+    {
+        "year": 2566,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "บุรีรัมย์",
+        "planted_area": 2754,
+        "harvest_area": 2729,
+        "yield_ton": 2126,
+        "yield_per_rai": 779
+    },
+    {
+        "year": 2566,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "กาฬสินธุ์",
+        "planted_area": 270,
+        "harvest_area": 270,
+        "yield_ton": 175,
+        "yield_per_rai": 648
+    },
+    {
+        "year": 2566,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "ขอนแก่น",
+        "planted_area": 6213,
+        "harvest_area": 6209,
+        "yield_ton": 4483,
+        "yield_per_rai": 722
+    },
+    {
+        "year": 2566,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "ชัยภูมิ",
+        "planted_area": 70340,
+        "harvest_area": 70252,
+        "yield_ton": 51171,
+        "yield_per_rai": 728
+    },
+    {
+        "year": 2566,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "นครราชสีมา",
+        "planted_area": 669548,
+        "harvest_area": 650557,
+        "yield_ton": 513540,
+        "yield_per_rai": 789
+    },
+    {
+        "year": 2566,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "สระบุรี",
+        "planted_area": 181645,
+        "harvest_area": 178675,
+        "yield_ton": 136659,
+        "yield_per_rai": 765
+    },
+    {
+        "year": 2566,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "ลพบุรี",
+        "planted_area": 403156,
+        "harvest_area": 401207,
+        "yield_ton": 307536,
+        "yield_per_rai": 767
+    },
+    {
+        "year": 2566,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "ชัยนาท",
+        "planted_area": 16831,
+        "harvest_area": 16718,
+        "yield_ton": 11869,
+        "yield_per_rai": 710
+    },
+    {
+        "year": 2566,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "สุพรรณบุรี",
+        "planted_area": 41436,
+        "harvest_area": 41414,
+        "yield_ton": 29556,
+        "yield_per_rai": 714
+    },
+    {
+        "year": 2566,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "นครนายก",
+        "planted_area": 269,
+        "harvest_area": 269,
+        "yield_ton": 209,
+        "yield_per_rai": 777
+    },
+    {
+        "year": 2566,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "ปราจีนบุรี",
+        "planted_area": 29210,
+        "harvest_area": 29080,
+        "yield_ton": 22669,
+        "yield_per_rai": 780
+    },
+    {
+        "year": 2566,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "ฉะเชิงเทรา",
+        "planted_area": 3762,
+        "harvest_area": 3718,
+        "yield_ton": 2540,
+        "yield_per_rai": 683
+    },
+    {
+        "year": 2566,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "สระแก้ว",
+        "planted_area": 133949,
+        "harvest_area": 128246,
+        "yield_ton": 99152,
+        "yield_per_rai": 773
+    },
+    {
+        "year": 2566,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "จันทบุรี",
+        "planted_area": 9797,
+        "harvest_area": 9651,
+        "yield_ton": 6563,
+        "yield_per_rai": 680
+    },
+    {
+        "year": 2566,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "กาญจนบุรี",
+        "planted_area": 80591,
+        "harvest_area": 80464,
+        "yield_ton": 57305,
+        "yield_per_rai": 712
+    },
+    {
+        "year": 2566,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "ราชบุรี",
+        "planted_area": 918,
+        "harvest_area": 918,
+        "yield_ton": 540,
+        "yield_per_rai": 588
+    },
+    {
+        "year": 2566,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "เพชรบุรี",
+        "planted_area": 4752,
+        "harvest_area": 4723,
+        "yield_ton": 2687,
+        "yield_per_rai": 569
+    },
+    {
+        "year": 2566,
+        "crop": "ข้าวโพดเลี้ยงสัตว์",
+        "province": "ประจวบคีรีขันธ์",
+        "planted_area": 412,
+        "harvest_area": 412,
+        "yield_ton": 263,
+        "yield_per_rai": 638
+    }
+]

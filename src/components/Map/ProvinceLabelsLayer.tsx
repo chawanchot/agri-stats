@@ -12,10 +12,7 @@ const ProvinceLabelsLayer = ({ data }: PropsType) => {
             type: "Feature",
             geometry: {
                 type: "Point",
-                coordinates: [
-                    feature.properties.province_lon,
-                    feature.properties.province_lat,
-                ],
+                coordinates: [feature.properties.province_lon, feature.properties.province_lat],
             },
             properties: feature.properties,
         })),
@@ -41,6 +38,6 @@ const ProvinceLabelsLayer = ({ data }: PropsType) => {
             />
         </Source>
     );
-}
+};
 
 export default ProvinceLabelsLayer;

@@ -15,12 +15,7 @@ const ProvinceLayer = ({ data, hoverData }: PropsType) => {
                     type="fill"
                     paint={{
                         "fill-color": "#088",
-                        "fill-opacity": [
-                            "case",
-                            ["==", ["get", "pro_th"], hoverData],
-                            0.5,
-                            0.1,
-                        ],
+                        "fill-opacity": ["case", ["==", ["get", "pro_th"], hoverData], 0.5, 0.1],
                     }}
                 />
 
@@ -36,6 +31,6 @@ const ProvinceLayer = ({ data, hoverData }: PropsType) => {
             </Source>
         </>
     );
-}
+};
 
 export default ProvinceLayer;

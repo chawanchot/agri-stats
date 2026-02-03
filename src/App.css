@@ -1,8 +1,32 @@
+/* Map Popup Styling */
 .maplibregl-popup-content {
-    padding: 10px !important;
-    border-radius: 10px;
+    padding: 16px !important;
+    border-radius: 16px !important;
     overflow: hidden;
     min-width: fit-content;
-
     font-family: "Kanit", sans-serif;
+    
+    /* Glassmorphism Effect */
+    background: rgba(255, 255, 255, 0.85) !important;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12) !important;
+}
+
+.maplibregl-popup-tip {
+    border-top-color: rgba(255, 255, 255, 0.85) !important;
+    border-bottom-color: rgba(255, 255, 255, 0.85) !important;
+}
+
+.maplibregl-popup-close-button {
+    font-size: 18px;
+    padding: 4px 8px;
+    color: #64748b;
+    transition: color 0.2s ease;
+}
+
+.maplibregl-popup-close-button:hover {
+    color: #ef4444;
+    background: transparent;
 }

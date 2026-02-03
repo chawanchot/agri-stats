@@ -1,20 +1,9 @@
 import ProvinceLabelsLayer from "@components/Map/ProvinceLabelsLayer";
 import ProvinceLayer from "@components/Map/ProvinceLayer";
 import { useAppDispatch, useAppSelector } from "@store/hook";
-import {
-    setMainChartFilter,
-    setProvince,
-    setZoom,
-} from "@store/slice/controlSlice";
+import { setMainChartFilter, setProvince, setZoom } from "@store/slice/controlSlice";
 import { forwardRef, useEffect, useState } from "react";
-import Map, {
-    LogoControl,
-    Marker,
-    NavigationControl,
-    Popup,
-    type MapRef,
-    type MarkerEvent,
-} from "react-map-gl/maplibre";
+import Map, { LogoControl, Marker, NavigationControl, Popup, type MapRef, type MarkerEvent } from "react-map-gl/maplibre";
 import "maplibre-gl/dist/maplibre-gl.css";
 import ProvincesData from "@assets/data/provinces.json";
 import type { FeatureCollection } from "geojson";
@@ -46,16 +35,8 @@ const MainMap = forwardRef<MapRef>(({}, mapRef) => {
     const onProvinceClick = async (event: any) => {
         const feature = event.features && event.features[0];
 
-        if (
-            feature &&
-            feature.properties &&
-            !isModalOpen &&
-            mapRef &&
-            typeof mapRef !== "function" &&
-            mapRef.current
-        ) {
-            const { pro_th, pro_en, province_lat, province_lon } =
-                feature.properties;
+        if (feature && feature.properties && !isModalOpen && mapRef && typeof mapRef !== "function" && mapRef.current) {
+            const { pro_th, pro_en, province_lat, province_lon } = feature.properties;
 
             mapRef.current?.flyTo({
                 center: [province_lon, province_lat],
@@ -67,10 +48,12 @@ const MainMap = forwardRef<MapRef>(({}, mapRef) => {
 
             try {
                 const soilName = pro_en.replaceAll(" ", "").toLowerCase();
+                console.log(soilName);
                 const data = await import(`../../assets/data/soils/${soilName}.json`);
 
                 setSoilData(data.default);
             } catch (error) {
+                console.log(error);
                 setSoilData(null);
             }
 
@@ -95,23 +78,19 @@ const MainMap = forwardRef<MapRef>(({}, mapRef) => {
             let allLocation: LocationType[] = [];
             let allPopup: PopupStatusType = {};
 
-            const getPrice = await Axios.get(
-                `http://localhost:5000/price-by-crop?crop=${menuSelected.crop}`
-            );
+            const getPrice = await Axios.get(`http://localhost:5000/price-by-crop?crop=${menuSelected.crop}`);
             const priceData = getPrice.data.data;
             if (!priceData.length) {
                 messageApi.open({
                     type: "warning",
-                    content: `ไม่มีข้อมูลราคาสินค้า ${menuSelected.crop}`
-                })
+                    content: `ไม่มีข้อมูลราคาสินค้า ${menuSelected.crop}`,
+                });
 
                 return;
             }
 
             for (const item of priceData) {
-                const location = encodeURIComponent(
-                    `${item.market_name} ${item.province}`
-                );
+                const location = encodeURIComponent(`${item.market_name} ${item.province}`);
                 const getLocation = await Axios.get(
                     `https://maps.googleapis.com/maps/api/geocode/json?address=${location}&key=${GOOGLE_API_KEY}`
                 );
@@ -129,21 +108,21 @@ const MainMap = forwardRef<MapRef>(({}, mapRef) => {
                                 name: item.product_name,
                                 price: item.day_price,
                                 unit: item.unit,
-                            }
-                        ]
+                            },
+                        ],
                     });
                 } else {
                     allLocation[marketIndex].productList.push({
                         name: item.product_name,
                         price: item.day_price,
                         unit: item.unit,
-                    })
+                    });
                 }
             }
 
             allLocation.map((item: LocationType) => {
                 allPopup[item.name] = false;
-            })
+            });
 
             console.log(allLocation);
             setPopupStatus(allPopup);
@@ -155,7 +134,7 @@ const MainMap = forwardRef<MapRef>(({}, mapRef) => {
 
     const onClickMarker = (event: MarkerEvent<MouseEvent>, name: string) => {
         event.originalEvent.stopPropagation();
-        let newStatus = {...popupStatus};
+        let newStatus = { ...popupStatus };
 
         Object.keys(newStatus).forEach((key) => {
             if (key === name) {
@@ -163,10 +142,10 @@ const MainMap = forwardRef<MapRef>(({}, mapRef) => {
             } else {
                 newStatus[key] = false;
             }
-        })
+        });
 
         setPopupStatus(newStatus);
-    }
+    };
 
     useEffect(() => {
         setLocationData([]);
@@ -195,17 +174,11 @@ const MainMap = forwardRef<MapRef>(({}, mapRef) => {
                 onIdle={onIdleHandle}
                 onMouseMove={(e) => {
                     if (e.features && e.features.length > 0) {
-                        const provinceFeature = e.features.find(
-                            (feature) =>
-                                feature.layer?.id === "province-hover-fills"
-                        );
-                        const soilFeature = e.features.find(
-                            (feature) => feature.layer?.id === "soil-fill"
-                        );
+                        const provinceFeature = e.features.find((feature) => feature.layer?.id === "province-hover-fills");
+                        const soilFeature = e.features.find((feature) => feature.layer?.id === "soil-fill");
 
                         const provinceCompareFeature = e.features.find(
-                            (feature) =>
-                                feature.layer?.id === "province-compare-fills"
+                            (feature) => feature.layer?.id === "province-compare-fills"
                         );
 
                         if (provinceFeature) {
@@ -235,75 +208,65 @@ const MainMap = forwardRef<MapRef>(({}, mapRef) => {
                         setHoverCompare(null);
                     }
                 }}
-                interactiveLayerIds={[
-                    "province-hover-fills",
-                    "soil-fill",
-                    "province-compare-fills",
-                ]}
+                interactiveLayerIds={["province-hover-fills", "soil-fill", "province-compare-fills"]}
             >
                 <LogoControl />
                 {!isModalOpen && <NavigationControl position="bottom-left" />}
 
                 <ProvinceLayer data={ProvincesGeoJson} hoverData={hoverInfo} />
 
-                {zoom >= 8 && soilData && (
-                    <SoilSource data={soilData} hoverData={hoverSoil} />
-                )}
+                {zoom >= 8 && soilData && <SoilSource data={soilData} hoverData={hoverSoil} />}
 
                 {menuSelected.crop && menuSelected.mode === "ผลผลิต" && (
-                    <CropCompareLayer
-                        hoverData={hoverCompare}
-                        type={menuSelected.type}
-                    />
+                    <CropCompareLayer hoverData={hoverCompare} type={menuSelected.type} />
                 )}
 
                 <ProvinceLabelsLayer data={ProvincesGeoJson} />
 
-                {menuSelected.mode === "ราคา" && locationData.map((item: LocationType) => {
-                    return (
-                        <div key={item.name}>
-                            <Marker
-                                latitude={item.location.lat}
-                                longitude={item.location.lng}
-                                onClick={(e) => onClickMarker(e, item.name)}
-                                className="cursor-pointer"
-                            >
-                                <Tag
-                                    variant="solid"
-                                    color="white"
-                                    className="text-black! shadow font-medium! rounded-full! text-xs! py-0.5!"
-                                >
-                                    {item.productList[0].price} ฿
-                                </Tag>
-                            </Marker>
-                            {popupStatus && popupStatus[item.name] && (
-                                <Popup
+                {menuSelected.mode === "ราคา" &&
+                    locationData.map((item: LocationType) => {
+                        return (
+                            <div key={item.name}>
+                                <Marker
                                     latitude={item.location.lat}
                                     longitude={item.location.lng}
-                                    closeButton={false}
-                                    offset={15}
+                                    onClick={(e) => onClickMarker(e, item.name)}
+                                    className="cursor-pointer"
                                 >
-                                    <div className="flex flex-col items-center justify-center overflow-hidden">
-                                        <div className="font-semibold">
-                                            {item.name}
+                                    <Tag
+                                        variant="solid"
+                                        color="white"
+                                        className="text-black! shadow font-medium! rounded-full! text-xs! py-0.5!"
+                                    >
+                                        {item.productList[0].price} ฿
+                                    </Tag>
+                                </Marker>
+                                {popupStatus && popupStatus[item.name] && (
+                                    <Popup
+                                        latitude={item.location.lat}
+                                        longitude={item.location.lng}
+                                        closeButton={false}
+                                        offset={15}
+                                    >
+                                        <div className="flex flex-col items-center justify-center overflow-hidden">
+                                            <div className="font-semibold">{item.name}</div>
+                                            <div className="text-gray-500 -mt-1">{item.province}</div>
+                                            <div className="flex flex-col mt-2">
+                                                {item.productList.map((product, index) => (
+                                                    <div className="text-gray-800" key={index}>
+                                                        {product.name}{" "}
+                                                        <span className="font-semibold">
+                                                            {product.price} {product.unit}
+                                                        </span>
+                                                    </div>
+                                                ))}
+                                            </div>
                                         </div>
-                                        <div className="text-gray-500 -mt-1">{item.province}</div>
-                                        <div className="flex flex-col mt-2">
-                                            {item.productList.map((product, index) => (
-                                                <div className="text-gray-800" key={index}>
-                                                    {product.name}{" "}
-                                                    <span className="font-semibold">
-                                                        {product.price} {product.unit}
-                                                    </span>
-                                                </div>
-                                            ))}
-                                        </div>
-                                    </div>
-                                </Popup>
-                            )}
-                        </div>
-                    );
-                })}
+                                    </Popup>
+                                )}
+                            </div>
+                        );
+                    })}
             </Map>
         </>
     );

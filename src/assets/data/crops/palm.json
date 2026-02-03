@@ -1,0 +1,3422 @@
+[
+    {
+        "year": 2563,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "เชียงราย",
+        "planted_area": 11908,
+        "harvest_area": 11834,
+        "yield_ton": 11730,
+        "yield_per_rai": 991
+    },
+    {
+        "year": 2563,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "พะเยา",
+        "planted_area": 3096,
+        "harvest_area": 3084,
+        "yield_ton": 3773,
+        "yield_per_rai": 1223
+    },
+    {
+        "year": 2563,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ลำปาง",
+        "planted_area": 2206,
+        "harvest_area": 2206,
+        "yield_ton": 2051,
+        "yield_per_rai": 930
+    },
+    {
+        "year": 2563,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ลำพูน",
+        "planted_area": 640,
+        "harvest_area": 611,
+        "yield_ton": 620,
+        "yield_per_rai": 1015
+    },
+    {
+        "year": 2563,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "เชียงใหม่",
+        "planted_area": 577,
+        "harvest_area": 470,
+        "yield_ton": 245,
+        "yield_per_rai": 521
+    },
+    {
+        "year": 2563,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "แม่ฮ่องสอน",
+        "planted_area": 136,
+        "harvest_area": 0,
+        "yield_ton": 0,
+        "yield_per_rai": 0
+    },
+    {
+        "year": 2563,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ตาก",
+        "planted_area": 1712,
+        "harvest_area": 1686,
+        "yield_ton": 1218,
+        "yield_per_rai": 722
+    },
+    {
+        "year": 2563,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "กำแพงเพชร",
+        "planted_area": 8431,
+        "harvest_area": 7321,
+        "yield_ton": 9225,
+        "yield_per_rai": 1260
+    },
+    {
+        "year": 2563,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "สุโขทัย",
+        "planted_area": 7932,
+        "harvest_area": 7872,
+        "yield_ton": 4496,
+        "yield_per_rai": 571
+    },
+    {
+        "year": 2563,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "แพร่",
+        "planted_area": 2154,
+        "harvest_area": 1754,
+        "yield_ton": 727,
+        "yield_per_rai": 415
+    },
+    {
+        "year": 2563,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "น่าน",
+        "planted_area": 5519,
+        "harvest_area": 4368,
+        "yield_ton": 2762,
+        "yield_per_rai": 632
+    },
+    {
+        "year": 2563,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "อุตรดิตถ์",
+        "planted_area": 3368,
+        "harvest_area": 3010,
+        "yield_ton": 1863,
+        "yield_per_rai": 619
+    },
+    {
+        "year": 2563,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "พิษณุโลก",
+        "planted_area": 17493,
+        "harvest_area": 15081,
+        "yield_ton": 27704,
+        "yield_per_rai": 1837
+    },
+    {
+        "year": 2563,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "พิจิตร",
+        "planted_area": 1790,
+        "harvest_area": 351,
+        "yield_ton": 383,
+        "yield_per_rai": 1091
+    },
+    {
+        "year": 2563,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "นครสวรรค์",
+        "planted_area": 2980,
+        "harvest_area": 2289,
+        "yield_ton": 2274,
+        "yield_per_rai": 993
+    },
+    {
+        "year": 2563,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "อุทัยธานี",
+        "planted_area": 9556,
+        "harvest_area": 8980,
+        "yield_ton": 10569,
+        "yield_per_rai": 1177
+    },
+    {
+        "year": 2563,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "เพชรบูรณ์",
+        "planted_area": 15880,
+        "harvest_area": 10251,
+        "yield_ton": 13141,
+        "yield_per_rai": 1282
+    },
+    {
+        "year": 2563,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "เลย",
+        "planted_area": 25868,
+        "harvest_area": 24253,
+        "yield_ton": 39737,
+        "yield_per_rai": 1638
+    },
+    {
+        "year": 2563,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "หนองบัวลำภู",
+        "planted_area": 7562,
+        "harvest_area": 6650,
+        "yield_ton": 5912,
+        "yield_per_rai": 889
+    },
+    {
+        "year": 2563,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "อุดรธานี",
+        "planted_area": 31682,
+        "harvest_area": 25568,
+        "yield_ton": 33217,
+        "yield_per_rai": 1299
+    },
+    {
+        "year": 2563,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "หนองคาย",
+        "planted_area": 23241,
+        "harvest_area": 20995,
+        "yield_ton": 32026,
+        "yield_per_rai": 1525
+    },
+    {
+        "year": 2563,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "บึงกาฬ",
+        "planted_area": 33978,
+        "harvest_area": 26846,
+        "yield_ton": 48171,
+        "yield_per_rai": 1794
+    },
+    {
+        "year": 2563,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "สกลนคร",
+        "planted_area": 29174,
+        "harvest_area": 27610,
+        "yield_ton": 27533,
+        "yield_per_rai": 997
+    },
+    {
+        "year": 2563,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "นครพนม",
+        "planted_area": 9240,
+        "harvest_area": 8114,
+        "yield_ton": 8257,
+        "yield_per_rai": 1018
+    },
+    {
+        "year": 2563,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "มุกดาหาร",
+        "planted_area": 4496,
+        "harvest_area": 4016,
+        "yield_ton": 4874,
+        "yield_per_rai": 1214
+    },
+    {
+        "year": 2563,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ยโสธร",
+        "planted_area": 4095,
+        "harvest_area": 3665,
+        "yield_ton": 3884,
+        "yield_per_rai": 1060
+    },
+    {
+        "year": 2563,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "อำนาจเจริญ",
+        "planted_area": 7686,
+        "harvest_area": 6592,
+        "yield_ton": 8255,
+        "yield_per_rai": 1252
+    },
+    {
+        "year": 2563,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "อุบลราชธานี",
+        "planted_area": 22521,
+        "harvest_area": 20265,
+        "yield_ton": 30469,
+        "yield_per_rai": 1504
+    },
+    {
+        "year": 2563,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ศรีสะเกษ",
+        "planted_area": 9835,
+        "harvest_area": 8137,
+        "yield_ton": 10494,
+        "yield_per_rai": 1290
+    },
+    {
+        "year": 2563,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "สุรินทร์",
+        "planted_area": 5583,
+        "harvest_area": 5318,
+        "yield_ton": 6013,
+        "yield_per_rai": 1131
+    },
+    {
+        "year": 2563,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "บุรีรัมย์",
+        "planted_area": 8082,
+        "harvest_area": 6879,
+        "yield_ton": 10357,
+        "yield_per_rai": 1506
+    },
+    {
+        "year": 2563,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "มหาสารคาม",
+        "planted_area": 246,
+        "harvest_area": 162,
+        "yield_ton": 103,
+        "yield_per_rai": 636
+    },
+    {
+        "year": 2563,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ร้อยเอ็ด",
+        "planted_area": 2078,
+        "harvest_area": 1806,
+        "yield_ton": 2534,
+        "yield_per_rai": 1403
+    },
+    {
+        "year": 2563,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "กาฬสินธุ์",
+        "planted_area": 6273,
+        "harvest_area": 6194,
+        "yield_ton": 7767,
+        "yield_per_rai": 1254
+    },
+    {
+        "year": 2563,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ขอนแก่น",
+        "planted_area": 1926,
+        "harvest_area": 1812,
+        "yield_ton": 2269,
+        "yield_per_rai": 1252
+    },
+    {
+        "year": 2563,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ชัยภูมิ",
+        "planted_area": 5576,
+        "harvest_area": 4272,
+        "yield_ton": 7294,
+        "yield_per_rai": 1707
+    },
+    {
+        "year": 2563,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "นครราชสีมา",
+        "planted_area": 11598,
+        "harvest_area": 8319,
+        "yield_ton": 11907,
+        "yield_per_rai": 1431
+    },
+    {
+        "year": 2563,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "สระบุรี",
+        "planted_area": 6032,
+        "harvest_area": 5981,
+        "yield_ton": 17110,
+        "yield_per_rai": 2861
+    },
+    {
+        "year": 2563,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ลพบุรี",
+        "planted_area": 2617,
+        "harvest_area": 2345,
+        "yield_ton": 2738,
+        "yield_per_rai": 1168
+    },
+    {
+        "year": 2563,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "สิงห์บุรี",
+        "planted_area": 29,
+        "harvest_area": 29,
+        "yield_ton": 54,
+        "yield_per_rai": 1862
+    },
+    {
+        "year": 2563,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ชัยนาท",
+        "planted_area": 1563,
+        "harvest_area": 1336,
+        "yield_ton": 1402,
+        "yield_per_rai": 1049
+    },
+    {
+        "year": 2563,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "สุพรรณบุรี",
+        "planted_area": 2459,
+        "harvest_area": 2254,
+        "yield_ton": 3999,
+        "yield_per_rai": 1774
+    },
+    {
+        "year": 2563,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "พระนครศรีอยุธยา",
+        "planted_area": 682,
+        "harvest_area": 578,
+        "yield_ton": 1018,
+        "yield_per_rai": 1761
+    },
+    {
+        "year": 2563,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "กรุงเทพมหานคร",
+        "planted_area": 121,
+        "harvest_area": 114,
+        "yield_ton": 93,
+        "yield_per_rai": 816
+    },
+    {
+        "year": 2563,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "นนทบุรี",
+        "planted_area": 18,
+        "harvest_area": 16,
+        "yield_ton": 33,
+        "yield_per_rai": 2063
+    },
+    {
+        "year": 2563,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ปทุมธานี",
+        "planted_area": 8551,
+        "harvest_area": 8077,
+        "yield_ton": 30135,
+        "yield_per_rai": 3731
+    },
+    {
+        "year": 2563,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "นครนายก",
+        "planted_area": 4469,
+        "harvest_area": 4408,
+        "yield_ton": 9301,
+        "yield_per_rai": 2110
+    },
+    {
+        "year": 2563,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ปราจีนบุรี",
+        "planted_area": 18552,
+        "harvest_area": 17242,
+        "yield_ton": 34553,
+        "yield_per_rai": 2004
+    },
+    {
+        "year": 2563,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ฉะเชิงเทรา",
+        "planted_area": 37487,
+        "harvest_area": 32891,
+        "yield_ton": 61809,
+        "yield_per_rai": 1879
+    },
+    {
+        "year": 2563,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "สระแก้ว",
+        "planted_area": 41352,
+        "harvest_area": 40260,
+        "yield_ton": 82715,
+        "yield_per_rai": 2055
+    },
+    {
+        "year": 2563,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "จันทบุรี",
+        "planted_area": 25415,
+        "harvest_area": 22801,
+        "yield_ton": 44548,
+        "yield_per_rai": 1954
+    },
+    {
+        "year": 2563,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ตราด",
+        "planted_area": 64917,
+        "harvest_area": 63567,
+        "yield_ton": 165153,
+        "yield_per_rai": 2598
+    },
+    {
+        "year": 2563,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ระยอง",
+        "planted_area": 33068,
+        "harvest_area": 32362,
+        "yield_ton": 77552,
+        "yield_per_rai": 2396
+    },
+    {
+        "year": 2563,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ชลบุรี",
+        "planted_area": 109902,
+        "harvest_area": 109374,
+        "yield_ton": 291676,
+        "yield_per_rai": 2667
+    },
+    {
+        "year": 2563,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "สมุทรปราการ",
+        "planted_area": 90,
+        "harvest_area": 90,
+        "yield_ton": 167,
+        "yield_per_rai": 1856
+    },
+    {
+        "year": 2563,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "สมุทรสาคร",
+        "planted_area": 150,
+        "harvest_area": 150,
+        "yield_ton": 309,
+        "yield_per_rai": 2060
+    },
+    {
+        "year": 2563,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "นครปฐม",
+        "planted_area": 336,
+        "harvest_area": 336,
+        "yield_ton": 676,
+        "yield_per_rai": 2012
+    },
+    {
+        "year": 2563,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "กาญจนบุรี",
+        "planted_area": 21308,
+        "harvest_area": 18930,
+        "yield_ton": 28105,
+        "yield_per_rai": 1485
+    },
+    {
+        "year": 2563,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ราชบุรี",
+        "planted_area": 11580,
+        "harvest_area": 10706,
+        "yield_ton": 13454,
+        "yield_per_rai": 1257
+    },
+    {
+        "year": 2563,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "สมุทรสงคราม",
+        "planted_area": 47,
+        "harvest_area": 47,
+        "yield_ton": 64,
+        "yield_per_rai": 1362
+    },
+    {
+        "year": 2563,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "เพชรบุรี",
+        "planted_area": 14227,
+        "harvest_area": 13713,
+        "yield_ton": 25527,
+        "yield_per_rai": 1862
+    },
+    {
+        "year": 2563,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ประจวบคีรีขันธ์",
+        "planted_area": 151178,
+        "harvest_area": 136005,
+        "yield_ton": 331119,
+        "yield_per_rai": 2435
+    },
+    {
+        "year": 2563,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ชุมพร",
+        "planted_area": 1024499,
+        "harvest_area": 1000431,
+        "yield_ton": 2878467,
+        "yield_per_rai": 2877
+    },
+    {
+        "year": 2563,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ระนอง",
+        "planted_area": 156023,
+        "harvest_area": 144302,
+        "yield_ton": 417281,
+        "yield_per_rai": 2892
+    },
+    {
+        "year": 2563,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "สุราษฎร์ธานี",
+        "planted_area": 1359380,
+        "harvest_area": 1300813,
+        "yield_ton": 3876333,
+        "yield_per_rai": 2980
+    },
+    {
+        "year": 2563,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "พังงา",
+        "planted_area": 257985,
+        "harvest_area": 233954,
+        "yield_ton": 668612,
+        "yield_per_rai": 2858
+    },
+    {
+        "year": 2563,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ภูเก็ต",
+        "planted_area": 2781,
+        "harvest_area": 2450,
+        "yield_ton": 6058,
+        "yield_per_rai": 2473
+    },
+    {
+        "year": 2563,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "กระบี่",
+        "planted_area": 1170815,
+        "harvest_area": 1122439,
+        "yield_ton": 3345467,
+        "yield_per_rai": 2981
+    },
+    {
+        "year": 2563,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ตรัง",
+        "planted_area": 287391,
+        "harvest_area": 268699,
+        "yield_ton": 730735,
+        "yield_per_rai": 2720
+    },
+    {
+        "year": 2563,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "นครศรีธรรมราช",
+        "planted_area": 648822,
+        "harvest_area": 610031,
+        "yield_ton": 1805859,
+        "yield_per_rai": 2960
+    },
+    {
+        "year": 2563,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "พัทลุง",
+        "planted_area": 100644,
+        "harvest_area": 80585,
+        "yield_ton": 206935,
+        "yield_per_rai": 2568
+    },
+    {
+        "year": 2563,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "สงขลา",
+        "planted_area": 80849,
+        "harvest_area": 74301,
+        "yield_ton": 181634,
+        "yield_per_rai": 2445
+    },
+    {
+        "year": 2563,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "สตูล",
+        "planted_area": 132856,
+        "harvest_area": 118281,
+        "yield_ton": 290875,
+        "yield_per_rai": 2459
+    },
+    {
+        "year": 2563,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ปัตตานี",
+        "planted_area": 23700,
+        "harvest_area": 23000,
+        "yield_ton": 56099,
+        "yield_per_rai": 2439
+    },
+    {
+        "year": 2563,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ยะลา",
+        "planted_area": 8613,
+        "harvest_area": 7300,
+        "yield_ton": 9672,
+        "yield_per_rai": 1325
+    },
+    {
+        "year": 2563,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "นราธิวาส",
+        "planted_area": 65244,
+        "harvest_area": 61933,
+        "yield_ton": 130783,
+        "yield_per_rai": 2112
+    },
+    {
+        "year": 2564,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "เชียงราย",
+        "planted_area": 11472,
+        "harvest_area": 11398,
+        "yield_ton": 14088,
+        "yield_per_rai": 1236
+    },
+    {
+        "year": 2564,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "พะเยา",
+        "planted_area": 3032,
+        "harvest_area": 3020,
+        "yield_ton": 3765,
+        "yield_per_rai": 1247
+    },
+    {
+        "year": 2564,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ลำปาง",
+        "planted_area": 2046,
+        "harvest_area": 1726,
+        "yield_ton": 1737,
+        "yield_per_rai": 1006
+    },
+    {
+        "year": 2564,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ลำพูน",
+        "planted_area": 629,
+        "harvest_area": 600,
+        "yield_ton": 542,
+        "yield_per_rai": 903
+    },
+    {
+        "year": 2564,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "เชียงใหม่",
+        "planted_area": 421,
+        "harvest_area": 310,
+        "yield_ton": 205,
+        "yield_per_rai": 661
+    },
+    {
+        "year": 2564,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "แม่ฮ่องสอน",
+        "planted_area": 86,
+        "harvest_area": 0,
+        "yield_ton": 0,
+        "yield_per_rai": 0
+    },
+    {
+        "year": 2564,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ตาก",
+        "planted_area": 1721,
+        "harvest_area": 1680,
+        "yield_ton": 1142,
+        "yield_per_rai": 680
+    },
+    {
+        "year": 2564,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "กำแพงเพชร",
+        "planted_area": 7285,
+        "harvest_area": 6341,
+        "yield_ton": 7924,
+        "yield_per_rai": 1250
+    },
+    {
+        "year": 2564,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "สุโขทัย",
+        "planted_area": 7599,
+        "harvest_area": 7511,
+        "yield_ton": 4656,
+        "yield_per_rai": 620
+    },
+    {
+        "year": 2564,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "แพร่",
+        "planted_area": 2090,
+        "harvest_area": 1855,
+        "yield_ton": 877,
+        "yield_per_rai": 473
+    },
+    {
+        "year": 2564,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "น่าน",
+        "planted_area": 5252,
+        "harvest_area": 4297,
+        "yield_ton": 2734,
+        "yield_per_rai": 636
+    },
+    {
+        "year": 2564,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "อุตรดิตถ์",
+        "planted_area": 4177,
+        "harvest_area": 3045,
+        "yield_ton": 1763,
+        "yield_per_rai": 579
+    },
+    {
+        "year": 2564,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "พิษณุโลก",
+        "planted_area": 17535,
+        "harvest_area": 15258,
+        "yield_ton": 30026,
+        "yield_per_rai": 1968
+    },
+    {
+        "year": 2564,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "พิจิตร",
+        "planted_area": 1760,
+        "harvest_area": 1679,
+        "yield_ton": 1681,
+        "yield_per_rai": 1001
+    },
+    {
+        "year": 2564,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "นครสวรรค์",
+        "planted_area": 2167,
+        "harvest_area": 1966,
+        "yield_ton": 1944,
+        "yield_per_rai": 989
+    },
+    {
+        "year": 2564,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "อุทัยธานี",
+        "planted_area": 9457,
+        "harvest_area": 8940,
+        "yield_ton": 10977,
+        "yield_per_rai": 1228
+    },
+    {
+        "year": 2564,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "เพชรบูรณ์",
+        "planted_area": 15880,
+        "harvest_area": 13903,
+        "yield_ton": 18202,
+        "yield_per_rai": 1309
+    },
+    {
+        "year": 2564,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "เลย",
+        "planted_area": 25707,
+        "harvest_area": 25257,
+        "yield_ton": 42091,
+        "yield_per_rai": 1667
+    },
+    {
+        "year": 2564,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "หนองบัวลำภู",
+        "planted_area": 7557,
+        "harvest_area": 7477,
+        "yield_ton": 7123,
+        "yield_per_rai": 953
+    },
+    {
+        "year": 2564,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "อุดรธานี",
+        "planted_area": 31966,
+        "harvest_area": 31247,
+        "yield_ton": 41069,
+        "yield_per_rai": 1314
+    },
+    {
+        "year": 2564,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "หนองคาย",
+        "planted_area": 23270,
+        "harvest_area": 22100,
+        "yield_ton": 34722,
+        "yield_per_rai": 1571
+    },
+    {
+        "year": 2564,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "บึงกาฬ",
+        "planted_area": 34807,
+        "harvest_area": 32040,
+        "yield_ton": 57989,
+        "yield_per_rai": 1810
+    },
+    {
+        "year": 2564,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "สกลนคร",
+        "planted_area": 29864,
+        "harvest_area": 27986,
+        "yield_ton": 29168,
+        "yield_per_rai": 1042
+    },
+    {
+        "year": 2564,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "นครพนม",
+        "planted_area": 9572,
+        "harvest_area": 8647,
+        "yield_ton": 9209,
+        "yield_per_rai": 1065
+    },
+    {
+        "year": 2564,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "มุกดาหาร",
+        "planted_area": 4496,
+        "harvest_area": 4136,
+        "yield_ton": 6395,
+        "yield_per_rai": 1546
+    },
+    {
+        "year": 2564,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ยโสธร",
+        "planted_area": 4095,
+        "harvest_area": 3665,
+        "yield_ton": 4355,
+        "yield_per_rai": 1188
+    },
+    {
+        "year": 2564,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "อำนาจเจริญ",
+        "planted_area": 7686,
+        "harvest_area": 6592,
+        "yield_ton": 8653,
+        "yield_per_rai": 1313
+    },
+    {
+        "year": 2564,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "อุบลราชธานี",
+        "planted_area": 22362,
+        "harvest_area": 21450,
+        "yield_ton": 34874,
+        "yield_per_rai": 1626
+    },
+    {
+        "year": 2564,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ศรีสะเกษ",
+        "planted_area": 7854,
+        "harvest_area": 6103,
+        "yield_ton": 8690,
+        "yield_per_rai": 1424
+    },
+    {
+        "year": 2564,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "สุรินทร์",
+        "planted_area": 5241,
+        "harvest_area": 5160,
+        "yield_ton": 6582,
+        "yield_per_rai": 1276
+    },
+    {
+        "year": 2564,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "บุรีรัมย์",
+        "planted_area": 7801,
+        "harvest_area": 6922,
+        "yield_ton": 11498,
+        "yield_per_rai": 1661
+    },
+    {
+        "year": 2564,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "มหาสารคาม",
+        "planted_area": 233,
+        "harvest_area": 133,
+        "yield_ton": 173,
+        "yield_per_rai": 1301
+    },
+    {
+        "year": 2564,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ร้อยเอ็ด",
+        "planted_area": 2065,
+        "harvest_area": 1917,
+        "yield_ton": 2771,
+        "yield_per_rai": 1445
+    },
+    {
+        "year": 2564,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "กาฬสินธุ์",
+        "planted_area": 6270,
+        "harvest_area": 6251,
+        "yield_ton": 7736,
+        "yield_per_rai": 1238
+    },
+    {
+        "year": 2564,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ขอนแก่น",
+        "planted_area": 1942,
+        "harvest_area": 1812,
+        "yield_ton": 2352,
+        "yield_per_rai": 1298
+    },
+    {
+        "year": 2564,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ชัยภูมิ",
+        "planted_area": 5469,
+        "harvest_area": 4233,
+        "yield_ton": 7740,
+        "yield_per_rai": 1828
+    },
+    {
+        "year": 2564,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "นครราชสีมา",
+        "planted_area": 10787,
+        "harvest_area": 9685,
+        "yield_ton": 16533,
+        "yield_per_rai": 1707
+    },
+    {
+        "year": 2564,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "สระบุรี",
+        "planted_area": 6101,
+        "harvest_area": 4779,
+        "yield_ton": 14333,
+        "yield_per_rai": 2999
+    },
+    {
+        "year": 2564,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ลพบุรี",
+        "planted_area": 2532,
+        "harvest_area": 2289,
+        "yield_ton": 2810,
+        "yield_per_rai": 1228
+    },
+    {
+        "year": 2564,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "สิงห์บุรี",
+        "planted_area": 29,
+        "harvest_area": 29,
+        "yield_ton": 87,
+        "yield_per_rai": 3000
+    },
+    {
+        "year": 2564,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ชัยนาท",
+        "planted_area": 1370,
+        "harvest_area": 1132,
+        "yield_ton": 1144,
+        "yield_per_rai": 1011
+    },
+    {
+        "year": 2564,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "สุพรรณบุรี",
+        "planted_area": 2381,
+        "harvest_area": 2147,
+        "yield_ton": 4259,
+        "yield_per_rai": 1984
+    },
+    {
+        "year": 2564,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "พระนครศรีอยุธยา",
+        "planted_area": 682,
+        "harvest_area": 595,
+        "yield_ton": 1056,
+        "yield_per_rai": 1775
+    },
+    {
+        "year": 2564,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "นนทบุรี",
+        "planted_area": 18,
+        "harvest_area": 16,
+        "yield_ton": 50,
+        "yield_per_rai": 3125
+    },
+    {
+        "year": 2564,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "กรุงเทพมหานคร",
+        "planted_area": 348,
+        "harvest_area": 331,
+        "yield_ton": 1030,
+        "yield_per_rai": 3112
+    },
+    {
+        "year": 2564,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ปทุมธานี",
+        "planted_area": 8580,
+        "harvest_area": 8518,
+        "yield_ton": 30158,
+        "yield_per_rai": 3541
+    },
+    {
+        "year": 2564,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "นครนายก",
+        "planted_area": 4407,
+        "harvest_area": 4338,
+        "yield_ton": 10036,
+        "yield_per_rai": 2314
+    },
+    {
+        "year": 2564,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ปราจีนบุรี",
+        "planted_area": 18541,
+        "harvest_area": 17996,
+        "yield_ton": 36715,
+        "yield_per_rai": 2040
+    },
+    {
+        "year": 2564,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ฉะเชิงเทรา",
+        "planted_area": 37585,
+        "harvest_area": 36503,
+        "yield_ton": 75821,
+        "yield_per_rai": 2077
+    },
+    {
+        "year": 2564,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "สระแก้ว",
+        "planted_area": 40969,
+        "harvest_area": 39932,
+        "yield_ton": 82517,
+        "yield_per_rai": 2066
+    },
+    {
+        "year": 2564,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "จันทบุรี",
+        "planted_area": 24065,
+        "harvest_area": 22359,
+        "yield_ton": 44469,
+        "yield_per_rai": 1989
+    },
+    {
+        "year": 2564,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ตราด",
+        "planted_area": 64218,
+        "harvest_area": 63023,
+        "yield_ton": 162430,
+        "yield_per_rai": 2577
+    },
+    {
+        "year": 2564,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ระยอง",
+        "planted_area": 35282,
+        "harvest_area": 32011,
+        "yield_ton": 77343,
+        "yield_per_rai": 2416
+    },
+    {
+        "year": 2564,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ชลบุรี",
+        "planted_area": 110080,
+        "harvest_area": 109298,
+        "yield_ton": 298794,
+        "yield_per_rai": 2734
+    },
+    {
+        "year": 2564,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "สมุทรปราการ",
+        "planted_area": 90,
+        "harvest_area": 90,
+        "yield_ton": 166,
+        "yield_per_rai": 1844
+    },
+    {
+        "year": 2564,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "สมุทรสาคร",
+        "planted_area": 133,
+        "harvest_area": 133,
+        "yield_ton": 265,
+        "yield_per_rai": 1992
+    },
+    {
+        "year": 2564,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "นครปฐม",
+        "planted_area": 445,
+        "harvest_area": 331,
+        "yield_ton": 620,
+        "yield_per_rai": 1873
+    },
+    {
+        "year": 2564,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "กาญจนบุรี",
+        "planted_area": 21642,
+        "harvest_area": 19225,
+        "yield_ton": 28785,
+        "yield_per_rai": 1497
+    },
+    {
+        "year": 2564,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ราชบุรี",
+        "planted_area": 11501,
+        "harvest_area": 11145,
+        "yield_ton": 14560,
+        "yield_per_rai": 1306
+    },
+    {
+        "year": 2564,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "สมุทรสงคราม",
+        "planted_area": 47,
+        "harvest_area": 47,
+        "yield_ton": 70,
+        "yield_per_rai": 1489
+    },
+    {
+        "year": 2564,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "เพชรบุรี",
+        "planted_area": 14251,
+        "harvest_area": 13976,
+        "yield_ton": 26748,
+        "yield_per_rai": 1914
+    },
+    {
+        "year": 2564,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ประจวบคีรีขันธ์",
+        "planted_area": 151129,
+        "harvest_area": 140688,
+        "yield_ton": 348907,
+        "yield_per_rai": 2480
+    },
+    {
+        "year": 2564,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ชุมพร",
+        "planted_area": 1030641,
+        "harvest_area": 1010777,
+        "yield_ton": 2802513,
+        "yield_per_rai": 2773
+    },
+    {
+        "year": 2564,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ระนอง",
+        "planted_area": 159689,
+        "harvest_area": 149257,
+        "yield_ton": 437579,
+        "yield_per_rai": 2932
+    },
+    {
+        "year": 2564,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "สุราษฎร์ธานี",
+        "planted_area": 1391958,
+        "harvest_area": 1323034,
+        "yield_ton": 4066640,
+        "yield_per_rai": 3074
+    },
+    {
+        "year": 2564,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "พังงา",
+        "planted_area": 261914,
+        "harvest_area": 251796,
+        "yield_ton": 735140,
+        "yield_per_rai": 2920
+    },
+    {
+        "year": 2564,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ภูเก็ต",
+        "planted_area": 3025,
+        "harvest_area": 2736,
+        "yield_ton": 7055,
+        "yield_per_rai": 2579
+    },
+    {
+        "year": 2564,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "กระบี่",
+        "planted_area": 1183117,
+        "harvest_area": 1140723,
+        "yield_ton": 3482750,
+        "yield_per_rai": 3053
+    },
+    {
+        "year": 2564,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ตรัง",
+        "planted_area": 291825,
+        "harvest_area": 280840,
+        "yield_ton": 799482,
+        "yield_per_rai": 2847
+    },
+    {
+        "year": 2564,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "นครศรีธรรมราช",
+        "planted_area": 659667,
+        "harvest_area": 635413,
+        "yield_ton": 1905517,
+        "yield_per_rai": 2999
+    },
+    {
+        "year": 2564,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "พัทลุง",
+        "planted_area": 103225,
+        "harvest_area": 95352,
+        "yield_ton": 254131,
+        "yield_per_rai": 2665
+    },
+    {
+        "year": 2564,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "สงขลา",
+        "planted_area": 83355,
+        "harvest_area": 78393,
+        "yield_ton": 198515,
+        "yield_per_rai": 2532
+    },
+    {
+        "year": 2564,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "สตูล",
+        "planted_area": 130794,
+        "harvest_area": 122191,
+        "yield_ton": 298597,
+        "yield_per_rai": 2444
+    },
+    {
+        "year": 2564,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ปัตตานี",
+        "planted_area": 24673,
+        "harvest_area": 23096,
+        "yield_ton": 57447,
+        "yield_per_rai": 2487
+    },
+    {
+        "year": 2564,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ยะลา",
+        "planted_area": 9176,
+        "harvest_area": 8393,
+        "yield_ton": 12514,
+        "yield_per_rai": 1491
+    },
+    {
+        "year": 2564,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "นราธิวาส",
+        "planted_area": 65733,
+        "harvest_area": 64772,
+        "yield_ton": 141665,
+        "yield_per_rai": 2187
+    },
+    {
+        "year": 2565,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "เชียงราย",
+        "planted_area": 11453,
+        "harvest_area": 11250,
+        "yield_ton": 15195,
+        "yield_per_rai": 1351
+    },
+    {
+        "year": 2565,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "พะเยา",
+        "planted_area": 2910,
+        "harvest_area": 2910,
+        "yield_ton": 4001,
+        "yield_per_rai": 1375
+    },
+    {
+        "year": 2565,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ลำปาง",
+        "planted_area": 2046,
+        "harvest_area": 1726,
+        "yield_ton": 1940,
+        "yield_per_rai": 1124
+    },
+    {
+        "year": 2565,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ลำพูน",
+        "planted_area": 610,
+        "harvest_area": 581,
+        "yield_ton": 293,
+        "yield_per_rai": 504
+    },
+    {
+        "year": 2565,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "เชียงใหม่",
+        "planted_area": 390,
+        "harvest_area": 352,
+        "yield_ton": 145,
+        "yield_per_rai": 412
+    },
+    {
+        "year": 2565,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "แม่ฮ่องสอน",
+        "planted_area": 36,
+        "harvest_area": 0,
+        "yield_ton": 0,
+        "yield_per_rai": 0
+    },
+    {
+        "year": 2565,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ตาก",
+        "planted_area": 1797,
+        "harvest_area": 1696,
+        "yield_ton": 1178,
+        "yield_per_rai": 695
+    },
+    {
+        "year": 2565,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "กำแพงเพชร",
+        "planted_area": 7496,
+        "harvest_area": 7094,
+        "yield_ton": 9180,
+        "yield_per_rai": 1294
+    },
+    {
+        "year": 2565,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "สุโขทัย",
+        "planted_area": 6845,
+        "harvest_area": 6495,
+        "yield_ton": 4317,
+        "yield_per_rai": 665
+    },
+    {
+        "year": 2565,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "แพร่",
+        "planted_area": 2125,
+        "harvest_area": 2090,
+        "yield_ton": 1064,
+        "yield_per_rai": 509
+    },
+    {
+        "year": 2565,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "น่าน",
+        "planted_area": 3577,
+        "harvest_area": 3545,
+        "yield_ton": 2226,
+        "yield_per_rai": 628
+    },
+    {
+        "year": 2565,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "อุตรดิตถ์",
+        "planted_area": 3443,
+        "harvest_area": 2429,
+        "yield_ton": 1239,
+        "yield_per_rai": 510
+    },
+    {
+        "year": 2565,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "พิษณุโลก",
+        "planted_area": 18288,
+        "harvest_area": 17133,
+        "yield_ton": 34946,
+        "yield_per_rai": 2040
+    },
+    {
+        "year": 2565,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "พิจิตร",
+        "planted_area": 1737,
+        "harvest_area": 1717,
+        "yield_ton": 1907,
+        "yield_per_rai": 1111
+    },
+    {
+        "year": 2565,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "นครสวรรค์",
+        "planted_area": 2061,
+        "harvest_area": 2008,
+        "yield_ton": 1985,
+        "yield_per_rai": 989
+    },
+    {
+        "year": 2565,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "อุทัยธานี",
+        "planted_area": 9046,
+        "harvest_area": 8775,
+        "yield_ton": 11981,
+        "yield_per_rai": 1365
+    },
+    {
+        "year": 2565,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "เพชรบูรณ์",
+        "planted_area": 16343,
+        "harvest_area": 15809,
+        "yield_ton": 20937,
+        "yield_per_rai": 1324
+    },
+    {
+        "year": 2565,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "เลย",
+        "planted_area": 25308,
+        "harvest_area": 24769,
+        "yield_ton": 43564,
+        "yield_per_rai": 1759
+    },
+    {
+        "year": 2565,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "หนองบัวลำภู",
+        "planted_area": 7590,
+        "harvest_area": 7537,
+        "yield_ton": 7865,
+        "yield_per_rai": 1044
+    },
+    {
+        "year": 2565,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "อุดรธานี",
+        "planted_area": 32087,
+        "harvest_area": 31480,
+        "yield_ton": 44728,
+        "yield_per_rai": 1421
+    },
+    {
+        "year": 2565,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "หนองคาย",
+        "planted_area": 23844,
+        "harvest_area": 23029,
+        "yield_ton": 38916,
+        "yield_per_rai": 1690
+    },
+    {
+        "year": 2565,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "บึงกาฬ",
+        "planted_area": 35979,
+        "harvest_area": 33956,
+        "yield_ton": 65690,
+        "yield_per_rai": 1935
+    },
+    {
+        "year": 2565,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "สกลนคร",
+        "planted_area": 30170,
+        "harvest_area": 29140,
+        "yield_ton": 33738,
+        "yield_per_rai": 1158
+    },
+    {
+        "year": 2565,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "นครพนม",
+        "planted_area": 9918,
+        "harvest_area": 9206,
+        "yield_ton": 10619,
+        "yield_per_rai": 1153
+    },
+    {
+        "year": 2565,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "มุกดาหาร",
+        "planted_area": 4582,
+        "harvest_area": 4493,
+        "yield_ton": 6994,
+        "yield_per_rai": 1557
+    },
+    {
+        "year": 2565,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ยโสธร",
+        "planted_area": 4106,
+        "harvest_area": 4095,
+        "yield_ton": 4985,
+        "yield_per_rai": 1217
+    },
+    {
+        "year": 2565,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "อำนาจเจริญ",
+        "planted_area": 7864,
+        "harvest_area": 7686,
+        "yield_ton": 9821,
+        "yield_per_rai": 1278
+    },
+    {
+        "year": 2565,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "อุบลราชธานี",
+        "planted_area": 22587,
+        "harvest_area": 22345,
+        "yield_ton": 38686,
+        "yield_per_rai": 1731
+    },
+    {
+        "year": 2565,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ศรีสะเกษ",
+        "planted_area": 7963,
+        "harvest_area": 7719,
+        "yield_ton": 10741,
+        "yield_per_rai": 1392
+    },
+    {
+        "year": 2565,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "สุรินทร์",
+        "planted_area": 5256,
+        "harvest_area": 5216,
+        "yield_ton": 7048,
+        "yield_per_rai": 1351
+    },
+    {
+        "year": 2565,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "บุรีรัมย์",
+        "planted_area": 7737,
+        "harvest_area": 7716,
+        "yield_ton": 13479,
+        "yield_per_rai": 1747
+    },
+    {
+        "year": 2565,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "มหาสารคาม",
+        "planted_area": 231,
+        "harvest_area": 138,
+        "yield_ton": 106,
+        "yield_per_rai": 768
+    },
+    {
+        "year": 2565,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ร้อยเอ็ด",
+        "planted_area": 2067,
+        "harvest_area": 2049,
+        "yield_ton": 2997,
+        "yield_per_rai": 1463
+    },
+    {
+        "year": 2565,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "กาฬสินธุ์",
+        "planted_area": 6388,
+        "harvest_area": 6251,
+        "yield_ton": 8312,
+        "yield_per_rai": 1330
+    },
+    {
+        "year": 2565,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ขอนแก่น",
+        "planted_area": 1893,
+        "harvest_area": 1848,
+        "yield_ton": 2520,
+        "yield_per_rai": 1364
+    },
+    {
+        "year": 2565,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ชัยภูมิ",
+        "planted_area": 5667,
+        "harvest_area": 5446,
+        "yield_ton": 9664,
+        "yield_per_rai": 1775
+    },
+    {
+        "year": 2565,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "นครราชสีมา",
+        "planted_area": 10860,
+        "harvest_area": 9176,
+        "yield_ton": 17829,
+        "yield_per_rai": 1943
+    },
+    {
+        "year": 2565,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "สระบุรี",
+        "planted_area": 5966,
+        "harvest_area": 4573,
+        "yield_ton": 14844,
+        "yield_per_rai": 3246
+    },
+    {
+        "year": 2565,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ลพบุรี",
+        "planted_area": 2495,
+        "harvest_area": 2436,
+        "yield_ton": 2933,
+        "yield_per_rai": 1204
+    },
+    {
+        "year": 2565,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "สิงห์บุรี",
+        "planted_area": 29,
+        "harvest_area": 29,
+        "yield_ton": 92,
+        "yield_per_rai": 3172
+    },
+    {
+        "year": 2565,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ชัยนาท",
+        "planted_area": 1343,
+        "harvest_area": 1165,
+        "yield_ton": 1072,
+        "yield_per_rai": 920
+    },
+    {
+        "year": 2565,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "สุพรรณบุรี",
+        "planted_area": 2378,
+        "harvest_area": 2346,
+        "yield_ton": 4886,
+        "yield_per_rai": 2083
+    },
+    {
+        "year": 2565,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "พระนครศรีอยุธยา",
+        "planted_area": 612,
+        "harvest_area": 572,
+        "yield_ton": 1025,
+        "yield_per_rai": 1792
+    },
+    {
+        "year": 2565,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "นนทบุรี",
+        "planted_area": 18,
+        "harvest_area": 16,
+        "yield_ton": 49,
+        "yield_per_rai": 3063
+    },
+    {
+        "year": 2565,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "กรุงเทพมหานคร",
+        "planted_area": 353,
+        "harvest_area": 338,
+        "yield_ton": 1156,
+        "yield_per_rai": 3420
+    },
+    {
+        "year": 2565,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ปทุมธานี",
+        "planted_area": 9083,
+        "harvest_area": 8528,
+        "yield_ton": 31089,
+        "yield_per_rai": 3646
+    },
+    {
+        "year": 2565,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "นครนายก",
+        "planted_area": 4625,
+        "harvest_area": 4367,
+        "yield_ton": 11208,
+        "yield_per_rai": 2567
+    },
+    {
+        "year": 2565,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ปราจีนบุรี",
+        "planted_area": 18690,
+        "harvest_area": 18479,
+        "yield_ton": 39864,
+        "yield_per_rai": 2157
+    },
+    {
+        "year": 2565,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ฉะเชิงเทรา",
+        "planted_area": 38311,
+        "harvest_area": 37375,
+        "yield_ton": 85554,
+        "yield_per_rai": 2289
+    },
+    {
+        "year": 2565,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "สระแก้ว",
+        "planted_area": 41440,
+        "harvest_area": 40450,
+        "yield_ton": 88298,
+        "yield_per_rai": 2183
+    },
+    {
+        "year": 2565,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "จันทบุรี",
+        "planted_area": 22844,
+        "harvest_area": 22734,
+        "yield_ton": 45476,
+        "yield_per_rai": 2000
+    },
+    {
+        "year": 2565,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ตราด",
+        "planted_area": 62686,
+        "harvest_area": 61903,
+        "yield_ton": 160945,
+        "yield_per_rai": 2600
+    },
+    {
+        "year": 2565,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ระยอง",
+        "planted_area": 35966,
+        "harvest_area": 31719,
+        "yield_ton": 81369,
+        "yield_per_rai": 2565
+    },
+    {
+        "year": 2565,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ชลบุรี",
+        "planted_area": 111161,
+        "harvest_area": 109370,
+        "yield_ton": 314636,
+        "yield_per_rai": 2877
+    },
+    {
+        "year": 2565,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "สมุทรปราการ",
+        "planted_area": 95,
+        "harvest_area": 90,
+        "yield_ton": 169,
+        "yield_per_rai": 1878
+    },
+    {
+        "year": 2565,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "สมุทรสาคร",
+        "planted_area": 121,
+        "harvest_area": 121,
+        "yield_ton": 248,
+        "yield_per_rai": 2050
+    },
+    {
+        "year": 2565,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "นครปฐม",
+        "planted_area": 433,
+        "harvest_area": 305,
+        "yield_ton": 599,
+        "yield_per_rai": 1964
+    },
+    {
+        "year": 2565,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "กาญจนบุรี",
+        "planted_area": 21583,
+        "harvest_area": 20437,
+        "yield_ton": 32058,
+        "yield_per_rai": 1569
+    },
+    {
+        "year": 2565,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ราชบุรี",
+        "planted_area": 11676,
+        "harvest_area": 11457,
+        "yield_ton": 15921,
+        "yield_per_rai": 1390
+    },
+    {
+        "year": 2565,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "สมุทรสงคราม",
+        "planted_area": 47,
+        "harvest_area": 47,
+        "yield_ton": 69,
+        "yield_per_rai": 1468
+    },
+    {
+        "year": 2565,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "เพชรบุรี",
+        "planted_area": 14399,
+        "harvest_area": 14102,
+        "yield_ton": 27803,
+        "yield_per_rai": 1972
+    },
+    {
+        "year": 2565,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ประจวบคีรีขันธ์",
+        "planted_area": 151761,
+        "harvest_area": 144798,
+        "yield_ton": 371255,
+        "yield_per_rai": 2564
+    },
+    {
+        "year": 2565,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ชุมพร",
+        "planted_area": 1035776,
+        "harvest_area": 1011178,
+        "yield_ton": 3128742,
+        "yield_per_rai": 3094
+    },
+    {
+        "year": 2565,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ระนอง",
+        "planted_area": 162159,
+        "harvest_area": 152907,
+        "yield_ton": 489410,
+        "yield_per_rai": 3201
+    },
+    {
+        "year": 2565,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "สุราษฎร์ธานี",
+        "planted_area": 1434290,
+        "harvest_area": 1345692,
+        "yield_ton": 4445175,
+        "yield_per_rai": 3303
+    },
+    {
+        "year": 2565,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "พังงา",
+        "planted_area": 269340,
+        "harvest_area": 254966,
+        "yield_ton": 798319,
+        "yield_per_rai": 3131
+    },
+    {
+        "year": 2565,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ภูเก็ต",
+        "planted_area": 3069,
+        "harvest_area": 2781,
+        "yield_ton": 7992,
+        "yield_per_rai": 2874
+    },
+    {
+        "year": 2565,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "กระบี่",
+        "planted_area": 1197809,
+        "harvest_area": 1164696,
+        "yield_ton": 3897619,
+        "yield_per_rai": 3346
+    },
+    {
+        "year": 2565,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ตรัง",
+        "planted_area": 305697,
+        "harvest_area": 287161,
+        "yield_ton": 863668,
+        "yield_per_rai": 3008
+    },
+    {
+        "year": 2565,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "นครศรีธรรมราช",
+        "planted_area": 681117,
+        "harvest_area": 646767,
+        "yield_ton": 2104039,
+        "yield_per_rai": 3253
+    },
+    {
+        "year": 2565,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "พัทลุง",
+        "planted_area": 106825,
+        "harvest_area": 97498,
+        "yield_ton": 266970,
+        "yield_per_rai": 2738
+    },
+    {
+        "year": 2565,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "สงขลา",
+        "planted_area": 85204,
+        "harvest_area": 80160,
+        "yield_ton": 213298,
+        "yield_per_rai": 2661
+    },
+    {
+        "year": 2565,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "สตูล",
+        "planted_area": 132440,
+        "harvest_area": 126791,
+        "yield_ton": 323737,
+        "yield_per_rai": 2553
+    },
+    {
+        "year": 2565,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ปัตตานี",
+        "planted_area": 25128,
+        "harvest_area": 23700,
+        "yield_ton": 60407,
+        "yield_per_rai": 2549
+    },
+    {
+        "year": 2565,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ยะลา",
+        "planted_area": 9242,
+        "harvest_area": 8553,
+        "yield_ton": 14262,
+        "yield_per_rai": 1667
+    },
+    {
+        "year": 2565,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "นราธิวาส",
+        "planted_area": 71253,
+        "harvest_area": 65244,
+        "yield_ton": 151028,
+        "yield_per_rai": 2315
+    },
+    {
+        "year": 2566,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "เชียงราย",
+        "planted_area": 11333,
+        "harvest_area": 11120,
+        "yield_ton": 13683,
+        "yield_per_rai": 1230
+    },
+    {
+        "year": 2566,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "พะเยา",
+        "planted_area": 2585,
+        "harvest_area": 2585,
+        "yield_ton": 3442,
+        "yield_per_rai": 1332
+    },
+    {
+        "year": 2566,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ลำปาง",
+        "planted_area": 2312,
+        "harvest_area": 2046,
+        "yield_ton": 1842,
+        "yield_per_rai": 900
+    },
+    {
+        "year": 2566,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ลำพูน",
+        "planted_area": 610,
+        "harvest_area": 581,
+        "yield_ton": 269,
+        "yield_per_rai": 463
+    },
+    {
+        "year": 2566,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "เชียงใหม่",
+        "planted_area": 408,
+        "harvest_area": 346,
+        "yield_ton": 130,
+        "yield_per_rai": 376
+    },
+    {
+        "year": 2566,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "แม่ฮ่องสอน",
+        "planted_area": 36,
+        "harvest_area": 0,
+        "yield_ton": 0,
+        "yield_per_rai": 0
+    },
+    {
+        "year": 2566,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ตาก",
+        "planted_area": 1848,
+        "harvest_area": 1711,
+        "yield_ton": 1185,
+        "yield_per_rai": 693
+    },
+    {
+        "year": 2566,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "กำแพงเพชร",
+        "planted_area": 8038,
+        "harvest_area": 7126,
+        "yield_ton": 9046,
+        "yield_per_rai": 1269
+    },
+    {
+        "year": 2566,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "สุโขทัย",
+        "planted_area": 6839,
+        "harvest_area": 6546,
+        "yield_ton": 4164,
+        "yield_per_rai": 636
+    },
+    {
+        "year": 2566,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "แพร่",
+        "planted_area": 2172,
+        "harvest_area": 2101,
+        "yield_ton": 1015,
+        "yield_per_rai": 483
+    },
+    {
+        "year": 2566,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "น่าน",
+        "planted_area": 3168,
+        "harvest_area": 3148,
+        "yield_ton": 1906,
+        "yield_per_rai": 605
+    },
+    {
+        "year": 2566,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "อุตรดิตถ์",
+        "planted_area": 3443,
+        "harvest_area": 3239,
+        "yield_ton": 1459,
+        "yield_per_rai": 450
+    },
+    {
+        "year": 2566,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "พิษณุโลก",
+        "planted_area": 18104,
+        "harvest_area": 16833,
+        "yield_ton": 33339,
+        "yield_per_rai": 1981
+    },
+    {
+        "year": 2566,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "พิจิตร",
+        "planted_area": 1792,
+        "harvest_area": 1699,
+        "yield_ton": 1846,
+        "yield_per_rai": 1087
+    },
+    {
+        "year": 2566,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "นครสวรรค์",
+        "planted_area": 2982,
+        "harvest_area": 2006,
+        "yield_ton": 1852,
+        "yield_per_rai": 923
+    },
+    {
+        "year": 2566,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "อุทัยธานี",
+        "planted_area": 9265,
+        "harvest_area": 8754,
+        "yield_ton": 11490,
+        "yield_per_rai": 1313
+    },
+    {
+        "year": 2566,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "เพชรบูรณ์",
+        "planted_area": 16554,
+        "harvest_area": 15672,
+        "yield_ton": 20115,
+        "yield_per_rai": 1283
+    },
+    {
+        "year": 2566,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "เลย",
+        "planted_area": 24536,
+        "harvest_area": 23887,
+        "yield_ton": 40306,
+        "yield_per_rai": 1687
+    },
+    {
+        "year": 2566,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "หนองบัวลำภู",
+        "planted_area": 7637,
+        "harvest_area": 7490,
+        "yield_ton": 7588,
+        "yield_per_rai": 1013
+    },
+    {
+        "year": 2566,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "อุดรธานี",
+        "planted_area": 32507,
+        "harvest_area": 31821,
+        "yield_ton": 43605,
+        "yield_per_rai": 1370
+    },
+    {
+        "year": 2566,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "หนองคาย",
+        "planted_area": 24976,
+        "harvest_area": 23224,
+        "yield_ton": 39118,
+        "yield_per_rai": 1684
+    },
+    {
+        "year": 2566,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "บึงกาฬ",
+        "planted_area": 37224,
+        "harvest_area": 34745,
+        "yield_ton": 67047,
+        "yield_per_rai": 1930
+    },
+    {
+        "year": 2566,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "สกลนคร",
+        "planted_area": 31162,
+        "harvest_area": 29849,
+        "yield_ton": 34397,
+        "yield_per_rai": 1152
+    },
+    {
+        "year": 2566,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "นครพนม",
+        "planted_area": 10351,
+        "harvest_area": 9532,
+        "yield_ton": 11089,
+        "yield_per_rai": 1163
+    },
+    {
+        "year": 2566,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "มุกดาหาร",
+        "planted_area": 4611,
+        "harvest_area": 4485,
+        "yield_ton": 7249,
+        "yield_per_rai": 1616
+    },
+    {
+        "year": 2566,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ยโสธร",
+        "planted_area": 4119,
+        "harvest_area": 4095,
+        "yield_ton": 4984,
+        "yield_per_rai": 1217
+    },
+    {
+        "year": 2566,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "อำนาจเจริญ",
+        "planted_area": 7921,
+        "harvest_area": 7685,
+        "yield_ton": 10078,
+        "yield_per_rai": 1311
+    },
+    {
+        "year": 2566,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "อุบลราชธานี",
+        "planted_area": 24221,
+        "harvest_area": 22338,
+        "yield_ton": 38936,
+        "yield_per_rai": 1743
+    },
+    {
+        "year": 2566,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ศรีสะเกษ",
+        "planted_area": 7963,
+        "harvest_area": 7495,
+        "yield_ton": 10829,
+        "yield_per_rai": 1445
+    },
+    {
+        "year": 2566,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "สุรินทร์",
+        "planted_area": 5293,
+        "harvest_area": 5213,
+        "yield_ton": 7023,
+        "yield_per_rai": 1347
+    },
+    {
+        "year": 2566,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "บุรีรัมย์",
+        "planted_area": 7802,
+        "harvest_area": 7680,
+        "yield_ton": 12819,
+        "yield_per_rai": 1669
+    },
+    {
+        "year": 2566,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "มหาสารคาม",
+        "planted_area": 185,
+        "harvest_area": 123,
+        "yield_ton": 62,
+        "yield_per_rai": 504
+    },
+    {
+        "year": 2566,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ร้อยเอ็ด",
+        "planted_area": 2040,
+        "harvest_area": 2022,
+        "yield_ton": 2885,
+        "yield_per_rai": 1427
+    },
+    {
+        "year": 2566,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "กาฬสินธุ์",
+        "planted_area": 6374,
+        "harvest_area": 6183,
+        "yield_ton": 7969,
+        "yield_per_rai": 1289
+    },
+    {
+        "year": 2566,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ขอนแก่น",
+        "planted_area": 2049,
+        "harvest_area": 1848,
+        "yield_ton": 2500,
+        "yield_per_rai": 1353
+    },
+    {
+        "year": 2566,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ชัยภูมิ",
+        "planted_area": 5718,
+        "harvest_area": 5205,
+        "yield_ton": 9264,
+        "yield_per_rai": 1780
+    },
+    {
+        "year": 2566,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "นครราชสีมา",
+        "planted_area": 11007,
+        "harvest_area": 10082,
+        "yield_ton": 18489,
+        "yield_per_rai": 1834
+    },
+    {
+        "year": 2566,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "สระบุรี",
+        "planted_area": 4691,
+        "harvest_area": 4646,
+        "yield_ton": 14474,
+        "yield_per_rai": 3115
+    },
+    {
+        "year": 2566,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ลพบุรี",
+        "planted_area": 2519,
+        "harvest_area": 1891,
+        "yield_ton": 1935,
+        "yield_per_rai": 1023
+    },
+    {
+        "year": 2566,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "สิงห์บุรี",
+        "planted_area": 29,
+        "harvest_area": 29,
+        "yield_ton": 93,
+        "yield_per_rai": 3207
+    },
+    {
+        "year": 2566,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ชัยนาท",
+        "planted_area": 1277,
+        "harvest_area": 1212,
+        "yield_ton": 1041,
+        "yield_per_rai": 859
+    },
+    {
+        "year": 2566,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "สุพรรณบุรี",
+        "planted_area": 2492,
+        "harvest_area": 2365,
+        "yield_ton": 4815,
+        "yield_per_rai": 2036
+    },
+    {
+        "year": 2566,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "พระนครศรีอยุธยา",
+        "planted_area": 612,
+        "harvest_area": 581,
+        "yield_ton": 986,
+        "yield_per_rai": 1697
+    },
+    {
+        "year": 2566,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "นนทบุรี",
+        "planted_area": 18,
+        "harvest_area": 18,
+        "yield_ton": 53,
+        "yield_per_rai": 2944
+    },
+    {
+        "year": 2566,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "กรุงเทพมหานคร",
+        "planted_area": 386,
+        "harvest_area": 338,
+        "yield_ton": 1166,
+        "yield_per_rai": 3450
+    },
+    {
+        "year": 2566,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ปทุมธานี",
+        "planted_area": 9529,
+        "harvest_area": 8570,
+        "yield_ton": 30433,
+        "yield_per_rai": 3551
+    },
+    {
+        "year": 2566,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "นครนายก",
+        "planted_area": 4824,
+        "harvest_area": 4400,
+        "yield_ton": 10784,
+        "yield_per_rai": 2451
+    },
+    {
+        "year": 2566,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ปราจีนบุรี",
+        "planted_area": 19067,
+        "harvest_area": 18469,
+        "yield_ton": 37848,
+        "yield_per_rai": 2049
+    },
+    {
+        "year": 2566,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ฉะเชิงเทรา",
+        "planted_area": 39471,
+        "harvest_area": 37520,
+        "yield_ton": 83964,
+        "yield_per_rai": 2238
+    },
+    {
+        "year": 2566,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "สระแก้ว",
+        "planted_area": 42271,
+        "harvest_area": 40601,
+        "yield_ton": 84127,
+        "yield_per_rai": 2072
+    },
+    {
+        "year": 2566,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "จันทบุรี",
+        "planted_area": 20808,
+        "harvest_area": 20785,
+        "yield_ton": 39022,
+        "yield_per_rai": 1877
+    },
+    {
+        "year": 2566,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ตราด",
+        "planted_area": 62929,
+        "harvest_area": 61884,
+        "yield_ton": 157971,
+        "yield_per_rai": 2553
+    },
+    {
+        "year": 2566,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ระยอง",
+        "planted_area": 35331,
+        "harvest_area": 33531,
+        "yield_ton": 84162,
+        "yield_per_rai": 2510
+    },
+    {
+        "year": 2566,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ชลบุรี",
+        "planted_area": 112503,
+        "harvest_area": 110030,
+        "yield_ton": 303545,
+        "yield_per_rai": 2759
+    },
+    {
+        "year": 2566,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "สมุทรปราการ",
+        "planted_area": 95,
+        "harvest_area": 90,
+        "yield_ton": 168,
+        "yield_per_rai": 1867
+    },
+    {
+        "year": 2566,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "สมุทรสาคร",
+        "planted_area": 53,
+        "harvest_area": 53,
+        "yield_ton": 101,
+        "yield_per_rai": 1906
+    },
+    {
+        "year": 2566,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "นครปฐม",
+        "planted_area": 454,
+        "harvest_area": 404,
+        "yield_ton": 611,
+        "yield_per_rai": 1512
+    },
+    {
+        "year": 2566,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "กาญจนบุรี",
+        "planted_area": 21930,
+        "harvest_area": 20490,
+        "yield_ton": 30394,
+        "yield_per_rai": 1483
+    },
+    {
+        "year": 2566,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ราชบุรี",
+        "planted_area": 11850,
+        "harvest_area": 11444,
+        "yield_ton": 15440,
+        "yield_per_rai": 1349
+    },
+    {
+        "year": 2566,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "สมุทรสงคราม",
+        "planted_area": 47,
+        "harvest_area": 47,
+        "yield_ton": 68,
+        "yield_per_rai": 1447
+    },
+    {
+        "year": 2566,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "เพชรบุรี",
+        "planted_area": 14492,
+        "harvest_area": 14125,
+        "yield_ton": 26816,
+        "yield_per_rai": 1898
+    },
+    {
+        "year": 2566,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ประจวบคีรีขันธ์",
+        "planted_area": 152584,
+        "harvest_area": 150790,
+        "yield_ton": 367648,
+        "yield_per_rai": 2438
+    },
+    {
+        "year": 2566,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ชุมพร",
+        "planted_area": 1037226,
+        "harvest_area": 1013020,
+        "yield_ton": 3012337,
+        "yield_per_rai": 2974
+    },
+    {
+        "year": 2566,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ระนอง",
+        "planted_area": 163586,
+        "harvest_area": 153816,
+        "yield_ton": 480927,
+        "yield_per_rai": 3127
+    },
+    {
+        "year": 2566,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "สุราษฎร์ธานี",
+        "planted_area": 1463697,
+        "harvest_area": 1371883,
+        "yield_ton": 4420016,
+        "yield_per_rai": 3222
+    },
+    {
+        "year": 2566,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "พังงา",
+        "planted_area": 279713,
+        "harvest_area": 259459,
+        "yield_ton": 794152,
+        "yield_per_rai": 3061
+    },
+    {
+        "year": 2566,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ภูเก็ต",
+        "planted_area": 3168,
+        "harvest_area": 3025,
+        "yield_ton": 8546,
+        "yield_per_rai": 2825
+    },
+    {
+        "year": 2566,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "กระบี่",
+        "planted_area": 1208594,
+        "harvest_area": 1172660,
+        "yield_ton": 3809094,
+        "yield_per_rai": 3248
+    },
+    {
+        "year": 2566,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ตรัง",
+        "planted_area": 326116,
+        "harvest_area": 291475,
+        "yield_ton": 859618,
+        "yield_per_rai": 2949
+    },
+    {
+        "year": 2566,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "นครศรีธรรมราช",
+        "planted_area": 703222,
+        "harvest_area": 654963,
+        "yield_ton": 2081684,
+        "yield_per_rai": 3178
+    },
+    {
+        "year": 2566,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "พัทลุง",
+        "planted_area": 117026,
+        "harvest_area": 103171,
+        "yield_ton": 267884,
+        "yield_per_rai": 2597
+    },
+    {
+        "year": 2566,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "สงขลา",
+        "planted_area": 96221,
+        "harvest_area": 82681,
+        "yield_ton": 217996,
+        "yield_per_rai": 2637
+    },
+    {
+        "year": 2566,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "สตูล",
+        "planted_area": 136327,
+        "harvest_area": 130096,
+        "yield_ton": 327135,
+        "yield_per_rai": 2515
+    },
+    {
+        "year": 2566,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ปัตตานี",
+        "planted_area": 25742,
+        "harvest_area": 24616,
+        "yield_ton": 58293,
+        "yield_per_rai": 2368
+    },
+    {
+        "year": 2566,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ยะลา",
+        "planted_area": 9372,
+        "harvest_area": 9106,
+        "yield_ton": 14908,
+        "yield_per_rai": 1637
+    },
+    {
+        "year": 2566,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "นราธิวาส",
+        "planted_area": 74209,
+        "harvest_area": 65681,
+        "yield_ton": 140354,
+        "yield_per_rai": 2137
+    },
+    {
+        "year": 2567,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "เชียงราย",
+        "planted_area": 10288,
+        "harvest_area": 10200,
+        "yield_ton": 12657,
+        "yield_per_rai": 1241
+    },
+    {
+        "year": 2567,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "พะเยา",
+        "planted_area": 2563,
+        "harvest_area": 2563,
+        "yield_ton": 3413,
+        "yield_per_rai": 1332
+    },
+    {
+        "year": 2567,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ลำปาง",
+        "planted_area": 2387,
+        "harvest_area": 2015,
+        "yield_ton": 1879,
+        "yield_per_rai": 933
+    },
+    {
+        "year": 2567,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ลำพูน",
+        "planted_area": 610,
+        "harvest_area": 581,
+        "yield_ton": 340,
+        "yield_per_rai": 585
+    },
+    {
+        "year": 2567,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "เชียงใหม่",
+        "planted_area": 408,
+        "harvest_area": 374,
+        "yield_ton": 138,
+        "yield_per_rai": 369
+    },
+    {
+        "year": 2567,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "แม่ฮ่องสอน",
+        "planted_area": 36,
+        "harvest_area": 0,
+        "yield_ton": 0,
+        "yield_per_rai": 0
+    },
+    {
+        "year": 2567,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ตาก",
+        "planted_area": 1805,
+        "harvest_area": 1703,
+        "yield_ton": 1210,
+        "yield_per_rai": 711
+    },
+    {
+        "year": 2567,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "กำแพงเพชร",
+        "planted_area": 8756,
+        "harvest_area": 7309,
+        "yield_ton": 9334,
+        "yield_per_rai": 1277
+    },
+    {
+        "year": 2567,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "สุโขทัย",
+        "planted_area": 6367,
+        "harvest_area": 6365,
+        "yield_ton": 4071,
+        "yield_per_rai": 640
+    },
+    {
+        "year": 2567,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "แพร่",
+        "planted_area": 2048,
+        "harvest_area": 2001,
+        "yield_ton": 1003,
+        "yield_per_rai": 501
+    },
+    {
+        "year": 2567,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "น่าน",
+        "planted_area": 2329,
+        "harvest_area": 2329,
+        "yield_ton": 1342,
+        "yield_per_rai": 576
+    },
+    {
+        "year": 2567,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "อุตรดิตถ์",
+        "planted_area": 3056,
+        "harvest_area": 2884,
+        "yield_ton": 1229,
+        "yield_per_rai": 426
+    },
+    {
+        "year": 2567,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "พิษณุโลก",
+        "planted_area": 17981,
+        "harvest_area": 17575,
+        "yield_ton": 36049,
+        "yield_per_rai": 2051
+    },
+    {
+        "year": 2567,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "พิจิตร",
+        "planted_area": 1787,
+        "harvest_area": 1694,
+        "yield_ton": 1880,
+        "yield_per_rai": 1110
+    },
+    {
+        "year": 2567,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "นครสวรรค์",
+        "planted_area": 3101,
+        "harvest_area": 1975,
+        "yield_ton": 1916,
+        "yield_per_rai": 970
+    },
+    {
+        "year": 2567,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "อุทัยธานี",
+        "planted_area": 9375,
+        "harvest_area": 8969,
+        "yield_ton": 13210,
+        "yield_per_rai": 1473
+    },
+    {
+        "year": 2567,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "เพชรบูรณ์",
+        "planted_area": 15836,
+        "harvest_area": 15395,
+        "yield_ton": 19318,
+        "yield_per_rai": 1255
+    },
+    {
+        "year": 2567,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "เลย",
+        "planted_area": 22912,
+        "harvest_area": 22615,
+        "yield_ton": 37498,
+        "yield_per_rai": 1658
+    },
+    {
+        "year": 2567,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "หนองบัวลำภู",
+        "planted_area": 7665,
+        "harvest_area": 7489,
+        "yield_ton": 7662,
+        "yield_per_rai": 1023
+    },
+    {
+        "year": 2567,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "อุดรธานี",
+        "planted_area": 32589,
+        "harvest_area": 31715,
+        "yield_ton": 43415,
+        "yield_per_rai": 1369
+    },
+    {
+        "year": 2567,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "หนองคาย",
+        "planted_area": 26702,
+        "harvest_area": 23776,
+        "yield_ton": 41804,
+        "yield_per_rai": 1758
+    },
+    {
+        "year": 2567,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "บึงกาฬ",
+        "planted_area": 37551,
+        "harvest_area": 35919,
+        "yield_ton": 71914,
+        "yield_per_rai": 2002
+    },
+    {
+        "year": 2567,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "สกลนคร",
+        "planted_area": 31433,
+        "harvest_area": 30125,
+        "yield_ton": 35409,
+        "yield_per_rai": 1175
+    },
+    {
+        "year": 2567,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "นครพนม",
+        "planted_area": 10567,
+        "harvest_area": 9862,
+        "yield_ton": 11680,
+        "yield_per_rai": 1184
+    },
+    {
+        "year": 2567,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "มุกดาหาร",
+        "planted_area": 4600,
+        "harvest_area": 4552,
+        "yield_ton": 7571,
+        "yield_per_rai": 1663
+    },
+    {
+        "year": 2567,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ยโสธร",
+        "planted_area": 4177,
+        "harvest_area": 3983,
+        "yield_ton": 5464,
+        "yield_per_rai": 1372
+    },
+    {
+        "year": 2567,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "อำนาจเจริญ",
+        "planted_area": 7988,
+        "harvest_area": 7843,
+        "yield_ton": 10270,
+        "yield_per_rai": 1309
+    },
+    {
+        "year": 2567,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "อุบลราชธานี",
+        "planted_area": 24880,
+        "harvest_area": 22390,
+        "yield_ton": 40488,
+        "yield_per_rai": 1808
+    },
+    {
+        "year": 2567,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ศรีสะเกษ",
+        "planted_area": 8044,
+        "harvest_area": 7552,
+        "yield_ton": 10832,
+        "yield_per_rai": 1434
+    },
+    {
+        "year": 2567,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "สุรินทร์",
+        "planted_area": 4920,
+        "harvest_area": 4863,
+        "yield_ton": 6464,
+        "yield_per_rai": 1329
+    },
+    {
+        "year": 2567,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "บุรีรัมย์",
+        "planted_area": 8135,
+        "harvest_area": 7628,
+        "yield_ton": 12628,
+        "yield_per_rai": 1655
+    },
+    {
+        "year": 2567,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "มหาสารคาม",
+        "planted_area": 185,
+        "harvest_area": 185,
+        "yield_ton": 83,
+        "yield_per_rai": 449
+    },
+    {
+        "year": 2567,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ร้อยเอ็ด",
+        "planted_area": 2044,
+        "harvest_area": 2024,
+        "yield_ton": 3005,
+        "yield_per_rai": 1485
+    },
+    {
+        "year": 2567,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "กาฬสินธุ์",
+        "planted_area": 6414,
+        "harvest_area": 6313,
+        "yield_ton": 8146,
+        "yield_per_rai": 1290
+    },
+    {
+        "year": 2567,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ขอนแก่น",
+        "planted_area": 2088,
+        "harvest_area": 1882,
+        "yield_ton": 2626,
+        "yield_per_rai": 1395
+    },
+    {
+        "year": 2567,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ชัยภูมิ",
+        "planted_area": 5407,
+        "harvest_area": 4813,
+        "yield_ton": 9014,
+        "yield_per_rai": 1873
+    },
+    {
+        "year": 2567,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "นครราชสีมา",
+        "planted_area": 11367,
+        "harvest_area": 10696,
+        "yield_ton": 19746,
+        "yield_per_rai": 1846
+    },
+    {
+        "year": 2567,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "สระบุรี",
+        "planted_area": 4769,
+        "harvest_area": 4599,
+        "yield_ton": 14474,
+        "yield_per_rai": 3147
+    },
+    {
+        "year": 2567,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ลพบุรี",
+        "planted_area": 2391,
+        "harvest_area": 1799,
+        "yield_ton": 1525,
+        "yield_per_rai": 848
+    },
+    {
+        "year": 2567,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "สิงห์บุรี",
+        "planted_area": 39,
+        "harvest_area": 29,
+        "yield_ton": 98,
+        "yield_per_rai": 3379
+    },
+    {
+        "year": 2567,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ชัยนาท",
+        "planted_area": 1290,
+        "harvest_area": 1232,
+        "yield_ton": 1146,
+        "yield_per_rai": 930
+    },
+    {
+        "year": 2567,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "สุพรรณบุรี",
+        "planted_area": 2280,
+        "harvest_area": 2175,
+        "yield_ton": 4707,
+        "yield_per_rai": 2164
+    },
+    {
+        "year": 2567,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "พระนครศรีอยุธยา",
+        "planted_area": 609,
+        "harvest_area": 570,
+        "yield_ton": 946,
+        "yield_per_rai": 1660
+    },
+    {
+        "year": 2567,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "นนทบุรี",
+        "planted_area": 18,
+        "harvest_area": 18,
+        "yield_ton": 52,
+        "yield_per_rai": 2889
+    },
+    {
+        "year": 2567,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "กรุงเทพมหานคร",
+        "planted_area": 391,
+        "harvest_area": 343,
+        "yield_ton": 1273,
+        "yield_per_rai": 3711
+    },
+    {
+        "year": 2567,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ปทุมธานี",
+        "planted_area": 10309,
+        "harvest_area": 9084,
+        "yield_ton": 32864,
+        "yield_per_rai": 3618
+    },
+    {
+        "year": 2567,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "นครนายก",
+        "planted_area": 4824,
+        "harvest_area": 4625,
+        "yield_ton": 11180,
+        "yield_per_rai": 2417
+    },
+    {
+        "year": 2567,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ปราจีนบุรี",
+        "planted_area": 19429,
+        "harvest_area": 18515,
+        "yield_ton": 37464,
+        "yield_per_rai": 2023
+    },
+    {
+        "year": 2567,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ฉะเชิงเทรา",
+        "planted_area": 42179,
+        "harvest_area": 38259,
+        "yield_ton": 85880,
+        "yield_per_rai": 2245
+    },
+    {
+        "year": 2567,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "สระแก้ว",
+        "planted_area": 44088,
+        "harvest_area": 41305,
+        "yield_ton": 84016,
+        "yield_per_rai": 2034
+    },
+    {
+        "year": 2567,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "จันทบุรี",
+        "planted_area": 19628,
+        "harvest_area": 19289,
+        "yield_ton": 35193,
+        "yield_per_rai": 1825
+    },
+    {
+        "year": 2567,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ตราด",
+        "planted_area": 63301,
+        "harvest_area": 61334,
+        "yield_ton": 151989,
+        "yield_per_rai": 2478
+    },
+    {
+        "year": 2567,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ระยอง",
+        "planted_area": 35895,
+        "harvest_area": 34391,
+        "yield_ton": 84255,
+        "yield_per_rai": 2450
+    },
+    {
+        "year": 2567,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ชลบุรี",
+        "planted_area": 115653,
+        "harvest_area": 110708,
+        "yield_ton": 301699,
+        "yield_per_rai": 2725
+    },
+    {
+        "year": 2567,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "สมุทรปราการ",
+        "planted_area": 70,
+        "harvest_area": 67,
+        "yield_ton": 132,
+        "yield_per_rai": 1970
+    },
+    {
+        "year": 2567,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "สมุทรสาคร",
+        "planted_area": 40,
+        "harvest_area": 40,
+        "yield_ton": 80,
+        "yield_per_rai": 2000
+    },
+    {
+        "year": 2567,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "นครปฐม",
+        "planted_area": 369,
+        "harvest_area": 313,
+        "yield_ton": 491,
+        "yield_per_rai": 1569
+    },
+    {
+        "year": 2567,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "กาญจนบุรี",
+        "planted_area": 25618,
+        "harvest_area": 22665,
+        "yield_ton": 32800,
+        "yield_per_rai": 1447
+    },
+    {
+        "year": 2567,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ราชบุรี",
+        "planted_area": 17317,
+        "harvest_area": 16774,
+        "yield_ton": 21564,
+        "yield_per_rai": 1286
+    },
+    {
+        "year": 2567,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "สมุทรสงคราม",
+        "planted_area": 40,
+        "harvest_area": 40,
+        "yield_ton": 46,
+        "yield_per_rai": 1150
+    },
+    {
+        "year": 2567,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "เพชรบุรี",
+        "planted_area": 14708,
+        "harvest_area": 14334,
+        "yield_ton": 26237,
+        "yield_per_rai": 1830
+    },
+    {
+        "year": 2567,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ประจวบคีรีขันธ์",
+        "planted_area": 154931,
+        "harvest_area": 151048,
+        "yield_ton": 364439,
+        "yield_per_rai": 2413
+    },
+    {
+        "year": 2567,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ชุมพร",
+        "planted_area": 1035048,
+        "harvest_area": 1005333,
+        "yield_ton": 2966944,
+        "yield_per_rai": 2951
+    },
+    {
+        "year": 2567,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ระนอง",
+        "planted_area": 169913,
+        "harvest_area": 158028,
+        "yield_ton": 493423,
+        "yield_per_rai": 3122
+    },
+    {
+        "year": 2567,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "สุราษฎร์ธานี",
+        "planted_area": 1520416,
+        "harvest_area": 1413336,
+        "yield_ton": 4541860,
+        "yield_per_rai": 3214
+    },
+    {
+        "year": 2567,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "พังงา",
+        "planted_area": 289334,
+        "harvest_area": 268023,
+        "yield_ton": 813475,
+        "yield_per_rai": 3035
+    },
+    {
+        "year": 2567,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ภูเก็ต",
+        "planted_area": 3271,
+        "harvest_area": 3069,
+        "yield_ton": 8621,
+        "yield_per_rai": 2809
+    },
+    {
+        "year": 2567,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "กระบี่",
+        "planted_area": 1230500,
+        "harvest_area": 1185042,
+        "yield_ton": 3839879,
+        "yield_per_rai": 3240
+    },
+    {
+        "year": 2567,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ตรัง",
+        "planted_area": 350749,
+        "harvest_area": 305027,
+        "yield_ton": 895358,
+        "yield_per_rai": 2935
+    },
+    {
+        "year": 2567,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "นครศรีธรรมราช",
+        "planted_area": 738509,
+        "harvest_area": 673534,
+        "yield_ton": 2159168,
+        "yield_per_rai": 3206
+    },
+    {
+        "year": 2567,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "พัทลุง",
+        "planted_area": 126364,
+        "harvest_area": 106742,
+        "yield_ton": 274419,
+        "yield_per_rai": 2571
+    },
+    {
+        "year": 2567,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "สงขลา",
+        "planted_area": 104451,
+        "harvest_area": 84807,
+        "yield_ton": 222347,
+        "yield_per_rai": 2622
+    },
+    {
+        "year": 2567,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "สตูล",
+        "planted_area": 141292,
+        "harvest_area": 131521,
+        "yield_ton": 323868,
+        "yield_per_rai": 2462
+    },
+    {
+        "year": 2567,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ปัตตานี",
+        "planted_area": 26364,
+        "harvest_area": 25059,
+        "yield_ton": 56681,
+        "yield_per_rai": 2262
+    },
+    {
+        "year": 2567,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "ยะลา",
+        "planted_area": 9216,
+        "harvest_area": 8779,
+        "yield_ton": 14245,
+        "yield_per_rai": 1623
+    },
+    {
+        "year": 2567,
+        "crop": "ปาล์มน้ำมัน",
+        "province": "นราธิวาส",
+        "planted_area": 77358,
+        "harvest_area": 71304,
+        "yield_ton": 152452,
+        "yield_per_rai": 2138
+    }
+]

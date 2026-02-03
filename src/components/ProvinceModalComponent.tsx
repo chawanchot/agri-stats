@@ -1,27 +1,29 @@
 import { useAppDispatch, useAppSelector } from "@store/hook";
 import { closeModal, openModal, setProvince } from "@store/slice/controlSlice";
 import { setCropByProvinceData } from "@store/slice/cropSlice";
-import { Modal, Tag, Tree } from "antd";
+import { Tag, Tree } from "antd";
 import Axios from "axios";
 import { forwardRef, useEffect, useState } from "react";
 import type { MapRef } from "react-map-gl/maplibre";
 import ModalChartComponent from "./ModalChartComponent";
 import type { CropDetailType, CropType, PriceType } from "types";
+import { motion, AnimatePresence } from "framer-motion";
+import { FiMapPin, FiTrendingUp, FiX } from "react-icons/fi";
 
 import cassavaData from "@assets/data/crops/cassava.json";
 import durianData from "@assets/data/crops/durian.json";
 import longanData from "@assets/data/crops/longan.json";
 import rubberData from "@assets/data/crops/rubber.json";
+import maizeData from "@assets/data/crops/maize.json";
+import palmData from "@assets/data/crops/palm.json";
 
 const ProvinceModalComponent = forwardRef<MapRef>(({}, mapRef) => {
     const dispatch = useAppDispatch();
     const isModalOpen = useAppSelector((state) => state.control.modal);
     const provinceSelected = useAppSelector((state) => state.control.province);
-    const cropByProvinceData = useAppSelector(
-        (state) => state.crop.cropByProvinceData
-    );
+    const cropByProvinceData = useAppSelector((state) => state.crop.cropByProvinceData);
     const [treeData, setTreeData] = useState<any>([]);
-    const cropDataFiles = [cassavaData, durianData, longanData, rubberData];
+    const cropFiles = [cassavaData, durianData, longanData, rubberData, maizeData, palmData];
 
     const exitProvince = () => {
         dispatch(closeModal());
@@ -40,22 +42,20 @@ const ProvinceModalComponent = forwardRef<MapRef>(({}, mapRef) => {
     const fetchCropByProvince = async () => {
         try {
             let cropsData: CropType[] = [];
-            
-            cropDataFiles.forEach((jsonData: any) => {
-                const filtered = jsonData.filter(
-                    (item: CropDetailType) => item.province === provinceSelected
-                );
-                
+
+            cropFiles.forEach((jsonData: any) => {
+                const filtered = jsonData.filter((item: CropDetailType) => item.province === provinceSelected);
+
                 if (filtered.length > 0) {
                     const cropName = filtered[0].crop;
-                    const existingCrop = cropsData.find(crop => crop.name === cropName);
-                    
+                    const existingCrop = cropsData.find((crop) => crop.name === cropName);
+
                     if (existingCrop) {
                         existingCrop.data.push(...filtered);
                     } else {
                         cropsData.push({
                             name: cropName,
-                            data: filtered
+                            data: filtered,
                         });
                     }
                 }
@@ -77,9 +77,7 @@ const ProvinceModalComponent = forwardRef<MapRef>(({}, mapRef) => {
         let allPrice: PriceType[] = [];
 
         for (const item of cropsData) {
-            const getPrice = await Axios.get(
-                `http://localhost:5000/price-by-crop?crop=${item.name}`
-            );
+            const getPrice = await Axios.get(`http://localhost:5000/price-by-crop?crop=${item.name}`);
             const priceData = getPrice.data.data;
             allPrice = [...allPrice, ...priceData];
         }
@@ -92,51 +90,40 @@ const ProvinceModalComponent = forwardRef<MapRef>(({}, mapRef) => {
             const price = getCropPrice(crop.name, allPrice);
             return {
                 title: (
-                    <span className="flex gap-3">
-                        <div className="font-bold">{crop.name}</div>
+                    <span className="flex items-center gap-2">
+                        <div className="font-semibold text-slate-700">{crop.name}</div>
                         {price && (
-                            <Tag
-                                variant="filled"
-                                color="green"
-                                className="shadow-sm"
-                            >
-                                {price.product_name} -{" "}
-                                <span className="font-semibold">{`${price.day_price} ${price.unit}`}</span>
+                            <Tag variant="filled" color="green" className="shadow-sm text-xs! rounded-lg!">
+                                {price.product_name} •{" "}
+                                <span className="font-bold">
+                                    {price.day_price} {price.unit}
+                                </span>
                             </Tag>
                         )}
                     </span>
                 ),
                 key: crop.name,
-                children: crop.data.map(
-                    (cropDetail: CropDetailType, index: number) => ({
-                        title: (
-                            <div className="flex flex-col text-xs py-1">
-                                <span className="">ปี {cropDetail.year}</span>
-                                <span className="font-semibold">
-                                    ผลผลิต:{" "}
-                                    <span className="text-green-500">
-                                        {cropDetail.yield_per_rai.toLocaleString()}
-                                    </span>{" "}
-                                    กก./ไร่
-                                </span>
-                            </div>
-                        ),
-                        key: `${crop.name}-${cropDetail.year}-${index}`,
-                    })
-                ),
+                children: crop.data.map((cropDetail: CropDetailType, index: number) => ({
+                    title: (
+                        <div className="flex flex-col text-xs py-1.5 px-2 rounded-lg hover:bg-slate-50 transition-colors">
+                            <span className="text-slate-500">ปี {cropDetail.year}</span>
+                            <span className="font-medium text-slate-700">
+                                ผลผลิต:{" "}
+                                <span className="text-emerald-600 font-bold">{cropDetail.yield_per_rai.toLocaleString()}</span>{" "}
+                                <span className="text-slate-400">กก./ไร่</span>
+                            </span>
+                        </div>
+                    ),
+                    key: `${crop.name}-${cropDetail.year}-${index}`,
+                })),
             };
         });
 
         setTreeData(dataTree);
     };
 
-    const getCropPrice = (
-        crop: string,
-        allPrice: PriceType[]
-    ): PriceType | "" => {
-        const filtered = allPrice.filter(
-            (item: PriceType) => item.product_category === crop
-        );
+    const getCropPrice = (crop: string, allPrice: PriceType[]): PriceType | "" => {
+        const filtered = allPrice.filter((item: PriceType) => item.product_category === crop);
 
         if (filtered.length > 0) {
             const HighestPrice = filtered.reduce((acc, curr) => {
@@ -156,34 +143,55 @@ const ProvinceModalComponent = forwardRef<MapRef>(({}, mapRef) => {
     }, [provinceSelected]);
 
     return (
-        <Modal
-            title="สถิติการเกษตร"
-            open={isModalOpen}
-            onCancel={exitProvince}
-            mask={false}
-            footer={null}
-            classNames={{
-                wrapper: "pointer-events-none",
-                title: "text-center",
-                container: "max-h-[90vh] flex flex-col",
-                body: "flex flex-col flex-1 overflow-hidden",
-            }}
-            className="absolute! top-1/2! right-[10%] transform -translate-y-1/2 "
-        >
-            {cropByProvinceData && (
-                <div className="flex-1 overflow-y-auto">
-                    <Tree
-                        showLine={{ showLeafIcon: false }}
-                        treeData={treeData}
-                    />
-                </div>
-            )}
+        <AnimatePresence>
+            {isModalOpen && (
+                <motion.div
+                    initial={{ opacity: 0, x: 100, scale: 0.95 }}
+                    animate={{ opacity: 1, x: 0, scale: 1 }}
+                    exit={{ opacity: 0, x: 100, scale: 0.95 }}
+                    transition={{ type: "spring", damping: 25, stiffness: 200 }}
+                    className="fixed top-1/2 right-1/6 -translate-y-1/2 z-50 w-130 max-h-[85vh] rounded-2xl bg-white/85 backdrop-blur-xl border border-white/40 shadow-2xl overflow-hidden flex flex-col"
+                >
+                    <div className="px-5 py-4 border-b border-slate-200/50 bg-linear-to-r from-emerald-50/50 to-teal-50/50">
+                        <div className="flex items-center justify-between">
+                            <div className="flex items-center gap-3">
+                                <div className="w-10 h-10 rounded-xl bg-emerald-500 flex items-center justify-center">
+                                    <FiMapPin className="text-white text-lg" />
+                                </div>
+                                <div>
+                                    <h2 className="text-lg font-bold text-slate-800">{provinceSelected}</h2>
+                                    <p className="text-xs text-slate-500">สถิติการเกษตร</p>
+                                </div>
+                            </div>
+                            <button
+                                onClick={exitProvince}
+                                className="w-8 h-8 rounded-lg bg-slate-100 hover:bg-red-100 hover:text-red-500 flex items-center justify-center transition-all duration-200 text-slate-400"
+                            >
+                                <FiX className="text-base" />
+                            </button>
+                        </div>
+                    </div>
 
-            {/* <div className=""> */}
-                {/* <p>กราฟแสดงสถิติการเกษตร</p> */}
-                <ModalChartComponent data={cropByProvinceData} />
-            {/* </div> */}
-        </Modal>
+                    <div className="flex-1 overflow-y-auto p-4">
+                        {cropByProvinceData && treeData.length > 0 && (
+                            <div className="mb-4">
+                                <div className="bg-white/60 rounded-xl p-3 border border-slate-100">
+                                    <div className="flex items-center gap-2 mb-3">
+                                        <FiTrendingUp className="text-emerald-500" />
+                                        <span className="text-sm font-semibold text-slate-700">ข้อมูลพืชผล</span>
+                                    </div>
+                                    <Tree showLine={{ showLeafIcon: false }} treeData={treeData} className="bg-transparent!" />
+                                </div>
+                            </div>
+                        )}
+
+                        <div className="bg-white/60 rounded-xl p-3 border border-slate-100">
+                            <ModalChartComponent data={cropByProvinceData} />
+                        </div>
+                    </div>
+                </motion.div>
+            )}
+        </AnimatePresence>
     );
 });
 
