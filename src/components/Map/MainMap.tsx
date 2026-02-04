@@ -3,7 +3,7 @@ import ProvinceLayer from "@components/Map/ProvinceLayer";
 import { useAppDispatch, useAppSelector } from "@store/hook";
 import { setMainChartFilter, setProvince, setZoom } from "@store/slice/controlSlice";
 import { forwardRef, useEffect, useState } from "react";
-import Map, { LogoControl, Marker, NavigationControl, Popup, type MapRef, type MarkerEvent } from "react-map-gl/maplibre";
+import Map, { Marker, Popup, type MapRef, type MarkerEvent } from "react-map-gl/maplibre";
 import "maplibre-gl/dist/maplibre-gl.css";
 import ProvincesData from "@assets/data/provinces.json";
 import type { FeatureCollection } from "geojson";
@@ -210,9 +210,6 @@ const MainMap = forwardRef<MapRef>(({}, mapRef) => {
                 }}
                 interactiveLayerIds={["province-hover-fills", "soil-fill", "province-compare-fills"]}
             >
-                <LogoControl />
-                {!isModalOpen && <NavigationControl position="bottom-left" />}
-
                 <ProvinceLayer data={ProvincesGeoJson} hoverData={hoverInfo} />
 
                 {zoom >= 8 && soilData && <SoilSource data={soilData} hoverData={hoverSoil} />}

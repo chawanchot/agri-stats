@@ -50,7 +50,7 @@ function HomePage() {
     return (
         <div className="flex items-center justify-center h-full">
             <div className="w-full h-full">
-                <MapControlComponent />
+                <MapControlComponent ref={mapRef} />
                 <MainChartComponent />
                 <MainMap ref={mapRef} />
 

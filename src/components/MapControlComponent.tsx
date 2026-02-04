@@ -2,11 +2,12 @@ import { useAppDispatch, useAppSelector } from "@store/hook";
 import { setBaseMap, setMenuSelected } from "@store/slice/controlSlice";
 import { setCropCompareData, setCropMainChart } from "@store/slice/cropSlice";
 import { Cascader, Segmented, type CascaderProps } from "antd";
-import { useEffect, useState } from "react";
+import { forwardRef, useEffect, useState } from "react";
 import ProvincesData from "../assets/data/provinces.json";
 import type { FeatureCollection } from "geojson";
-import { FiLayers, FiInfo } from "react-icons/fi";
+import { FiLayers, FiPlus, FiMinus } from "react-icons/fi";
 import type { CropDetailType, OptionType } from "types";
+import type { MapRef } from "react-map-gl/maplibre";
 
 import cassavaData from "@assets/data/crops/cassava.json";
 import durianData from "@assets/data/crops/durian.json";
@@ -18,7 +19,7 @@ import palmData from "@assets/data/crops/palm.json";
 const ProvincesGeoJson = ProvincesData as FeatureCollection;
 const cropFiles = [cassavaData, durianData, longanData, rubberData, maizeData, palmData];
 
-const MapControlComponent = () => {
+const MapControlComponent = forwardRef<MapRef>(({}, mapRef) => {
     const dispatch = useAppDispatch();
     const isModalOpen = useAppSelector((state) => state.control.modal);
     const cropCompareSelected = useAppSelector((state) => state.control.menu);
@@ -117,98 +118,121 @@ const MapControlComponent = () => {
         dispatch(setBaseMap(base));
     };
 
+    const handleZoomIn = () => {
+        if (mapRef && typeof mapRef !== "function" && mapRef.current) {
+            mapRef.current.zoomIn();
+        }
+    };
+
+    const handleZoomOut = () => {
+        if (mapRef && typeof mapRef !== "function" && mapRef.current) {
+            mapRef.current.zoomOut();
+        }
+    };
+
     return (
         <div>
             {!isModalOpen && (
                 <>
-                    <div className="absolute z-10 left-4 top-4 px-3 py-2 rounded-xl flex items-center gap-2 text-sm text-slate-600 bg-white/75 backdrop-blur-md border border-white/30 shadow-lg transition-all duration-300 hover:shadow-xl">
-                        <FiInfo className="text-emerald-500" />
-                        <span>ข้อมูลผลผลิตปี พ.ศ. 2563-2567</span>
-                    </div>
-
-                    <div className="absolute top-16 left-4 z-10 w-64 p-4 rounded-2xl bg-white/75 backdrop-blur-md border border-white/30 shadow-lg transition-all duration-300 hover:shadow-xl">
+                    <div className="absolute top-20 left-4 z-10 w-64 p-4 rounded-2xl bg-[#131B2D] transition-all duration-300">
                         <div className="flex flex-col gap-4">
                             <div className="flex flex-col gap-2">
-                                <label className="text-sm font-medium text-slate-700">เลือกข้อมูล</label>
-                                <Cascader
-                                    placeholder="เลือกพืช และปี..."
-                                    options={compareOptions}
-                                    onChange={onCropsSelectedChange}
-                                    className="w-full!"
-                                    style={{
-                                        boxShadow: "0 2px 8px rgba(0,0,0,0.08)",
-                                        borderRadius: "10px",
-                                    }}
-                                />
-                            </div>
-
-                            {menuSelected.mode === "ผลผลิต" && (
-                                <div className="flex flex-col gap-2">
-                                    <label className="text-sm font-medium text-slate-700">ประเภทข้อมูล</label>
-                                    <Segmented
-                                        size="middle"
-                                        value={cropCompareSelected.type}
-                                        options={["ผลผลิตต่อไร่", "ผลผลิตทั้งหมด"]}
-                                        onChange={(value) =>
-                                            dispatch(
-                                                setMenuSelected({
-                                                    type: value,
-                                                })
-                                            )
-                                        }
-                                        block
-                                        className="rounded-xl!"
-                                        style={{
-                                            padding: "4px",
-                                            background: "rgba(0,0,0,0.04)",
+                                <div className="text-sm text-white">เลือกข้อมูล</div>
+                                <div>
+                                    <label className="text-xs text-[#94A3B8]">ชนิดพืช และ ปีที่ต้องการ</label>
+                                    <Cascader
+                                        placeholder="เลือกพืช และปี..."
+                                        options={compareOptions}
+                                        onChange={onCropsSelectedChange}
+                                        classNames={{
+                                            root: "w-full! bg-[#1E293B]! border-none! drop-shadow! rounded-xl!",
+                                            content: "text-white! py-1",
+                                            suffix: "text-white!",
+                                            placeholder: "text-white!",
+                                            popup: { root: "bg-[#1E293B]!", listItem: "text-white hover:bg-[#131B2D]!" },
                                         }}
                                     />
                                 </div>
-                            )}
+                                {menuSelected.mode === "ผลผลิต" && (
+                                    <div className="flex flex-col gap-2">
+                                        <label className="text-xs text-[#94A3B8]">ประเภทข้อมูล</label>
+                                        <Segmented
+                                            size="middle"
+                                            value={cropCompareSelected.type}
+                                            options={["ผลผลิตต่อไร่", "ผลผลิตทั้งหมด"]}
+                                            onChange={(value) =>
+                                                dispatch(
+                                                    setMenuSelected({
+                                                        type: value,
+                                                    })
+                                                )
+                                            }
+                                            block
+                                            className="[&_.ant-segmented-item-selected]:bg-[#334155]! [&_.ant-segmented-item]:text-[#94A3B8] [&_.ant-segmented-item-selected]:text-green! [&_.ant-segmented-item-selected]:font-bold [&_.ant-segmented-item-selected]:drop-shadow-lg"
+                                            classNames={{
+                                                root: "rounded-xl! bg-[#1E293B]! drop-shadow py-1!",
+                                                label: "hover:text-[#94A3B8]!",
+                                            }}
+                                        />
+                                    </div>
+                                )}
+                            </div>
                         </div>
                     </div>
 
-                    <div className="absolute left-4 bottom-8 z-10">
-                        <div className="flex items-center gap-2">
+                    <div className="absolute left-4 bottom-12 z-10 flex flex-col gap-2">
+                        <div className="flex flex-col">
                             <button
-                                onClick={() => setLayerOpen(!layerOpen)}
-                                className={`w-11 h-11 rounded-xl flex items-center justify-center transition-all duration-300 shadow-lg ${
-                                    layerOpen
-                                        ? "bg-emerald-500 text-white"
-                                        : "bg-white/80 backdrop-blur-md text-slate-600 hover:bg-white hover:shadow-xl"
-                                }`}
+                                onClick={handleZoomIn}
+                                className="w-11 h-11 rounded-t-xl bg-[#1e293b] text-white cursor-pointer flex items-center justify-center hover:bg-teal-500 transition-all border-b border-[#2d3748]"
+                                aria-label="Zoom in"
                             >
-                                <FiLayers className="text-lg" />
+                                <FiPlus className="text-xl" />
                             </button>
-
-                            {layerOpen && (
-                                <div className="flex gap-2 animate-in slide-in-from-left-2 duration-200">
-                                    <button
-                                        onClick={() => onChangeLayer("base")}
-                                        className="px-4 py-2 rounded-xl bg-white/80 backdrop-blur-md text-sm font-medium text-slate-600 hover:bg-emerald-500 hover:text-white transition-all duration-200 shadow-lg hover:shadow-xl"
-                                    >
-                                        พื้นฐาน
-                                    </button>
-                                    <button
-                                        onClick={() => onChangeLayer("streets")}
-                                        className="px-4 py-2 rounded-xl bg-white/80 backdrop-blur-md text-sm font-medium text-slate-600 hover:bg-emerald-500 hover:text-white transition-all duration-200 shadow-lg hover:shadow-xl"
-                                    >
-                                        เส้นทาง
-                                    </button>
-                                    <button
-                                        onClick={() => onChangeLayer("satellite")}
-                                        className="px-4 py-2 rounded-xl bg-white/80 backdrop-blur-md text-sm font-medium text-slate-600 hover:bg-emerald-500 hover:text-white transition-all duration-200 shadow-lg hover:shadow-xl"
-                                    >
-                                        ดาวเทียม
-                                    </button>
-                                </div>
-                            )}
+                            <button
+                                onClick={handleZoomOut}
+                                className="w-11 h-11 rounded-b-xl bg-[#1e293b] text-white cursor-pointer flex items-center justify-center hover:bg-teal-500 transition-all"
+                                aria-label="Zoom out"
+                            >
+                                <FiMinus className="text-xl" />
+                            </button>
                         </div>
+                        <button
+                            onClick={() => setLayerOpen(!layerOpen)}
+                            className={`w-11 h-11 rounded-xl flex items-center justify-center cursor-pointer ${
+                                layerOpen ? "bg-teal-500 text-white" : "bg-[#1e293b] text-white hover:bg-teal-500"
+                            }`}
+                        >
+                            <FiLayers className="text-lg" />
+                        </button>
+
+                        {layerOpen && (
+                            <div className="ml-14 -mt-11 flex gap-2">
+                                <button
+                                    onClick={() => onChangeLayer("base")}
+                                    className="px-4 py-2 rounded-xl bg-[#1e293b] text-sm cursor-pointer font-medium text-white hover:bg-teal-500 transition-all duration-200"
+                                >
+                                    พื้นฐาน
+                                </button>
+                                <button
+                                    onClick={() => onChangeLayer("streets")}
+                                    className="px-4 py-2 rounded-xl bg-[#1e293b] text-sm cursor-pointer font-medium text-white hover:bg-teal-500 transition-all duration-200"
+                                >
+                                    เส้นทาง
+                                </button>
+                                <button
+                                    onClick={() => onChangeLayer("satellite")}
+                                    className="px-4 py-2 rounded-xl bg-[#1e293b] text-sm cursor-pointer font-medium text-white hover:bg-teal-500 transition-all duration-200"
+                                >
+                                    ดาวเทียม
+                                </button>
+                            </div>
+                        )}
                     </div>
                 </>
             )}
         </div>
     );
-};
+});
 
 export default MapControlComponent;

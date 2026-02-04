@@ -1,5 +1,6 @@
 import HomePage from "@pages/HomePage";
 import MainPage from "@pages/MainPage";
+import Layout from "@components/Layout";
 
 import { useRoutes } from "react-router-dom";
 
@@ -11,7 +12,11 @@ const MainRouter = () => {
         },
         {
             path: "/home",
-            element: <HomePage />,
+            element: (
+                <Layout>
+                    <HomePage />
+                </Layout>
+            ),
         },
     ]);
 };
