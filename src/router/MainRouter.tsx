@@ -1,6 +1,6 @@
 import HomePage from "@pages/HomePage";
 import MainPage from "@pages/MainPage";
-import Layout from "@components/Layout";
+import HomePageLayout from "@layout/HomePageLayout";
 
 import { useRoutes } from "react-router-dom";
 
@@ -11,12 +11,13 @@ const MainRouter = () => {
             element: <MainPage />,
         },
         {
-            path: "/home",
-            element: (
-                <Layout>
-                    <HomePage />
-                </Layout>
-            ),
+            element: <HomePageLayout />,
+            children: [
+                {
+                    path: "/home",
+                    element: <HomePage />,
+                },
+            ],
         },
     ]);
 };

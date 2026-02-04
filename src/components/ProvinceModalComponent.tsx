@@ -11,7 +11,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { FiMapPin, FiTrendingUp, FiX } from "react-icons/fi";
 
 import cassavaData from "@assets/data/crops/cassava.json";
-import durianData from "@assets/data/crops/durian.json";
+// import durianData from "@assets/data/crops/durian.json";
 import longanData from "@assets/data/crops/longan.json";
 import rubberData from "@assets/data/crops/rubber.json";
 import maizeData from "@assets/data/crops/maize.json";
@@ -20,10 +20,10 @@ import palmData from "@assets/data/crops/palm.json";
 const ProvinceModalComponent = forwardRef<MapRef>(({}, mapRef) => {
     const dispatch = useAppDispatch();
     const isModalOpen = useAppSelector((state) => state.control.modal);
-    const provinceSelected = useAppSelector((state) => state.control.province);
+    const province_selected = useAppSelector((state) => state.control.province);
     const cropByProvinceData = useAppSelector((state) => state.crop.cropByProvinceData);
     const [treeData, setTreeData] = useState<any>([]);
-    const cropFiles = [cassavaData, durianData, longanData, rubberData, maizeData, palmData];
+    const cropFiles = [cassavaData, longanData, rubberData, maizeData, palmData];
 
     const exitProvince = () => {
         dispatch(closeModal());
@@ -44,7 +44,7 @@ const ProvinceModalComponent = forwardRef<MapRef>(({}, mapRef) => {
             let cropsData: CropType[] = [];
 
             cropFiles.forEach((jsonData: any) => {
-                const filtered = jsonData.filter((item: CropDetailType) => item.province === provinceSelected);
+                const filtered = jsonData.filter((item: CropDetailType) => item.province === province_selected);
 
                 if (filtered.length > 0) {
                     const cropName = filtered[0].crop;
@@ -65,7 +65,7 @@ const ProvinceModalComponent = forwardRef<MapRef>(({}, mapRef) => {
             fetchCropPrice(cropsData);
 
             setTimeout(() => {
-                dispatch(setProvince(provinceSelected));
+                dispatch(setProvince(province_selected));
                 dispatch(openModal());
             }, 2000);
         } catch (error) {
@@ -77,7 +77,7 @@ const ProvinceModalComponent = forwardRef<MapRef>(({}, mapRef) => {
         let allPrice: PriceType[] = [];
 
         for (const item of cropsData) {
-            const getPrice = await Axios.get(`http://localhost:5000/price-by-crop?crop=${item.name}`);
+            const getPrice = await Axios.get(`http://mu2f.dev/price-by-crop?crop=${item.name}`);
             const priceData = getPrice.data.data;
             allPrice = [...allPrice, ...priceData];
         }
@@ -90,11 +90,11 @@ const ProvinceModalComponent = forwardRef<MapRef>(({}, mapRef) => {
             const price = getCropPrice(crop.name, allPrice);
             return {
                 title: (
-                    <span className="flex items-center gap-2">
-                        <div className="font-semibold text-slate-700">{crop.name}</div>
+                    <span className="flex items-center justify-between">
+                        <div className="font-medium text-[#F1F5F9]">{crop.name}</div>
                         {price && (
-                            <Tag variant="filled" color="green" className="shadow-sm text-xs! rounded-lg!">
-                                {price.product_name} •{" "}
+                            <Tag variant="filled" className="drop-shadow-lg font-normal text-xs! rounded-lg! bg-[#0D3033]! text-[#34D399]!">
+                                {price.product_name} -{" "}
                                 <span className="font-bold">
                                     {price.day_price} {price.unit}
                                 </span>
@@ -137,10 +137,10 @@ const ProvinceModalComponent = forwardRef<MapRef>(({}, mapRef) => {
     };
 
     useEffect(() => {
-        if (provinceSelected) {
+        if (province_selected) {
             fetchCropByProvince();
         }
-    }, [provinceSelected]);
+    }, [province_selected]);
 
     return (
         <AnimatePresence>
@@ -150,42 +150,46 @@ const ProvinceModalComponent = forwardRef<MapRef>(({}, mapRef) => {
                     animate={{ opacity: 1, x: 0, scale: 1 }}
                     exit={{ opacity: 0, x: 100, scale: 0.95 }}
                     transition={{ type: "spring", damping: 25, stiffness: 200 }}
-                    className="fixed top-1/2 right-1/6 -translate-y-1/2 z-50 w-130 max-h-[85vh] rounded-2xl bg-white/85 backdrop-blur-xl border border-white/40 shadow-2xl overflow-hidden flex flex-col"
+                    className="absolute top-1/2 right-[12%] -translate-y-1/2 z-50 w-130 max-h-[95%] rounded-2xl bg-[#131b2d] shadow-2xl overflow-hidden flex flex-col"
                 >
-                    <div className="px-5 py-4 border-b border-slate-200/50 bg-linear-to-r from-emerald-50/50 to-teal-50/50">
+                    <div className="px-5 py-4 bg-[#131b2d]">
                         <div className="flex items-center justify-between">
                             <div className="flex items-center gap-3">
-                                <div className="w-10 h-10 rounded-xl bg-emerald-500 flex items-center justify-center">
+                                <div className="w-10 h-10 rounded-xl bg-[#10b981] flex items-center justify-center">
                                     <FiMapPin className="text-white text-lg" />
                                 </div>
                                 <div>
-                                    <h2 className="text-lg font-bold text-slate-800">{provinceSelected}</h2>
-                                    <p className="text-xs text-slate-500">สถิติการเกษตร</p>
+                                    <h2 className="text-xl font-semibold text-white">{province_selected}</h2>
+                                    <p className="text-xs text-[#94a3b8]">สถิติการเกษตร</p>
                                 </div>
                             </div>
                             <button
                                 onClick={exitProvince}
-                                className="w-8 h-8 rounded-lg bg-slate-100 hover:bg-red-100 hover:text-red-500 flex items-center justify-center transition-all duration-200 text-slate-400"
+                                className="w-8 h-8 rounded-full bg-[#1e293b] flex items-center justify-center transition-all duration-200 cursor-pointer"
                             >
-                                <FiX className="text-base" />
+                                <FiX className="text-base text-[#94a3b8]" />
                             </button>
                         </div>
                     </div>
 
-                    <div className="flex-1 overflow-y-auto p-4">
+                    <div className="flex-1 overflow-y-auto px-4 pb-4 pt-2">
                         {cropByProvinceData && treeData.length > 0 && (
                             <div className="mb-4">
-                                <div className="bg-white/60 rounded-xl p-3 border border-slate-100">
+                                <div className="bg-[#1e293b] rounded-xl p-3">
                                     <div className="flex items-center gap-2 mb-3">
-                                        <FiTrendingUp className="text-emerald-500" />
-                                        <span className="text-sm font-semibold text-slate-700">ข้อมูลพืชผล</span>
+                                        <FiTrendingUp className="text-[#10b981]" />
+                                        <span className="text-sm font-medium text-white">ข้อมูลพืชผล</span>
                                     </div>
-                                    <Tree showLine={{ showLeafIcon: false }} treeData={treeData} className="bg-transparent!" />
+                                    <Tree
+                                        showLine={{ showLeafIcon: false }}
+                                        treeData={treeData}
+                                        className="bg-transparent! [&_.ant-tree-switcher-line-icon]:text-[#94a3b8]! [&_.ant-tree-treenode]:w-full! [&_.ant-tree-node-content-wrapper]:w-full"
+                                    />
                                 </div>
                             </div>
                         )}
 
-                        <div className="bg-white/60 rounded-xl p-3 border border-slate-100">
+                        <div className="bg-[#1e293b] rounded-xl p-3">
                             <ModalChartComponent data={cropByProvinceData} />
                         </div>
                     </div>

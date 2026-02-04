@@ -19,7 +19,7 @@ export const controlSlice = createSlice({
             type: "ผลผลิตต่อไร่",
         },
         mainChartFilter: [],
-        baseMap: BASE_MAP.satellite,
+        baseMap: BASE_MAP.base,
     },
     reducers: {
         openModal: (state) => {

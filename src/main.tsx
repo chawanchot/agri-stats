@@ -9,7 +9,7 @@ createRoot(document.getElementById("root")!).render(
     <ConfigProvider
         theme={{
             token: {
-                fontFamily: "Kanit",
+                fontFamily: "Noto Sans Thai",
             },
         }}
     >

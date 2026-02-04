@@ -26,7 +26,7 @@ const ProvinceLabelsLayer = ({ data }: PropsType) => {
                 minzoom={4}
                 layout={{
                     "text-field": ["get", "pro_th"],
-                    "text-font": ["Kanit"],
+                    "text-font": ["Noto Sans Thai"],
                     "text-size": 14,
                 }}
                 paint={{

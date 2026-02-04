@@ -26,31 +26,23 @@ function ModalChartComponent({ data }: PropsType) {
             toolbar: {
                 show: false,
             },
-            fontFamily: "Kanit",
+            fontFamily: "Noto Sans Thai",
             background: "transparent",
         },
-        colors: ["#10b981", "#6366f1", "#f59e0b", "#ef4444"],
+        colors: ["#10b981", "#6366f1", "#f59e0b", "#ef4444", "#cf4421"],
         stroke: {
             curve: "smooth",
             width: 3,
         },
         markers: {
-            size: 4,
-            strokeWidth: 2,
-            hover: {
-                size: 6,
-            },
+            size: 0,
         },
         dataLabels: {
             enabled: false,
         },
         grid: {
-            borderColor: "#e2e8f0",
+            borderColor: "#414B60",
             strokeDashArray: 4,
-            row: {
-                colors: ["transparent"],
-                opacity: 0.5,
-            },
         },
         xaxis: {
             categories: categories.map(String),
@@ -59,12 +51,6 @@ function ModalChartComponent({ data }: PropsType) {
                     colors: "#64748b",
                     fontSize: "12px",
                 },
-            },
-            axisBorder: {
-                show: false,
-            },
-            axisTicks: {
-                show: false,
             },
         },
         yaxis: {
@@ -77,20 +63,21 @@ function ModalChartComponent({ data }: PropsType) {
             },
         },
         legend: {
-            position: "top",
-            horizontalAlign: "left",
+            position: "bottom",
+            horizontalAlign: "center",
             fontSize: "12px",
-            fontWeight: 500,
+            fontWeight: 400,
             labels: {
-                colors: "#475569",
+                colors: "#F1F5F9",
             },
             markers: {
                 size: 8,
                 shape: "circle",
+                strokeWidth: 0,
             },
         },
         tooltip: {
-            enabled: true,
+            enabled: false,
             theme: "light",
             y: {
                 formatter: (val) => `${val.toLocaleString()} กก./ไร่`,
@@ -105,8 +92,8 @@ function ModalChartComponent({ data }: PropsType) {
     return (
         <div>
             <div className="flex items-center gap-2 mb-2">
-                <FiActivity className="text-emerald-500" />
-                <span className="text-sm font-semibold text-slate-700">แนวโน้มผลผลิต</span>
+                <FiActivity className="text-[#10b981]" />
+                <span className="text-sm font-medium text-white">ผลผลิตรายปี</span>
             </div>
             <Chart options={chartOptions} series={chartData} type="line" height={220} />
         </div>

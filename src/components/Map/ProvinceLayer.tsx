@@ -1,3 +1,4 @@
+import { useAppSelector } from "@store/hook";
 import type { FeatureCollection } from "geojson";
 import { Layer, Source } from "react-map-gl/maplibre";
 
@@ -7,17 +8,21 @@ type PropsType = {
 };
 
 const ProvinceLayer = ({ data, hoverData }: PropsType) => {
+    const province_selected = useAppSelector((state) => state.control.province);
+
     return (
         <>
             <Source id="provincesData" type="geojson" data={data}>
-                <Layer
-                    id="province-hover-fills"
-                    type="fill"
-                    paint={{
-                        "fill-color": "#088",
-                        "fill-opacity": ["case", ["==", ["get", "pro_th"], hoverData], 0.5, 0.1],
-                    }}
-                />
+                {!province_selected && (
+                    <Layer
+                        id="province-hover-fills"
+                        type="fill"
+                        paint={{
+                            "fill-color": "#088",
+                            "fill-opacity": ["case", ["==", ["get", "pro_th"], hoverData], 0.5, 0.1],
+                        }}
+                    />
+                )}
 
                 <Layer
                     id="province-outline"

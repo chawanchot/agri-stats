@@ -8,12 +8,12 @@ import MapControlComponent from "@components/MapControlComponent";
 import ProvinceModalComponent from "@components/ProvinceModalComponent";
 
 import cassavaData from "@assets/data/crops/cassava.json";
-import durianData from "@assets/data/crops/durian.json";
+// import durianData from "@assets/data/crops/durian.json";
 import longanData from "@assets/data/crops/longan.json";
 import rubberData from "@assets/data/crops/rubber.json";
 import maizeData from "@assets/data/crops/maize.json";
 import palmData from "@assets/data/crops/palm.json";
-const cropFiles = [cassavaData, durianData, longanData, rubberData, maizeData, palmData];
+const cropFiles = [cassavaData, longanData, rubberData, maizeData, palmData];
 
 function HomePage() {
     const dispatch = useAppDispatch();
@@ -48,14 +48,11 @@ function HomePage() {
     }, []);
 
     return (
-        <div className="flex items-center justify-center h-full">
-            <div className="w-full h-full">
-                <MapControlComponent ref={mapRef} />
-                <MainChartComponent />
-                <MainMap ref={mapRef} />
-
-                <ProvinceModalComponent ref={mapRef} />
-            </div>
+        <div className="flex items-center justify-center h-full relative">
+            <MapControlComponent ref={mapRef} />
+            <MainChartComponent />
+            <MainMap ref={mapRef} />
+            <ProvinceModalComponent ref={mapRef} />
         </div>
     );
 }

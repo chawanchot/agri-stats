@@ -21,7 +21,7 @@ const MainMap = forwardRef<MapRef>(({}, mapRef) => {
     const dispatch = useAppDispatch();
     const isModalOpen = useAppSelector((state) => state.control.modal);
     const zoom = useAppSelector((state) => state.control.zoom);
-    const menuSelected = useAppSelector((state) => state.control.menu);
+    const menu_selected = useAppSelector((state) => state.control.menu);
     const baseMap = useAppSelector((state) => state.control.baseMap);
     const [messageApi, contextHolder] = message.useMessage();
 
@@ -48,9 +48,7 @@ const MainMap = forwardRef<MapRef>(({}, mapRef) => {
 
             try {
                 const soilName = pro_en.replaceAll(" ", "").toLowerCase();
-                console.log(soilName);
                 const data = await import(`../../assets/data/soils/${soilName}.json`);
-
                 setSoilData(data.default);
             } catch (error) {
                 console.log(error);
@@ -78,12 +76,12 @@ const MainMap = forwardRef<MapRef>(({}, mapRef) => {
             let allLocation: LocationType[] = [];
             let allPopup: PopupStatusType = {};
 
-            const getPrice = await Axios.get(`http://localhost:5000/price-by-crop?crop=${menuSelected.crop}`);
+            const getPrice = await Axios.get(`http://mu2f.dev/price-by-crop?crop=${menu_selected.crop}`);
             const priceData = getPrice.data.data;
             if (!priceData.length) {
                 messageApi.open({
                     type: "warning",
-                    content: `ไม่มีข้อมูลราคาสินค้า ${menuSelected.crop}`,
+                    content: `ไม่มีข้อมูลราคาสินค้า ${menu_selected.crop}`,
                 });
 
                 return;
@@ -150,10 +148,10 @@ const MainMap = forwardRef<MapRef>(({}, mapRef) => {
     useEffect(() => {
         setLocationData([]);
 
-        if (menuSelected.mode === "ราคา") {
+        if (menu_selected.mode === "ราคา") {
             fetchCropPrice();
         }
-    }, [menuSelected.crop, menuSelected.mode]);
+    }, [menu_selected.crop, menu_selected.mode]);
 
     return (
         <>
@@ -172,6 +170,7 @@ const MainMap = forwardRef<MapRef>(({}, mapRef) => {
                 onZoom={(e) => dispatch(setZoom(e.viewState.zoom))}
                 onClick={onProvinceClick}
                 onIdle={onIdleHandle}
+                attributionControl={false}
                 onMouseMove={(e) => {
                     if (e.features && e.features.length > 0) {
                         const provinceFeature = e.features.find((feature) => feature.layer?.id === "province-hover-fills");
@@ -193,6 +192,8 @@ const MainMap = forwardRef<MapRef>(({}, mapRef) => {
                                 latitude: e.lngLat.lat,
                                 properties: soilFeature.properties,
                             });
+                        } else {
+                            setHoverSoil(null);
                         }
 
                         if (provinceCompareFeature) {
@@ -201,6 +202,8 @@ const MainMap = forwardRef<MapRef>(({}, mapRef) => {
                                 lat: e.lngLat.lat,
                                 properties: provinceCompareFeature.properties,
                             });
+                        } else {
+                            setHoverCompare(null);
                         }
                     } else {
                         setHoverSoil(null);
@@ -214,13 +217,13 @@ const MainMap = forwardRef<MapRef>(({}, mapRef) => {
 
                 {zoom >= 8 && soilData && <SoilSource data={soilData} hoverData={hoverSoil} />}
 
-                {menuSelected.crop && menuSelected.mode === "ผลผลิต" && (
-                    <CropCompareLayer hoverData={hoverCompare} type={menuSelected.type} />
+                {menu_selected.crop && menu_selected.mode === "ผลผลิต" && (
+                    <CropCompareLayer hoverData={hoverCompare} type={menu_selected.type} />
                 )}
 
                 <ProvinceLabelsLayer data={ProvincesGeoJson} />
 
-                {menuSelected.mode === "ราคา" &&
+                {menu_selected.mode === "ราคา" &&
                     locationData.map((item: LocationType) => {
                         return (
                             <div key={item.name}>

@@ -13,6 +13,7 @@ export default defineConfig({
             "@router": path.resolve(__dirname, "src/router"),
             "@store": path.resolve(__dirname, "src/store"),
             "@assets": path.resolve(__dirname, "src/assets"),
+            "@layout": path.resolve(__dirname, "src/layout"),
         },
     },
     server: {

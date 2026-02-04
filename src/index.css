@@ -9,10 +9,9 @@ body {
   padding: 0;
   box-sizing: border-box;
   min-height: 100vh;
-  font-family: "Kanit", sans-serif;
+  font-family: "Noto Sans Thai", sans-serif;
 }
 
-/* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
@@ -23,10 +22,10 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #94a3b8;
+  background: #94b89e;
   border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #64748b;
+  background: #31c95c;
 }
