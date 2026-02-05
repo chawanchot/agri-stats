@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { forwardRef, useEffect, useRef } from "react";
 import MainChartComponent from "@components/MainChartComponent";
 import MainMap from "@components/Map/MainMap";
 import { useAppDispatch } from "@store/hook";
@@ -15,10 +15,9 @@ import maizeData from "@assets/data/crops/maize.json";
 import palmData from "@assets/data/crops/palm.json";
 const cropFiles = [cassavaData, longanData, rubberData, maizeData, palmData];
 
-function HomePage() {
+const HomePage = forwardRef<MapRef>((_props, ref) => {
     const dispatch = useAppDispatch();
-
-    const mapRef = useRef<MapRef>(null);
+    const mapRef = (ref as React.RefObject<MapRef>) || useRef<MapRef>(null);
 
     const fetchCropsList = async () => {
         try {
@@ -55,6 +54,6 @@ function HomePage() {
             <ProvinceModalComponent ref={mapRef} />
         </div>
     );
-}
+});
 
 export default HomePage;

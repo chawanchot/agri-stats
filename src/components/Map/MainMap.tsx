@@ -12,12 +12,14 @@ import CropCompareLayer from "@components/Map/CropCompareLayer";
 import { message, Tag } from "antd";
 import Axios from "axios";
 import type { LocationType, PopupStatusType } from "types";
+import { useLocation } from "react-router-dom";
 
 const ProvincesGeoJson = ProvincesData as FeatureCollection;
 const MAPTILER_KEY = import.meta.env.VITE_MAPTILER_KEY;
 const GOOGLE_API_KEY = import.meta.env.VITE_GOOGLE_API_KEY;
 
 const MainMap = forwardRef<MapRef>(({}, mapRef) => {
+    const location = useLocation();
     const dispatch = useAppDispatch();
     const isModalOpen = useAppSelector((state) => state.control.modal);
     const zoom = useAppSelector((state) => state.control.zoom);
@@ -28,9 +30,10 @@ const MainMap = forwardRef<MapRef>(({}, mapRef) => {
     const [hoverInfo, setHoverInfo] = useState<string | null>(null);
     const [hoverSoil, setHoverSoil] = useState<any>(null);
     const [hoverCompare, setHoverCompare] = useState<any>(null);
-    const [soilData, setSoilData] = useState(null);
+    const [soilData, setSoilData] = useState<FeatureCollection | null>(null);
     const [locationData, setLocationData] = useState<LocationType[] | []>([]);
     const [popupStatus, setPopupStatus] = useState<any>(null);
+    const [is_landing, setIsLanding] = useState<boolean>(false);
 
     const onProvinceClick = async (event: any) => {
         const feature = event.features && event.features[0];
@@ -122,7 +125,6 @@ const MainMap = forwardRef<MapRef>(({}, mapRef) => {
                 allPopup[item.name] = false;
             });
 
-            console.log(allLocation);
             setPopupStatus(allPopup);
             setLocationData(allLocation);
         } catch (error) {
@@ -153,24 +155,56 @@ const MainMap = forwardRef<MapRef>(({}, mapRef) => {
         }
     }, [menu_selected.crop, menu_selected.mode]);
 
+    useEffect(() => {
+        if (location.pathname.includes("landing")) {
+            setIsLanding(true);
+        } else {
+            setIsLanding(false);
+        }
+    }, [location.pathname]);
+
+    const applyLandingMode = (landing: boolean) => {
+        if (mapRef && typeof mapRef !== "function" && mapRef.current) {
+            const map = mapRef.current?.getMap();
+
+            if (landing) {
+                map.setMaxBounds(null);
+            } else {
+                mapRef.current?.flyTo({
+                    center: [100.9, 13.18],
+                    zoom: 4.8,
+                    duration: 1000,
+                    essential: true,
+                });
+
+                // รอ fly จบแล้วสลับ Projection และกำหนด MaxBounds
+                map.once("moveend", () => {
+                    map.setProjection({ type: "mercator" });
+                    map.setMaxBounds([82.28, 4.77, 119.53, 21.32]);
+                });
+            }
+        }
+    };
+
     return (
         <>
             {contextHolder}
             <Map
                 initialViewState={{
-                    longitude: 100.9,
-                    latitude: 13.18,
-                    zoom: 5,
+                    longitude: -100,
+                    latitude: 40,
+                    zoom: 1,
                 }}
                 mapStyle={`https://api.maptiler.com/maps/${baseMap}/style.json?key=${MAPTILER_KEY}`}
                 ref={mapRef}
-                maxBounds={[82.28, 4.77, 119.53, 21.32]}
                 dragPan={!isModalOpen}
                 scrollZoom={!isModalOpen}
                 onZoom={(e) => dispatch(setZoom(e.viewState.zoom))}
                 onClick={onProvinceClick}
                 onIdle={onIdleHandle}
                 attributionControl={false}
+                onLoad={() => applyLandingMode(is_landing)}
+                projection={{ type: "globe" }}
                 onMouseMove={(e) => {
                     if (e.features && e.features.length > 0) {
                         const provinceFeature = e.features.find((feature) => feature.layer?.id === "province-hover-fills");

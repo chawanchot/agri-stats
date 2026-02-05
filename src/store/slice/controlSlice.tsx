@@ -20,6 +20,7 @@ export const controlSlice = createSlice({
         },
         mainChartFilter: [],
         baseMap: BASE_MAP.base,
+        landingPage: false,
     },
     reducers: {
         openModal: (state) => {
@@ -42,17 +43,13 @@ export const controlSlice = createSlice({
         },
         setBaseMap: (state, action) => {
             state.baseMap = BASE_MAP[action.payload];
-        }
+        },
+        setIsLandingPage: (state, action) => {
+            state.landingPage = action.payload;
+        },
     },
 });
 
-export const {
-    openModal,
-    closeModal,
-    setProvince,
-    setZoom,
-    setMenuSelected,
-    setMainChartFilter,
-    setBaseMap
-} = controlSlice.actions;
+export const { openModal, closeModal, setProvince, setZoom, setMenuSelected, setMainChartFilter, setBaseMap, setIsLandingPage } =
+    controlSlice.actions;
 export default controlSlice.reducer;
