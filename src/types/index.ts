@@ -42,6 +42,7 @@ export type ProductListType = {
     name: string;
     price: number;
     unit: string;
+    data_date: string;
 };
 
 export type PopupStatusType = Record<string, boolean>;

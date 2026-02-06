@@ -1,25 +1,11 @@
-/* Map Popup Styling */
+.maplibregl-popup {
+    max-width: none !important;
+}
+
 .maplibregl-popup-content {
-    padding: 16px !important;
-    border-radius: 16px !important;
+    padding: 16px 16px 10px 16px !important;
+    border-radius: 7px !important;
     overflow: hidden;
-    min-width: fit-content;
     font-family: "Noto Sans Thai", sans-serif;
-}
-
-.maplibregl-popup-tip {
-    border-top-color: rgba(255, 255, 255, 0.85) !important;
-    border-bottom-color: rgba(255, 255, 255, 0.85) !important;
-}
-
-.maplibregl-popup-close-button {
-    font-size: 18px;
-    padding: 4px 8px;
-    color: #64748b;
-    transition: color 0.2s ease;
-}
-
-.maplibregl-popup-close-button:hover {
-    color: #ef4444;
-    background: transparent;
+    filter: drop-shadow(1px 1px 5px #0000002b);
 }

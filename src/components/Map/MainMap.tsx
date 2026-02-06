@@ -12,14 +12,18 @@ import CropCompareLayer from "@components/Map/CropCompareLayer";
 import { message, Tag } from "antd";
 import Axios from "axios";
 import type { LocationType, PopupStatusType } from "types";
-import { useLocation } from "react-router-dom";
+import { TbClockCheck } from "react-icons/tb";
+import dayjs from "dayjs";
 
 const ProvincesGeoJson = ProvincesData as FeatureCollection;
 const MAPTILER_KEY = import.meta.env.VITE_MAPTILER_KEY;
 const GOOGLE_API_KEY = import.meta.env.VITE_GOOGLE_API_KEY;
 
-const MainMap = forwardRef<MapRef>(({}, mapRef) => {
-    const location = useLocation();
+type PropsType = {
+    isLandingPage?: boolean;
+};
+
+const MainMap = forwardRef<MapRef, PropsType>(({ isLandingPage = false }, mapRef) => {
     const dispatch = useAppDispatch();
     const isModalOpen = useAppSelector((state) => state.control.modal);
     const zoom = useAppSelector((state) => state.control.zoom);
@@ -33,7 +37,6 @@ const MainMap = forwardRef<MapRef>(({}, mapRef) => {
     const [soilData, setSoilData] = useState<FeatureCollection | null>(null);
     const [locationData, setLocationData] = useState<LocationType[] | []>([]);
     const [popupStatus, setPopupStatus] = useState<any>(null);
-    const [is_landing, setIsLanding] = useState<boolean>(false);
 
     const onProvinceClick = async (event: any) => {
         const feature = event.features && event.features[0];
@@ -109,6 +112,7 @@ const MainMap = forwardRef<MapRef>(({}, mapRef) => {
                                 name: item.product_name,
                                 price: item.day_price,
                                 unit: item.unit,
+                                data_date: item.data_date,
                             },
                         ],
                     });
@@ -117,6 +121,7 @@ const MainMap = forwardRef<MapRef>(({}, mapRef) => {
                         name: item.product_name,
                         price: item.day_price,
                         unit: item.unit,
+                        data_date: item.data_date,
                     });
                 }
             }
@@ -154,14 +159,6 @@ const MainMap = forwardRef<MapRef>(({}, mapRef) => {
             fetchCropPrice();
         }
     }, [menu_selected.crop, menu_selected.mode]);
-
-    useEffect(() => {
-        if (location.pathname.includes("landing")) {
-            setIsLanding(true);
-        } else {
-            setIsLanding(false);
-        }
-    }, [location.pathname]);
 
     const applyLandingMode = (landing: boolean) => {
         if (mapRef && typeof mapRef !== "function" && mapRef.current) {
@@ -203,7 +200,7 @@ const MainMap = forwardRef<MapRef>(({}, mapRef) => {
                 onClick={onProvinceClick}
                 onIdle={onIdleHandle}
                 attributionControl={false}
-                onLoad={() => applyLandingMode(is_landing)}
+                onLoad={() => applyLandingMode(isLandingPage)}
                 projection={{ type: "globe" }}
                 onMouseMove={(e) => {
                     if (e.features && e.features.length > 0) {
@@ -270,7 +267,7 @@ const MainMap = forwardRef<MapRef>(({}, mapRef) => {
                                     <Tag
                                         variant="solid"
                                         color="white"
-                                        className="text-black! shadow font-medium! rounded-full! text-xs! py-0.5!"
+                                        className={`text-black! font-semibold! text-sm rounded-md! px-2! py-0.5! drop-shadow-sm ${popupStatus[item.name] ? "bg-[#2D6A4F]! text-white!" : "bg-white! text-black!"}`}
                                     >
                                         {item.productList[0].price} ฿
                                     </Tag>
@@ -283,17 +280,24 @@ const MainMap = forwardRef<MapRef>(({}, mapRef) => {
                                         offset={15}
                                     >
                                         <div className="flex flex-col items-center justify-center overflow-hidden">
-                                            <div className="font-semibold">{item.name}</div>
-                                            <div className="text-gray-500 -mt-1">{item.province}</div>
-                                            <div className="flex flex-col mt-2">
+                                            <div className="font-bold text-sm text-[#52796F]">{item.name}</div>
+                                            <div className="flex flex-col mt-2 w-full">
                                                 {item.productList.map((product, index) => (
-                                                    <div className="text-gray-800" key={index}>
-                                                        {product.name}{" "}
-                                                        <span className="font-semibold">
-                                                            {product.price} {product.unit}
-                                                        </span>
+                                                    <div className="flex flex-col">
+                                                        <div className="text-xs" key={index}>
+                                                            {product.name}{" "}
+                                                            <span className="font-bold">
+                                                                {product.price} {product.unit}
+                                                            </span>
+                                                        </div>
                                                     </div>
                                                 ))}
+                                            </div>
+                                            <div className="flex justify-center items-center gap-1 w-full border-t border-t-[#E7E3E3] pt-2 mt-4 text-[#9CA3AF]">
+                                                <TbClockCheck />
+                                                <span>
+                                                    ข้อมูลล่าสุด {dayjs(item.productList[0].data_date).format("DD-MM-YYYY")}
+                                                </span>
                                             </div>
                                         </div>
                                     </Popup>

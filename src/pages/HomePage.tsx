@@ -15,7 +15,11 @@ import maizeData from "@assets/data/crops/maize.json";
 import palmData from "@assets/data/crops/palm.json";
 const cropFiles = [cassavaData, longanData, rubberData, maizeData, palmData];
 
-const HomePage = forwardRef<MapRef>((_props, ref) => {
+type PropType = {
+    isLandingPage?: boolean;
+};
+
+const HomePage = forwardRef<MapRef, PropType>(({ isLandingPage = false }, ref) => {
     const dispatch = useAppDispatch();
     const mapRef = (ref as React.RefObject<MapRef>) || useRef<MapRef>(null);
 
@@ -47,10 +51,10 @@ const HomePage = forwardRef<MapRef>((_props, ref) => {
     }, []);
 
     return (
-        <div className="flex items-center justify-center h-full relative">
-            <MapControlComponent ref={mapRef} />
+        <div className="flex items-center justify-center h-full bg-[#0f172a] relative">
+            {!isLandingPage && <MapControlComponent ref={mapRef} />}
             <MainChartComponent />
-            <MainMap ref={mapRef} />
+            <MainMap ref={mapRef} isLandingPage={isLandingPage} />
             <ProvinceModalComponent ref={mapRef} />
         </div>
     );

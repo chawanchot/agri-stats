@@ -90,10 +90,10 @@ const ProvinceModalComponent = forwardRef<MapRef>(({}, mapRef) => {
             const price = getCropPrice(crop.name, allPrice);
             return {
                 title: (
-                    <span className="flex items-center justify-between">
-                        <div className="font-medium text-[#F1F5F9]">{crop.name}</div>
+                    <span className="flex flex-col md:flex-row items-start md:items-center justify-between">
+                        <div className="font-medium text-xs md:text-base text-[#F1F5F9]">{crop.name}</div>
                         {price && (
-                            <Tag variant="filled" className="drop-shadow-lg font-normal text-xs! rounded-lg! bg-[#0D3033]! text-[#34D399]!">
+                            <Tag variant="filled" className="drop-shadow-lg font-normal text-[10px]! md:text-xs! rounded-lg! bg-[#0D3033]! text-[#34D399]!">
                                 {price.product_name} -{" "}
                                 <span className="font-bold">
                                     {price.day_price} {price.unit}
@@ -150,17 +150,17 @@ const ProvinceModalComponent = forwardRef<MapRef>(({}, mapRef) => {
                     animate={{ opacity: 1, x: 0, scale: 1 }}
                     exit={{ opacity: 0, x: 100, scale: 0.95 }}
                     transition={{ type: "spring", damping: 25, stiffness: 200 }}
-                    className="absolute top-1/2 right-[12%] -translate-y-1/2 z-50 w-130 max-h-[95%] rounded-2xl bg-[#131b2d] shadow-2xl overflow-hidden flex flex-col"
+                    className="absolute md:top-1/2 md:right-[12%] md:-translate-y-1/2 z-50 w-[95%] md:w-130 max-h-[95%] rounded-2xl bg-[#131b2d] shadow-2xl overflow-hidden flex flex-col"
                 >
                     <div className="px-5 py-4 bg-[#131b2d]">
                         <div className="flex items-center justify-between">
                             <div className="flex items-center gap-3">
-                                <div className="w-10 h-10 rounded-xl bg-[#10b981] flex items-center justify-center">
+                                <div className="w-8 h-8 md:w-10 md:h-10 rounded-lg md:rounded-xl bg-[#10b981] flex items-center justify-center">
                                     <FiMapPin className="text-white text-lg" />
                                 </div>
                                 <div>
-                                    <h2 className="text-xl font-semibold text-white">{province_selected}</h2>
-                                    <p className="text-xs text-[#94a3b8]">สถิติการเกษตร</p>
+                                    <h2 className="text-base md:text-xl font-semibold text-white">{province_selected}</h2>
+                                    <p className="text-[10px] md:text-xs text-[#94a3b8]">สถิติการเกษตร</p>
                                 </div>
                             </div>
                             <button
@@ -172,7 +172,7 @@ const ProvinceModalComponent = forwardRef<MapRef>(({}, mapRef) => {
                         </div>
                     </div>
 
-                    <div className="flex-1 overflow-y-auto px-4 pb-4 pt-2">
+                    <div className="flex-1 overflow-y-auto px-4 pb-4 pt-0 md:pt-2">
                         {cropByProvinceData && treeData.length > 0 && (
                             <div className="mb-4">
                                 <div className="bg-[#1e293b] rounded-xl p-3">

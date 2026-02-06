@@ -1,5 +1,5 @@
 import MainRouter from "@router/MainRouter";
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import { ConfigProvider } from "antd";
 import "./App.css";
 
@@ -25,9 +25,9 @@ const antTheme = {
 function App() {
     return (
         <ConfigProvider theme={antTheme}>
-            <BrowserRouter>
+            <HashRouter>
                 <MainRouter />
-            </BrowserRouter>
+            </HashRouter>
         </ConfigProvider>
     );
 }

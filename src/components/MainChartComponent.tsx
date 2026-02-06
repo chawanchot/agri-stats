@@ -3,9 +3,7 @@ import { useAppDispatch, useAppSelector } from "@store/hook";
 import type { CropDetailType } from "types";
 import { motion, AnimatePresence } from "framer-motion";
 import { FiX } from "react-icons/fi";
-import { setCropCompareData, setCropMainChart } from "@store/slice/cropSlice";
-import { setMenuSelected } from "@store/slice/controlSlice";
-
+import { fnExitMainChart } from "@utils/fetchCrops";
 function MainChartComponent() {
     const [chartData, setChartData] = useState<{ province: string; value: number }[]>([]);
     const [maxValue, setMaxValue] = useState<number>(0);
@@ -15,12 +13,6 @@ function MainChartComponent() {
     const menu_selected = useAppSelector((state) => state.control.menu);
     const cropCompareData = useAppSelector((state) => state.crop.cropMainChart);
     const provincesFilter: string[] = useAppSelector((state) => state.control.mainChartFilter);
-
-    const fnExitChart = () => {
-        dispatch(setCropMainChart([]));
-        dispatch(setCropCompareData([]));
-        dispatch(setMenuSelected({ crop: "", mode: "", year: "" }));
-    };
 
     useEffect(() => {
         if (cropCompareData.length > 0 && provincesFilter.length > 0) {
@@ -59,7 +51,7 @@ function MainChartComponent() {
                     animate={{ x: 0, opacity: 1 }}
                     exit={{ x: 100, opacity: 0 }}
                     transition={{ duration: 0.3 }}
-                    className="absolute right-4 top-5 h-[90%] z-10 w-80 rounded-xl overflow-hidden flex flex-col bg-[#131b2e] shadow-2xl"
+                    className="absolute right-2 md:right-4 top-2 md:top-5 h-[90%] z-10 w-80 rounded-xl overflow-hidden flex flex-col bg-[#131b2e] shadow-2xl"
                 >
                     <div className="px-5 py-4 flex justify-between items-center">
                         <div>
@@ -69,7 +61,7 @@ function MainChartComponent() {
                             </div>
                         </div>
                         <button
-                            onClick={fnExitChart}
+                            onClick={() => fnExitMainChart(dispatch)}
                             className="w-8 h-8 rounded-full bg-[#1e293b] flex items-center justify-center transition-all duration-200 cursor-pointer"
                         >
                             <FiX className="text-base text-[#94a3b8]" />

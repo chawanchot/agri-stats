@@ -9,6 +9,9 @@ import Lenis from "lenis";
 import HomePage from "./HomePage";
 import type { MapRef } from "react-map-gl/maplibre";
 import { useNavigate } from "react-router-dom";
+import { FaArrowDown } from "react-icons/fa6";
+import { useAppDispatch } from "@store/hook";
+import { fnExitMainChart, fnFetchCropCompareData } from "@utils/fetchCrops";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -25,39 +28,45 @@ useGLTF.preload("/models/stylized_mangrove_greenhouse.glb");
 
 const storyData = [
     {
-        tag: "INTRO",
+        tag: "FEATURE",
         title: "ภาพรวมระบบ",
-        description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, optio necessitatibus! Reprehenderit odit possimus natus.",
+        description:
+            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, optio necessitatibus! Reprehenderit odit possimus natus.",
     },
     {
         tag: "FEATURE",
         title: "ข้อมูลพืชผล",
-        description: "ระบบแสดงข้อมูลพืชผลทางการเกษตรหลากหลายชนิด พร้อมสถิติการผลิตในแต่ละจังหวัด",
+        description:
+            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, optio necessitatibus! Reprehenderit odit possimus natus.",
     },
     {
-        tag: "EXPLORE",
+        tag: "FEATURE",
         title: "สำรวจแผนที่",
-        description: "สามารถเลือกดูข้อมูลดินและพืชผลในแต่ละพื้นที่ พร้อมเปรียบเทียบข้อมูลระหว่างจังหวัด",
+        description:
+            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, optio necessitatibus! Reprehenderit odit possimus natus.",
     },
 ];
 
 const LandingPage = () => {
     const navigate = useNavigate();
+    const dispatch = useAppDispatch();
     const rootRef = useRef<HTMLDivElement | null>(null);
     const mapRef = useRef<MapRef>(null);
+    const modelWrapRef = useRef<HTMLDivElement | null>(null);
+    const headerWrapRef = useRef<HTMLDivElement | null>(null);
     const [scene, setScene] = useState<number | null>(null);
 
     const fnFlyToThai = () => {
         if (mapRef) {
             mapRef.current?.stop();
-            mapRef.current?.flyTo({ center: [100.9, 13.18], zoom: 4.8, duration: 2000, essential: true });
+            mapRef.current?.flyTo({ center: [100.9, 13.18], zoom: 4.8, duration: 1500, essential: true });
         }
     };
 
     const fnResetMap = () => {
         if (mapRef) {
             mapRef.current?.stop();
-            mapRef.current?.flyTo({ center: [-100, 40], zoom: 1, duration: 2000, essential: true });
+            mapRef.current?.flyTo({ center: [-100, 40], zoom: 1, duration: 1500, essential: true });
         }
     };
 
@@ -81,7 +90,13 @@ const LandingPage = () => {
                 end: "bottom bottom",
                 pin: ".pinned-content",
                 pinSpacing: false,
-                onEnter: () => setScene(0),
+                onEnter: () => {
+                    setScene(0);
+                    fnFlyToThai();
+                },
+                onEnterBack: () => {
+                    fnFlyToThai();
+                },
                 onLeave: () => {
                     fnResetMap();
                     setScene(null);
@@ -93,8 +108,34 @@ const LandingPage = () => {
                 onUpdate: (self) => {
                     const progress = self.progress;
                     const stepCount = storyData.length;
+
                     const newScene = Math.min(Math.floor(progress * stepCount), stepCount - 1);
-                    setScene(newScene);
+
+                    setScene((prev) => (prev !== newScene ? newScene : prev));
+                },
+            });
+
+            gsap.to(modelWrapRef.current, {
+                xPercent: 200,
+                opacity: 0,
+                ease: "none",
+                scrollTrigger: {
+                    trigger: ".container",
+                    start: "top top",
+                    end: "bottom bottom",
+                    scrub: 1,
+                },
+            });
+
+            gsap.to(headerWrapRef.current, {
+                xPercent: -200,
+                opacity: 0,
+                ease: "none",
+                scrollTrigger: {
+                    trigger: ".container",
+                    start: "top top",
+                    end: "bottom bottom",
+                    scrub: 1,
                 },
             });
 
@@ -109,26 +150,29 @@ const LandingPage = () => {
     }, []);
 
     useEffect(() => {
-        if (scene === 0) {
-            fnFlyToThai();
+        if (scene === 1) {
+            fnFetchCropCompareData("ข้าวโพดเลี้ยงสัตว์", "2566", dispatch);
+        } else {
+            fnExitMainChart(dispatch);
         }
-
-        console.log(scene);
     }, [scene]);
 
     return (
         <div ref={rootRef} className="bg-slate-950 text-white w-full">
-            <div className="container mx-auto px-50">
-                <section className="w-full py-20 relative">
-                    <div className="flex flex-col">
-                        <h1 className="text-5xl font-black sm:text-7xl">
+            <div className="container mx-auto px-50 overflow-hidden">
+                <section className="w-full h-screen py-20 relative">
+                    <div ref={headerWrapRef} className="flex flex-col justify-center h-full">
+                        <h1 className="text-7xl font-black">
                             AGRICULTURAL
                             <span className="block text-[#13bf50]">STATISTICS</span>
                         </h1>
-                        <p className="mt-4 max-w-xl text-white/70">ระบบแสดงข้อมูลสถิติทางการเกษตรผ่านเทคโนโลยีแผนที่</p>
+                        <p className="mt-4 text-white/70">ระบบแสดงข้อมูลสถิติทางการเกษตรผ่านเทคโนโลยีแผนที่</p>
                     </div>
 
-                    <div className="absolute -top-[32%] right-0 h-137 w-137">
+                    <div
+                        ref={modelWrapRef}
+                        className="absolute top-[45%] left-[80%] transform -translate-x-1/2 -translate-y-1/2 h-200 w-200"
+                    >
                         <Canvas camera={{ position: [7.6, 1.8, 3.2], fov: 45 }}>
                             <ambientLight intensity={0.6} />
                             <directionalLight position={[3, 4, 2]} intensity={1.2} />
@@ -140,14 +184,16 @@ const LandingPage = () => {
                             </Suspense>
                         </Canvas>
                     </div>
+                    <div className="text-[#81838B] text-xs tracking-[4px] flex flex-col items-center gap-2 animate-bounce">
+                        <div>SCROLL DOWN</div>
+                        <FaArrowDown />
+                    </div>
                 </section>
 
                 {/* SCROLLY LAYOUT */}
-                <section className="scrolly h-[300vh]">
-                    {/* PINNED CONTENT */}
+                <section className="scrolly h-[500vh]">
                     <div className="pinned-content h-screen flex items-center">
-                        <div className="grid grid-cols-2 gap-10 w-full px-6">
-                            {/* MAP PANEL */}
+                        <div className="grid grid-cols-2 gap-8 w-full px-6">
                             <div className="stage">
                                 <div className="flex flex-col gap-4">
                                     <div className="relative">
@@ -155,15 +201,15 @@ const LandingPage = () => {
                                     </div>
 
                                     <div className="relative h-150 overflow-hidden rounded-2xl border border-white/10 bg-slate-900/30 pointer-events-none">
-                                        <HomePage ref={mapRef} />
+                                        <HomePage ref={mapRef} isLandingPage={true} />
                                     </div>
 
                                     <div className="flex justify-center items-center gap-2">
-                                        {storyData.map((_, i) => (
+                                        {storyData.map((_, index) => (
                                             <span
-                                                key={i}
+                                                key={index}
                                                 className={`h-2 rounded-full transition-all duration-300 ${
-                                                    scene === i ? "bg-[#13bf50] w-6" : "bg-white/20 w-2"
+                                                    scene === index ? "bg-[#13bf50] w-6" : "bg-white/20 w-2"
                                                 }`}
                                             />
                                         ))}
@@ -171,7 +217,6 @@ const LandingPage = () => {
                                 </div>
                             </div>
 
-                            {/* STORY TEXT - changes based on scroll */}
                             <div className="flex items-center">
                                 <AnimatePresence mode="wait">
                                     {scene !== null && (
@@ -186,12 +231,12 @@ const LandingPage = () => {
                                             <div className="text-xs font-semibold uppercase tracking-widest text-lime-300/90">
                                                 {storyData[scene].tag}
                                             </div>
-
                                             <h2 className="mt-2 text-3xl font-bold">{storyData[scene].title}</h2>
-
                                             <p className="mt-3 text-white/70">{storyData[scene].description}</p>
-
-                                            <div className="mt-6 text-xs text-white/50">Scroll ต่อเพื่อเปลี่ยน Scene →</div>
+                                            <div className="text-[#81838B] text-xs flex items-center gap-2 mt-6">
+                                                <div>SCROLL DOWN</div>
+                                                <FaArrowDown />
+                                            </div>
                                         </motion.div>
                                     )}
                                 </AnimatePresence>
@@ -202,7 +247,7 @@ const LandingPage = () => {
                 <div className="flex justify-center py-20">
                     <button
                         onClick={() => navigate("/home")}
-                        className="px-10 py-5 rounded-lg font-semibold cursor-pointer bg-[#1E293B] hover:scale-105 duration-200"
+                        className="px-10 py-5 rounded-lg font-semibold cursor-pointer bg-[#13bf50] hover:scale-105 duration-200"
                     >
                         เข้าสู่เว็บไซต์
                     </button>

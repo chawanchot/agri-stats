@@ -3,22 +3,12 @@ import { setBaseMap, setMenuSelected } from "@store/slice/controlSlice";
 import { setCropCompareData, setCropMainChart } from "@store/slice/cropSlice";
 import { Cascader, Segmented, type CascaderProps } from "antd";
 import { forwardRef, useEffect, useMemo, useState } from "react";
-import ProvincesData from "../assets/data/provinces.json";
-import type { FeatureCollection } from "geojson";
-import { FiLayers, FiPlus, FiMinus } from "react-icons/fi";
-import type { CropDetailType, OptionType } from "types";
+import { FiLayers, FiPlus, FiMinus, FiX } from "react-icons/fi";
+import { HiMenuAlt1 } from "react-icons/hi";
+import type { OptionType } from "types";
 import type { MapRef } from "react-map-gl/maplibre";
-
-import cassavaData from "@assets/data/crops/cassava.json";
-// import durianData from "@assets/data/crops/durian.json";
-import longanData from "@assets/data/crops/longan.json";
-import rubberData from "@assets/data/crops/rubber.json";
-import maizeData from "@assets/data/crops/maize.json";
-import palmData from "@assets/data/crops/palm.json";
 import { AnimatePresence, motion } from "framer-motion";
-
-const ProvincesGeoJson = ProvincesData as FeatureCollection;
-const cropFiles = [cassavaData, longanData, rubberData, maizeData, palmData];
+import { fnFetchCropCompareData } from "@utils/fetchCrops";
 
 const MapControlComponent = forwardRef<MapRef>(({}, mapRef) => {
     const dispatch = useAppDispatch();
@@ -26,6 +16,7 @@ const MapControlComponent = forwardRef<MapRef>(({}, mapRef) => {
     const cropCompareSelected = useAppSelector((state) => state.control.menu);
     const cropYearList: any = useAppSelector((state) => state.crop.cropYearList);
     const menu_selected = useAppSelector((state) => state.control.menu);
+    const [mobile_menu, setMobileMenu] = useState<boolean>(false);
 
     const [layerOpen, setLayerOpen] = useState<boolean>(false);
     const [compareOptions, setCompareOptions] = useState<OptionType[] | []>([]);
@@ -84,46 +75,14 @@ const MapControlComponent = forwardRef<MapRef>(({}, mapRef) => {
                         year: value[2],
                     })
                 );
-                fetchCropCompareData(value[0], value[2]);
+
+                fnFetchCropCompareData(value[0], value[2], dispatch);
             } else if (value[1] === "ราคา") {
                 dispatch(setMenuSelected({ crop: value[0], mode: value[1] }));
             }
         }
-    };
 
-    const fetchCropCompareData = async (crop: string, year: string) => {
-        try {
-            let cropData: CropDetailType[] = [];
-
-            cropFiles.forEach((jsonData: any) => {
-                const filtered = jsonData.filter((item: CropDetailType) => item.crop === crop && item.year === Number(year));
-
-                if (filtered.length > 0) {
-                    cropData.push(...filtered);
-                }
-            });
-
-            const updatedGeoJson = {
-                ...ProvincesGeoJson,
-                features: ProvincesGeoJson.features.map((feature: any) => {
-                    const match = cropData.find((item: CropDetailType) => item.province === feature.properties.pro_th);
-
-                    return {
-                        ...feature,
-                        properties: {
-                            ...feature.properties,
-                            yield_per_rai: match ? match.yield_per_rai : 0,
-                            yield_ton: match ? match.yield_ton : 0,
-                        },
-                    };
-                }),
-            };
-
-            dispatch(setCropMainChart(cropData));
-            dispatch(setCropCompareData(updatedGeoJson));
-        } catch (error) {
-            console.log(error);
-        }
+        setMobileMenu(false);
     };
 
     const onChangeLayer = (base: string) => {
@@ -146,59 +105,72 @@ const MapControlComponent = forwardRef<MapRef>(({}, mapRef) => {
     return (
         <AnimatePresence>
             {!isModalOpen && (
-                <>
-                    <motion.div
-                        initial={{ x: -100, opacity: 0 }}
-                        animate={{ x: 0, opacity: 1 }}
-                        exit={{ x: -100, opacity: 0 }}
-                        transition={{ duration: 0.3 }}
-                        className="absolute top-5 left-4 z-10 w-64 p-4 rounded-2xl bg-[#131b2d]"
+                <motion.div
+                    initial={{ x: -100, opacity: 0 }}
+                    animate={{ x: 0, opacity: 1 }}
+                    exit={{ x: -100, opacity: 0 }}
+                    transition={{ duration: 0.3 }}
+                >
+                    {!mobile_menu && (
+                        <button
+                            onClick={() => setMobileMenu(!mobile_menu)}
+                            className="absolute top-2 md:top-5 left-2 md:left-4 z-10 w-11 h-11 rounded-xl flex items-center justify-center cursor-pointer bg-[#1e293b] text-white"
+                        >
+                            <HiMenuAlt1 className="text-lg" />
+                        </button>
+                    )}
+                    <div
+                        className={`absolute top-2 md:top-5 left-2 md:left-4 z-10 w-64 p-4 rounded-2xl bg-[#131b2d] ${mobile_menu ? "flex" : "hidden md:flex"}`}
                     >
-                        <div className="flex flex-col gap-4">
-                            <div className="flex flex-col gap-2">
-                                <div className="text-sm text-white">เลือกข้อมูล</div>
-                                <div>
-                                    <label className="text-xs text-[#94a3b8]">ชนิดพืช และ ปีที่ต้องการ</label>
-                                    <Cascader
-                                        placeholder="เลือกพืช และปี..."
-                                        options={compareOptions}
-                                        value={cascaderValue}
-                                        onChange={onCropsSelectedChange}
-                                        className="[&_.ant-select-content-value]:text-[#10b981]! [&_.ant-select-content-value]:font-bold!"
+                        <div className="flex flex-col gap-2 relative">
+                            <div className="text-sm text-white">เลือกข้อมูล</div>
+                            <button
+                                onClick={() => setMobileMenu(!mobile_menu)}
+                                className="absolute top-0 right-0 w-8 h-8 rounded-full bg-[#1e293b] flex md:hidden items-center justify-center"
+                            >
+                                <FiX className="text-base text-[#94a3b8]" />
+                            </button>
+                            <div>
+                                <label className="text-xs text-[#94a3b8]">ชนิดพืช และ ปีที่ต้องการ</label>
+                                <Cascader
+                                    placeholder="เลือกพืช และปี..."
+                                    options={compareOptions}
+                                    value={cascaderValue}
+                                    onChange={onCropsSelectedChange}
+                                    className="[&_.ant-select-content-value]:text-[#10b981]! [&_.ant-select-content-value]:font-bold!"
+                                    classNames={{
+                                        root: "w-full! bg-[#1e293b]! border-none! drop-shadow! rounded-xl!",
+                                        content: "text-white! py-1",
+                                        suffix: "text-white!",
+                                        placeholder: "text-white!",
+                                        popup: { root: "bg-[#1e293b]!", listItem: "text-white hover:bg-[#131b2d]!" },
+                                    }}
+                                />
+                            </div>
+                            {menu_selected.mode === "ผลผลิต" && (
+                                <div className="flex flex-col gap-2">
+                                    <label className="text-xs text-[#94a3b8]">ประเภทข้อมูล</label>
+                                    <Segmented
+                                        size="middle"
+                                        value={cropCompareSelected.type}
+                                        options={["ผลผลิตต่อไร่", "ผลผลิตทั้งหมด"]}
+                                        onChange={(value) =>
+                                            dispatch(
+                                                setMenuSelected({
+                                                    type: value,
+                                                })
+                                            )
+                                        }
+                                        block
+                                        className="[&_.ant-segmented-item-selected]:font-bold [&_.ant-segmented-item-selected]:drop-shadow-lg [&_.ant-segmented-item]:text-[#94a3b8]"
                                         classNames={{
-                                            root: "w-full! bg-[#1e293b]! border-none! drop-shadow! rounded-xl!",
-                                            content: "text-white! py-1",
-                                            suffix: "text-white!",
-                                            placeholder: "text-white!",
-                                            popup: { root: "bg-[#1e293b]!", listItem: "text-white hover:bg-[#131b2d]!" },
+                                            root: "rounded-xl! bg-[#1e293b]! drop-shadow py-1!",
                                         }}
                                     />
                                 </div>
-                                {menu_selected.mode === "ผลผลิต" && (
-                                    <div className="flex flex-col gap-2">
-                                        <label className="text-xs text-[#94a3b8]">ประเภทข้อมูล</label>
-                                        <Segmented
-                                            size="middle"
-                                            value={cropCompareSelected.type}
-                                            options={["ผลผลิตต่อไร่", "ผลผลิตทั้งหมด"]}
-                                            onChange={(value) =>
-                                                dispatch(
-                                                    setMenuSelected({
-                                                        type: value,
-                                                    })
-                                                )
-                                            }
-                                            block
-                                            className="[&_.ant-segmented-item-selected]:font-bold [&_.ant-segmented-item-selected]:drop-shadow-lg [&_.ant-segmented-item]:text-[#94a3b8]"
-                                            classNames={{
-                                                root: "rounded-xl! bg-[#1e293b]! drop-shadow py-1!",
-                                            }}
-                                        />
-                                    </div>
-                                )}
-                            </div>
+                            )}
                         </div>
-                    </motion.div>
+                    </div>
 
                     {/* Zoom | Layer Control */}
                     <motion.div
@@ -206,7 +178,7 @@ const MapControlComponent = forwardRef<MapRef>(({}, mapRef) => {
                         animate={{ x: 0, opacity: 1 }}
                         exit={{ x: -100, opacity: 0 }}
                         transition={{ duration: 0.3 }}
-                        className="absolute left-4 bottom-5 z-10 flex flex-col gap-2"
+                        className="absolute left-2 md:left-4 bottom-2 md:bottom-5 z-10 flex flex-col gap-2"
                     >
                         <div className="flex flex-col">
                             <button
@@ -262,7 +234,7 @@ const MapControlComponent = forwardRef<MapRef>(({}, mapRef) => {
                             )}
                         </AnimatePresence>
                     </motion.div>
-                </>
+                </motion.div>
             )}
         </AnimatePresence>
     );
