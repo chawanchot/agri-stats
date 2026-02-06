@@ -1,6 +1,7 @@
 import { Suspense, useEffect, useLayoutEffect, useRef, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { Bounds, Environment, Float, useGLTF } from "@react-three/drei";
+import { motion, AnimatePresence } from "framer-motion";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "maplibre-gl/dist/maplibre-gl.css";
@@ -22,12 +23,29 @@ function Model() {
 
 useGLTF.preload("/models/stylized_mangrove_greenhouse.glb");
 
+const storyData = [
+    {
+        tag: "INTRO",
+        title: "ภาพรวมระบบ",
+        description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, optio necessitatibus! Reprehenderit odit possimus natus.",
+    },
+    {
+        tag: "FEATURE",
+        title: "ข้อมูลพืชผล",
+        description: "ระบบแสดงข้อมูลพืชผลทางการเกษตรหลากหลายชนิด พร้อมสถิติการผลิตในแต่ละจังหวัด",
+    },
+    {
+        tag: "EXPLORE",
+        title: "สำรวจแผนที่",
+        description: "สามารถเลือกดูข้อมูลดินและพืชผลในแต่ละพื้นที่ พร้อมเปรียบเทียบข้อมูลระหว่างจังหวัด",
+    },
+];
+
 const LandingPage = () => {
     const navigate = useNavigate();
     const rootRef = useRef<HTMLDivElement | null>(null);
     const mapRef = useRef<MapRef>(null);
     const [scene, setScene] = useState<number | null>(null);
-    const [step_length, setStepLength] = useState<number>(0);
 
     const fnFlyToThai = () => {
         if (mapRef) {
@@ -61,9 +79,9 @@ const LandingPage = () => {
                 trigger: ".scrolly",
                 start: "top top",
                 end: "bottom bottom",
-                pin: ".stage",
-                pinSpacing: true,
-                anticipatePin: 0,
+                pin: ".pinned-content",
+                pinSpacing: false,
+                onEnter: () => setScene(0),
                 onLeave: () => {
                     fnResetMap();
                     setScene(null);
@@ -72,19 +90,12 @@ const LandingPage = () => {
                     fnResetMap();
                     setScene(null);
                 },
-            });
-
-            const steps = gsap.utils.toArray<HTMLElement>(".story-step");
-            setStepLength(steps.length);
-
-            steps.forEach((step, index) => {
-                ScrollTrigger.create({
-                    trigger: step,
-                    start: "top center",
-                    end: "bottom center",
-                    onEnter: () => setScene(index),
-                    onEnterBack: () => setScene(index),
-                });
+                onUpdate: (self) => {
+                    const progress = self.progress;
+                    const stepCount = storyData.length;
+                    const newScene = Math.min(Math.floor(progress * stepCount), stepCount - 1);
+                    setScene(newScene);
+                },
             });
 
             ScrollTrigger.refresh();
@@ -106,7 +117,7 @@ const LandingPage = () => {
     }, [scene]);
 
     return (
-        <div ref={rootRef} className="bg-slate-950 text-white min-h-screen w-full">
+        <div ref={rootRef} className="bg-slate-950 text-white w-full">
             <div className="container mx-auto px-50">
                 <section className="w-full py-20 relative">
                     <div className="flex flex-col">
@@ -132,75 +143,58 @@ const LandingPage = () => {
                 </section>
 
                 {/* SCROLLY LAYOUT */}
-                <section className="scrolly mx-auto px-6">
-                    <div className="grid grid-cols-2 gap-10">
-                        {/* PIN DIV */}
-                        <div className="stage">
-                            <div className="flex flex-col gap-4 pt-5">
-                                <div className="relative">
-                                    <div className="mt-2 text-2xl font-bold">ภาพรวมระบบ</div>
-                                </div>
+                <section className="scrolly h-[300vh]">
+                    {/* PINNED CONTENT */}
+                    <div className="pinned-content h-screen flex items-center">
+                        <div className="grid grid-cols-2 gap-10 w-full px-6">
+                            {/* MAP PANEL */}
+                            <div className="stage">
+                                <div className="flex flex-col gap-4">
+                                    <div className="relative">
+                                        <div className="text-2xl font-bold">ภาพรวมระบบ</div>
+                                    </div>
 
-                                {/* MAP PANEL */}
-                                <div className="relative h-150 overflow-hidden rounded-2xl border border-white/10 bg-slate-900/30 pointer-events-none">
-                                    <HomePage ref={mapRef} />
-                                </div>
+                                    <div className="relative h-150 overflow-hidden rounded-2xl border border-white/10 bg-slate-900/30 pointer-events-none">
+                                        <HomePage ref={mapRef} />
+                                    </div>
 
-                                <div className="flex justify-center items-center gap-2">
-                                    {Array.from({ length: step_length }).map((_, i) => (
-                                        <span
-                                            key={i}
-                                            className={`h-2 rounded-full transition-all duration-300 ${
-                                                scene === i ? "bg-[#13bf50] w-6" : "bg-white/20 w-2"
-                                            }`}
-                                        />
-                                    ))}
-                                </div>
-                            </div>
-                        </div>
-
-                        <div>
-                            <div className="story-step h-[120vh] flex items-center">
-                                <div className="rounded-3xl animate-in fade-in slide-in-from-bottom-4 duration-500 ease-out">
-                                    <div className="text-xs font-semibold uppercase tracking-widest text-lime-300/90">INTRO</div>
-
-                                    <h2 className="mt-2 text-3xl font-bold">TITLE</h2>
-
-                                    <p className="mt-3 text-white/70">
-                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, optio necessitatibus!
-                                        Reprehenderit odit possimus natus.
-                                    </p>
-
-                                    <div className="mt-6 text-xs text-white/50">Scroll ต่อเพื่อเปลี่ยน Scene →</div>
+                                    <div className="flex justify-center items-center gap-2">
+                                        {storyData.map((_, i) => (
+                                            <span
+                                                key={i}
+                                                className={`h-2 rounded-full transition-all duration-300 ${
+                                                    scene === i ? "bg-[#13bf50] w-6" : "bg-white/20 w-2"
+                                                }`}
+                                            />
+                                        ))}
+                                    </div>
                                 </div>
                             </div>
-                            <div className="story-step h-[120vh] flex items-center">
-                                <div className="rounded-3xl animate-in fade-in slide-in-from-bottom-4 duration-500 ease-out">
-                                    <div className="text-xs font-semibold uppercase tracking-widest text-lime-300/90">INTRO</div>
 
-                                    <h2 className="mt-2 text-3xl font-bold">TITLE</h2>
+                            {/* STORY TEXT - changes based on scroll */}
+                            <div className="flex items-center">
+                                <AnimatePresence mode="wait">
+                                    {scene !== null && (
+                                        <motion.div
+                                            key={scene}
+                                            initial={{ opacity: 0, y: 20 }}
+                                            animate={{ opacity: 1, y: 0 }}
+                                            exit={{ opacity: 0, y: -20 }}
+                                            transition={{ duration: 0.3, ease: "easeOut" }}
+                                            className="rounded-3xl"
+                                        >
+                                            <div className="text-xs font-semibold uppercase tracking-widest text-lime-300/90">
+                                                {storyData[scene].tag}
+                                            </div>
 
-                                    <p className="mt-3 text-white/70">
-                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, optio necessitatibus!
-                                        Reprehenderit odit possimus natus.
-                                    </p>
+                                            <h2 className="mt-2 text-3xl font-bold">{storyData[scene].title}</h2>
 
-                                    <div className="mt-6 text-xs text-white/50">Scroll ต่อเพื่อเปลี่ยน Scene →</div>
-                                </div>
-                            </div>
-                            <div className="story-step h-[120vh] flex items-center">
-                                <div className="rounded-3xl animate-in fade-in slide-in-from-bottom-4 duration-500 ease-out">
-                                    <div className="text-xs font-semibold uppercase tracking-widest text-lime-300/90">INTRO</div>
+                                            <p className="mt-3 text-white/70">{storyData[scene].description}</p>
 
-                                    <h2 className="mt-2 text-3xl font-bold">TITLE</h2>
-
-                                    <p className="mt-3 text-white/70">
-                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, optio necessitatibus!
-                                        Reprehenderit odit possimus natus.
-                                    </p>
-
-                                    <div className="mt-6 text-xs text-white/50">Scroll ต่อเพื่อเปลี่ยน Scene →</div>
-                                </div>
+                                            <div className="mt-6 text-xs text-white/50">Scroll ต่อเพื่อเปลี่ยน Scene →</div>
+                                        </motion.div>
+                                    )}
+                                </AnimatePresence>
                             </div>
                         </div>
                     </div>
