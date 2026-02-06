@@ -77,7 +77,7 @@ const ProvinceModalComponent = forwardRef<MapRef>(({}, mapRef) => {
         let allPrice: PriceType[] = [];
 
         for (const item of cropsData) {
-            const getPrice = await Axios.get(`http://mu2f.dev/price-by-crop?crop=${item.name}`);
+            const getPrice = await Axios.get(`https://mu2f.dev/price-by-crop?crop=${item.name}`);
             const priceData = getPrice.data.data;
             allPrice = [...allPrice, ...priceData];
         }

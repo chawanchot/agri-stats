@@ -82,7 +82,7 @@ const MainMap = forwardRef<MapRef, PropsType>(({ isLandingPage = false }, mapRef
             let allLocation: LocationType[] = [];
             let allPopup: PopupStatusType = {};
 
-            const getPrice = await Axios.get(`http://mu2f.dev/price-by-crop?crop=${menu_selected.crop}`);
+            const getPrice = await Axios.get(`https://mu2f.dev/price-by-crop?crop=${menu_selected.crop}`);
             const priceData = getPrice.data.data;
             if (!priceData.length) {
                 messageApi.open({
