@@ -16,7 +16,7 @@ import { fnExitMainChart, fnFetchCropCompareData } from "@utils/fetchCrops";
 gsap.registerPlugin(ScrollTrigger);
 
 function Model() {
-    const gltf = useGLTF("/models/stylized_mangrove_greenhouse.glb");
+    const gltf = useGLTF(`${import.meta.env.BASE_URL}/models/stylized_mangrove_greenhouse.glb`);
     return (
         <Float speed={1.4} rotationIntensity={1.2} floatIntensity={0.6}>
             <primitive object={gltf.scene} scale={0.1} position={[0, 0, 0]} />
@@ -24,7 +24,7 @@ function Model() {
     );
 }
 
-useGLTF.preload("/models/stylized_mangrove_greenhouse.glb");
+useGLTF.preload(`${import.meta.env.BASE_URL}/models/stylized_mangrove_greenhouse.glb`);
 
 const storyData = [
     {
