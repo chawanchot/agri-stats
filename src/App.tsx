@@ -6,8 +6,7 @@ import "./App.css";
 const antTheme = {
     components: {
         Cascader: {
-            optionSelectedBg: "#ecfdf5",
-            controlItemBgHover: "#f0fdf4",
+            optionSelectedBg: "#10b981",
         },
         Segmented: {
             itemHoverColor: "#94A3B8",

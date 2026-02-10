@@ -16,10 +16,11 @@ const MapControlComponent = forwardRef<MapRef>(({}, mapRef) => {
     const cropCompareSelected = useAppSelector((state) => state.control.menu);
     const cropYearList: any = useAppSelector((state) => state.crop.cropYearList);
     const menu_selected = useAppSelector((state) => state.control.menu);
-    const [mobile_menu, setMobileMenu] = useState<boolean>(false);
 
+    const [mobile_menu, setMobileMenu] = useState<boolean>(false);
     const [layerOpen, setLayerOpen] = useState<boolean>(false);
     const [compareOptions, setCompareOptions] = useState<OptionType[] | []>([]);
+    const [show_menu, setShowMenu] = useState<boolean>(false);
 
     const cascaderValue = useMemo(() => {
         if (menu_selected?.crop && menu_selected?.mode) {
@@ -102,24 +103,31 @@ const MapControlComponent = forwardRef<MapRef>(({}, mapRef) => {
         }
     };
 
+    useEffect(() => {
+        setTimeout(() => {
+            setShowMenu(true);
+        }, 2000);
+    }, []);
+
+    if (!show_menu) return null;
+
     return (
         <AnimatePresence>
             {!isModalOpen && (
-                <motion.div
-                    initial={{ x: -100, opacity: 0 }}
-                    animate={{ x: 0, opacity: 1 }}
-                    exit={{ x: -100, opacity: 0 }}
-                    transition={{ duration: 0.3 }}
-                >
+                <div>
                     {!mobile_menu && (
                         <button
                             onClick={() => setMobileMenu(!mobile_menu)}
-                            className="absolute top-2 md:top-5 left-2 md:left-4 z-10 w-11 h-11 rounded-xl flex items-center justify-center cursor-pointer bg-[#1e293b] text-white"
+                            className="absolute top-2 md:top-5 left-2 md:left-4 z-10 w-11 h-11 rounded-xl flex md:hidden items-center justify-center cursor-pointer bg-[#1e293b] text-white"
                         >
                             <HiMenuAlt1 className="text-lg" />
                         </button>
                     )}
-                    <div
+                    <motion.div
+                        initial={{ x: -100, opacity: 0 }}
+                        animate={{ x: 0, opacity: 1 }}
+                        exit={{ x: -100, opacity: 0 }}
+                        transition={{ duration: 0.3 }}
                         className={`absolute top-2 md:top-5 left-2 md:left-4 z-10 w-64 p-4 rounded-2xl bg-[#131b2d] ${mobile_menu ? "flex" : "hidden md:flex"}`}
                     >
                         <div className="flex flex-col gap-2 relative">
@@ -143,7 +151,7 @@ const MapControlComponent = forwardRef<MapRef>(({}, mapRef) => {
                                         content: "text-white! py-1",
                                         suffix: "text-white!",
                                         placeholder: "text-white!",
-                                        popup: { root: "bg-[#1e293b]!", listItem: "text-white hover:bg-[#131b2d]!" },
+                                        popup: { root: "bg-[#1e293b]!", listItem: "text-white hover:bg-[#10b981]!" },
                                     }}
                                 />
                             </div>
@@ -170,7 +178,7 @@ const MapControlComponent = forwardRef<MapRef>(({}, mapRef) => {
                                 </div>
                             )}
                         </div>
-                    </div>
+                    </motion.div>
 
                     {/* Zoom | Layer Control */}
                     <motion.div
@@ -234,7 +242,7 @@ const MapControlComponent = forwardRef<MapRef>(({}, mapRef) => {
                             )}
                         </AnimatePresence>
                     </motion.div>
-                </motion.div>
+                </div>
             )}
         </AnimatePresence>
     );

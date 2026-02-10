@@ -51,7 +51,7 @@ function MainChartComponent() {
                     animate={{ x: 0, opacity: 1 }}
                     exit={{ x: 100, opacity: 0 }}
                     transition={{ duration: 0.3 }}
-                    className="absolute right-2 md:right-4 top-2 md:top-5 h-[90%] z-10 w-80 rounded-xl overflow-hidden flex flex-col bg-[#131b2e] shadow-2xl"
+                    className="absolute right-2 md:right-4 top-2 md:top-5 h-[94%] z-10 w-80 rounded-xl overflow-hidden flex flex-col bg-[#131b2e] shadow-2xl"
                 >
                     <div className="px-5 py-4 flex justify-between items-center">
                         <div>
@@ -69,30 +69,33 @@ function MainChartComponent() {
                     </div>
 
                     <div className="flex-1 overflow-y-auto">
-                        {chartData.map((item, index) => (
-                            <div
-                                key={index}
-                                className="px-4 py-3 border-t border-[#1e293b] hover:bg-[#1e293b] transition-colors cursor-pointer"
-                            >
-                                {/* province text value */}
-                                <div className="flex items-center justify-between mb-2">
-                                    <span className="text-sm text-white">{item.province}</span>
-                                    <span className="text-sm font-medium text-teal-400">
-                                        {item.value.toLocaleString()} {unit}
-                                    </span>
-                                </div>
+                        {chartData.map((item, index) => {
+                            if (item.value > 0)
+                                return (
+                                    <div
+                                        key={index}
+                                        className="px-4 py-3 border-t border-[#1e293b] hover:bg-[#1e293b] transition-colors cursor-pointer"
+                                    >
+                                        {/* province text value */}
+                                        <div className="flex items-center justify-between mb-2">
+                                            <span className="text-sm text-white">{item.province}</span>
+                                            <span className="text-sm font-medium text-teal-400">
+                                                {item.value.toLocaleString()} {unit}
+                                            </span>
+                                        </div>
 
-                                {/* value chart bar */}
-                                <div className="w-full h-6 bg-[#1e293b] rounded-lg overflow-hidden">
-                                    <motion.div
-                                        initial={{ width: 0 }}
-                                        animate={{ width: `${(item.value / maxValue) * 100}%` }}
-                                        transition={{ duration: 0.5, delay: index * 0.03 }}
-                                        className="h-full bg-[#10B981] rounded-lg"
-                                    />
-                                </div>
-                            </div>
-                        ))}
+                                        {/* value chart bar */}
+                                        <div className="w-full h-6 bg-[#1e293b] rounded-lg overflow-hidden">
+                                            <motion.div
+                                                initial={{ width: 0 }}
+                                                animate={{ width: `${(item.value / maxValue) * 100}%` }}
+                                                transition={{ duration: 0.5, delay: index * 0.03 }}
+                                                className="h-full bg-[#10B981] rounded-lg"
+                                            />
+                                        </div>
+                                    </div>
+                                );
+                        })}
                     </div>
                 </motion.div>
             )}

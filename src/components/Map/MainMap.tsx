@@ -3,17 +3,17 @@ import ProvinceLayer from "@components/Map/ProvinceLayer";
 import { useAppDispatch, useAppSelector } from "@store/hook";
 import { setMainChartFilter, setProvince, setZoom } from "@store/slice/controlSlice";
 import { forwardRef, useEffect, useState } from "react";
-import Map, { Marker, Popup, type MapRef, type MarkerEvent } from "react-map-gl/maplibre";
+import Map, { Marker, type MapRef, type MarkerEvent } from "react-map-gl/maplibre";
 import "maplibre-gl/dist/maplibre-gl.css";
 import ProvincesData from "@assets/data/provinces.json";
 import type { FeatureCollection } from "geojson";
-import SoilSource from "@components/Map/SoilLayer";
+import SoilLayer from "@components/Map/SoilLayer";
 import CropCompareLayer from "@components/Map/CropCompareLayer";
-import { message, Tag } from "antd";
+import { message, Spin, Tag } from "antd";
 import Axios from "axios";
 import type { LocationType, PopupStatusType } from "types";
-import { TbClockCheck } from "react-icons/tb";
-import dayjs from "dayjs";
+import { LoadingOutlined } from "@ant-design/icons";
+import PricePopup from "@components/PricePopup";
 
 const ProvincesGeoJson = ProvincesData as FeatureCollection;
 const MAPTILER_KEY = import.meta.env.VITE_MAPTILER_KEY;
@@ -25,7 +25,7 @@ type PropsType = {
 
 const MainMap = forwardRef<MapRef, PropsType>(({ isLandingPage = false }, mapRef) => {
     const dispatch = useAppDispatch();
-    const isModalOpen = useAppSelector((state) => state.control.modal);
+    const is_modal_open = useAppSelector((state) => state.control.modal);
     const zoom = useAppSelector((state) => state.control.zoom);
     const menu_selected = useAppSelector((state) => state.control.menu);
     const baseMap = useAppSelector((state) => state.control.baseMap);
@@ -37,31 +37,34 @@ const MainMap = forwardRef<MapRef, PropsType>(({ isLandingPage = false }, mapRef
     const [soilData, setSoilData] = useState<FeatureCollection | null>(null);
     const [locationData, setLocationData] = useState<LocationType[] | []>([]);
     const [popupStatus, setPopupStatus] = useState<any>(null);
+    const [price_loading, setPriceLoading] = useState<boolean>(false);
 
     const onProvinceClick = async (event: any) => {
-        const feature = event.features && event.features[0];
+        if (menu_selected.mode !== "ราคา") {
+            const feature = event.features && event.features[0];
 
-        if (feature && feature.properties && !isModalOpen && mapRef && typeof mapRef !== "function" && mapRef.current) {
-            const { pro_th, pro_en, province_lat, province_lon } = feature.properties;
+            if (feature && feature.properties && !is_modal_open && mapRef && typeof mapRef !== "function" && mapRef.current) {
+                const { pro_th, pro_en, province_lat, province_lon } = feature.properties;
 
-            mapRef.current?.flyTo({
-                center: [province_lon, province_lat],
-                zoom: 8,
-                duration: 2000,
-                offset: [-300, 0],
-                essential: true,
-            });
+                mapRef.current?.flyTo({
+                    center: [province_lon, province_lat],
+                    zoom: 8,
+                    duration: 2000,
+                    offset: [-300, 0],
+                    essential: true,
+                });
 
-            try {
-                const soilName = pro_en.replaceAll(" ", "").toLowerCase();
-                const data = await import(`../../assets/data/soils/${soilName}.json`);
-                setSoilData(data.default);
-            } catch (error) {
-                console.log(error);
-                setSoilData(null);
+                try {
+                    const soilName = pro_en.replaceAll(" ", "").toLowerCase();
+                    const data = await import(`../../assets/data/soils/${soilName}.json`);
+                    setSoilData(data.default);
+                } catch (error) {
+                    console.log(error);
+                    setSoilData(null);
+                }
+
+                dispatch(setProvince(pro_th));
             }
-
-            dispatch(setProvince(pro_th));
         }
     };
 
@@ -79,6 +82,8 @@ const MainMap = forwardRef<MapRef, PropsType>(({ isLandingPage = false }, mapRef
 
     const fetchCropPrice = async () => {
         try {
+            setPriceLoading(true);
+
             let allLocation: LocationType[] = [];
             let allPopup: PopupStatusType = {};
 
@@ -126,14 +131,20 @@ const MainMap = forwardRef<MapRef, PropsType>(({ isLandingPage = false }, mapRef
                 }
             }
 
-            allLocation.map((item: LocationType) => {
-                allPopup[item.name] = false;
+            allLocation.map((item: LocationType, index: number) => {
+                if (index === 0 && isLandingPage) {
+                    allPopup[item.name] = true;
+                } else {
+                    allPopup[item.name] = false;
+                }
             });
 
             setPopupStatus(allPopup);
             setLocationData(allLocation);
         } catch (error) {
             console.log(error);
+        } finally {
+            setPriceLoading(false);
         }
     };
 
@@ -174,7 +185,6 @@ const MainMap = forwardRef<MapRef, PropsType>(({ isLandingPage = false }, mapRef
                     essential: true,
                 });
 
-                // รอ fly จบแล้วสลับ Projection และกำหนด MaxBounds
                 map.once("moveend", () => {
                     map.setProjection({ type: "mercator" });
                     map.setMaxBounds([82.28, 4.77, 119.53, 21.32]);
@@ -186,6 +196,9 @@ const MainMap = forwardRef<MapRef, PropsType>(({ isLandingPage = false }, mapRef
     return (
         <>
             {contextHolder}
+            {price_loading && !isLandingPage && (
+                <Spin size="large" indicator={<LoadingOutlined className="text-[#0f172a]!" spin />} fullscreen />
+            )}
             <Map
                 initialViewState={{
                     longitude: -100,
@@ -194,16 +207,17 @@ const MainMap = forwardRef<MapRef, PropsType>(({ isLandingPage = false }, mapRef
                 }}
                 mapStyle={`https://api.maptiler.com/maps/${baseMap}/style.json?key=${MAPTILER_KEY}`}
                 ref={mapRef}
-                dragPan={!isModalOpen}
-                scrollZoom={!isModalOpen}
+                dragPan={!is_modal_open}
+                scrollZoom={!is_modal_open}
                 onZoom={(e) => dispatch(setZoom(e.viewState.zoom))}
                 onClick={onProvinceClick}
                 onIdle={onIdleHandle}
                 attributionControl={false}
+                doubleClickZoom={false}
                 onLoad={() => applyLandingMode(isLandingPage)}
                 projection={{ type: "globe" }}
                 onMouseMove={(e) => {
-                    if (e.features && e.features.length > 0) {
+                    if (e.features && e.features.length > 0 && menu_selected.mode !== "ราคา") {
                         const provinceFeature = e.features.find((feature) => feature.layer?.id === "province-hover-fills");
                         const soilFeature = e.features.find((feature) => feature.layer?.id === "soil-fill");
 
@@ -246,7 +260,7 @@ const MainMap = forwardRef<MapRef, PropsType>(({ isLandingPage = false }, mapRef
             >
                 <ProvinceLayer data={ProvincesGeoJson} hoverData={hoverInfo} />
 
-                {zoom >= 8 && soilData && <SoilSource data={soilData} hoverData={hoverSoil} />}
+                {zoom >= 8 && soilData && is_modal_open && <SoilLayer data={soilData} hoverData={hoverSoil} />}
 
                 {menu_selected.crop && menu_selected.mode === "ผลผลิต" && (
                     <CropCompareLayer hoverData={hoverCompare} type={menu_selected.type} />
@@ -272,36 +286,7 @@ const MainMap = forwardRef<MapRef, PropsType>(({ isLandingPage = false }, mapRef
                                         {item.productList[0].price} ฿
                                     </Tag>
                                 </Marker>
-                                {popupStatus && popupStatus[item.name] && (
-                                    <Popup
-                                        latitude={item.location.lat}
-                                        longitude={item.location.lng}
-                                        closeButton={false}
-                                        offset={15}
-                                    >
-                                        <div className="flex flex-col items-center justify-center overflow-hidden">
-                                            <div className="font-bold text-sm text-[#52796F]">{item.name}</div>
-                                            <div className="flex flex-col mt-2 w-full">
-                                                {item.productList.map((product, index) => (
-                                                    <div className="flex flex-col">
-                                                        <div className="text-xs" key={index}>
-                                                            {product.name}{" "}
-                                                            <span className="font-bold">
-                                                                {product.price} {product.unit}
-                                                            </span>
-                                                        </div>
-                                                    </div>
-                                                ))}
-                                            </div>
-                                            <div className="flex justify-center items-center gap-1 w-full border-t border-t-[#E7E3E3] pt-2 mt-4 text-[#9CA3AF]">
-                                                <TbClockCheck />
-                                                <span>
-                                                    ข้อมูลล่าสุด {dayjs(item.productList[0].data_date).format("DD-MM-YYYY")}
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </Popup>
-                                )}
+                                {popupStatus && popupStatus[item.name] && <PricePopup data={item} />}
                             </div>
                         );
                     })}

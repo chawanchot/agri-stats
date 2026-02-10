@@ -1,4 +1,4 @@
-import { Suspense, useEffect, useLayoutEffect, useRef, useState } from "react";
+import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { Bounds, Environment, Float, useGLTF } from "@react-three/drei";
 import { motion, AnimatePresence } from "framer-motion";
@@ -9,9 +9,10 @@ import Lenis from "lenis";
 import HomePage from "./HomePage";
 import type { MapRef } from "react-map-gl/maplibre";
 import { useNavigate } from "react-router-dom";
-import { FaArrowDown } from "react-icons/fa6";
+import { FaArrowDown, FaArrowRightLong } from "react-icons/fa6";
 import { useAppDispatch } from "@store/hook";
 import { fnExitMainChart, fnFetchCropCompareData } from "@utils/fetchCrops";
+import { setMenuSelected } from "@store/slice/controlSlice";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -29,23 +30,20 @@ useGLTF.preload(`${import.meta.env.BASE_URL}/models/stylized_mangrove_greenhouse
 const storyData = [
     {
         tag: "FEATURE",
-        title: "ภาพรวมระบบ",
-        description:
-            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, optio necessitatibus! Reprehenderit odit possimus natus.",
+        title: "แสดงแผนที่ประเทศไทย",
+        description: "ซูม/เลื่อนเพื่อดูภาพรวมทั้งประเทศ พร้อมเลเยอร์ประกอบเพื่อสำรวจข้อมูลเชิงพื้นที่ได้อย่างรวดเร็ว",
     },
     {
         tag: "FEATURE",
-        title: "ข้อมูลพืชผล",
-        description:
-            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, optio necessitatibus! Reprehenderit odit possimus natus.",
+        title: "เปรียบเทียบผลผลิตรายจังหวัด",
+        description: "เลือกพืชและปี แล้วดูการกระจายของผลผลิต (เช่น กก./ไร่) บนแผนที่ เพื่อให้เห็นจังหวัดเด่น ๆ ทันที",
     },
     {
         tag: "FEATURE",
-        title: "สำรวจแผนที่",
-        description:
-            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, optio necessitatibus! Reprehenderit odit possimus natus.",
+        title: "ตรวจสอบราคารับซื้อผลผลิต",
+        description: "ดูจุดรับซื้อ/ราคาตามพื้นที่ ช่วยประเมินแนวโน้มและวางแผนได้ดีขึ้น",
     },
-];
+] as const;
 
 const LandingPage = () => {
     const navigate = useNavigate();
@@ -55,6 +53,8 @@ const LandingPage = () => {
     const modelWrapRef = useRef<HTMLDivElement | null>(null);
     const headerWrapRef = useRef<HTMLDivElement | null>(null);
     const [scene, setScene] = useState<number | null>(null);
+
+    const stepCount = storyData.length;
 
     const fnFlyToThai = () => {
         if (mapRef) {
@@ -67,6 +67,19 @@ const LandingPage = () => {
         if (mapRef) {
             mapRef.current?.stop();
             mapRef.current?.flyTo({ center: [-100, 40], zoom: 1, duration: 1500, essential: true });
+        }
+    };
+
+    const applySceneAction = (scene: number | null) => {
+        fnExitMainChart(dispatch);
+        dispatch(setMenuSelected({ crop: "", mode: "", year: "" }));
+
+        if (scene === 1) {
+            fnFetchCropCompareData("ข้าวโพดเลี้ยงสัตว์", "2566", dispatch);
+        }
+
+        if (scene === 2) {
+            dispatch(setMenuSelected({ crop: "ข้าวโพดเลี้ยงสัตว์", mode: "ราคา" }));
         }
     };
 
@@ -106,11 +119,9 @@ const LandingPage = () => {
                     setScene(null);
                 },
                 onUpdate: (self) => {
-                    const progress = self.progress;
-                    const stepCount = storyData.length;
+                    const p = self.progress;
 
-                    const newScene = Math.min(Math.floor(progress * stepCount), stepCount - 1);
-
+                    const newScene = Math.min(Math.floor(p * stepCount), stepCount - 1);
                     setScene((prev) => (prev !== newScene ? newScene : prev));
                 },
             });
@@ -147,41 +158,46 @@ const LandingPage = () => {
             gsap.ticker.remove(tick);
             lenis.destroy();
         };
-    }, []);
+    }, [stepCount]);
 
     useEffect(() => {
-        if (scene === 1) {
-            fnFetchCropCompareData("ข้าวโพดเลี้ยงสัตว์", "2566", dispatch);
-        } else {
-            fnExitMainChart(dispatch);
-        }
+        applySceneAction(scene);
     }, [scene]);
 
     return (
         <div ref={rootRef} className="bg-slate-950 text-white w-full">
             <div className="container mx-auto px-50 overflow-hidden">
                 <section className="w-full h-screen py-20 relative">
+                    <div className="absolute top-6 right-6 z-10 flex items-center gap-2">
+                        <button
+                            onClick={() => navigate("/home")}
+                            className="px-4 py-2 rounded-full bg-white/10 hover:bg-white/15 text-sm font-semibold cursor-pointer"
+                        >
+                            ข้ามไปหน้าแผนที่
+                        </button>
+                    </div>
+
                     <div ref={headerWrapRef} className="flex flex-col justify-center h-full">
                         <h1 className="text-7xl font-black">
                             AGRICULTURAL
                             <span className="block text-[#13bf50]">STATISTICS</span>
                         </h1>
-                        <p className="mt-4 text-white/70">ระบบแสดงข้อมูลสถิติทางการเกษตรผ่านเทคโนโลยีแผนที่</p>
+                        <p className="mt-4 text-white/70 w-1/2">
+                            ระบบแสดงข้อมูลสถิติทางการเกษตรผ่านเทคโนโลยีแผนที่ สำรวจผลผลิต เปรียบเทียบพื้นที่ และดูราคาแบบภาพรวม
+                        </p>
                     </div>
 
                     <div
                         ref={modelWrapRef}
-                        className="absolute top-[45%] left-[80%] transform -translate-x-1/2 -translate-y-1/2 h-200 w-200"
+                        className="absolute top-[43%] left-[80%] transform -translate-x-1/2 -translate-y-1/2 h-200 w-200"
                     >
                         <Canvas camera={{ position: [7.6, 1.8, 3.2], fov: 45 }}>
                             <ambientLight intensity={0.6} />
                             <directionalLight position={[3, 4, 2]} intensity={1.2} />
-                            <Suspense fallback={null}>
-                                <Environment preset="city" />
-                                <Bounds fit margin={1.2}>
-                                    <Model />
-                                </Bounds>
-                            </Suspense>
+                            <Environment preset="city" />
+                            <Bounds fit margin={1.2}>
+                                <Model />
+                            </Bounds>
                         </Canvas>
                     </div>
                     <div className="text-[#81838B] text-xs tracking-[4px] flex flex-col items-center gap-2 animate-bounce">
@@ -191,12 +207,12 @@ const LandingPage = () => {
                 </section>
 
                 {/* SCROLLY LAYOUT */}
-                <section className="scrolly h-[500vh]">
+                <section className="scrolly h-[750vh]">
                     <div className="pinned-content h-screen flex items-center">
                         <div className="grid grid-cols-2 gap-8 w-full px-6">
                             <div className="stage">
                                 <div className="flex flex-col gap-4">
-                                    <div className="relative">
+                                    <div className="relative flex items-center justify-between">
                                         <div className="text-2xl font-bold">ภาพรวมระบบ</div>
                                     </div>
 
@@ -228,14 +244,22 @@ const LandingPage = () => {
                                             transition={{ duration: 0.3, ease: "easeOut" }}
                                             className="rounded-3xl"
                                         >
-                                            <div className="text-xs font-semibold uppercase tracking-widest text-lime-300/90">
-                                                {storyData[scene].tag}
+                                            <div className="flex items-center gap-3">
+                                                <div>
+                                                    <div className="text-xs font-semibold uppercase tracking-widest text-lime-300/90">
+                                                        {storyData[scene].tag}
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <h2 className="mt-2 text-3xl font-bold">{storyData[scene].title}</h2>
+
+                                            <h2 className="mt-3 text-3xl font-bold">{storyData[scene].title}</h2>
                                             <p className="mt-3 text-white/70">{storyData[scene].description}</p>
-                                            <div className="text-[#81838B] text-xs flex items-center gap-2 mt-6">
-                                                <div>SCROLL DOWN</div>
-                                                <FaArrowDown />
+
+                                            <div className="mt-8 flex items-center gap-3">
+                                                <div className="text-[#81838B] text-xs flex items-center gap-2">
+                                                    <div>SCROLL DOWN</div>
+                                                    <FaArrowDown />
+                                                </div>
                                             </div>
                                         </motion.div>
                                     )}
@@ -244,13 +268,18 @@ const LandingPage = () => {
                         </div>
                     </div>
                 </section>
-                <div className="flex justify-center py-20">
+
+                <div className="flex flex-col items-center gap-2 justify-center py-20">
                     <button
                         onClick={() => navigate("/home")}
-                        className="px-10 py-5 rounded-lg font-semibold cursor-pointer bg-[#13bf50] hover:scale-105 duration-200"
+                        className="flex justify-center items-center gap-3 py-4 w-56 rounded-full font-semibold cursor-pointer bg-[#13bf50] hover:scale-105 duration-300"
                     >
                         เข้าสู่เว็บไซต์
+                        <span>
+                            <FaArrowRightLong className="text-lg" />
+                        </span>
                     </button>
+                    <div className="text-xs text-white/50">พร้อมใช้งานหน้าหลักและเมนูเปรียบเทียบ</div>
                 </div>
             </div>
         </div>

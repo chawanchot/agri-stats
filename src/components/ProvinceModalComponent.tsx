@@ -91,7 +91,7 @@ const ProvinceModalComponent = forwardRef<MapRef>(({}, mapRef) => {
             return {
                 title: (
                     <span className="flex flex-col md:flex-row items-start md:items-center justify-between">
-                        <div className="font-medium text-xs md:text-base text-[#F1F5F9]">{crop.name}</div>
+                        <div className="font-medium text-xs md:text-sm text-[#F1F5F9]">{crop.name}</div>
                         {price && (
                             <Tag variant="filled" className="drop-shadow-lg font-normal text-[10px]! md:text-xs! rounded-lg! bg-[#0D3033]! text-[#34D399]!">
                                 {price.product_name} -{" "}
@@ -107,10 +107,10 @@ const ProvinceModalComponent = forwardRef<MapRef>(({}, mapRef) => {
                     title: (
                         <div className="flex flex-col text-xs py-1.5 px-2 rounded-lg hover:bg-slate-50 transition-colors">
                             <span className="text-slate-500">ปี {cropDetail.year}</span>
-                            <span className="font-medium text-slate-700">
+                            <span className="font-medium text-[#94a3b8]">
                                 ผลผลิต:{" "}
                                 <span className="text-emerald-600 font-bold">{cropDetail.yield_per_rai.toLocaleString()}</span>{" "}
-                                <span className="text-slate-400">กก./ไร่</span>
+                                <span className="text-[#94a3b8]">กก./ไร่</span>
                             </span>
                         </div>
                     ),
