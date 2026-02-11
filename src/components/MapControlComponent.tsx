@@ -1,7 +1,7 @@
 import { useAppDispatch, useAppSelector } from "@store/hook";
 import { setBaseMap, setMenuSelected } from "@store/slice/controlSlice";
 import { setCropCompareData, setCropMainChart } from "@store/slice/cropSlice";
-import { Cascader, Segmented, type CascaderProps } from "antd";
+import { Cascader, type CascaderProps } from "antd";
 import { forwardRef, useEffect, useMemo, useState } from "react";
 import { FiLayers, FiPlus, FiMinus, FiX } from "react-icons/fi";
 import { HiMenuAlt1 } from "react-icons/hi";
@@ -9,11 +9,11 @@ import type { OptionType } from "types";
 import type { MapRef } from "react-map-gl/maplibre";
 import { AnimatePresence, motion } from "framer-motion";
 import { fnFetchCropCompareData } from "@utils/fetchCrops";
+import CompareModeComponent from "./CompareModeComponent";
 
 const MapControlComponent = forwardRef<MapRef>(({}, mapRef) => {
     const dispatch = useAppDispatch();
     const isModalOpen = useAppSelector((state) => state.control.modal);
-    const cropCompareSelected = useAppSelector((state) => state.control.menu);
     const cropYearList: any = useAppSelector((state) => state.crop.cropYearList);
     const menu_selected = useAppSelector((state) => state.control.menu);
 
@@ -155,28 +155,7 @@ const MapControlComponent = forwardRef<MapRef>(({}, mapRef) => {
                                     }}
                                 />
                             </div>
-                            {menu_selected.mode === "ผลผลิต" && (
-                                <div className="flex flex-col gap-2">
-                                    <label className="text-xs text-[#94a3b8]">ประเภทข้อมูล</label>
-                                    <Segmented
-                                        size="middle"
-                                        value={cropCompareSelected.type}
-                                        options={["ผลผลิตต่อไร่", "ผลผลิตทั้งหมด"]}
-                                        onChange={(value) =>
-                                            dispatch(
-                                                setMenuSelected({
-                                                    type: value,
-                                                })
-                                            )
-                                        }
-                                        block
-                                        className="[&_.ant-segmented-item-selected]:font-bold [&_.ant-segmented-item-selected]:drop-shadow-lg [&_.ant-segmented-item]:text-[#94a3b8]"
-                                        classNames={{
-                                            root: "rounded-xl! bg-[#1e293b]! drop-shadow py-1!",
-                                        }}
-                                    />
-                                </div>
-                            )}
+                            {menu_selected.mode === "ผลผลิต" && <CompareModeComponent />}
                         </div>
                     </motion.div>
 

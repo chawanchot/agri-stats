@@ -170,6 +170,7 @@ const LandingPage = () => {
             <div className="container mx-auto px-5 lg:px-50 overflow-hidden">
                 <section className="w-full h-screen py-0 lg:py-20 relative flex flex-col justify-center items-center lg:block">
                     <div className="absolute top-4 right-0 lg:right-6 z-10 flex items-center gap-2">
+                        <img src="" />
                         <button
                             onClick={() => navigate("/home")}
                             className="px-4 py-2 rounded-full bg-white/10 hover:bg-white/15 text-sm font-semibold cursor-pointer"
@@ -253,8 +254,12 @@ const LandingPage = () => {
                                                 </div>
                                             </div>
 
-                                            <h2 className="mt-1 lg:mt-3 text-2xl lg:text-3xl font-bold">{storyData[scene].title}</h2>
-                                            <p className="mt-1 lg:mt-3 text-xs lg:text-sm text-white/70">{storyData[scene].description}</p>
+                                            <h2 className="mt-1 lg:mt-3 text-2xl lg:text-3xl font-bold">
+                                                {storyData[scene].title}
+                                            </h2>
+                                            <p className="mt-1 lg:mt-3 text-xs lg:text-sm text-white/70">
+                                                {storyData[scene].description}
+                                            </p>
 
                                             <div className="mt-5 lg:mt-8 flex items-center gap-3">
                                                 <div className="text-[#81838B] text-xs flex items-center gap-2">

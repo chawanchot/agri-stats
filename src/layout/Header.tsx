@@ -1,13 +1,10 @@
 import { FcHighPriority } from "react-icons/fc";
-import { TbChartBar } from "react-icons/tb";
 
 const Header = () => {
     return (
-        <header className="bg-[#0f172a] text-white px-3 md:px-6 py-3 flex items-center justify-between">
-            <div className="flex items-center gap-3">
-                <div className="bg-[#10b981] p-2 rounded-lg hidden md:flex">
-                    <TbChartBar className="w-6 h-6 text-[#f1f5f9]" />
-                </div>
+        <header className="bg-[#0f172a] text-white px-3 md:px-6 h-16 flex items-center justify-between">
+            <div className="flex items-center gap-1 md:gap-2 h-full">
+                <img src="agri-logo.png" alt="logo" className="w-8 md:w-12" />
                 <div>
                     <div className="text-xs md:text-lg font-semibold tracking-wide">AGRICULTURAL STATISTICS</div>
                     <div className="text-xs text-gray-400">ข้อมูลสถิติทางการเกษตร</div>

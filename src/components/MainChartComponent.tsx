@@ -4,6 +4,7 @@ import type { CropDetailType } from "types";
 import { motion, AnimatePresence } from "framer-motion";
 import { FiX } from "react-icons/fi";
 import { fnExitMainChart } from "@utils/fetchCrops";
+import CompareModeComponent from "./CompareModeComponent";
 function MainChartComponent() {
     const [chartData, setChartData] = useState<{ province: string; value: number }[]>([]);
     const [maxValue, setMaxValue] = useState<number>(0);
@@ -51,46 +52,48 @@ function MainChartComponent() {
                     animate={{ x: 0, opacity: 1 }}
                     exit={{ x: 100, opacity: 0 }}
                     transition={{ duration: 0.3 }}
-                    className="absolute right-2 md:right-4 top-2 md:top-5 h-[94%] z-10 w-80 rounded-xl overflow-hidden flex flex-col bg-[#131b2e] shadow-2xl"
+                    className="absolute right-2 md:right-4 top-2 md:top-5 h-[50%] md:h-[94%] z-10 w-40 pb-2 md:w-80 rounded-xl overflow-hidden flex flex-col bg-[#131b2e] shadow-2xl"
                 >
-                    <div className="px-5 py-4 flex justify-between items-center">
+                    <div className="px-2 md:px-5 pt-4 pb-2 md:pb-4 flex justify-between items-center">
                         <div>
-                            <div className="text-base font-medium text-white">ผลผลิตรายจังหวัด</div>
-                            <div className="text-sm text-[#64748b] mt-0.5">
+                            <div className="text-xs md:text-base font-medium text-white">ผลผลิตรายจังหวัด</div>
+                            <div className="text-[10px] md:text-sm text-[#64748b] mt-0.5">
                                 {chartData.length} จังหวัด - {unit}
                             </div>
                         </div>
                         <button
                             onClick={() => fnExitMainChart(dispatch)}
-                            className="w-8 h-8 rounded-full bg-[#1e293b] flex items-center justify-center transition-all duration-200 cursor-pointer"
+                            className="w-5 h-5 md:w-8 md:h-8 rounded-full bg-[#1e293b] flex items-center justify-center transition-all duration-200 cursor-pointer"
                         >
-                            <FiX className="text-base text-[#94a3b8]" />
+                            <FiX className="text-base text-[#94a3b8] text-[10px] md:text-base" />
                         </button>
                     </div>
-
+                    <div className="px-2 md:px-4 pb-2 block md:hidden">
+                        <CompareModeComponent />
+                    </div>
                     <div className="flex-1 overflow-y-auto">
                         {chartData.map((item, index) => {
                             if (item.value > 0)
                                 return (
                                     <div
                                         key={index}
-                                        className="px-4 py-3 border-t border-[#1e293b] hover:bg-[#1e293b] transition-colors cursor-pointer"
+                                        className="px-2 md:px-4 py-1 md:py-3 border-t border-[#1e293b] hover:bg-[#1e293b] transition-colors cursor-pointer"
                                     >
                                         {/* province text value */}
                                         <div className="flex items-center justify-between mb-2">
-                                            <span className="text-sm text-white">{item.province}</span>
-                                            <span className="text-sm font-medium text-teal-400">
+                                            <span className="text-[10px] md:text-sm text-white">{item.province}</span>
+                                            <span className="text-[10px] md:text-sm font-medium text-teal-400">
                                                 {item.value.toLocaleString()} {unit}
                                             </span>
                                         </div>
 
                                         {/* value chart bar */}
-                                        <div className="w-full h-6 bg-[#1e293b] rounded-lg overflow-hidden">
+                                        <div className="w-full h-3 md:h-6 bg-[#1e293b] rounded md:rounded-lg overflow-hidden">
                                             <motion.div
                                                 initial={{ width: 0 }}
                                                 animate={{ width: `${(item.value / maxValue) * 100}%` }}
                                                 transition={{ duration: 0.5, delay: index * 0.03 }}
-                                                className="h-full bg-[#10B981] rounded-lg"
+                                                className="h-full bg-[#10B981] rounded md:rounded-lg"
                                             />
                                         </div>
                                     </div>
