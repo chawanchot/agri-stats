@@ -269,7 +269,7 @@ const MainMap = forwardRef<MapRef, PropsType>(({ isLandingPage = false }, mapRef
                 <ProvinceLabelsLayer data={ProvincesGeoJson} />
 
                 {menu_selected.mode === "ราคา" &&
-                    locationData.map((item: LocationType) => {
+                    locationData.map((item: LocationType, index: number) => {
                         return (
                             <div key={item.name}>
                                 <Marker
@@ -286,7 +286,7 @@ const MainMap = forwardRef<MapRef, PropsType>(({ isLandingPage = false }, mapRef
                                         {item.productList[0].price} ฿
                                     </Tag>
                                 </Marker>
-                                {popupStatus && popupStatus[item.name] && <PricePopup data={item} />}
+                                {popupStatus && popupStatus[item.name] && <PricePopup key={index} data={item} />}
                             </div>
                         );
                     })}

@@ -75,11 +75,13 @@ const LandingPage = () => {
         dispatch(setMenuSelected({ crop: "", mode: "", year: "" }));
 
         if (scene === 1) {
-            fnFetchCropCompareData("ข้าวโพดเลี้ยงสัตว์", "2566", dispatch);
+            fnFlyToThai();
+            fnFetchCropCompareData("ยางพารา", "2566", dispatch);
         }
 
         if (scene === 2) {
-            dispatch(setMenuSelected({ crop: "ข้าวโพดเลี้ยงสัตว์", mode: "ราคา" }));
+            dispatch(setMenuSelected({ crop: "ยางพารา", mode: "ราคา" }));
+            mapRef.current?.flyTo({ center: [101.43, 12.77], zoom: 8, duration: 1500, essential: true });
         }
     };
 
@@ -149,7 +151,6 @@ const LandingPage = () => {
                     scrub: 1,
                 },
             });
-
             ScrollTrigger.refresh();
         }, rootRef);
 
@@ -166,9 +167,9 @@ const LandingPage = () => {
 
     return (
         <div ref={rootRef} className="bg-slate-950 text-white w-full">
-            <div className="container mx-auto px-50 overflow-hidden">
-                <section className="w-full h-screen py-20 relative">
-                    <div className="absolute top-6 right-6 z-10 flex items-center gap-2">
+            <div className="container mx-auto px-5 lg:px-50 overflow-hidden">
+                <section className="w-full h-screen py-0 lg:py-20 relative flex flex-col justify-center items-center lg:block">
+                    <div className="absolute top-4 right-0 lg:right-6 z-10 flex items-center gap-2">
                         <button
                             onClick={() => navigate("/home")}
                             className="px-4 py-2 rounded-full bg-white/10 hover:bg-white/15 text-sm font-semibold cursor-pointer"
@@ -177,19 +178,19 @@ const LandingPage = () => {
                         </button>
                     </div>
 
-                    <div ref={headerWrapRef} className="flex flex-col justify-center h-full">
-                        <h1 className="text-7xl font-black">
+                    <div ref={headerWrapRef} className="flex flex-col justify-center lg:h-full">
+                        <h1 className="text-4xl md:text-7xl font-black">
                             AGRICULTURAL
                             <span className="block text-[#13bf50]">STATISTICS</span>
                         </h1>
-                        <p className="mt-4 text-white/70 w-1/2">
+                        <p className="mt-4 text-white/70 lg:w-1/2 text-xs md:text-sm">
                             ระบบแสดงข้อมูลสถิติทางการเกษตรผ่านเทคโนโลยีแผนที่ สำรวจผลผลิต เปรียบเทียบพื้นที่ และดูราคาแบบภาพรวม
                         </p>
                     </div>
 
                     <div
                         ref={modelWrapRef}
-                        className="absolute top-[43%] left-[80%] transform -translate-x-1/2 -translate-y-1/2 h-200 w-200"
+                        className="w-96 h-96 md:w-145 md:h-145 lg:h-200 lg:w-200 -mt-14 md:-mt-28 lg:mt-0 lg:absolute lg:top-[43%] lg:left-[80%] lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2"
                     >
                         <Canvas camera={{ position: [7.6, 1.8, 3.2], fov: 45 }}>
                             <ambientLight intensity={0.6} />
@@ -207,13 +208,13 @@ const LandingPage = () => {
                 </section>
 
                 {/* SCROLLY LAYOUT */}
-                <section className="scrolly h-[750vh]">
+                <section className="scrolly h-[400vh] lg:h-[600vh]">
                     <div className="pinned-content h-screen flex items-center">
-                        <div className="grid grid-cols-2 gap-8 w-full px-6">
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-8 w-full px-0 lg:px-6">
                             <div className="stage">
                                 <div className="flex flex-col gap-4">
                                     <div className="relative flex items-center justify-between">
-                                        <div className="text-2xl font-bold">ภาพรวมระบบ</div>
+                                        <div className="text-xl lg:text-2xl font-bold">ภาพรวมระบบ</div>
                                     </div>
 
                                     <div className="relative h-150 overflow-hidden rounded-2xl border border-white/10 bg-slate-900/30 pointer-events-none">
@@ -252,10 +253,10 @@ const LandingPage = () => {
                                                 </div>
                                             </div>
 
-                                            <h2 className="mt-3 text-3xl font-bold">{storyData[scene].title}</h2>
-                                            <p className="mt-3 text-white/70">{storyData[scene].description}</p>
+                                            <h2 className="mt-1 lg:mt-3 text-2xl lg:text-3xl font-bold">{storyData[scene].title}</h2>
+                                            <p className="mt-1 lg:mt-3 text-xs lg:text-sm text-white/70">{storyData[scene].description}</p>
 
-                                            <div className="mt-8 flex items-center gap-3">
+                                            <div className="mt-5 lg:mt-8 flex items-center gap-3">
                                                 <div className="text-[#81838B] text-xs flex items-center gap-2">
                                                     <div>SCROLL DOWN</div>
                                                     <FaArrowDown />
