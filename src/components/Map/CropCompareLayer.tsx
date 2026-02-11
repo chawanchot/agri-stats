@@ -70,17 +70,15 @@ const CropCompareLayer = ({ hoverData, type }: PropsType) => {
                 />
                 {hoverData && <ComparePopup data={hoverData} type={type} />}
             </Source>
-            <div className="absolute left-20 bottom-4 z-20 w-64 rounded-2xl bg-[#131b2d] px-4 py-3 text-white drop-shadow font-['Noto_Sans_Thai']">
-                <div className="flex items-center justify-between">
-                    <div className="text-sm font-semibold">ระดับ{type}</div>
-                </div>
-                <div className="text-[11px] text-white/60">คำนวณตามข้อมูลที่แสดงแบ่งเป็น 5 ระดับ</div>
-                <div className="mt-3 space-y-2">
+            <div className="absolute right-2 md:left-20 bottom-2 md:bottom-4 z-20 w-40 md:w-64 rounded-xl md:rounded-2xl bg-[#131b2d] px-3 md:px-4 py-2 md:py-3 text-white drop-shadow font-['Noto_Sans_Thai']">
+                <div className="text-[10px] md:text-sm font-semibold">ระดับ{type}</div>
+                <div className="text-[8px] md:text-[11px] text-white/60 -mt-1.5 md:mt-0">คำนวณตามข้อมูลที่แสดงแบ่งเป็น 5 ระดับ</div>
+                <div className="mt-1 md:mt-3 space-y-1 md:space-y-2">
                     {LEGEND.map((item) => (
-                        <div key={item.label} className="flex items-start gap-3">
-                            <span className="mt-0.5 h-4 w-4 rounded-sm" style={{ backgroundColor: item.color }} />
+                        <div key={item.label} className="flex items-center gap-1.5 md:gap-3">
+                            <span className="mt-0.5 h-2 w-2 md:h-4 md:w-4 rounded-sm" style={{ backgroundColor: item.color }} />
                             <div className="leading-tight">
-                                <div className="text-xs font-semibold">{item.label}</div>
+                                <div className="text-[8px] md:text-xs font-medium">{item.label}</div>
                             </div>
                         </div>
                     ))}

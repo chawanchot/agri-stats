@@ -93,7 +93,10 @@ const ProvinceModalComponent = forwardRef<MapRef>(({}, mapRef) => {
                     <span className="flex flex-col md:flex-row items-start md:items-center justify-between">
                         <div className="font-medium text-xs md:text-sm text-[#F1F5F9]">{crop.name}</div>
                         {price && (
-                            <Tag variant="filled" className="drop-shadow-lg font-normal text-[10px]! md:text-xs! rounded-lg! bg-[#0D3033]! text-[#34D399]!">
+                            <Tag
+                                variant="filled"
+                                className="drop-shadow-lg font-normal text-[10px]! md:text-xs! rounded-lg! bg-[#0D3033]! text-[#34D399]!"
+                            >
                                 {price.product_name} -{" "}
                                 <span className="font-bold">
                                     {price.day_price} {price.unit}
@@ -150,7 +153,7 @@ const ProvinceModalComponent = forwardRef<MapRef>(({}, mapRef) => {
                     animate={{ opacity: 1, x: 0, scale: 1 }}
                     exit={{ opacity: 0, x: 100, scale: 0.95 }}
                     transition={{ type: "spring", damping: 25, stiffness: 200 }}
-                    className="absolute md:top-1/2 md:right-[12%] md:-translate-y-1/2 z-50 w-[95%] md:w-130 max-h-[95%] rounded-2xl bg-[#131b2d] shadow-2xl overflow-hidden flex flex-col"
+                    className="absolute top-[49%] md:top-1/2 md:right-[12%] md:-translate-y-1/2 z-50 w-[95%] md:w-130 max-h-[50%] md:max-h-[95%] rounded-2xl bg-[#131b2d] shadow-2xl overflow-hidden flex flex-col"
                 >
                     <div className="px-5 py-4 bg-[#131b2d]">
                         <div className="flex items-center justify-between">

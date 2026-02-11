@@ -77,11 +77,17 @@ const LandingPage = () => {
         if (scene === 1) {
             fnFlyToThai();
             fnFetchCropCompareData("ยางพารา", "2566", dispatch);
+            dispatch(
+                setMenuSelected({
+                    crop: "ยางพารา",
+                    mode: "ผลผลิต",
+                    year: "2566",
+                })
+            );
         }
 
         if (scene === 2) {
             dispatch(setMenuSelected({ crop: "ยางพารา", mode: "ราคา" }));
-            mapRef.current?.flyTo({ center: [101.43, 12.77], zoom: 8, duration: 1500, essential: true });
         }
     };
 

@@ -23,6 +23,9 @@ function ModalChartComponent({ data }: PropsType) {
 
     const chartOptions: ApexOptions = {
         chart: {
+            zoom: {
+                enabled: false,
+            },
             toolbar: {
                 show: false,
             },

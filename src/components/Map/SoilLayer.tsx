@@ -50,18 +50,18 @@ const SoilLayer = ({ data, hoverData }: PropsType) => {
                 {hoverData && <SoilPopup data={hoverData} />}
             </Source>
 
-            <div className="absolute left-3 bottom-3 z-20 w-64 rounded-2xl bg-[#131b2d] px-4 py-3 text-white drop-shadow font-['Noto_Sans_Thai']">
+            <div className="absolute left-[53%] md:left-3 bottom-[80%] md:bottom-3 z-20 w-44 md:w-64 rounded-xl md:rounded-2xl bg-[#131b2d] px-3 md:px-4 py-2 md:py-3 text-white drop-shadow font-['Noto_Sans_Thai']">
                 <div className="flex items-center justify-between">
-                    <div className="text-sm font-semibold">ความเป็นกรด-ด่างของดิน (pH)</div>
+                    <div className="text-[10px] md:text-sm font-semibold">ความเป็นกรด-ด่างของดิน (pH)</div>
                 </div>
-                <div className="text-[11px] text-white/60">สีแต่ละระดับแสดงช่วงค่าเฉลี่ย pH ดินชั้นบน</div>
-                <div className="mt-3 space-y-2">
+                <div className="text-[8px] md:text-[11px] text-white/60 -mt-1.5 md:mt-0">สีแต่ละระดับแสดงช่วงค่าเฉลี่ย pH ดินชั้นบน</div>
+                <div className="mt-1 md:mt-3 space-y-1 md:space-y-2">
                     {PH_RANGES.map((item) => (
-                        <div key={item.label} className="flex items-start gap-3">
-                            <span className="mt-0.5 h-4 w-4 rounded-sm" style={{ backgroundColor: item.color }} />
+                        <div key={item.label} className="flex items-start gap-1.5 md:gap-3">
+                            <span className="mt-0.5 h-2 w-2 md:h-4 md:w-4 rounded-sm" style={{ backgroundColor: item.color }} />
                             <div className="leading-tight">
-                                <div className="text-xs font-semibold">{item.label}</div>
-                                <div className="text-[11px] text-white/70">{item.desc}</div>
+                                <div className="text-[8px] md:text-xs font-medium">{item.label}</div>
+                                <div className="text-[8px] md:text-xs font-medium text-white/70">{item.desc}</div>
                             </div>
                         </div>
                     ))}

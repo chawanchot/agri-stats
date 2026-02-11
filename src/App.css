@@ -10,3 +10,40 @@
     font-family: "Noto Sans Thai", sans-serif;
     filter: drop-shadow(1px 1px 5px #0000002b);
 }
+
+/* ===== กัน iOS zoom ===== */
+.no-ios-zoom .ant-select-content-value,
+.no-ios-zoom .ant-select-placeholder {
+    font-size: 16px !important;
+    transform-origin: left center;
+}
+
+/* ===== ทำให้ value + placeholder scale เท่ากัน ===== */
+.no-ios-zoom .ant-select-selection-item,
+.no-ios-zoom .ant-select-placeholder,
+.no-ios-zoom .ant-select-content-value {
+    transform-origin: left center;
+}
+
+/* mobile = 12px (12 / 16 = 0.75) */
+.no-ios-zoom .ant-select-selection-item,
+.no-ios-zoom .ant-select-placeholder,
+.no-ios-zoom .ant-select-content-value {
+    transform: scale(0.75);
+}
+
+/* md = 14px (14 / 16 = 0.875) */
+@media (min-width: 768px) {
+
+    .no-ios-zoom .ant-select-selection-item,
+    .no-ios-zoom .ant-select-placeholder,
+    .no-ios-zoom .ant-select-content-value {
+        transform: scale(0.875);
+    }
+}
+
+/* จัดแนวไม่ให้ลอย */
+.no-ios-zoom .ant-select-selector {
+    display: flex;
+    align-items: center;
+}

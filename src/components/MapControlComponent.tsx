@@ -128,18 +128,18 @@ const MapControlComponent = forwardRef<MapRef>(({}, mapRef) => {
                         animate={{ x: 0, opacity: 1 }}
                         exit={{ x: -100, opacity: 0 }}
                         transition={{ duration: 0.3 }}
-                        className={`absolute top-2 md:top-5 left-2 md:left-4 z-10 w-64 p-4 rounded-2xl bg-[#131b2d] ${mobile_menu ? "flex" : "hidden md:flex"}`}
+                        className={`absolute top-2 md:top-5 left-2 md:left-4 z-10 w-48 md:w-64 px-3 py-4 md:px-4 md:py-4 rounded-2xl bg-[#131b2d] ${mobile_menu ? "flex" : "hidden md:flex"}`}
                     >
-                        <div className="flex flex-col gap-2 relative">
-                            <div className="text-sm text-white">เลือกข้อมูล</div>
+                        <div className="flex flex-col gap-1 md:gap-2 relative w-full">
+                            <div className="text-xs md:text-sm text-white">เลือกข้อมูล</div>
                             <button
                                 onClick={() => setMobileMenu(!mobile_menu)}
-                                className="absolute top-0 right-0 w-8 h-8 rounded-full bg-[#1e293b] flex md:hidden items-center justify-center"
+                                className="absolute top-0 right-0 w-6 h-6 md:w-8 md:h-8 rounded-full bg-[#1e293b] flex md:hidden items-center justify-center"
                             >
-                                <FiX className="text-base text-[#94a3b8]" />
+                                <FiX className="text-xs md:text-base text-[#94a3b8]" />
                             </button>
                             <div>
-                                <label className="text-xs text-[#94a3b8]">ชนิดพืช และ ปีที่ต้องการ</label>
+                                <label className="text-[10px] md:text-xs text-[#94a3b8]">ชนิดพืช และ ปีที่ต้องการ</label>
                                 <Cascader
                                     placeholder="เลือกพืช และปี..."
                                     options={compareOptions}
@@ -147,15 +147,18 @@ const MapControlComponent = forwardRef<MapRef>(({}, mapRef) => {
                                     onChange={onCropsSelectedChange}
                                     className="[&_.ant-select-content-value]:text-[#10b981]! [&_.ant-select-content-value]:font-bold!"
                                     classNames={{
-                                        root: "w-full! bg-[#1e293b]! border-none! drop-shadow! rounded-xl!",
+                                        root: "w-full! bg-[#1e293b]! border-none! drop-shadow! rounded-xl! text-xs! md:text-sm!",
                                         content: "text-white! py-1",
                                         suffix: "text-white!",
                                         placeholder: "text-white!",
-                                        popup: { root: "bg-[#1e293b]!", listItem: "text-white hover:bg-[#10b981]!" },
+                                        popup: {
+                                            root: "bg-[#1e293b]!",
+                                            listItem: "text-white hover:bg-[#10b981]! text-xs! md:text-sm!",
+                                        },
                                     }}
                                 />
                             </div>
-                            {menu_selected.mode === "ผลผลิต" && <CompareModeComponent />}
+                            <div className="hidden md:block">{menu_selected.mode === "ผลผลิต" && <CompareModeComponent />}</div>
                         </div>
                     </motion.div>
 

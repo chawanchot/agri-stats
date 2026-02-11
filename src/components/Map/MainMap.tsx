@@ -39,6 +39,8 @@ const MainMap = forwardRef<MapRef, PropsType>(({ isLandingPage = false }, mapRef
     const [popupStatus, setPopupStatus] = useState<any>(null);
     const [price_loading, setPriceLoading] = useState<boolean>(false);
 
+    const fnIsMobile = () => window.matchMedia("(max-width: 768px)").matches;
+
     const onProvinceClick = async (event: any) => {
         if (menu_selected.mode !== "ราคา") {
             const feature = event.features && event.features[0];
@@ -48,9 +50,9 @@ const MainMap = forwardRef<MapRef, PropsType>(({ isLandingPage = false }, mapRef
 
                 mapRef.current?.flyTo({
                     center: [province_lon, province_lat],
-                    zoom: 8,
+                    zoom: fnIsMobile() ? 7 : 8,
                     duration: 2000,
-                    offset: [-300, 0],
+                    offset: fnIsMobile() ? [0, -150] : [-300, 0],
                     essential: true,
                 });
 
@@ -132,8 +134,15 @@ const MainMap = forwardRef<MapRef, PropsType>(({ isLandingPage = false }, mapRef
             }
 
             allLocation.map((item: LocationType, index: number) => {
-                if (index === 0 && isLandingPage) {
+                // Zoom เข้าจุดรับซื้อและโชว์ Popup เมื่ออยู่หน้า LandingPage
+                if (index === 0 && isLandingPage && mapRef && typeof mapRef !== "function" && mapRef.current) {
                     allPopup[item.name] = true;
+                    mapRef.current?.flyTo({
+                        center: [item.location.lng, item.location.lat],
+                        zoom: 8,
+                        duration: 1500,
+                        essential: true,
+                    });
                 } else {
                     allPopup[item.name] = false;
                 }
@@ -260,7 +269,7 @@ const MainMap = forwardRef<MapRef, PropsType>(({ isLandingPage = false }, mapRef
             >
                 <ProvinceLayer data={ProvincesGeoJson} hoverData={hoverInfo} />
 
-                {zoom >= 8 && soilData && is_modal_open && <SoilLayer data={soilData} hoverData={hoverSoil} />}
+                {zoom >= 7 && soilData && is_modal_open && <SoilLayer data={soilData} hoverData={hoverSoil} />}
 
                 {menu_selected.crop && menu_selected.mode === "ผลผลิต" && (
                     <CropCompareLayer hoverData={hoverCompare} type={menu_selected.type} />

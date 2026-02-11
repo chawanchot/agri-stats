@@ -7,8 +7,8 @@ function CompareModeComponent() {
     const dispatch = useAppDispatch();
 
     return (
-        <div className="flex flex-col gap-2">
-            <label className="text-xs text-[#94a3b8]">ประเภทข้อมูล</label>
+        <div className="flex flex-col gap-1 md:gap-2">
+            <label className="text-[8px] md:text-xs text-[#94a3b8]">ประเภทข้อมูล</label>
             <Segmented
                 size="middle"
                 value={crop_compare_selected.type}
@@ -23,8 +23,8 @@ function CompareModeComponent() {
                 block
                 className="[&_.ant-segmented-item-selected]:font-bold [&_.ant-segmented-item-selected]:drop-shadow-lg [&_.ant-segmented-item]:text-[#94a3b8]"
                 classNames={{
-                    root: "rounded-xl! bg-[#1e293b]! drop-shadow py-0! md:py-1!",
-                    label: "text-[8px] md:text-sm p-0!"
+                    root: "bg-[#1e293b]! drop-shadow py-0!",
+                    label: "text-[8px] md:text-sm p-0! min-h-5! max-h-5! md:min-h-8! md:max-h-8! flex! justify-center items-center",
                 }}
             />
         </div>
