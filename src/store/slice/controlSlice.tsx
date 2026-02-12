@@ -20,6 +20,7 @@ export const controlSlice = createSlice({
         },
         mainChartFilter: [],
         baseMap: BASE_MAP.streets,
+        isLanding: false,
     },
     reducers: {
         openModal: (state) => {
@@ -43,9 +44,12 @@ export const controlSlice = createSlice({
         setBaseMap: (state, action) => {
             state.baseMap = BASE_MAP[action.payload];
         },
+        setIsLanding: (state, action) => {
+            state.isLanding = action.payload;
+        },
     },
 });
 
-export const { openModal, closeModal, setProvince, setZoom, setMenuSelected, setMainChartFilter, setBaseMap } =
+export const { openModal, closeModal, setProvince, setZoom, setMenuSelected, setMainChartFilter, setBaseMap, setIsLanding } =
     controlSlice.actions;
 export default controlSlice.reducer;

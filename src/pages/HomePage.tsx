@@ -1,7 +1,7 @@
 import { forwardRef, useEffect, useRef } from "react";
 import MainChartComponent from "@components/MainChartComponent";
 import MainMap from "@components/Map/MainMap";
-import { useAppDispatch } from "@store/hook";
+import { useAppDispatch, useAppSelector } from "@store/hook";
 import type { MapRef } from "react-map-gl/maplibre";
 import { setCropYearList } from "@store/slice/cropSlice";
 import MapControlComponent from "@components/MapControlComponent";
@@ -15,12 +15,9 @@ import maizeData from "@assets/data/crops/maize.json";
 import palmData from "@assets/data/crops/palm.json";
 const cropFiles = [cassavaData, longanData, rubberData, maizeData, palmData];
 
-type PropType = {
-    isLandingPage?: boolean;
-};
-
-const HomePage = forwardRef<MapRef, PropType>(({ isLandingPage = false }, ref) => {
+const HomePage = forwardRef<MapRef>((_, ref) => {
     const dispatch = useAppDispatch();
+    const is_landing = useAppSelector((state) => state.control.isLanding);
     const mapRef = (ref as React.RefObject<MapRef>) || useRef<MapRef>(null);
 
     const fetchCropsList = async () => {
@@ -52,9 +49,9 @@ const HomePage = forwardRef<MapRef, PropType>(({ isLandingPage = false }, ref) =
 
     return (
         <div className="flex items-center justify-center h-full bg-[#0f172a] relative">
-            {!isLandingPage && <MapControlComponent ref={mapRef} />}
+            {!is_landing && <MapControlComponent ref={mapRef} />}
             <MainChartComponent />
-            <MainMap ref={mapRef} isLandingPage={isLandingPage} />
+            <MainMap ref={mapRef} />
             <ProvinceModalComponent ref={mapRef} />
         </div>
     );

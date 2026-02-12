@@ -19,16 +19,13 @@ const ProvincesGeoJson = ProvincesData as FeatureCollection;
 const MAPTILER_KEY = import.meta.env.VITE_MAPTILER_KEY;
 const GOOGLE_API_KEY = import.meta.env.VITE_GOOGLE_API_KEY;
 
-type PropsType = {
-    isLandingPage?: boolean;
-};
-
-const MainMap = forwardRef<MapRef, PropsType>(({ isLandingPage = false }, mapRef) => {
+const MainMap = forwardRef<MapRef>((_, mapRef) => {
     const dispatch = useAppDispatch();
     const is_modal_open = useAppSelector((state) => state.control.modal);
     const zoom = useAppSelector((state) => state.control.zoom);
     const menu_selected = useAppSelector((state) => state.control.menu);
     const baseMap = useAppSelector((state) => state.control.baseMap);
+    const is_landing = useAppSelector((state) => state.control.isLanding);
     const [messageApi, contextHolder] = message.useMessage();
 
     const [hoverInfo, setHoverInfo] = useState<string | null>(null);
@@ -135,7 +132,7 @@ const MainMap = forwardRef<MapRef, PropsType>(({ isLandingPage = false }, mapRef
 
             allLocation.map((item: LocationType, index: number) => {
                 // Zoom เข้าจุดรับซื้อและโชว์ Popup เมื่ออยู่หน้า LandingPage
-                if (index === 0 && isLandingPage && mapRef && typeof mapRef !== "function" && mapRef.current) {
+                if (index === 0 && is_landing && mapRef && typeof mapRef !== "function" && mapRef.current) {
                     allPopup[item.name] = true;
                     mapRef.current?.flyTo({
                         center: [item.location.lng, item.location.lat],
@@ -205,7 +202,7 @@ const MainMap = forwardRef<MapRef, PropsType>(({ isLandingPage = false }, mapRef
     return (
         <>
             {contextHolder}
-            {price_loading && !isLandingPage && (
+            {price_loading && !is_landing && (
                 <Spin size="large" indicator={<LoadingOutlined className="text-[#0f172a]!" spin />} fullscreen />
             )}
             <Map
@@ -223,7 +220,7 @@ const MainMap = forwardRef<MapRef, PropsType>(({ isLandingPage = false }, mapRef
                 onIdle={onIdleHandle}
                 attributionControl={false}
                 doubleClickZoom={false}
-                onLoad={() => applyLandingMode(isLandingPage)}
+                onLoad={() => applyLandingMode(is_landing)}
                 projection={{ type: "globe" }}
                 onMouseMove={(e) => {
                     if (e.features && e.features.length > 0 && menu_selected.mode !== "ราคา") {

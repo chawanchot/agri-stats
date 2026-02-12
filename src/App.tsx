@@ -1,7 +1,10 @@
 import MainRouter from "@router/MainRouter";
-import { HashRouter } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { ConfigProvider } from "antd";
 import "./App.css";
+import { useEffect } from "react";
+import { useAppDispatch } from "@store/hook";
+import { setIsLanding } from "@store/slice/controlSlice";
 
 const antTheme = {
     components: {
@@ -22,11 +25,16 @@ const antTheme = {
 };
 
 function App() {
+    const { pathname } = useLocation();
+    const dispatch = useAppDispatch();
+
+    useEffect(() => {
+        dispatch(setIsLanding(pathname === "/" || pathname === "/agri-stats/"));
+    }, [pathname, dispatch]);
+
     return (
         <ConfigProvider theme={antTheme}>
-            <HashRouter>
-                <MainRouter />
-            </HashRouter>
+            <MainRouter />
         </ConfigProvider>
     );
 }

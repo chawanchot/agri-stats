@@ -13,6 +13,7 @@ import { FaArrowDown, FaArrowRightLong } from "react-icons/fa6";
 import { useAppDispatch } from "@store/hook";
 import { fnExitMainChart, fnFetchCropCompareData } from "@utils/fetchCrops";
 import { setMenuSelected } from "@store/slice/controlSlice";
+import StatCardComponent from "@components/StatCardComponent";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -31,19 +32,21 @@ const storyData = [
     {
         tag: "FEATURE",
         title: "แสดงแผนที่ประเทศไทย",
-        description: "ซูม/เลื่อนเพื่อดูภาพรวมทั้งประเทศ พร้อมเลเยอร์ประกอบเพื่อสำรวจข้อมูลเชิงพื้นที่ได้อย่างรวดเร็ว",
+        description:
+            "ซูม/เลื่อนเพื่อดูภาพรวมทั้งประเทศ พร้อมเลเยอร์ประกอบเพื่อสำรวจข้อมูลเชิงพื้นที่ได้อย่างรวดเร็ว สลับแผนที่ฐานได้ทั้งแบบถนนและดาวเทียม",
     },
     {
         tag: "FEATURE",
         title: "เปรียบเทียบผลผลิตรายจังหวัด",
-        description: "เลือกพืชและปี แล้วดูการกระจายของผลผลิต (เช่น กก./ไร่) บนแผนที่ เพื่อให้เห็นจังหวัดเด่น ๆ ทันที",
+        description:
+            "เลือกพืชและปี แล้วดูการกระจายของผลผลิต (เช่น กก./ไร่) บนแผนที่ด้วยสีแบ่งระดับ เปรียบเทียบจังหวัดเด่น ๆ ได้ทันที พร้อมกราฟสรุปรายละเอียด",
     },
     {
         tag: "FEATURE",
         title: "ตรวจสอบราคารับซื้อผลผลิต",
-        description: "ดูจุดรับซื้อ/ราคาตามพื้นที่ ช่วยประเมินแนวโน้มและวางแผนได้ดีขึ้น",
+        description: "ดูจุดรับซื้อ/ราคาตามพื้นที่ทั่วประเทศ ช่วยประเมินแนวโน้มราคาและวางแผนการขายผลผลิตได้ดียิ่งขึ้น",
     },
-] as const;
+];
 
 const LandingPage = () => {
     const navigate = useNavigate();
@@ -173,10 +176,9 @@ const LandingPage = () => {
 
     return (
         <div ref={rootRef} className="bg-slate-950 text-white w-full">
-            <div className="container mx-auto px-5 lg:px-50 overflow-hidden">
+            <div className="container mx-auto px-5 md:px-10 lg:px-20 xl:px-40 overflow-hidden">
                 <section className="w-full h-screen py-0 lg:py-20 relative flex flex-col justify-center items-center lg:block">
-                    <div className="absolute top-4 right-0 lg:right-6 z-10 flex items-center gap-2">
-                        <img src="" />
+                    <div className="absolute top-4 right-0 lg:right-6 z-10">
                         <button
                             onClick={() => navigate("/home")}
                             className="px-4 py-2 rounded-full bg-white/10 hover:bg-white/15 text-sm font-semibold cursor-pointer"
@@ -214,7 +216,6 @@ const LandingPage = () => {
                     </div>
                 </section>
 
-                {/* SCROLLY LAYOUT */}
                 <section className="scrolly h-[400vh] lg:h-[600vh]">
                     <div className="pinned-content h-screen flex items-center">
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-8 w-full px-0 lg:px-6">
@@ -225,7 +226,7 @@ const LandingPage = () => {
                                     </div>
 
                                     <div className="relative h-150 overflow-hidden rounded-2xl border border-white/10 bg-slate-900/30 pointer-events-none">
-                                        <HomePage ref={mapRef} isLandingPage={true} />
+                                        <HomePage ref={mapRef} />
                                     </div>
 
                                     <div className="flex justify-center items-center gap-2">
@@ -253,10 +254,8 @@ const LandingPage = () => {
                                             className="rounded-3xl"
                                         >
                                             <div className="flex items-center gap-3">
-                                                <div>
-                                                    <div className="text-xs font-semibold uppercase tracking-widest text-lime-300/90">
-                                                        {storyData[scene].tag}
-                                                    </div>
+                                                <div className="text-xs font-semibold uppercase tracking-widest text-[#13bf50]">
+                                                    {storyData[scene].tag}
                                                 </div>
                                             </div>
 
@@ -282,6 +281,14 @@ const LandingPage = () => {
                 </section>
 
                 <div className="flex flex-col items-center gap-2 justify-center py-20">
+                    <StatCardComponent />
+
+                    <div className="text-center">
+                        <h2 className="text-xl lg:text-2xl font-bold mb-2">พร้อมสำรวจข้อมูลการเกษตรแล้วหรือยัง?</h2>
+                        <p className="text-sm text-white/50 mb-6">
+                            เข้าสู่หน้าหลักเพื่อเริ่มต้นใช้งานแผนที่และดูข้อมูลสถิติการเกษตร
+                        </p>
+                    </div>
                     <button
                         onClick={() => navigate("/home")}
                         className="flex justify-center items-center gap-3 py-4 w-56 rounded-full font-semibold cursor-pointer bg-[#13bf50] hover:scale-105 duration-300"
@@ -291,7 +298,7 @@ const LandingPage = () => {
                             <FaArrowRightLong className="text-lg" />
                         </span>
                     </button>
-                    <div className="text-xs text-white/50">พร้อมใช้งานหน้าหลักและเมนูเปรียบเทียบ</div>
+                    <div className="text-xs text-white/50">เข้าสู่หน้าหลักของเว็บไซต์</div>
                 </div>
             </div>
         </div>
