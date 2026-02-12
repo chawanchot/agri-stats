@@ -8,7 +8,7 @@ import { HiMenuAlt1 } from "react-icons/hi";
 import type { OptionType } from "types";
 import type { MapRef } from "react-map-gl/maplibre";
 import { AnimatePresence, motion } from "framer-motion";
-import { fnFetchCropCompareData } from "@utils/fetchCrops";
+import { fnFetchCropCompareData } from "@utils/crops";
 import CompareModeComponent from "./CompareModeComponent";
 
 const MapControlComponent = forwardRef<MapRef>(({}, mapRef) => {

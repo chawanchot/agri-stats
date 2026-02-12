@@ -20,6 +20,7 @@ const HomePage = forwardRef<MapRef>((_, ref) => {
     const is_landing = useAppSelector((state) => state.control.isLanding);
     const mapRef = (ref as React.RefObject<MapRef>) || useRef<MapRef>(null);
 
+    // ดึงข้อมูลชื่อผลผลิตและปีทั้งหมด
     const fetchCropsList = async () => {
         try {
             const allData: { name: string; data: number[] }[] = [];

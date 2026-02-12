@@ -3,7 +3,7 @@ import { useAppDispatch, useAppSelector } from "@store/hook";
 import type { CropDetailType } from "types";
 import { motion, AnimatePresence } from "framer-motion";
 import { FiX } from "react-icons/fi";
-import { fnExitMainChart } from "@utils/fetchCrops";
+import { fnExitMainChart } from "@utils/crops";
 import CompareModeComponent from "./CompareModeComponent";
 import clsx from "clsx";
 

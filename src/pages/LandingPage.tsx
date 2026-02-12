@@ -11,9 +11,9 @@ import type { MapRef } from "react-map-gl/maplibre";
 import { useNavigate } from "react-router-dom";
 import { FaArrowDown, FaArrowRightLong } from "react-icons/fa6";
 import { useAppDispatch } from "@store/hook";
-import { fnExitMainChart, fnFetchCropCompareData } from "@utils/fetchCrops";
+import { fnExitMainChart, fnFetchCropCompareData } from "@utils/crops";
 import { setMenuSelected } from "@store/slice/controlSlice";
-import StatCardComponent from "@components/StatCardComponent";
+import StatCardComponent from "@components/LandingPage/StatCardComponent";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -73,27 +73,6 @@ const LandingPage = () => {
         }
     };
 
-    const applySceneAction = (scene: number | null) => {
-        fnExitMainChart(dispatch);
-        dispatch(setMenuSelected({ crop: "", mode: "", year: "" }));
-
-        if (scene === 1) {
-            fnFlyToThai();
-            fnFetchCropCompareData("ยางพารา", "2566", dispatch);
-            dispatch(
-                setMenuSelected({
-                    crop: "ยางพารา",
-                    mode: "ผลผลิต",
-                    year: "2566",
-                })
-            );
-        }
-
-        if (scene === 2) {
-            dispatch(setMenuSelected({ crop: "ยางพารา", mode: "ราคา" }));
-        }
-    };
-
     useLayoutEffect(() => {
         const lenis = new Lenis({
             duration: 1.1,
@@ -130,9 +109,9 @@ const LandingPage = () => {
                     setScene(null);
                 },
                 onUpdate: (self) => {
-                    const p = self.progress;
+                    const progress = self.progress;
 
-                    const newScene = Math.min(Math.floor(p * stepCount), stepCount - 1);
+                    const newScene = Math.min(Math.floor(progress * stepCount), stepCount - 1);
                     setScene((prev) => (prev !== newScene ? newScene : prev));
                 },
             });
@@ -171,7 +150,24 @@ const LandingPage = () => {
     }, [stepCount]);
 
     useEffect(() => {
-        applySceneAction(scene);
+        fnExitMainChart(dispatch);
+        dispatch(setMenuSelected({ crop: "", mode: "", year: "" }));
+
+        if (scene === 1) {
+            fnFetchCropCompareData("ยางพารา", "2566", dispatch);
+            dispatch(
+                setMenuSelected({
+                    crop: "ยางพารา",
+                    mode: "ผลผลิต",
+                    year: "2566",
+                })
+            );
+            fnFlyToThai();
+        }
+
+        if (scene === 2) {
+            dispatch(setMenuSelected({ crop: "ยางพารา", mode: "ราคา" }));
+        }
     }, [scene]);
 
     return (

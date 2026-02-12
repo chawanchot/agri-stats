@@ -24,7 +24,7 @@ const MainMap = forwardRef<MapRef>((_, mapRef) => {
     const is_modal_open = useAppSelector((state) => state.control.modal);
     const zoom = useAppSelector((state) => state.control.zoom);
     const menu_selected = useAppSelector((state) => state.control.menu);
-    const baseMap = useAppSelector((state) => state.control.baseMap);
+    const base_map = useAppSelector((state) => state.control.baseMap);
     const is_landing = useAppSelector((state) => state.control.isLanding);
     const [messageApi, contextHolder] = message.useMessage();
 
@@ -33,11 +33,13 @@ const MainMap = forwardRef<MapRef>((_, mapRef) => {
     const [hoverCompare, setHoverCompare] = useState<any>(null);
     const [soilData, setSoilData] = useState<FeatureCollection | null>(null);
     const [locationData, setLocationData] = useState<LocationType[] | []>([]);
-    const [popupStatus, setPopupStatus] = useState<any>(null);
+    const [popup_status, setPopupStatus] = useState<Record<string, boolean> | null>(null);
     const [price_loading, setPriceLoading] = useState<boolean>(false);
 
+    // เช็คว่าเป็น mobile สำหรับ zoom และ duration แผนที่ตอนเลือกจังหวัด
     const fnIsMobile = () => window.matchMedia("(max-width: 768px)").matches;
 
+    // ซูมแผนที่แล้วโหลดข้อมูลดินตอนคลิกเลือกจังหวัด
     const onProvinceClick = async (event: any) => {
         if (menu_selected.mode !== "ราคา") {
             const feature = event.features && event.features[0];
@@ -67,6 +69,7 @@ const MainMap = forwardRef<MapRef>((_, mapRef) => {
         }
     };
 
+    // filter จังหวัดที่จะแสดงบนกราฟตอนแผนที่หยุดขยับ
     const onIdleHandle = () => {
         if (mapRef && typeof mapRef !== "function" && mapRef.current) {
             const features = mapRef.current.queryRenderedFeatures({
@@ -79,6 +82,7 @@ const MainMap = forwardRef<MapRef>((_, mapRef) => {
         }
     };
 
+    // ดึงข้อมูลราคาสินค้าและ location
     const fetchCropPrice = async () => {
         try {
             setPriceLoading(true);
@@ -154,9 +158,10 @@ const MainMap = forwardRef<MapRef>((_, mapRef) => {
         }
     };
 
+    // เปิด/ปิด Popup ราคาสินค้าตอนคลิก Marker บนแผนที่
     const onClickMarker = (event: MarkerEvent<MouseEvent>, name: string) => {
         event.originalEvent.stopPropagation();
-        let newStatus = { ...popupStatus };
+        let newStatus = { ...popup_status };
 
         Object.keys(newStatus).forEach((key) => {
             if (key === name) {
@@ -211,7 +216,7 @@ const MainMap = forwardRef<MapRef>((_, mapRef) => {
                     latitude: 40,
                     zoom: 1,
                 }}
-                mapStyle={`https://api.maptiler.com/maps/${baseMap}/style.json?key=${MAPTILER_KEY}`}
+                mapStyle={`https://api.maptiler.com/maps/${base_map}/style.json?key=${MAPTILER_KEY}`}
                 ref={mapRef}
                 dragPan={!is_modal_open}
                 scrollZoom={!is_modal_open}
@@ -287,12 +292,12 @@ const MainMap = forwardRef<MapRef>((_, mapRef) => {
                                     <Tag
                                         variant="solid"
                                         color="white"
-                                        className={`text-black! font-semibold! text-sm rounded-md! px-2! py-0.5! drop-shadow-sm ${popupStatus[item.name] ? "bg-[#2D6A4F]! text-white!" : "bg-white! text-black!"}`}
+                                        className={`text-black! font-semibold! text-sm rounded-md! px-2! py-0.5! drop-shadow-sm ${popup_status?.[item.name] ? "bg-[#2D6A4F]! text-white!" : "bg-white! text-black!"}`}
                                     >
                                         {item.productList[0].price} ฿
                                     </Tag>
                                 </Marker>
-                                {popupStatus && popupStatus[item.name] && <PricePopup key={index} data={item} />}
+                                {popup_status && popup_status[item.name] && <PricePopup key={index} data={item} />}
                             </div>
                         );
                     })}

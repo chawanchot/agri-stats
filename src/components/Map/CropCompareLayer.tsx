@@ -19,17 +19,18 @@ const LEGEND = [
 ] as const;
 
 const CropCompareLayer = ({ hoverData, type }: PropsType) => {
-    const cropCompareData: any = useAppSelector((state) => state.crop.cropCompareData);
+    const crop_compare_data: any = useAppSelector((state) => state.crop.cropCompareData);
     const is_landing = useAppSelector((state) => state.control.isLanding);
 
+    // แบ่งช่วงของข้อมูลเป็น 5 ระดับเพื่อกำหนดสีบนแผนที่
     const findDynamicColorRange = () => {
-        if (!cropCompareData?.features || cropCompareData.features.length === 0) {
+        if (!crop_compare_data?.features || crop_compare_data.features.length === 0) {
             return [0, "#f2f0f7"];
         }
 
         const field = type === "ผลผลิตต่อไร่" ? "yield_per_rai" : "yield_ton";
 
-        const values = cropCompareData.features.map((feature: any) => feature.properties[field]);
+        const values = crop_compare_data.features.map((feature: any) => feature.properties[field]);
         const max = Math.max(...values);
         const min = Math.min(...values);
         const step = (max - min) / 4;
@@ -50,7 +51,7 @@ const CropCompareLayer = ({ hoverData, type }: PropsType) => {
 
     return (
         <>
-            <Source id="provinces-source" type="geojson" data={cropCompareData}>
+            <Source id="provinces-source" type="geojson" data={crop_compare_data}>
                 <Layer
                     id="province-compare-fills"
                     type="fill"
