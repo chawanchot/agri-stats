@@ -10,10 +10,10 @@ type PropsType = {
 };
 
 const PH_RANGES = [
-    { min: 0, max: 4.5, color: "#cccccc", label: "< 4.5", desc: "ดินเป็นกรด / ไม่มีข้อมูล" },
-    { min: 4.5, max: 5.5, color: "#ff9999", label: "4.5 - 5.5", desc: "ดินค่อนข้างเป็นกรด" },
-    { min: 5.5, max: 7.0, color: "#99ff99", label: "5.5 - 7.0", desc: "เหมาะกับพืชส่วนใหญ่" },
-    { min: 7.0, max: 14, color: "#cccccc", label: "> 7.0", desc: "ดินเป็นด่าง" },
+    { min: 0, max: 4.5, color: "#F1F3E0", label: "< 4.5", desc: "ดินเป็นกรด / ไม่มีข้อมูล" },
+    { min: 4.5, max: 5.5, color: "#D2DCB6", label: "4.5 - 5.5", desc: "ดินค่อนข้างเป็นกรด" },
+    { min: 5.5, max: 7.0, color: "#A1BC98", label: "5.5 - 7.0", desc: "เหมาะกับพืชส่วนใหญ่" },
+    { min: 7.0, max: 14, color: "#778873", label: "> 7.0", desc: "ดินเป็นด่าง" },
 ] as const;
 
 const SoilLayer = ({ data, hoverData }: PropsType) => {

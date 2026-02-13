@@ -108,7 +108,7 @@ const ProvinceModalComponent = forwardRef<MapRef>(({}, mapRef) => {
                 key: crop.name,
                 children: crop.data.map((cropDetail: CropDetailType, index: number) => ({
                     title: (
-                        <div className="flex flex-col text-xs py-1.5 px-2 rounded-lg hover:bg-slate-50 transition-colors">
+                        <div className="flex flex-col text-xs py-1.5 px-2 rounded-lg">
                             <span className="text-slate-500">ปี {cropDetail.year}</span>
                             <span className="font-medium text-[#94a3b8]">
                                 ผลผลิต:{" "}
