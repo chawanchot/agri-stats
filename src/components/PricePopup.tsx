@@ -7,7 +7,7 @@ type PropsType = {
     data: LocationType;
 };
 
-function PricePopup({ data }: PropsType) {
+const PricePopup = ({ data }: PropsType) => {
     return (
         <Popup latitude={data.location.lat} longitude={data.location.lng} closeButton={false} offset={15}>
             <div className="flex flex-col items-center justify-center overflow-hidden">
@@ -31,6 +31,6 @@ function PricePopup({ data }: PropsType) {
             </div>
         </Popup>
     );
-}
+};
 
 export default PricePopup;

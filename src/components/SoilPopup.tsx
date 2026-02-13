@@ -4,7 +4,7 @@ type PropsType = {
     data: any;
 };
 
-function SoilPopup({ data }: PropsType) {
+const SoilPopup = ({ data }: PropsType) => {
     return (
         <Popup longitude={data.longitude} latitude={data.latitude} offset={15} closeButton={false}>
             <div className="flex flex-col items-center justify-center">
@@ -18,6 +18,6 @@ function SoilPopup({ data }: PropsType) {
             </div>
         </Popup>
     );
-}
+};
 
 export default SoilPopup;

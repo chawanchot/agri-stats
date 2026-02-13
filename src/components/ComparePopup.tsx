@@ -5,7 +5,7 @@ type PropsType = {
     type: string;
 };
 
-function ComparePopup({ data, type }: PropsType) {
+const ComparePopup = ({ data, type }: PropsType) => {
     return (
         <Popup latitude={data.lat} longitude={data.lng} offset={15} closeButton={false}>
             <div className="flex flex-col items-center justify-center">
@@ -21,6 +21,6 @@ function ComparePopup({ data, type }: PropsType) {
             </div>
         </Popup>
     );
-}
+};
 
 export default ComparePopup;

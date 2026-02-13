@@ -17,14 +17,14 @@ import StatCardComponent from "@components/LandingPage/StatCardComponent";
 
 gsap.registerPlugin(ScrollTrigger);
 
-function Model() {
+const Model = () => {
     const gltf = useGLTF(`${import.meta.env.BASE_URL}/models/stylized_mangrove_greenhouse.glb`);
     return (
         <Float speed={1.4} rotationIntensity={1.2} floatIntensity={0.6}>
             <primitive object={gltf.scene} scale={0.1} position={[0, 0, 0]} />
         </Float>
     );
-}
+};
 
 useGLTF.preload(`${import.meta.env.BASE_URL}/models/stylized_mangrove_greenhouse.glb`);
 
@@ -33,13 +33,13 @@ const storyData = [
         tag: "FEATURE",
         title: "แสดงแผนที่ประเทศไทย",
         description:
-            "ซูม/เลื่อนเพื่อดูภาพรวมทั้งประเทศ พร้อมเลเยอร์ประกอบเพื่อสำรวจข้อมูลเชิงพื้นที่ได้อย่างรวดเร็ว สลับแผนที่ฐานได้ทั้งแบบถนนและดาวเทียม",
+            "ซูม/เลื่อนเพื่อดูภาพรวมทั้งประเทศ พร้อมเลเยอร์ประกอบเพื่อสำรวจข้อมูลเชิงพื้นที่ได้อย่างรวดเร็ว สลับแผนที่ได้ทั้งแบบถนนและดาวเทียม",
     },
     {
         tag: "FEATURE",
         title: "เปรียบเทียบผลผลิตรายจังหวัด",
         description:
-            "เลือกพืชและปี แล้วดูการกระจายของผลผลิต (เช่น กก./ไร่) บนแผนที่ด้วยสีแบ่งระดับ เปรียบเทียบจังหวัดเด่น ๆ ได้ทันที พร้อมกราฟสรุปรายละเอียด",
+            "เลือกพืชและปี แล้วดูการกระจายของผลผลิต (เช่น กก./ไร่) บนแผนที่ด้วยแบ่งการระดับสี เปรียบเทียบจังหวัดเด่น ๆ ได้ทันที พร้อมกราฟสรุปรายละเอียด",
     },
     {
         tag: "FEATURE",

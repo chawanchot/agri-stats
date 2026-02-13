@@ -23,13 +23,13 @@ const stats_card_data = [
     },
     {
         icon: <TbMapSearch className="text-3xl text-emerald-400" />,
-        value: "60+",
+        value: "77",
         label: "ข้อมูลดินรายจังหวัด",
-        sub: "กลุ่มชุดดิน & สมบัติดิน",
+        sub: "กลุ่มชุดดิน",
     },
 ];
 
-function StatCardComponent() {
+const StatCardComponent = () => {
     return (
         <div className="w-full mb-20">
             <div className="text-center mb-10">
@@ -60,6 +60,6 @@ function StatCardComponent() {
             </div>
         </div>
     );
-}
+};
 
 export default StatCardComponent;

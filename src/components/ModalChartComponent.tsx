@@ -7,7 +7,7 @@ type PropsType = {
     data: CropType[];
 };
 
-function ModalChartComponent({ data }: PropsType) {
+const ModalChartComponent = ({ data }: PropsType) => {
     const categories = Array.from(new Set(data.flatMap((cropGroup) => cropGroup.data.map((item) => item.year)))).sort(
         (a, b) => a - b
     );
@@ -101,6 +101,6 @@ function ModalChartComponent({ data }: PropsType) {
             <Chart options={chartOptions} series={chartData} type="line" height={220} />
         </div>
     );
-}
+};
 
 export default ModalChartComponent;
