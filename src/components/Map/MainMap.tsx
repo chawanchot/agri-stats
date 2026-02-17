@@ -41,7 +41,7 @@ const MainMap = forwardRef<MapRef>((_, mapRef) => {
 
     // ซูมแผนที่แล้วโหลดข้อมูลดินตอนคลิกเลือกจังหวัด
     const onProvinceClick = async (event: any) => {
-        if (menu_selected.mode !== "ราคา") {
+        if (menu_selected.mode !== "ราคา" && menu_selected.mode !== "ผลผลิต") {
             const feature = event.features && event.features[0];
 
             if (feature && feature.properties && !is_modal_open && mapRef && typeof mapRef !== "function" && mapRef.current) {
