@@ -62,7 +62,7 @@ const ModalChartComponent = ({ data }: PropsType) => {
                     colors: "#64748b",
                     fontSize: "12px",
                 },
-                formatter: (val) => val.toLocaleString(),
+                formatter: (val) => `${val.toLocaleString()} กก./ไร่`,
             },
         },
         legend: {

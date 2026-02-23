@@ -6,7 +6,6 @@ import path from "path";
 // https://vite.dev/config/
 export default defineConfig({
     plugins: [react(), tailwindcss()],
-    base: "/agri-stats/",
     resolve: {
         alias: {
             "@pages": path.resolve(__dirname, "src/pages"),
