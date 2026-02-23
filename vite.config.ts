@@ -6,6 +6,19 @@ import path from "path";
 // https://vite.dev/config/
 export default defineConfig({
     plugins: [react(), tailwindcss()],
+    build: {
+        sourcemap: false,
+        rollupOptions: {
+            output: {
+                manualChunks: {
+                    vendor: ["react", "react-dom"],
+                    antd: ["antd"],
+                    maplibre: ["maplibre-gl"],
+                },
+            },
+        },
+    },
+
     resolve: {
         alias: {
             "@pages": path.resolve(__dirname, "src/pages"),
