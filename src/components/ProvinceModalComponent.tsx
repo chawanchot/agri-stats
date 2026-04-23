@@ -2,7 +2,6 @@ import { useAppDispatch, useAppSelector } from "@store/hook";
 import { closeModal, openModal, setProvince } from "@store/slice/controlSlice";
 import { setCropByProvinceData } from "@store/slice/cropSlice";
 import { Tag, Tree } from "antd";
-import Axios from "axios";
 import { forwardRef, useEffect, useState } from "react";
 import type { MapRef } from "react-map-gl/maplibre";
 import ModalChartComponent from "./ModalChartComponent";
@@ -16,6 +15,7 @@ import longanData from "@assets/data/crops/longan.json";
 import rubberData from "@assets/data/crops/rubber.json";
 import maizeData from "@assets/data/crops/maize.json";
 import palmData from "@assets/data/crops/palm.json";
+import priceMockData from "@assets/data/price.json";
 
 const ProvinceModalComponent = forwardRef<MapRef>(({}, mapRef) => {
     const dispatch = useAppDispatch();
@@ -73,19 +73,13 @@ const ProvinceModalComponent = forwardRef<MapRef>(({}, mapRef) => {
         }
     };
 
-    const fetchCropPrice = async (cropsData: CropType[]) => {
+    const fetchCropPrice = (cropsData: CropType[]) => {
         let allPrice: PriceType[] = [];
+        const mockData = priceMockData.data as PriceType[];
 
         for (const item of cropsData) {
-            try {
-                const getPrice = await Axios.get(`https://mu2f.dev/price-by-crop?crop=${item.name}`);
-                const priceData = getPrice.data?.data;
-                if (Array.isArray(priceData)) {
-                    allPrice = [...allPrice, ...priceData];
-                }
-            } catch (error) {
-                console.log(`Failed to fetch price for ${item.name}:`, error);
-            }
+            const foundData = mockData.filter((mock) => mock.product_category === item.name);
+            allPrice = [...allPrice, ...foundData];
         }
 
         formatTreeData(cropsData, allPrice);
@@ -136,7 +130,7 @@ const ProvinceModalComponent = forwardRef<MapRef>(({}, mapRef) => {
 
         if (filtered.length > 0) {
             const HighestPrice = filtered.reduce((acc, curr) => {
-                return curr.day_price > acc.day_price ? curr : acc;
+                return Number(curr.day_price) > Number(acc.day_price) ? curr : acc;
             });
 
             return HighestPrice;

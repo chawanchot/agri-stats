@@ -12,9 +12,9 @@ const PricePopup = ({ data }: PropsType) => {
         <Popup latitude={data.location.lat} longitude={data.location.lng} closeButton={false} offset={15}>
             <div className="flex flex-col items-center justify-center overflow-hidden">
                 <div className="font-bold text-sm text-[#52796F]">{data.name}</div>
-                <div className="flex flex-col mt-2 w-full">
+                <div className="flex flex-col mt-2 w-full text-center">
                     {data.productList.map((product, index) => (
-                        <div className="flex flex-col">
+                        <div className="flex flex-col" key={product.name}>
                             <div className="text-xs text-black" key={index}>
                                 {product.name}{" "}
                                 <span className="font-bold">

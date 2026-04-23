@@ -11,13 +11,13 @@ import SoilLayer from "@components/Map/SoilLayer";
 import CropCompareLayer from "@components/Map/CropCompareLayer";
 import { message, Spin, Tag } from "antd";
 import Axios from "axios";
-import type { LocationType, PopupStatusType } from "types";
+import type { LocationType, PopupStatusType, PriceType } from "types";
 import { LoadingOutlined } from "@ant-design/icons";
 import PricePopup from "@components/PricePopup";
+import priceMockData from "@assets/data/price.json";
 
 const ProvincesGeoJson = ProvincesData as FeatureCollection;
 const MAPTILER_KEY = import.meta.env.VITE_MAPTILER_KEY;
-const GOOGLE_API_KEY = import.meta.env.VITE_GOOGLE_API_KEY;
 
 const MainMap = forwardRef<MapRef>((_, mapRef) => {
     const dispatch = useAppDispatch();
@@ -82,16 +82,26 @@ const MainMap = forwardRef<MapRef>((_, mapRef) => {
         }
     };
 
+    const normalize = (str: string) => {
+        return str
+            .normalize("NFKC") // แก้ unicode
+            .replace(/\s+/g, "") // ลบ whitespace ทุกชนิด
+            .trim();
+    };
+
     // ดึงข้อมูลราคาสินค้าและ location
     const fetchCropPrice = async () => {
         try {
             setPriceLoading(true);
 
+            const mockData = priceMockData.data as PriceType[];
             let allLocation: LocationType[] = [];
             let allPopup: PopupStatusType = {};
 
-            const getPrice = await Axios.get(`https://mu2f.dev/price-by-crop?crop=${menu_selected.crop}`);
-            const priceData = getPrice.data.data;
+            const priceData = mockData.filter((mock) => mock.product_category === menu_selected.crop);
+
+            // const getPrice = await Axios.get(`https://agri-stats-api.mu2f.dev/price-by-crop?crop=${menu_selected.crop}`);
+            // const priceData = getPrice.data.data;
             if (!priceData.length) {
                 messageApi.open({
                     type: "warning",
@@ -103,16 +113,17 @@ const MainMap = forwardRef<MapRef>((_, mapRef) => {
 
             for (const item of priceData) {
                 const location = encodeURIComponent(`${item.market_name} ${item.province}`);
-                const getLocation = await Axios.get(
-                    `https://maps.googleapis.com/maps/api/geocode/json?address=${location}&key=${GOOGLE_API_KEY}`
-                );
+                const getLocation = await Axios.get(`https://agri-stats-api.mu2f.dev/geocode?address=${location}`);
 
                 const locationData = getLocation.data.results?.[0];
                 if (!locationData?.geometry?.location) {
                     continue;
                 }
 
-                const marketIndex = allLocation.findIndex((market) => market.name === item.market_name);
+                const marketIndex = allLocation.findIndex((market) => {
+                    return normalize(market.name) === normalize(item.market_name);
+                });
+
                 if (marketIndex === -1) {
                     allLocation.push({
                         name: item.market_name,
@@ -121,7 +132,7 @@ const MainMap = forwardRef<MapRef>((_, mapRef) => {
                         productList: [
                             {
                                 name: item.product_name,
-                                price: item.day_price,
+                                price: typeof item.day_price === "string" ? parseFloat(item.day_price) : item.day_price,
                                 unit: item.unit,
                                 data_date: item.data_date,
                             },
@@ -130,12 +141,14 @@ const MainMap = forwardRef<MapRef>((_, mapRef) => {
                 } else {
                     allLocation[marketIndex].productList.push({
                         name: item.product_name,
-                        price: item.day_price,
+                        price: typeof item.day_price === "string" ? parseFloat(item.day_price) : item.day_price,
                         unit: item.unit,
                         data_date: item.data_date,
                     });
                 }
             }
+
+            console.log(allLocation);
 
             allLocation.map((item: LocationType, index: number) => {
                 // Zoom เข้าจุดรับซื้อและโชว์ Popup เมื่ออยู่หน้า LandingPage

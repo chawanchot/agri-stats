@@ -20,10 +20,13 @@ export type OptionType = {
 };
 
 export type PriceType = {
-    day_price: string;
+    day_price: string | number;
     product_category: string;
     product_name: string;
     unit: string;
+    market_name: string;
+    province: string;
+    data_date: string;
 };
 
 export type LocationType = {
