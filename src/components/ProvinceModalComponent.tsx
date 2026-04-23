@@ -77,9 +77,15 @@ const ProvinceModalComponent = forwardRef<MapRef>(({}, mapRef) => {
         let allPrice: PriceType[] = [];
 
         for (const item of cropsData) {
-            const getPrice = await Axios.get(`https://mu2f.dev/price-by-crop?crop=${item.name}`);
-            const priceData = getPrice.data.data;
-            allPrice = [...allPrice, ...priceData];
+            try {
+                const getPrice = await Axios.get(`https://mu2f.dev/price-by-crop?crop=${item.name}`);
+                const priceData = getPrice.data?.data;
+                if (Array.isArray(priceData)) {
+                    allPrice = [...allPrice, ...priceData];
+                }
+            } catch (error) {
+                console.log(`Failed to fetch price for ${item.name}:`, error);
+            }
         }
 
         formatTreeData(cropsData, allPrice);

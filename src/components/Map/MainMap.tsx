@@ -107,7 +107,10 @@ const MainMap = forwardRef<MapRef>((_, mapRef) => {
                     `https://maps.googleapis.com/maps/api/geocode/json?address=${location}&key=${GOOGLE_API_KEY}`
                 );
 
-                const locationData = getLocation.data.results[0];
+                const locationData = getLocation.data.results?.[0];
+                if (!locationData?.geometry?.location) {
+                    continue;
+                }
 
                 const marketIndex = allLocation.findIndex((market) => market.name === item.market_name);
                 if (marketIndex === -1) {

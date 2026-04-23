@@ -18,7 +18,7 @@ import StatCardComponent from "@components/LandingPage/StatCardComponent";
 gsap.registerPlugin(ScrollTrigger);
 
 const Model = () => {
-    const gltf = useGLTF(`${import.meta.env.BASE_URL}/models/stylized_mangrove_greenhouse.glb`);
+    const gltf = useGLTF("/models/stylized_mangrove_greenhouse.glb");
     return (
         <Float speed={1.4} rotationIntensity={1.2} floatIntensity={0.6}>
             <primitive object={gltf.scene} scale={0.1} position={[0, 0, 0]} />
@@ -26,7 +26,21 @@ const Model = () => {
     );
 };
 
-useGLTF.preload(`${import.meta.env.BASE_URL}/models/stylized_mangrove_greenhouse.glb`);
+useGLTF.preload("/models/stylized_mangrove_greenhouse.glb");
+
+const Scene3D = ({ visible }: { visible: boolean }) => {
+    if (!visible) return null;
+    return (
+        <Canvas camera={{ position: [7.6, 1.8, 3.2], fov: 45 }} frameloop={visible ? "always" : "never"}>
+            <ambientLight intensity={0.6} />
+            <directionalLight position={[3, 4, 2]} intensity={1.2} />
+            <Environment preset="city" />
+            <Bounds fit margin={1.2}>
+                <Model />
+            </Bounds>
+        </Canvas>
+    );
+};
 
 const storyData = [
     {
@@ -56,6 +70,7 @@ const LandingPage = () => {
     const modelWrapRef = useRef<HTMLDivElement | null>(null);
     const headerWrapRef = useRef<HTMLDivElement | null>(null);
     const [scene, setScene] = useState<number | null>(null);
+    const [showModel, setShowModel] = useState<boolean>(true);
 
     const stepCount = storyData.length;
 
@@ -95,6 +110,7 @@ const LandingPage = () => {
                 pinSpacing: false,
                 onEnter: () => {
                     setScene(0);
+                    setShowModel(false);
                     fnFlyToThai();
                 },
                 onEnterBack: () => {
@@ -107,6 +123,7 @@ const LandingPage = () => {
                 onLeaveBack: () => {
                     fnResetMap();
                     setScene(null);
+                    setShowModel(true);
                 },
                 onUpdate: (self) => {
                     const progress = self.progress;
@@ -197,14 +214,7 @@ const LandingPage = () => {
                         ref={modelWrapRef}
                         className="w-96 h-96 md:w-145 md:h-145 lg:h-200 lg:w-200 -mt-14 md:-mt-28 lg:mt-0 lg:absolute lg:top-[43%] lg:left-[80%] lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2"
                     >
-                        <Canvas camera={{ position: [7.6, 1.8, 3.2], fov: 45 }}>
-                            <ambientLight intensity={0.6} />
-                            <directionalLight position={[3, 4, 2]} intensity={1.2} />
-                            <Environment preset="city" />
-                            <Bounds fit margin={1.2}>
-                                <Model />
-                            </Bounds>
-                        </Canvas>
+                        <Scene3D visible={showModel} />
                     </div>
                     <div className="text-[#81838B] text-xs tracking-[4px] flex flex-col items-center gap-2 animate-bounce">
                         <div>SCROLL DOWN</div>

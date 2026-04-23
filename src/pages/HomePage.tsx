@@ -18,7 +18,8 @@ const cropFiles = [cassavaData, longanData, rubberData, maizeData, palmData];
 const HomePage = forwardRef<MapRef>((_, ref) => {
     const dispatch = useAppDispatch();
     const is_landing = useAppSelector((state) => state.control.isLanding);
-    const mapRef = (ref as React.RefObject<MapRef>) || useRef<MapRef>(null);
+    const internalRef = useRef<MapRef>(null);
+    const mapRef = (ref as React.RefObject<MapRef>) ?? internalRef;
 
     // ดึงข้อมูลชื่อผลผลิตและปีทั้งหมด
     const fetchCropsList = async () => {
