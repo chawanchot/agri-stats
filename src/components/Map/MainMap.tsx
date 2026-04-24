@@ -100,7 +100,7 @@ const MainMap = forwardRef<MapRef>((_, mapRef) => {
 
             const priceData = mockData.filter((mock) => mock.product_category === menu_selected.crop);
 
-            // const getPrice = await Axios.get(`https://agri-stats-api.mu2f.dev/price-by-crop?crop=${menu_selected.crop}`);
+            // const getPrice = await Axios.get(`https://agri-stats-api.chawanchot.me/price-by-crop?crop=${menu_selected.crop}`);
             // const priceData = getPrice.data.data;
             if (!priceData.length) {
                 messageApi.open({
@@ -113,7 +113,7 @@ const MainMap = forwardRef<MapRef>((_, mapRef) => {
 
             for (const item of priceData) {
                 const location = encodeURIComponent(`${item.market_name} ${item.province}`);
-                const getLocation = await Axios.get(`https://agri-stats-api.mu2f.dev/geocode?address=${location}`);
+                const getLocation = await Axios.get(`https://agri-stats-api.chawanchot.me/geocode?address=${location}`);
 
                 const locationData = getLocation.data.results?.[0];
                 if (!locationData?.geometry?.location) {
